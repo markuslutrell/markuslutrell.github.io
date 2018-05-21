@@ -295,7 +295,7 @@ h3 {
 		display: none;
 	}
 	.hover__text {
-		left: 7.8%;
+		display: none;
 	}
 
 	
@@ -358,16 +358,8 @@ h3 {
 		margin-top: 200px;
 	}
 
-	.hover__text {
-		left: 11.5%;
-	}
 }
 
-@media screen and (max-width: 767px) {
-	.hover__text {
-		left: 24%;
-	}
-}
 
 @media screen and (max-width: 580px) {
 	
@@ -416,46 +408,8 @@ h3 {
 		margin-top: 300px;
 	}
 	
-	.hover__text {
-		left: 25.5%;
-	}
 }
 
-@media screen and (max-width: 560px) {
-	.hover__text {
-		left: 25%;
-	}
-}
-
-@media screen and (max-width: 540px) {
-	.hover__text {
-		left: 24%;
-	}
-}
-
-@media screen and (max-width: 520px) {
-	.hover__text {
-		left: 19%;
-	}
-}
-
-@media screen and (max-width: 520px) {
-	.hover__text {
-		left: 23.5%;
-	}
-}
-
-@media screen and (max-width: 480px) {
-	.hover__text {
-		left: 18%;
-	}
-}
-
-@media screen and (max-width: 400px) {
-	.hover__text {
-		left: 11.5%;
-	}
-}
 
 @media screen and (max-width: 380px) {
 	#skills {
@@ -467,16 +421,8 @@ h3 {
 		margin-top: 700px;
 	}
 
-	.hover__text {
-		left: 10%;
-	}
 }
 
-@media screen and (max-width: 330px) {
-	.hover__text {
-		left: 8%;
-	}
-}
 @media screen and (max-width: 280px) {
 	#skills {
 		margin-top: 800px;
