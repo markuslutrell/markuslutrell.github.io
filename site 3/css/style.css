@@ -475,6 +475,6 @@ footer .phone-number {
 	font-size: 18px;
 }
 
-.view__btn {
+.view__btn:hover {
 	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.65);
 }
