@@ -667,6 +667,10 @@ footer {
 	.prev, .next {
 		display: none;
 	}
+	
+	.get-started__text {
+		padding-left: 50px;
+	}
 }
 
 @media screen and (max-width: 320px) {
