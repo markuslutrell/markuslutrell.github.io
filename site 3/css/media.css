@@ -215,6 +215,10 @@
 		font-size: 11px;
 		padding-right: 5px;
 	}
+	
+	h2 {
+		font-size: 2rem;
+	}
 }
 
 @media screen and (max-width: 350px) {
