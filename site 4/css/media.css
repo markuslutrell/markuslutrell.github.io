@@ -1,0 +1,291 @@
+@media screen and (max-width: 1500px) {
+	.player-1 {
+		width: 50%;
+		left: 5%;
+	}
+
+	.player-2 {
+		width: 50%;
+		right: 5%;
+	}
+
+	.row__img {
+		height: 600px;
+	}
+
+	.row__text {
+		width: 50%;
+		padding-left: 100px;
+		padding-top: 5%;
+	}
+
+	.row__text p {
+		color: #000000;
+		font-size: 24px;
+		font-weight: 400;
+		letter-spacing: 1.2px;
+		line-height: 28px;
+		width: 380px;
+	}
+	.row__text p:after {
+		content: '';
+		display: block;
+		width: 22px;
+		height: 5px;
+		border-radius: 2px;
+		background: #5e42b0;
+		margin-top: 70px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	h1 {
+		font-size: 5rem;
+	}
+	h2 {
+		font-size: 5rem;
+	}
+	.sports {
+		margin-top: 0;
+	}
+
+	.player-1 {
+		width: 50%;
+		right: 5%;
+		top: 15%;
+	}
+
+	.player-2 {
+		width: 50%;
+		right: 5%;
+		top: 30%;
+	}
+
+	#athlets p{
+		padding-right: 50px;
+	}
+	#players .sports__item p, #players .sports__item h3, #players h2{
+		padding-left: 100px;
+		padding-right: 50%;
+	}
+	.row__img {
+		height: 500px;
+	}
+	.row__text {
+		width: 50%;
+		padding-left: 80px;
+		padding-top: 3%;
+	}
+	.row__text p {
+		color: #000000;
+		font-size: 24px;
+		font-weight: 400;
+		letter-spacing: 1.2px;
+		line-height: 28px;
+		width: 380px;
+	}
+	.row__text p:after {
+		content: '';
+		display: block;
+		width: 22px;
+		height: 5px;
+		border-radius: 2px;
+		background: #5e42b0;
+		margin-top: 50px;
+	}
+	
+	.square {
+		width: 140px;
+		height: 130px;
+		margin-left: -70px;
+		line-height: 130px;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.player-1 {
+		position: static;
+		width: auto;
+		margin-left: 10%;
+		margin-top: 50px;
+	}
+	.player-2 {
+		position: static;
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 50px;
+	}
+
+	#athlets h2, #athlets h3, #athlets p {
+		padding-left: 10%;
+	}
+
+	#players .sports__item p, #players .sports__item h3, #players h2{
+		padding-left: 50px;
+		padding-right: 10%;
+	}
+	.row {
+		flex-direction: column;
+	}
+
+	.row2 {
+		flex-direction: column-reverse;
+	}
+
+	.row2 h2 {
+	}
+	.row__img {
+		height: auto;
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	.row__text {
+		text-align: center;
+		width: 80%;
+		padding:0;
+		padding-top: 3%;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	.row__text p {
+		color: #000000;
+		font-size: 24px;
+		font-weight: 400;
+		letter-spacing: 1.2px;
+		line-height: 28px;
+		width: 80%;
+		margin: 0 auto;
+	}
+	.row__text p:after {
+		content: '';
+		display: block;
+		width: 22px;
+		height: 5px;
+		border-radius: 2px;
+		background: #5e42b0;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+	
+	.square {
+		width: 140px;
+		height: 130px;
+		margin-left: -70px;
+		line-height: 130px;
+		top: 50%;
+	}
+	footer p{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	h1 {
+		font-size: 4rem;
+	}
+	h2 {
+		font-size: 4rem;
+	}
+	h3 {
+		font-size: 30px;
+	}
+
+	h3 span {
+		padding-top: 5px;
+	}
+	#athlets p, #players p {
+		font-size: 15px;
+
+	}
+	.sports {
+		font-size: 13px;
+	}
+	.sports span {
+		line-height: 30px;
+	}
+
+	.player-1 {
+		position: static;
+		width: 80%;
+	}
+	.square {
+		width: 110px;
+		height: 100px;
+		margin-left: -55px;
+		line-height: 100px;
+		top: 50%;
+	}
+
+	.logo2 {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 660px) {
+	.square {
+		top: 40%;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	nav p {
+		display: none;
+	}
+
+	h1 {
+		margin-top: 200px;
+		font-size: 3rem;
+		line-height: 70px;
+	}
+	h2 {
+		font-size: 3rem;
+	}
+	h3 span {
+		padding-top: 2px;
+	}
+	.sports {
+		padding-bottom: 100px;
+	}
+	.sports span {
+		line-height: 50px;
+	}
+	.download__button_link {
+		margin-left: -10px;
+		width: 250px;
+		padding-left: 20px;
+	}
+	.download__button {
+		width: 250px;
+		margin-left: 0;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+	#athlets p {
+		font-size: 15px;
+	}
+	.player-2 {
+		margin-left: 5%;
+	}
+	.square {
+		top: 30%;
+	}
+
+	#active h2 {
+		padding-top: 60px;
+	}
+	#download h2 {
+		text-align: center;
+	}
+	footer img {
+		width: 140px;
+		height: 25px;
+	}
+
+	.links {
+		padding-left: 3px;
+		padding-right: 3px;
+	}
+}
