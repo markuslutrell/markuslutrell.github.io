@@ -1,0 +1,1155 @@
+@media screen and (max-width:1095px){
+	.wrapper{
+		width: 768px;
+		padding: 0 10px;
+		overflow: hidden;
+	}
+
+	.header__right{
+		width: 510px;
+	}
+
+	.header__left{
+		width: 258px;
+	}
+
+	.order-link{
+		display: none;
+	}
+
+	.header__slider{
+		display: none;
+	}
+
+	.phone-banner{
+		width: 100%;
+	}
+
+	.header__top {
+		margin-bottom: 0;
+	}
+
+	.phone-banner{
+		padding-top: 10px;
+		position: relative;
+		padding-bottom: 14px;
+	}
+
+	.phone-banner__num{
+		float: left;
+		text-align: left;
+		margin-right: 22px;
+	}
+
+	.phone-banner__num_call{
+		display: block;
+		float: none;
+	}
+
+	.phone-banner__num:first-child{
+		font-size: 24px;
+		padding-top: 6px;
+		padding-left: 19px;
+		padding-top: 2px;
+	}
+
+	.phone-banner__num:last-child{
+		display: inline-block;
+		float: left;
+		position: absolute;
+		left: 366px;
+		bottom: 14px;
+	}
+
+	.menu__items{
+		width: 100%
+	}
+
+	.menu{
+		width: 100%;
+		text-align: left;
+		padding: 7px;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#016bc4+1,017cd2+50,46a6e2+100 */
+		background: #016bc4; /* Old browsers */
+		background: -moz-linear-gradient(top, #016bc4 1%, #017cd2 50%, #46a6e2 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #016bc4 1%,#017cd2 50%,#46a6e2 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #016bc4 1%,#017cd2 50%,#46a6e2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#016bc4', endColorstr='#46a6e2',GradientType=0 ); /* IE6-9 */
+	}
+
+	.logo{
+		height: 97px;
+	}
+
+	.logo-bg{
+		top: -82px;
+		left: -71px;
+	}
+
+	.header{
+		height: 104px;
+		margin-bottom: 12px;
+	}
+
+	.clinics__item:nth-child(even){
+		margin-right: 0;
+	}
+
+	.clinics__item{
+		width: 369px;
+		margin-bottom: 10px;
+	}
+
+	.clinics{
+		margin-bottom: 0;
+	}
+
+	.point_mob{
+		display: block;
+		margin-bottom: 12px;
+		background-position: 212px 13px ;
+	}
+
+	.colomns__middle{
+		width: 554px;
+	}
+
+	iframe{
+		width: 100%;
+		height: 308px;
+	}
+
+	.item_block{
+		width: 49%;
+		margin-right: 6px;
+	}
+
+	.colomns{
+		padding-top: 5px;
+	}
+
+	.item_block:nth-child(2n){
+		margin-right: 0;
+	}
+
+	.jq-selectbox{
+		width: 100%;
+	}
+
+	.recall {
+		width: 18%;
+		float: right;
+		text-align: left;
+		padding-top: 18px;
+	}
+
+	.item_block.block-btn{
+		width: 255px;
+	}
+
+	.hint{
+		margin-top: 20px;
+	}
+
+	.hint input[type=checkbox] {
+		display: inline;
+	}
+
+	.hint label {
+		display: inline;
+		padding-left: 0;
+	}
+
+	.hint label::before {
+		display: none;
+	}
+
+	.callback-form{
+		padding-bottom: 16px;
+	}
+
+	.callback__advantages{
+		padding-top: 5px;
+	}
+
+	.callback__advantage{
+		width: 100%;
+		margin-right: 0;
+		padding-bottom: 15px;
+		line-height: 16px;
+		background-position: left -2px;
+		padding-top: 2px;
+	}
+
+	.callback__advantage br{
+		display: none;
+	}
+
+	.colomns__left {
+		width: 184px;
+		float: left;
+		margin-right: 10px;
+	}
+
+	.colomns__right{
+		display: none;
+	}
+
+	.page-pic{
+		height: 228px;
+		margin-bottom: 10px;
+	}
+
+	.footer__right{
+		margin-top: -4px;
+	}
+
+	.menu__item{
+		padding: 8px 7px 0 7px;
+	}
+
+	.menu__list{
+		padding-left: 0;
+	}
+
+	.mob-banner{
+		display: block;
+	}
+
+	.service__text{
+		width: 74%;
+	}
+
+	.tabs .tabs-label{
+		text-align: center;
+		padding: 2px 4px;
+	}
+
+	.tabs .tabs-input:checked + .tabs-label::after{
+		height: 8px;
+	}
+
+	.services__items{
+		margin-bottom: 40px;
+	}
+
+	.page-content_page{
+		margin-top: 0;
+	}
+
+	.reasons__item {
+		width: 46%;
+		padding-right: 0;
+		margin-bottom: 15px;
+	}
+
+	ul li{
+		list-style-position: outside;
+	}
+
+	.service-list__item a{
+		margin-left: 10px;
+		padding-left: 0;
+		display: inline-block;
+		border-bottom: none;
+	}
+
+	.service-list__items a::before{
+		top: 11px;
+	}
+
+	.clinics_mob{
+		display: block;
+		margin-bottom: 2px;
+		margin-top: 6px;
+	}
+
+	.clinics__title br{
+		display: none;
+	}
+
+	.colomns__common{
+		width: 554px;
+	}
+
+	.doctors-select__item {
+		width: 32%;
+		margin-right: 10px;
+	}
+
+	.doctors-list__item{
+		width: 49%;
+		margin-right: 11px;
+		margin-bottom: 11px;
+	}
+
+	.doctors-list__pic{
+		width: 61px;
+	}
+
+	.doctors-select{
+		margin-bottom: 12px;
+	}
+
+	.doctors-list__pic{
+		height: 94px;
+	}
+
+	.clinics-list_mob{
+		display: block;
+		margin-bottom: 20px;
+		margin-top: 2px;
+	}
+
+	.flebology__inner{
+		background: #e2e2e2  url('../../img/bg_varicosity.jpg') 0 0 no-repeat;
+		background-size: contain;
+		padding-top: 228px;
+	}
+
+	.flebology__title span{
+		font-size: inherit;
+		display: inline;
+		line-height: 37px;
+	}
+
+	.flebology__title{
+		line-height: 36px;
+		margin-top: 0;
+		display: inline-block;
+		text-transform: uppercase;
+	}
+
+	.symptom__list{
+		padding: 31px 0px 22px 65px;
+	}
+
+	.factors__item{
+		width: 45%;
+		margin: 0 10px 0 10px;
+	}
+
+	.section__list{
+		width: 53%;
+	}
+
+	.block__title{
+		font-size: 17px;
+	}
+
+	.clinic-map{
+		height: 323px;
+	}
+
+	.page-content{
+		padding-bottom: 10px;
+	}
+
+	.doctors-shedule__data{
+		background-position: 204px 2px;
+	}
+
+	.doctors-select__btn_doc{
+		width: 100%;
+	}
+
+	.callback_big .item_block{
+		width: 256px;
+	}
+
+	.callback_big .recall {
+		width: 100%;
+		float: right;
+		text-align: right;
+		padding-top: 0;
+	}
+
+	.recall{
+		display: none;
+	}
+
+	.callback_big .recall{
+		display: none;
+	}
+
+	.schedule-table  td{
+		min-width: 146px;
+		max-width: 146px;
+	}
+
+	.schedule-list__point{
+		width: 19px;
+	}
+
+	.schedule-list__time__left{
+		width: 46%;
+	}
+
+	.schedule-list__time__right{
+		width: 53%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width:767px){
+	.wrapper{
+		width: 320px;
+	}
+
+	.header{
+		height: 177px;
+	}
+
+	.header__left{
+		width: 100%;
+		height: 83px;
+	}
+
+	.header__right{
+		width: 100%;
+	}
+
+	.header__top{
+		display: none;
+	}
+
+	.logo{
+		height: 83px;
+		margin: 0 auto;
+		position: static;
+	}
+
+	.logo-bg {
+		top: -90px;
+		left: 3px;
+		width: 100%;
+	}
+
+	.mobile-hamburger {
+		display: block;
+	}
+
+	.sidebar .logo {
+		height: 65px;
+		position: absolute;
+		top: 3px;
+		left: 60px;
+		width: 200px;
+	}
+
+	.sidebar .logo img{
+		padding-top: 19px;
+	}
+
+	.mob-order__link{
+		display: block;
+		position: absolute;
+		top: 20px;
+		right: 10px;
+		background: url(../../img/order-icon.png) 10px 10px no-repeat;
+		width: 38px;
+		height: 40px;
+	}
+
+	.phone-banner__num_small{
+		width: 48%;
+		margin-left: 0;
+	}
+
+	.phone-banner__num:last-child {
+		display: inline-block;
+		margin: 0;
+		padding-top: 0;
+		position: static;
+	}
+
+	.phone-banner__num{
+		width: 48%;
+		margin-right: 0;
+		text-align: center;
+	}
+
+	.phone-banner__num:first-child{
+		width: 100%;
+	}
+
+	.phone-banner__num_call{
+		width: 100%;
+		text-align: center;
+	}
+
+	.phone-banner{
+		padding-bottom: 7px;
+	}
+
+	.clinics__item{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.ms-menu{
+		display: none;
+	}
+
+	.ms-menu_mob{
+		display: block;
+		padding-top: 110px;
+	}
+
+	.ms-menu__item-drop.active{
+		padding-left: 15px;
+	}
+
+	.search__title{
+		padding-left: 101px;
+		background-position: 75px 9px;
+		line-height: 32px;
+	}
+
+	.common__links{
+		padding-bottom: 17px;
+		margin-bottom: 0;
+	}
+
+	.menu__links{
+		display: none;
+	}
+
+	.menu__links_mob{
+		display: block;
+		margin-bottom: 0;
+	}
+
+	.common__links{
+		display: none;
+	}
+
+	.search{
+		display: none;
+	}
+
+	.search_mob{
+		display: block;
+		margin-bottom: 0;
+	}
+
+	.common__links_mob{
+		display: block;
+	}
+
+	.colomns__left{
+		display: none;
+	}
+
+	.colomns__middle{
+		width: 100%;
+	}
+
+	.main-title{
+		line-height: 27px;
+		margin-bottom: 10px;
+	}
+
+	.doctors-shedule__clear {
+		margin-bottom: 15px;
+		margin-top: -25px;
+	}
+
+	.page-pic{
+		height: 142px;
+		margin-bottom: 10px;
+	}
+
+	.page-pic img{
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.point_mob {
+		background-position: 63px 13px;
+		margin-bottom: 24px;
+	}
+
+	.main-title{
+		text-align: left;
+		line-height: 22px;
+	}
+
+	p{
+		padding-bottom: 10px;
+	}
+
+	iframe{
+		height: 176px;
+	}
+
+	.video{
+		margin-bottom: 0;
+	}
+
+	.callback__title{
+		margin-top: 5px;
+		line-height: 22px;
+		padding-right: 93px;
+	}
+
+	.phone_big  b{
+		font-size: 29px;
+	}
+
+	.subtitle{
+		line-height: 27px;
+	}
+
+	.item_block{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 8px;
+	}
+
+	.calback__btn{
+		margin-top: 12px;
+	}
+
+	.recall {
+		width: 37%;
+		padding-top: 10px;
+	}
+
+	.hint{
+		margin-top: 7px;
+	}
+
+	.jq-selectbox__select-text{
+		line-height: 29px;
+	}
+
+	.footer__left {
+		width: 100%;
+		float: left;
+		margin-bottom: 10px;
+	}
+
+	.footer__bot{
+		padding-top: 15px;
+		padding-bottom: 4px;
+	}
+
+	.footer-clinics__item{
+		width: 100%;
+		margin: 0 0 12px 0;
+	}
+
+	.modal-container{
+		width: 320px;
+	}
+
+	.b-form-item_type_captcha .b-form-item__input-image{
+		width: 42%;
+	}
+
+	.b-form-item_type_captcha .b-form-item__input{
+		width: 52%
+	}
+
+	.service__text{
+		float: left;
+	}
+
+	.service__pic{
+		margin-bottom: 0;
+		width: 128px;
+	}
+
+	.tabs .tabs-label{
+		display: inline-block;
+		width: 49%;
+	}
+
+	.tabs .tabs-input:checked + .tabs-label{
+		border:none;
+	}
+
+	.tabs .tabs-label{
+		border:none;
+		text-align: left;
+		padding: 5px;
+	}
+
+	.price-table{
+		margin-top: 0;
+		display: table;
+	}
+
+	.footer-clinics__title{
+		margin-bottom: 4px;
+	}
+
+	.menu__list{
+		margin-bottom: 0;
+	}
+
+	.mob-banner{
+		height: 68px;
+		margin-bottom: 18px;
+	}
+
+	.footer__top{
+		padding-bottom: 4px;
+	}
+
+	.page-links__item{
+		display: block;
+	}
+
+	.page-links__list{
+		display: block;
+		width: 100%;
+	}
+
+	.service__text {
+		width: 57%;
+		padding-left: 10px;
+		margin-top: -4px;
+	}
+
+	.section{
+		padding: 5px;
+		width: 300px;
+		margin-top: 7px;
+	}
+
+	.price-table td{
+		max-width: 185px;
+		padding: 4px;
+	}
+
+	.page-content{
+		padding-bottom: 0;
+		padding-top: 5px;
+	}
+
+	.footer-clinics__title{
+		margin-bottom: 5px;
+	}
+
+
+	.price-table_big td{
+		padding: 6px;
+	}
+
+	.bread-crumbs__item{
+		margin-bottom: 0;
+	}
+
+	.page-content_page{
+		padding: 10px;
+	}
+
+	.clinics__item{
+		min-height: 128px;
+		padding: 15px;
+		margin-bottom: 16px;
+	}
+
+	.bread-crumbs{
+		margin-bottom: 15px;
+	}
+
+	.reasons{
+		margin-bottom: 0;
+	}
+
+	.clinics__item:last-child{
+		margin-bottom: 4px;
+	}
+
+	.faq-list_service  .faq-point{
+		margin-left: 0;
+		line-height: 16px;
+	}
+
+	.faq-list_service .faq-list__item{
+		padding-left: 18px;
+	}
+
+	.set__title {
+		margin-bottom: 12px;
+		line-height: 15px;
+	}
+
+	.faq-list_service .faq__content {
+		padding: 2px 0 5px 14px;
+	}
+
+	.colomns__common{
+		width: 100%;
+	}
+
+	.doctors-select__item {
+		width: 100%;
+		margin: 0 0 15px 0;
+	}
+
+	.doctors-select__title{
+		background-position: 54px  10px;
+	}
+
+	.jq-selectbox__dropdown{
+		width: 100%!important;
+	}
+
+	.doctors-list__item{
+		width: 100%;
+		margin: 0 0 12px 0;
+	}
+
+	.pagination{
+		margin-top: 15px;
+	}
+
+	.pagination__item_larr{
+		display: none;
+	}
+
+	.pagination__item_rarr{
+		display: none;
+	}
+
+	.pagination__item{
+		padding: 0 7px;
+	}
+
+	.pagination__item.pagination__item_current{
+		padding: 2px 8px;
+	}
+
+	.doctor__pic{
+		width: 65%;
+		margin-bottom: 15px;
+		margin: 0 auto 15px;
+		float: none;
+	}
+
+	.flebology__inner{
+		padding-top: 118px;
+	}
+
+	.flebology__inner__left{
+		width: 100%;
+		text-align: left;
+		padding: 0 8px 0 16px;
+	}
+
+	.flebology__inner__right{
+		width: 100%;
+		text-align: left;
+		padding: 0 8px 0 16px;
+	}
+
+	.flebology__title{
+		margin-top: 2px;
+	}
+
+	.statistics__left{
+		width: 100%;
+		padding: 0 21px 20px 21px;
+	}
+
+	.statistics__right{
+		width: 100%;
+		padding: 0 21px 20px 21px;
+	}
+
+	.statistic__pic_big{
+		width: 100%;
+	}
+
+	.symptom__list{
+		background-position: -186px 0;
+		padding: 22px 0px 2px 15px;
+	}
+
+	.factors__item{
+		width: 41%;
+	}
+
+	.factors__inner{
+		padding: 27px 0 21px 0 ;
+	}
+
+	.factors__title{
+		font-size: 12px;
+	}
+
+	.tabs_fleb .tabs-input:checked + .tabs-label{
+		border-bottom: 1px solid #dfdfdf;
+	}
+
+	.tabs_fleb .tabs-label{
+		width: 100%;
+		border-bottom: 1px solid #dfdfdf;
+		margin-bottom: 1px;
+		text-align: center;
+		padding: 7px 7px 0 7px;
+		height: 55px;
+	}
+
+	.tabs{
+		min-width: 100%;
+	}
+
+	.section__list {
+		width: 100%;
+		padding-left: 20px;
+	}
+
+	.section{
+		width: 285px;
+	}
+
+	.section__pic{
+		width: 200px;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.life{
+		padding: 10px;
+		background-size: 0;
+	}
+
+	.life__item{
+		margin-right: 0;
+	}
+
+	.seek__left{
+		width: 100%;
+	}
+
+	.seek__inner{
+		height: auto;
+		min-height: 634px;
+	}
+
+	.seek__right{
+		width: 100%;
+	}
+
+	.myths__slide{
+		padding: 20px;
+	}
+
+	.myths__slider{
+		margin-bottom: 65px;
+		background-color: #d8f1f8;
+	}
+
+	.myths__slider  .slick-prev{
+		top: 101%;
+		left: 60px;
+		border: 1px solid #d8f1f8; 
+	}
+
+	.myths__slider  .slick-next{
+		top: 101%;
+		right: 60px;
+		border: 1px solid #d8f1f8; 
+		background-position: 2px 3px;
+	}
+
+	.flebology .video{
+		margin-bottom: 20px;
+	}
+
+	.faq__modal{
+		width:  100%;
+		text-align: center;
+	}
+
+	.set{
+		padding-left: 0;
+	}
+
+	.set__title.active {
+		background: #f2efe8;
+		margin-bottom: 0;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	.callback__advantages{
+		margin-bottom: 10px;
+	}
+
+	dt{
+		width: 25%;
+	}
+
+	.contacts__title{
+		line-height: 17px;
+	}
+
+	.contact__map{
+		width: 100%;
+	}
+
+	.clinic-map{
+		height: 188px;
+	}
+
+	.clinic-full__pic{
+		width: 100%;
+	}
+
+	.doctors-shedule__or{
+		display: none;
+	}
+
+	.doctors-shedule__left{
+		width: 100%;
+	}
+
+	.doctors-shedule__right{
+		width: 100%;
+	}
+
+	.doctors-shedule__item{
+		margin-bottom: 18px;
+	}
+
+	.doctors-shedule__data{
+		background-position: 263px 2px;
+	}
+
+	.colomns{
+		overflow: visible;
+	}
+
+	.doctors-select__btn_doc{
+		margin-top: 0;
+	}
+
+	.no-date{
+		margin-bottom: 14px;
+		padding: 16px;
+	}
+
+	.no-date__text{
+		font-size: 13px;
+		line-height: 23px;
+	}
+
+	.no-date__text br{
+		display: none;
+	}
+
+	.no-date__link{
+		font-size: 12px;
+	}
+
+	.schedule-table{
+		display: table;
+		width: 100%;
+		overflow-y: auto;
+	}
+
+	.schedule-table th{
+		padding: 4px 8px 4px 9px;
+		width: 50px;
+	}
+
+	.schedule-table  td{
+		padding: 6px 0 8px 3px;
+	}
+
+	.schedule-table_mob{
+		display: block;
+	}
+
+	.coln {
+		width: 31%;
+	}
+
+	.schedule-table  td{
+		padding: 2px;
+	}
+
+	.schedule-list__time__left{
+		width: 100%;
+		float: none;
+		margin-bottom: 15px;
+	}
+
+	.schedule-list__time__right{
+		width: 100%;
+		float: none;
+	}
+
+	.item_block.block-btn{
+		width: 100%;
+	}
+
+	.schedule-list__tables{
+		display: none;
+	}
+
+	.schedule-list__mob{
+		display: table;
+	}
+
+	.schedule-list__point{
+		width: 19px;
+	}
+
+	.schedule-list__change{
+		font-size: 12px;
+		text-align: center;
+	}
+
+	.schedule-list{
+		margin-bottom: 20px;
+	}
+
+	.schedule-list__time__left{
+		padding-left: 3px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
