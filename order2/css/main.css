@@ -21,6 +21,7 @@ body {
 	width: 580px;
 	height: 331px;
 	position: relative;
+	margin-left: 0;
 }
 
 .mainimg {
@@ -128,55 +129,89 @@ button:hover {
 	top: 30%;
 }
 
-
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 580px) {
+	.wrapper{
+		width: 100%;
+		height: 450px;
+	}
 	.mainimg {
 		display: none;
 	}
-	.main__text {
-		top: -7%;
-		left: 13%;
+	.main__text{
+		width: 100%;
+		right: 50%;
+		margin-right: -50%;
 	}
-	.main__text h2 {
-		font-size: 65px;
+
+	.main__text h2{
+		width: 100%;
+		right:50%;
+		margin-right: -50%;
 	}
-	.main__text h3 {
-		font-size: 33px;
-		padding-right: 25px;
+	.shadow {
+		display: none;
 	}
 
 	.email {
-		font-size: 25px;
-		line-height: 22px;
-		right: 11%;
-		top: 41.5%;
+		right: 50%;
+		margin-right: -171px;
+		top: 38%;
 	}
-
 	input {
-		font-size: 23px;
-		width: 450px;
-		left: 11.4%;
-		top: 66%;
+		left: 50%;
+		margin-left: -45%;
+		width: 90%;	
+		top: 65%;
 	}
-
 	button {
-		right: 11.4%;
-		top: 81.5%;
-		width: 450px;
-		font-size: 28px;
+		right: 50%;
+		margin-right: -45%;
+		width: 90%;	
+		top: 80%;
 	}
 	.footer__text {
-		font-size: 13.3px;
-		left: 0.8%;
-		top: 93%;
-	}
-
-
-	.wrapper {
+		top: 90.5%;
 		width: 100%;
-		height: 460px;	
+		left: 50%;
+		margin-left: -50%;
 	}
-	.shadow {
-		top: 35%;
+
+}
+
+
+@media screen and (max-width: 420px) {
+	.main__text h2 {
+		font-size: 50px;
 	}
+	.main__text h3 {
+		font-size: 24px;
+	}
+
+	.main__text{
+		top: -5%;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.main__text h2 {
+		font-size: 46px;
+	}
+	.main__text h3 {
+		font-size: 22px;
+	}
+
+	.main__text{
+		top: 0%;
+	}
+}
+
+@media screen and (max-width: 335px) {
+	.main__text h2 {
+		font-size: 43px;
+		line-height: 80px;
+	}
+	.main__text h3 {
+		font-size: 20px;
+	}
+
 }
