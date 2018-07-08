@@ -142,19 +142,19 @@ input:nth-child(3) {
 }
 
 @media screen and (max-width: 420px) {
-	main {
-		height: 370px;
+	.main {
 		width: 100%;
 	}
 	h1 {
-		font-size: 50px;
+		font-size: 40px;
 		left: 7%;
 		top: -2%;
 	}
 
 	input {
+		height: 45px;
 		width: 27%;	
-		font-size: 25px;
+		font-size: 20px;
 	}
 	input:nth-child(3) {
 		width: 42%;
@@ -162,7 +162,8 @@ input:nth-child(3) {
 	button {
 		width: 98%;
 		margin-top: 5px;
-		font-size: 27px;
+		font-size: 20px;
+		height: 45px;
 	}
 
 	form {
@@ -179,5 +180,36 @@ input:nth-child(3) {
 	.bars2 {		
 		left:11%;
 		top:30%;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	h1 {
+		font-size: 35px;
+		left: 0;
+	}
+	input {
+		font-size: 18px;
+	}
+
+	.circle:nth-child(1) {
+		top: 3%;
+	}
+
+	.circle:nth-child(2) {
+		top: 30%;
+		right: 10%;
+	}
+
+	.circle:nth-child(3) {
+		top: 55%;
+	}
+	.bars1 {
+		top: 1%;
+		right: 7%;
+	}
+	.bars2 {		
+		left:1%;
+		top:26%;
 	}
 }
