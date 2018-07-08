@@ -22,6 +22,7 @@ body {
 	height: 331px;
 	position: relative;
 	margin-left: 0;
+	overflow: hidden;
 }
 
 .mainimg {
@@ -118,7 +119,7 @@ button:hover {
 	left: 5.5%;
 }
 
-.footer__text span {
+.footer__text span a{
 	text-decoration: underline;
 	color: #ffd201;
 }
@@ -138,42 +139,36 @@ button:hover {
 		display: none;
 	}
 	.main__text{
-		width: 100%;
-		right: 50%;
-		margin-right: -50%;
+		position: static;
 	}
 
 	.main__text h2{
-		width: 100%;
-		right:50%;
-		margin-right: -50%;
+		text-align: center;
+		margin-top: 30px;
 	}
 	.shadow {
 		display: none;
 	}
 
 	.email {
-		right: 50%;
-		margin-right: -171px;
-		top: 38%;
+		position: static;
+		margin-top: 10px;
 	}
 	input {
-		left: 50%;
-		margin-left: -45%;
-		width: 90%;	
-		top: 65%;
+		position: static;
+		width: 95%;
+		margin-left: 2.5%;
 	}
 	button {
-		right: 50%;
-		margin-right: -45%;
-		width: 90%;	
-		top: 80%;
+		position: static;
+		width: 95%;
+		margin-left: 2.5%;
+		margin-top: 10px;
 	}
 	.footer__text {
-		top: 90.5%;
+		position: static;
 		width: 100%;
-		left: 50%;
-		margin-left: -50%;
+		margin-top: 20px;
 	}
 
 }
