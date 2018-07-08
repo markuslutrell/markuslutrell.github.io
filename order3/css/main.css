@@ -144,6 +144,7 @@ input:nth-child(3) {
 @media screen and (max-width: 420px) {
 	main {
 		height: 370px;
+		width: 100%;
 	}
 	h1 {
 		font-size: 50px;
