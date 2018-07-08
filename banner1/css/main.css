@@ -1,0 +1,156 @@
+@font-face {
+ font-family: "Proxima Nova - Extrabld";
+ src: url("../fonts/ProximaNova-Extrabld.ttf") format("ttf"),
+        url("../fonts/ProximaNova-Extrabld.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Proxima Nova";
+ src: url("../fonts/ProximaNova-Regular.ttf") format("ttf"),
+        url("../fonts/ProximaNova-Regular.woff") format("woff");
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Proxima Nova";
+}
+
+.wrapper {
+	background: url(../img/bg.jpg) no-repeat center center / cover;
+	width: 580px;
+	height: 331px;
+	position: relative;
+}
+
+.mainimg {
+	position: absolute;
+	width: 262px;
+	top: 37%;
+	margin-top: -105px;
+	left: 1%;
+}
+
+.main__text {
+	position: absolute;
+	right: 3%;
+	top: -10%;
+	transform: rotate(357deg) scale(1) skew(1deg) translate(0px);
+	-webkit-transform: rotate(357deg) scale(1) skew(1deg) translate(0px);
+	-moz-transform: rotate(357deg) scale(1) skew(1deg) translate(0px);
+	-o-transform: rotate(357deg) scale(1) skew(1deg) translate(0px);
+	-ms-transform: rotate(357deg) scale(1) skew(1deg) translate(0px);
+}
+
+.main__text h2 {
+	text-shadow: 1px 2px 0 rgba(0, 53, 113, 0.76);
+	color: #ffffff;
+	font-family: "Proxima Nova - Extrabld";
+	font-size: 56px;
+	font-weight: 900;
+	background-clip: text;
+	text-shadow: 13px 12px 4px rgba(20, 20, 20, .4);
+}
+
+.main__text h3 {
+	font-size: 26px;
+	text-align: center;
+	color: #fff;
+	font-weight: 900;
+	margin-top: -50px;
+	background-clip: text;
+	text-shadow: 13px 12px 4px rgba(20, 20, 20, .5);
+}
+
+.main__text h3 span {
+	color: #fff200;
+}
+
+.email {
+	position: absolute;
+	color: #fff;
+	text-align: center;
+	font-size: 19px;
+	top: 45%;
+	right: 6%;
+}
+
+input {
+	position: absolute;
+	border-radius: 25px;
+	width: 350px;
+	height: 58px;
+	border: none;
+	font-size: 17px;
+	text-align: center;
+	top:69%;
+	left: 2%;
+}
+
+button {
+	position: absolute;
+	border-radius: 25px;
+	font-size: 21px;
+	font-weight: bold;
+	width: 195px;
+	height: 58px;
+	border: none;
+	background: #ffce00;
+	line-height: 22px;
+	top: 69%;
+	right: 2%;
+	box-shadow: 0px 0px 58px 5px rgba(17,130,0,0.69);
+}
+
+.footer__text {
+	position: absolute;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	bottom: 0%;
+	left: 5.5%;
+}
+
+.footer__text span {
+	text-decoration: underline;
+	color: #ffd201;
+}
+
+.shadow {
+	position: absolute;
+	width: 100%;
+	top: 30%;
+}
+
+
+@media screen and (max-width: 420px) {
+	.main__text h2 {
+		font-size: 58px;
+	}
+	.main__text h3 {
+		font-size: 27.5px;
+	}
+
+	.main__text {
+		right: 2%;
+		top: -12%;
+	}
+
+	.email {
+		font-size: 20px;
+		line-height: 22px;
+		right: 4%;
+	}
+
+	input {
+		font-size: 19px;
+	}
+
+	button {
+		font-size: 23px;
+	}
+	.footer__text {
+		font-size: 13px;
+		left: 2.5%;
+	}
+}
