@@ -90,7 +90,7 @@ input {
 button {
 	position: absolute;
 	border-radius: 25px;
-	font-size: 21px;
+	font-size: 22px;
 	font-weight: bold;
 	width: 195px;
 	height: 58px;
@@ -130,33 +130,52 @@ button:hover {
 
 
 @media screen and (max-width: 420px) {
+	.mainimg {
+		display: none;
+	}
+	.main__text {
+		top: -7%;
+		left: 13%;
+	}
 	.main__text h2 {
-		font-size: 58px;
+		font-size: 65px;
 	}
 	.main__text h3 {
-		font-size: 27.5px;
-	}
-
-	.main__text {
-		right: 2%;
-		top: -12%;
+		font-size: 33px;
+		padding-right: 25px;
 	}
 
 	.email {
-		font-size: 20px;
+		font-size: 25px;
 		line-height: 22px;
-		right: 4%;
+		right: 11%;
+		top: 41.5%;
 	}
 
 	input {
-		font-size: 19px;
+		font-size: 23px;
+		width: 450px;
+		left: 11.4%;
+		top: 66%;
 	}
 
 	button {
-		font-size: 23px;
+		right: 11.4%;
+		top: 81.5%;
+		width: 450px;
+		font-size: 28px;
 	}
 	.footer__text {
-		font-size: 13px;
-		left: 2.5%;
+		font-size: 13.3px;
+		left: 0.8%;
+		top: 93%;
+	}
+
+
+	.wrapper {
+		height: 460px;	
+	}
+	.shadow {
+		top: 35%;
 	}
 }
