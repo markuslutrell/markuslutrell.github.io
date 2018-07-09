@@ -70,15 +70,17 @@ form {
 	position: absolute;
 	bottom: 13%;
 	left: 4%;
+	width: 100%;
 }
 
 input {
+	width: 60%;
 	font-size: 19px;
 	text-align: center;
 	border-radius: 20px;
 	border: none;
 	height: 50px;
-	width: 100px;
+	color: gray;
 }
 
 button {
@@ -89,8 +91,9 @@ button {
 	border-radius: 20px;
 	border: none;
 	height: 50px;
-	width: 160px;
+	width: 30%;
 	background-color: #ffd000;	
+	cursor: pointer;
 }
 
 button:hover {
@@ -155,10 +158,12 @@ input:nth-child(3) {
 .footer__text a {
 	text-decoration: underline;
 	color: #ffd201;
+	cursor: pointer;
 }
 
 .footer__text a:hover {
 	text-decoration: none;
+
 }
 
 @media screen and (max-width: 580px) {
@@ -173,11 +178,11 @@ input:nth-child(3) {
 		position: static;
 		width: 90%;
 		margin-left: 5%;
-		margin-top: 20px;
 	}
 
 	input {
-		width: 29.5%;
+		margin-top: 20px;
+		width: 100%;
 		font-size: 23px;
 	}
 	input:nth-child(3) {
@@ -187,7 +192,7 @@ input:nth-child(3) {
 	button {
 		font-size: 25px;
 		width: 100%;
-		margin-top: 15px;
+		margin-top: 20px;
 	}
 
 	.footer__text {
@@ -202,7 +207,10 @@ input:nth-child(3) {
 		font-size: 20px;
 	}
 	.main {
-		height: 410px;
+		height: 440px;
+	}
+	input:nth-child(3) {
+		width: 37%;
 	}
 } 
 
@@ -222,8 +230,8 @@ input:nth-child(3) {
 		bottom: -4%;
 	}
 	input {
-		width: 49%;
-		margin-left: .25%;
+		width: 100%;
+		margin-left: .5%;
 	}
 	input:nth-child(3) {
 		width: 100%;
@@ -252,7 +260,7 @@ input:nth-child(3) {
 	}
 
 	.circle:nth-child(3) {
-		top: 55%;
+		display: none;
 	}
 	.bars1 {
 		top: 1%;

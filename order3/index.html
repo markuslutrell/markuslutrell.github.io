@@ -20,9 +20,7 @@
 		</h1>
 
 		<form>
-			<input type="text" placeholder="День">
-			<input type="text" placeholder="Месяц">
-			<input type="text" placeholder="Год рождения">
+			<input type="text" placeholder="Год рождения" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
 			<button>Отправить</button>
 		</form>
 
