@@ -31,6 +31,6 @@ $(window).on('load', function () {
 			
 			$(".js-overlay-campaign").fadeIn();
 		}
-	}, 5000);
+	}, 0);
 });
 
