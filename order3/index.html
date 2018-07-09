@@ -1,34 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Banner 2</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/main.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
+
 <body>
-	<div class="main">
-		<div class="circle"></div>
-		<div class="circle"></div>
-		<div class="circle"></div>
-		<img src="img/bars1.png" alt="Bars" class="bars1">
-		<img src="img/bars2.png" alt="Bars" class="bars2">
-		<h1>
-			Мы сделаем<br>
-			<span class="yellow">Вам подарок<br></span>
-			<span>на День Рождение!</span>
-		</h1>
+	<main>
+		<div class="button js-button-campaign"><span></span></div>
+	</main>
+	<div class="overlay js-overlay-campaign">
+		<div class="popup js-popup-campaign">
+			<div class="main">
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<img src="img/bars1.png" alt="Bars" class="bars1">
+			<img src="img/bars2.png" alt="Bars" class="bars2">
 
-		<form>
-			<input type="text" placeholder="Дата рождения" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
-			<button>Отправить</button>
-		</form>
+			<h1>
+				Мы сделаем<br>
+				<span class="yellow">Вам подарок<br></span>
+				<span>на День Рождение!</span>
+			</h1>
 
-		<p class="footer__text">
-			Нажимая на кнопку «Купить со скидкой» я <a href="https://www.partner-moto.ru/about/polzovatelskoe-soglashenie/">даю согласие на обработку персональных данных</a>
-		</p>
+			<form>
+				<input type="text" placeholder="Год рождения" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+				<button>Отправить</button>
+			</form>
+
+			<p class="footer__text">
+				Нажимая на кнопку «Купить со скидкой» я <a href="https://www.partner-moto.ru/about/polzovatelskoe-soglashenie/">даю согласие на обработку персональных данных</a>
+			</p>
+
+			<div class="close-popup js-close-campaign"></div>
+		</div>
 
 
 	</div>
+			
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
