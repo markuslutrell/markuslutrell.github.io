@@ -1,0 +1,182 @@
+@font-face {
+ font-family: "Proxima Nova - Extrabld";
+ src: url("../fonts/ProximaNova-Extrabld.ttf") format("ttf"),
+        url("../fonts/ProximaNova-Extrabld.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Proxima Nova";
+ src: url("../fonts/ProximaNova-Regular.ttf") format("ttf"),
+        url("../fonts/ProximaNova-Regular.woff") format("woff");
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Proxima Nova";
+}
+
+.main {
+	background: url(../img/mainbg.jpg) no-repeat center center / cover;
+	width: 580px;
+	height: 331px;
+	position: relative;
+	overflow: hidden;
+}
+
+h1 {
+	left: 12%;
+	position: absolute;
+	font-size: 45px;
+	text-align: center;
+	color: #fff;
+	font-family: "Proxima Nova - Extrabld";
+	text-transform: uppercase;
+	text-shadow: 1px 2px 0 rgba(180, 87, 23, 0.76);
+	line-height: 43px;
+	transform: rotate(356deg) scale(1) skew(1deg) translate(0px);
+	-webkit-transform: rotate(356deg) scale(1) skew(1deg) translate(0px);
+	-moz-transform: rotate(356deg) scale(1) skew(1deg) translate(0px);
+	-o-transform: rotate(356deg) scale(1) skew(1deg) translate(0px);
+	-ms-transform: rotate(356deg) scale(1) skew(1deg) translate(0px);
+}
+
+h1 span{
+	text-transform: none;
+	letter-spacing: 1.7px;
+}
+
+h1 .yellow {
+	color: #fcff00;
+	text-transform: uppercase;
+}
+
+.gift1 {
+	position: absolute;
+	width: 250px;
+	top: 50%;
+	right: 65%;
+}
+.gift2 {
+	position: absolute;
+	width: 210px;
+	left: 74%;
+	top: 47%;
+}
+
+form {
+	position: absolute;
+	bottom: 13%;
+	left: 4%;
+}
+
+input {
+	font-size: 19px;
+	text-align: center;
+	border-radius: 20px;
+	border: none;
+	height: 50px;
+	width: 100px;
+}
+
+button {
+	padding: 1px;
+	font-family: "Proxima Nova - Extrabld";
+	font-size: 21px;
+	text-align: center;
+	border-radius: 20px;
+	border: none;
+	height: 50px;
+	width: 160px;
+	background-color: #ffd000;	
+}
+
+button:hover {
+	transition: .3s ease;
+	border: 2px solid #fff;
+}
+
+input:nth-child(3) {
+	width: 164px;
+}
+
+.circle {
+	height: 11px;
+	width: 11px;
+	border: 1.5px solid #fff;
+	border-radius: 50%;
+	position: absolute;
+}
+
+.circle:first-child {
+	top:8%;
+	left: 15%;
+}
+
+.circle:nth-child(2) {
+	height: 9px;
+	width: 9px;
+	top:16%;
+	right: 14%;
+	border: 1px solid #fff;
+}
+
+.circle:nth-child(3) {
+	height: 7px;
+	width: 7px;
+	right: 32%;
+	top: 57%;
+}
+
+.bars1 {
+	position: absolute;
+	height: 40px;
+	top: 2%;
+	right: 18%;
+}
+.bars2 {
+	position: absolute;
+	height: 30px;
+	left:15%;
+	top:31%;
+}
+
+@media screen and (max-width: 420px) {
+	main {
+		height: 370px;
+	}
+	h1 {
+		font-size: 50px;
+		left: 7%;
+		top: -2%;
+	}
+
+	input {
+		width: 27%;	
+		font-size: 25px;
+	}
+	input:nth-child(3) {
+		width: 42%;
+	}
+	button {
+		width: 98%;
+		margin-top: 5px;
+		font-size: 27px;
+	}
+
+	form {
+		left: 2%;
+		bottom: 10%;
+	}
+	.circle:nth-child(3) {
+		top: 52%;
+	}
+	.bars1 {
+		top: 1%;
+		right: 15%;
+	}
+	.bars2 {		
+		left:11%;
+		top:30%;
+	}
+}

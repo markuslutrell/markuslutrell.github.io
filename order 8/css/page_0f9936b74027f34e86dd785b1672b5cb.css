@@ -1,0 +1,67 @@
+
+
+/* Start:/bitrix/templates/osmo/components/bitrix/news/faq/bitrix/news.list/.default/style.css?1486713585159*/
+/*div.news-list
+{
+	word-wrap: break-word;
+}
+div.news-list img.preview_picture
+{
+	float:left;
+	margin:0 4px 6px 0;
+}
+.news-date-time {
+	color:#486DAA;
+}     */
+
+/* End */
+
+
+/* Start:/bitrix/templates/osmo/components/bitrix/form/faq-form/bitrix/form.result.new/.default/style.css?1486713584677*/
+/*table.form-table
+{
+	width:100%;
+	background-color:white;
+	border-collapse:collapse;
+	font-size:100%;
+	font-weight:normal;
+	line-height:160%;
+}
+
+table.form-table th, table.form-table td
+{
+	border:1px solid #ADC3D5;
+	padding: 5px 5px;
+	vertical-align:top;
+}
+
+table.form-table th
+{
+	background-image:url(/bitrix/templates/osmo/components/bitrix/form/faq-form/bitrix/form.result.new/.default/images/table_head.gif);
+	background-repeat:repeat-x;
+	text-align: left;
+	color:#25639A;
+}
+
+
+table.form-table td
+{
+	padding: 15px 5px;
+}
+
+.form-required 
+{
+	color: red;
+}
+
+.error-fld {
+	display: block;
+	float: left;
+	height: 13px;
+	width: 15px;
+	background-repeat: no-repeat;
+	background-image: url(/bitrix/templates/osmo/components/bitrix/form/faq-form/bitrix/form.result.new/.default/images/icon_warn.gif);
+}       */
+/* End */
+/* /bitrix/templates/osmo/components/bitrix/news/faq/bitrix/news.list/.default/style.css?1486713585159 */
+/* /bitrix/templates/osmo/components/bitrix/form/faq-form/bitrix/form.result.new/.default/style.css?1486713584677 */
