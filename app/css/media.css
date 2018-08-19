@@ -1,0 +1,222 @@
+@media screen and (max-width: 1200px) {
+	.menu__item {
+		padding-right: 15px;
+	}
+	.header__contacts_item {
+		padding-left: 15px;
+	}
+
+	.second__item {
+		width: 100%;
+	}
+
+	.second__item_text {
+		font-size: 25px;
+		padding-top: 75px;
+	}
+	.second__item_text1 {
+		padding-top: 110px;
+	}
+	.header__content_img {
+		padding-top: 60px;
+	}
+	.header__content_header {
+		font-size: 32px;
+	}
+	.application__input button{
+		height: 40px;
+		width: 350px;
+	}
+
+	.application__input input {
+		margin-right: 30px;
+	}
+	
+	.input__user {
+		right: 15%;
+	}
+
+	#application .form__phone {
+		right: 15%;
+	}
+
+	.tab-nav-label1 {
+		margin-left: 130px;
+	}
+}
+
+@media screen and (max-width: 996px) {
+	.menu {
+		display: none;
+		position: absolute;
+		top: 15%;
+		right: 1%;
+		z-index: 50;
+	}
+	.menu__item {
+		width: 280px;
+		display: block;
+		text-align: center;
+		background: rgba(0,0,0, .7);
+		padding: 15px 0px;
+		margin: 0;
+		transition: .3s ease;
+		cursor: pointer;
+
+	}
+
+	.menu__item:hover {
+		background: rgba(0,0,0, .8);
+	}
+
+	.menu-icon {
+		display: block;
+		margin-left: 250px;
+		cursor: pointer;
+		z-index: 300;
+	}
+	.second__header {
+		margin-top: 450px;
+		font-size: 49px;
+	}
+
+	.second__item {
+		width: 350px;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	.second__item_text {
+		padding-top: 18%;
+		font-size: 28px;
+	}
+
+	.second__item_text1 {
+		padding-top: 29%;
+	}
+	
+	.application__form {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.application__input button{
+		text-align: center;
+		width: 400px;
+		margin: 0 auto;
+	}
+
+	.application__input_h {
+		text-align: center;
+		margin-left: 0;
+	}
+
+	.application__input1 {
+		margin-left: 0;
+	}
+
+	.application__input{
+		margin-left: 0;
+		width: 400px;
+		margin: 0 auto;
+		display: block;
+		margin-top: 10px;
+	}
+	.application__input input {
+		width: 400px;
+	}
+
+	.application__btn {
+		margin: 0 auto;
+	}
+
+	.input__user {
+		right: 4%;
+		margin-bottom: -23px;
+	}
+
+	#application .form__phone {
+		right: 5%;
+		margin-bottom: -10px;
+	}
+
+	.application__warranty {
+		text-align: center;
+	}
+
+	.tab-nav-label1 {
+		margin-left: 23px;
+	}
+
+	.tab-nav-label {
+		margin-right: 10px;
+	}
+	.clients__header {
+		margin-top: 500px;
+	}
+	.recommend__item {
+		margin: 20px auto; 
+		text-align: center;
+		display: block;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.menu-icon {
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.header__contacts_item {
+		display: none;
+	}
+
+	.tab-nav-label1 {
+		margin-left: 80px;
+	}
+	.tab-nav-label3 {
+		margin-left: 80px;
+	}
+
+	.tab-nav-label {
+		margin-right: 30px;
+	}
+	.brands__header {
+		padding-left: 0px;
+		padding-right: 0px;
+		font-size: 48px;
+	}
+
+	.product__item {
+		height: 500px;
+	}
+
+	.clients__header {
+		margin-top: 2250px;
+	}
+
+	.products__brand {
+		background-image: linear-gradient(rgb(245,255,255), #FFFFFF);
+	}
+
+	.projects__item_lower-text {
+		margin-bottom: 50px;
+	}
+
+	.wooman {
+		display: none;
+	}
+
+	.calc__header {
+		text-align: center;
+		padding: 0;
+	}
+
+	.calc__text {
+		text-align: center;
+		padding: 0;
+	}
+
+	.calc__form {
+		width: 400px;
+	}
+}
