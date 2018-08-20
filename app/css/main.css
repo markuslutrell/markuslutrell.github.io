@@ -108,10 +108,10 @@ nav {
 }
 
 .headhesive {
-	background: rgba(0,0,0, .7);
+	background: rgba(0,0,0, .8);
 	position: fixed;
 	width: 100%;
-	transform: translateY(-400%);
+	transform: translateY(-500%);
 	transition: 0.3s ease;
 	z-index: 99;
 }
@@ -957,5 +957,5 @@ footer {
 	margin: 0;
 }
 .active-nav {
-	background: rgba(0,0,0, .7);
+	background: rgba(0,0,0, .8);
 }

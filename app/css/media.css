@@ -144,7 +144,7 @@
 	.menu {
 		display: none;
 		position: absolute;
-		top: 9.8%;
+		top: 75px;
 		right: 20%;
 		z-index: 50;
 		transition: .3s ease;
@@ -153,7 +153,7 @@
 		width: 280px;
 		display: block;
 		text-align: center;
-		background: rgba(0,0,0, .7);
+		background: rgba(0,0,0, .8);
 		padding: 15px 0px;
 		margin: 0;
 		transition: .3s ease;
@@ -162,7 +162,7 @@
 	}
 
 	.menu__item:hover {
-		background: rgba(0,0,0, .8);
+		background: rgba(0,0,0, .9);
 	}
 
 	.menu-icon {
@@ -235,7 +235,7 @@
 @media screen and (max-width: 768px) {
 	.menu {
 		right: 0%;
-		top: 9.7%;
+		top: 74px;
 	}
 
 	.menu-icon {
@@ -631,11 +631,5 @@
 		width: 260px;
 		margin-left: -15px;
 		margin-right: auto; 
-	}
-}
-
-@media screen and (max-width: 321px) {
-	.menu {
-		top: 13%;
 	}
 }
