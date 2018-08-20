@@ -1,0 +1,1037 @@
+/*Fonts*/
+
+@font-face {
+ font-family: "Gilroy Light";
+ src: url("../fonts/Gilroy Light.otf") format("otf"),
+ 	  url("../fonts/Gilroy-Light.woff") format("woff");
+}
+
+@font-face {
+ font-family: "Gilroy ExtraBold";
+ src: url("../fonts/Gilroy ExtraBold.otf") format("otf"),
+ 	  url("../fonts/Gilroy-ExtraBold.woff") format("woff");
+}
+
+/*Specialization*/
+
+body {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+button {
+	cursor: pointer;
+}
+
+/*Header*/
+
+header {
+	background: url(../img/back_1.jpg) no-repeat center center / cover;
+	height: 640px;
+}
+
+nav {
+	padding-top: 3px;
+}
+
+.logo {
+	font-family: "Gilroy Light";
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.logo:hover {
+	text-decoration: none;
+}
+
+.logo__text {
+	font-weight: 100;
+	color: #fff;
+	padding-top: 11px;
+	padding-left: 15px;
+	line-height: 17px;
+	font-size: 15px;
+	letter-spacing: .7px;
+}
+
+
+.menu {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	list-style: none;
+}
+.menu__item {
+	display: block;
+	font-size: 16px;
+	font-family: "Gilroy ExtraBold";
+	text-transform: uppercase;
+	color: #fff;
+	text-shadow: 2px 2px 3px rgba(0,0,0,.52);
+	padding-top: 24px;
+	padding-right: 20px;
+}
+.menu__item:last-child {
+	padding-right: 0;
+}
+
+.menu__item a{
+	color: #fff;
+	text-decoration: none;
+	transition: .3s ease;
+}
+.menu__item a:hover{
+	text-shadow: 3px 3px 7px rgba(0,0,0,.7);
+}
+
+.header__contacts_item {
+	color: #00CBF7;
+	text-shadow: 2px 2px 3px rgba(0,0,0,.52);
+	font-size: 19px;
+	font-family: "Gilroy ExtraBold";
+	letter-spacing: 1px;
+	text-align: right;
+}
+
+.header__contacts {
+	padding-top: 7px;
+	margin-bottom: -7px;
+}
+
+.headhesive {
+	background: rgba(0,0,0, .8);
+	position: fixed;
+	width: 100%;
+	transform: translateY(-1000%);
+	transition: 0.3s ease;
+	z-index: 99;
+}
+
+.headhesive .menu__item{
+	color: #000;
+}
+
+.headhesive--stick {
+	transform: translateY(0);
+}
+
+.headhesive--unstick {
+	display: none;
+}
+
+.headhesive--stick .menu {
+	top: 101%;
+}
+
+.header__content {
+	margin-top: 90px;
+}
+
+.header__content_img {
+	width: 100%;
+}
+
+.header__content_header {
+	color: #232323;
+	font-family: "Gilroy ExtraBold";
+	font-size: 34px;
+	line-height: 43px;
+}
+
+.header__content_text {
+	font-size: 19px;
+	font-family: "Gilroy Light";
+	color: #232323;
+	line-height: 24px;
+	padding-right: 20%;
+	padding-top: 20px;
+}
+
+.dv {
+	display: block;
+}
+
+.main__btn {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-family: "Gilroy ExtraBold";
+	color: #232323;
+	border-radius: 5px;
+	background: rgba(0, 203, 247, 1);
+	box-shadow: 0px 3px 0px #00748D;
+	padding: 8px 15px 7px 15px;
+	border: none;
+	transition: .3s ease;
+}
+
+.main__btn:hover {
+	background: rgba(0, 190, 235, 1);
+	box-shadow: 3px -3px 0px #00748D;
+}
+
+/*Second Section*/
+
+#second {
+	padding-bottom: 65px;
+}
+
+.second__header {
+	font-size: 50px;
+	color: #C8C8C8;
+	text-align: center;
+	font-family: "Gilroy ExtraBold";
+	line-height: 60px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-top: 50px;
+}
+
+.second__item {
+	position: relative;
+	height: 200px;
+	width: 350px;
+	border-radius: 10px;
+}
+
+.second__item_text {
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0, .25);
+	border-radius: 10px;
+	text-align: center;
+	color: #fff;
+	font-size: 28px;
+	text-shadow: 0px 3px 6px rgba(0,0,0,.89);
+	font-family: "Gilroy ExtraBold";
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	padding-top: 18%;
+	transition: .3s ease;
+}
+
+.second__item_text:hover {
+	background: rgba(0,0,0, .50);
+	box-shadow: 1px 1px 3px rgba(0,0,0,.89);
+}
+
+.second__item1 {
+	background: url(../img/img_1.jpg);
+}
+.second__item2 {
+	background: url(../img/img_2.jpg);
+}
+.second__item3 {
+	background: url(../img/img_3.jpg);
+}
+
+.second__item_text1 {
+	padding-top: 29%;
+}
+.second__item_text2 {
+
+}
+.second__item_text3 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*Third Section*/
+
+#companies {
+	padding-top: 65px;
+	background: #E8FBFF;
+	padding-bottom: 65px;
+}
+
+.companies__header {
+	color: #232323;
+	font-size: 50px;
+	text-align: center;
+	line-height: 60px;
+	font-family: "Gilroy ExtraBold";
+	text-transform: uppercase;
+}
+
+.companies__item {
+	height: 200px;
+	width: 350px;
+	border-radius: 6px;
+	box-shadow: 0px 12px 15px rgba(0,0,0, .16);
+	background: #fff;
+	display: flex;
+	margin: 20px auto;
+}
+
+.companies__item_header {
+	font-size: 24px;
+	color: #232323;
+	line-height: 29px;
+	font-family: "Gilroy ExtraBold";
+	text-transform: uppercase;
+	padding-top: 27px;
+}
+
+.companies__item_img {
+	height: 68px;
+	width: 68px;
+	margin-top: 65px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.companies__item_text {
+	font-size: 15px;
+	color: #232323;
+	line-height: 20px;
+	font-family: "Gilroy Light";
+	padding-right: 12px;
+}
+
+.companies__item_header6 {
+	padding-top: 12px;
+}
+
+/*Forth Section*/
+
+#application {
+	background: url(../img/back_2.jpg) no-repeat center top / cover;
+	padding-top: 80px;
+}
+
+.application__header {
+	font-size: 39px;
+	color: #fff;
+	text-shadow: 0px 3px 6px rgba(0,0,0, .56);
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Gilroy ExtraBold";
+	letter-spacing: 1.5px;
+}
+.application__note {
+	font-size: 24px;
+	text-shadow: 0px 3px 6px rgba(0,0,0, .56);
+	color: #fff;
+	text-align: center;
+	font-family: "Gilroy Light";
+	padding: 0 15%;
+	line-height: 30px;
+	padding-bottom: 20px;
+}
+
+.application__form {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	font-family: "Gilroy Light";
+	color: #fff;
+	margin: 0 auto;
+	justify-content: space-around;
+	padding-bottom: 30px;
+}
+
+#application .form__phone {
+	right: 6%;
+	bottom: 50%;
+}
+
+.application__input_h {
+	font-size: 15px;
+	font-family: "Gilroy ExtraBold";
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+}
+
+.application__warranty {
+	font-size: 12px;
+	font-family: "Gilroy Light";
+	margin-top: 10px;	
+}
+
+.application__warranty img {
+	padding-bottom: 3px;
+}
+
+.application__input input {
+	font-size: 16px;
+	font-family: "Gilroy Light";
+	letter-spacing: 1.2px;
+	border-radius: 5px;
+	border: 1px solid #E9E9E9;
+	box-shadow: 1px 1px 2px rgba(0,0,0, .12);
+	width: 280px;
+	height: 40px;
+	padding-left: 15px;
+}
+
+.input__user {
+	position: absolute;
+	right: 5%;
+	bottom: 50%;
+	margin-bottom: -1px;
+}
+
+.application__input {
+	position: relative;
+
+}
+
+.application__input1 {
+	margin-left: 50px;
+}
+
+.application__btn {
+	margin-top: 27px;
+	margin-right: 50px;
+}
+
+/*Fifth Section*/
+
+#brands {
+	background-image: linear-gradient(#E8FBFF, #FFFFFF);
+	padding-top: 65px;
+
+}
+
+.brands__header, .projects__header{
+	padding-left: 81px;
+	padding-right: 81px;
+	font-size: 50px;
+	font-family: "Gilroy ExtraBold";
+	line-height: 68px;
+	letter-spacing: 1.5px;
+	color: #232323;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.tab-nav {
+	display: none;
+}
+
+.tab-nav-label {
+	cursor: pointer;
+	width: 150px;
+	height: 45px;
+	border: 1px solid #232323;
+	border-radius: 10px;
+	text-align: center;
+	font-size: 23px;
+	font-family: "Gilroy Light";
+	letter-spacing: 1.2px;
+	padding-top: 5px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	margin-right: 20px;
+}
+
+
+.tab-nav-label1 {
+	margin-left: 220px;
+}
+
+.product__item {
+	background: #fff;
+	box-shadow: 0px 0px 12px rgba(0,0,0,0.16);
+	height: 450px;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.product__header, .projects__item_title {
+	text-transform: uppercase;
+	font-size: 23px;
+	color: #313131;
+	font-family: "Gilroy ExtraBold";
+	padding-left: 20px;
+}
+
+.product__img {
+	width: 100%;
+}
+
+.product__powerfull {
+	font-size: 15px;
+	color: #777777;
+	font-family: "Gilroy Light";
+	padding-left: 20px;
+	margin-top: -10px;
+}
+.product__price {
+	color: #00CBF7;
+	font-size: 29px;
+	font-family: "Gilroy ExtraBold";
+	padding-left: 20px;
+}
+.product__btn {
+	font-size: 15px;
+	color: #232323;
+	text-transform: uppercase;
+	font-family: "Gilroy ExtraBold";
+	border: 2px solid #232323;
+	border-radius: 6px;
+	margin-left: 20px;
+	background: #fff;
+	height: 40px;
+	width: 160px;
+	cursor: pointer;
+	transition: .3s ease;
+}
+
+.product__btn:hover {
+	background: #232323;
+	color: #fff;
+}
+
+.product__item_order {
+	position: absolute;
+	bottom: 7%;
+}
+
+.tabs {
+	height: 1000px;
+	position: relative;
+
+}
+
+
+.products__brand {
+	position: absolute;
+	opacity: 0;
+	background-image: linear-gradient(#E8FBFF, #FFFFFF);
+}
+
+.tab-nav-label {
+	transition: .3s ease;
+}
+.tab-nav {
+	transition: .3s ease;
+}
+
+.tab-nav-label:hover,
+.tab-nav:checked + label {
+	transition: 0.3s ease;
+	background: #00CBF7;
+	color: #fff;
+	border-color: #00CBF7;
+}
+
+#tab-nav-1:checked ~ .tabs > div:nth-of-type(1),
+#tab-nav-2:checked ~ .tabs > div:nth-of-type(2),
+#tab-nav-3:checked ~ .tabs > div:nth-of-type(3),
+#tab-nav-4:checked ~ .tabs > div:nth-of-type(4){
+  transform: rotateX(0deg);
+  opacity: 1;
+  z-index: 1;
+}
+
+/*Sixs Section*/ 
+
+.clients__header {
+	font-size: 40px;
+	font-family: "Gilroy ExtraBold";
+	letter-spacing: 1.2px;
+	color: #232323;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 50px;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.client__item {
+	margin-top: 30px;
+	filter: grayscale(100);
+	transition: .3s ease;
+}
+
+.client__item:hover {
+	filter: grayscale(0);
+}
+
+/*Sevens Section*/
+
+#recommend {
+	padding-bottom: 65px;
+	position: relative;
+}
+
+.recommend__header {
+	font-size: 50px;
+	letter-spacing: 1.2px;
+	color: #C8C8C8;
+	font-family: "Gilroy ExtraBold";
+	text-align: center;
+	text-transform: uppercase;
+	padding-top: 80px;
+	padding-bottom: 20px;
+}
+
+.recommend__item img {
+	box-shadow: 0px 10px 15px rgba(0,0,0,0.16);
+	cursor: pointer;
+	transition: .3s ease;
+}
+
+.recommend__item img:hover {
+	box-shadow: 0px 10px 15px rgba(0,0,0,0.4);
+}
+
+
+.img-popup {
+	position: fixed;
+	height:100%;
+	width:100%;
+	display:none;
+	text-align:center;
+}
+
+.img-popup_bg {
+	background: rgba(0,0,0,0.4);
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+}
+
+
+.img-popup_img {
+	position: relative;
+	margin: 0 auto;
+	z-index: 2;
+	max-height: 94%;
+	max-width: 94%;
+	margin: 1% 0 0 0;
+}
+
+/*Eigths Section*/
+
+#projects {
+	padding-top: 65px;
+	background-image: linear-gradient(#E8FBFF, #FFFFFF);
+}
+
+.projects__item_img {
+	display: block;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.projects__item_title {
+	text-align: center;
+	margin-top: 25px;
+	padding: 0;
+	margin-bottom: 0;
+}
+
+.projects__item_lower-text {
+	font-size: 19px;
+	letter-spacing: 1px;
+	color: #C8C8C8;
+	font-family: "Gilroy Light";
+	text-align: center;
+	margin-bottom: 240px;
+}
+
+/*Nines Section*/ 
+
+#calc {
+	background: url(../img/back_3.jpg) no-repeat center top / cover;
+	position: relative;
+}
+
+.calc__header {
+	font-size: 35px;
+	color: #fff;
+	font-family: "Gilroy ExtraBold";
+	text-transform: uppercase;
+	margin-top: 40px;
+	padding-right: 80px;
+}
+.calc__text {
+	font-size: 19px;
+	color: #fff;
+	font-family: "Gilroy Light";
+	padding-right: 100px;
+	margin-top: -10px;
+}
+.calc__form {
+	display: block;
+	width: 360px;
+	margin-left: 0;
+}
+
+.calc__form > .application__input1 {
+	margin-left: 0;
+}
+
+.calc__form  .application__warranty {
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.calc__form input, .calc__form button {
+	width: 100%;
+}
+.calc__form .input__user {
+	margin-bottom: -13px;
+}
+
+.calc__form input {
+	margin-bottom: 15px;
+}
+
+ .calc__form button {
+ 	margin-top: 5px;
+ }
+
+
+.calc__form .form__phone {
+	right: 5%;
+	bottom: 50%;
+	margin-bottom: -15px;
+}
+ .wooman {
+ 	position: absolute;
+ 	bottom: 0;
+ 	right: 5%;
+ }
+
+ /*Tens Section*/
+
+ #contacts {
+ 	background: #232323;
+ }
+
+ #contacts .logo {
+ 	margin-top: 20px;
+ }
+
+  #contacts .logo__text {
+  	padding-top: 20px;
+  }
+
+.contacts__address {
+  	display: -webkit-flex;
+  	display: -moz-flex;
+  	display: -ms-flex;
+  	display: -o-flex;
+  	display: flex;
+  }
+
+ .contacts__address_text {
+ 	font-size: 15px;
+ 	font-family: "Gilroy Light";
+ 	color: #fff;
+ }
+
+ .location, .tel {
+ 	height: 28px;
+ 	margin-top: 7px;
+ 	margin-right: 10px;
+ }
+
+ .tel {
+ 	height: 23px;
+ 	margin-top: 15px;
+ }
+
+ .contacts__header {
+ 	font-size: 24px;
+ 	color: #00CBF7;
+	font-family: "Gilroy ExtraBold";
+	text-transform: uppercase;
+	margin-bottom: 0;
+	margin-top: 25px;
+ }
+
+ .contacts__phone {
+ 	font-size: 24px;
+ 	font-family: "Gilroy ExtraBold";
+ 	line-height: 29px;
+ 	color: #fff;
+ }
+
+ .contacts__phone {
+ 	display: -webkit-flex;
+ 	display: -moz-flex;
+ 	display: -ms-flex;
+ 	display: -o-flex;
+ 	display: flex;
+ }
+
+ .contacts__mail_text {
+ 	font-size: 15px;
+ 	font-family: "Gilroy Light";
+ 	color: #fff;
+ }
+
+ .contacts__mail {
+ 	display: -webkit-flex;
+ 	display: -moz-flex;
+ 	display: -ms-flex;
+ 	display: -o-flex;
+ 	display: flex;
+ 	height: 20px;
+ 	margin-bottom: 30px;
+ }
+
+.mail {
+	height: 16px;
+	margin-top: 3.5px;
+	margin-right: 15px;
+}
+
+/*Footer*/
+
+footer {
+	background: #000;
+}
+
+.footer__text {
+	font-size: 15px;
+	color: #fff;
+	text-align: center;
+	font-family: "Gilroy Light";
+	line-height: 80px;
+	margin: 0;
+}
+
+.footer__text a {
+	color: #00CBF7;
+	transition: 0.3s ease;
+}
+
+.map {
+	position: absolute;
+	right: 0;
+	width: 900px;
+	height: 556px;
+}
+
+.overlay {
+	z-index: 99;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,.8);
+	display: none;
+}
+
+.popup {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	width: 500px;
+	height: 500px;
+	background: #fff;
+	box-shadow: 0px 0px 30px rgba(0,0,0,.55);
+	border-radius: 2px;
+}
+
+.popup form {
+	margin: 0 auto;
+	color: #232323;
+	text-align: center;
+}
+
+.popup input, .popup button {
+	width: 280px;
+	margin-left: auto;
+	margin-right: auto; 
+}
+
+.popup button {
+	margin-top: 20px;
+	padding: 10px 0;
+
+}
+
+.popup__header {
+	font-size: 35px;
+	color: #232323;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	text-align: center;
+	font-family: "Gilroy ExtraBold";
+	color: #232323;
+	margin-top: 50px;
+}
+
+.popup .input__user {
+	right: 15%;
+}
+
+.popup span {
+	color: red;
+}
+
+.popup .application__warranty {
+	color: #707070;
+}
+
+.lock {
+	filter: grayscale(100);
+}
+
+.close-popup {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.popup .application__input_h {
+	text-align: left;
+	padding-left: 41px;
+	color: #232323;
+}
+
+.popup .form__phone {
+	position: absolute;
+	right: 16%;
+	bottom: 50%;
+	margin-bottom: -16px;
+}
+
+.form__phone {
+	position: absolute;
+}
+
+.close-popup:before {
+	content: '';
+	background: #000;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+
+.close-popup:after {
+	content: '';
+	background: #000;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: -4px;
+}
+
+.menu-icon svg g {
+	fill: #fff;
+}
+
+.menu-icon {
+	text-align: right;
+	padding-top: 17px;
+	display: none;
+}
+
+.menu__content{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.active {
+	display: block !important;
+}
+
+.active-icon {
+	margin: 0;
+}
+.active-nav {
+	background: rgba(0,0,0, .8);
+}
+
+.done__text2 {
+	display: none;
+	color: #fff;
+	font-family: "Gilroy Light";
+	font-size: 26px;
+	margin-bottom: 198px;
+}
+
+.done__text1 {
+	display: none;
+	color: #fff;
+	font-family: "Gilroy Light";
+	font-size: 26px;
+	padding-bottom: 72px;
+	text-align: center;
+}
+
+.done__text3 {
+	display: none;
+	font-family: "Gilroy Light";
+	font-size: 26px;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.abv {
+	display: block;
+}
+
+.tel {
+	color: #00CBF7;
+}
+
+.tel:hover {
+	color: #00CBF7;
+	text-decoration: none;
+}
+.header__contacts_item {
+	text-align: center;
+}
+
+#contacts .tel {
+	
+}
+
+.contacts__phone {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.contacts__phone_block {
+	margin-bottom: 16px;
+}
+
+.dnone {
+	display: none;
+}
+
+.menu__item_tel {
+	display: none;
+}
+
+.menu__item_tel > .tel {
+		color: #00CBF7;
+}
