@@ -39,6 +39,7 @@ $('.menu-icon').click(function () {
 	$('nav').toggleClass("active-nav");
 });
 
+
         //E-mail Ajax Send
 
     //Documentation & Example: https://github.com/agragregra/uniMail
@@ -95,4 +96,8 @@ $('.application__btn1').click(function () {
 });
 $('.application__btn3').click(function () {
 	$(".done__text3").addClass("abv")
+});
+
+$('body').scroll(function () {
+	$(".headhesive").addClass("dnone")
 });

@@ -141,6 +141,12 @@
 	.wooman {
 		display: none;
 	}
+	.header__contacts {
+		width: 170px;
+	}
+	.menu__item {
+		padding-right: 11px;
+	}
 }
 
 @media screen and (max-width: 996px) {
@@ -236,6 +242,9 @@
 }
 
 @media screen and (max-width: 768px) {
+	.menu__item_tel {
+		display: block;
+	}
 	.menu {
 		right: 0%;
 		top: 74px;
@@ -296,7 +305,6 @@
 		padding-left: 0px;
 		padding-right: 0px;
 	}
-
 }
 
 @media screen and (max-width: 668px) {
@@ -482,6 +490,9 @@
 	.contacts__mail2 {
  		margin-bottom: 542px;
  	}
+ 	.menu__item {
+		width: 390px;
+	}
 }
 
 @media screen and (max-width: 370px) {
@@ -618,6 +629,10 @@
 		margin-left: -10px;
 		margin-right: auto; 
 	}
+
+	.menu__item {
+		width: 370px;
+	}
 }
 
 @media screen and (max-width: 340px) {
@@ -634,5 +649,8 @@
 		width: 260px;
 		margin-left: -15px;
 		margin-right: auto; 
+	}
+	.menu__item {
+		width: 340px;
 	}
 }
