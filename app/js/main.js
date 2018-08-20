@@ -36,4 +36,5 @@ $(document).mouseup(function (e) {
 $('.menu-icon').click(function () {
 	$('.menu').toggleClass("active");
 	$('.menu-icon').toggleClass("active-icon");
+	$('nav').toggleClass("active-nav");
 })

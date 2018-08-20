@@ -18,6 +18,11 @@ body {
 	padding: 0;
 	margin: 0;
 }
+
+html {
+	overflow-x: hidden;
+}
+
 button {
 	cursor: pointer;
 }
@@ -497,7 +502,7 @@ nav {
 .products__brand {
 	position: absolute;
 	opacity: 0;
-	background-image: linear-gradient(rgb(245,255,255), #FFFFFF);
+	background-image: linear-gradient(#E8FBFF, #FFFFFF);
 }
 
 .tab-nav-label {
@@ -771,6 +776,8 @@ nav {
  	display: -ms-flex;
  	display: -o-flex;
  	display: flex;
+ 	height: 20px;
+ 	margin-bottom: 30px;
  }
 
 .mail {
@@ -948,4 +955,7 @@ footer {
 
 .active-icon {
 	margin: 0;
+}
+.active-nav {
+	background: rgba(0,0,0, .7);
 }
