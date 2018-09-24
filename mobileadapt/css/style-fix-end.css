@@ -322,14 +322,13 @@ html {
 	svg {
 		margin-top: -10px;
 		height: 150px;
-		transform: rotate(16.5deg) scale(1) skew(1deg) translate(10px);
 		padding: 5px;
 		padding-top: 10px;
 	}
 	.logo {
 		position: absolute;
 		left: 50%;
-		margin-left: -85px;
+		margin-left: -100px;
 		top: -1%;
 	}
 
@@ -1166,6 +1165,12 @@ html {
 		text-align: center;
 		margin-right: auto;
 	}
+}
+@media only screen and (max-width: 380px){
+.section-form .btn-accent333 {
+    margin-left: 0px;
+  }
+
 }
 
 @media only screen and (max-width: 325px) {
