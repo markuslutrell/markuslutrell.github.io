@@ -1,5 +1,5 @@
-html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%; overflow-x: hidden; min-width: 100%;}
-body{margin:0; overflow-x: hidden; min-width: 100%;}
+html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%; overflow-x: hidden;}
+body{margin:0; overflow-x: hidden;}
 article,
 aside,
 details,
@@ -466,7 +466,7 @@ to{opacity:0.2;}
 .ani-bounce, .a-loader img{will-change:transform;transform:translate3d(0, 0, 0);-webkit-animation:ani-bounce 1.2s ease-out infinite;-moz-animation:ani-bounce 1.2s ease-out infinite;-ms-animation:ani-bounce 1.2s ease-out infinite;animation:ani-bounce 1.2s ease-out infinite;}
 *{box-sizing:border-box;}
 html{color:#000;background:#4e82be;font:16px/1.5 'Museo';width:100%;min-width:1200px;max-width:100%;}
-body{width:100%;min-width:1200px;max-width:100%;}
+body{width:100%;max-width:100%;}
 #global-wrapper{overflow:hidden;min-width:1200px;position:relative;background:#fff;}
 #wpadminbar{top:auto !important;bottom:0 !important;}
 .container{display:block;width:960px;padding:0 10px;margin:0 auto;position:relative;z-index:15;}
@@ -840,7 +840,7 @@ html.si-lock{overflow:hidden !important;}
 .form-agree label{margin-left:67px;}
 .fixed_input_form label{margin-right:20px;float:left;top:2px;}
 .section-headding{height:983px;padding:454px 0 0;background:url("../images/footballspasibo.jpg") no-repeat 50% 0% transparent;-webkit-background-size:cover;background-size:cover;}
-.section-headding .btn{width:426px;margin-top:240px;}
+.section-headding .btn{margin-top:240px;}
 .section-headding .btn.smaller{width:auto;font-size:16px;line-height:45px;height:51px;}
 iframe{width:1480px;height:800px;}
 body {

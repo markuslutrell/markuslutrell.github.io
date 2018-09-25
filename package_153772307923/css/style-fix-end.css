@@ -13,8 +13,56 @@
 	text-align: right !important;
 }
 
+.logo-fuck {
+	margin-left: 200px;
+}
+
 .logo {
 	margin-left: -70px;
+}
+.thanks-block{
+	background: url(../images/adaptive.jpg) no-repeat center top / cover !important;
+}
+.thanks-block > svg {
+	margin-left: 200px;
+}
+
+.section-headding .btn {
+		width: 400px;
+	}
+
+.thanks-block {
+	padding-top: 300px;
+	margin-right: 0;
+}
+.hidsend-fix {
+	margin: 0 auto;
+	color: #fff;
+	margin-bottom: 0;
+	background: green;
+	border-radius: 30px;
+	opacity: .8;
+	font-weight: 700;
+	text-transform: none;
+	padding-bottom: 20px;
+	padding-top: 10px;
+	background: #086F20;
+	margin-top: 10px;
+	margin: 0 auto;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 90%;
+}
+.hidsend-fix span {
+	font-size: .7em;
+}
+.thanks-button-holder {
+	margin: 0 auto;
+	margin-top: -170px;
+	width: 90%;
+}
+.thansk--header .container {
+	width: 960px;
 }
 
 .section-heading-fix {
@@ -32,6 +80,9 @@
 	letter-spacing: 2.5px;
 	line-height: 75px;
 	padding-bottom: 20px;
+}
+.fake-header {
+	margin-top: -500px;
 }
 
 html {
@@ -79,6 +130,14 @@ html {
 	justify-content: space-between;
 }
 
+.thanks-block .logo{
+	display: none;
+}
+.logo-fuck svg {
+	padding-left: 70px;
+}
+
+
 @media only screen and (max-width: 1100px) {
 	
 	.header-block {
@@ -86,6 +145,9 @@ html {
 	}
 	.header-motto {
 		margin-right: 80px;
+	}
+	.header-motto-thanks {
+		margin-right: 0;
 	}
 }
 
@@ -100,6 +162,20 @@ html {
 	.header-motto {
 		margin-right: 100px;
 	}
+	.thanks-block {
+		padding-top: 250px;
+		margin-right: 0;
+	}
+	.header-motto-thanks {
+		margin-right: 0;
+	}
+	.thansk--header .container {
+		width: 100%;
+	}
+	.logo-fuck svg {
+		padding-left: 50px;
+	}
+
 }
 @media only screen and (max-width: 996px) {
 	.btn-holder-fix {
@@ -131,6 +207,9 @@ html {
 		margin-left: auto;
 		text-align: center;
 		margin-right: auto;
+	}
+	.si-phone-fix {
+		margin-left: 250px;
 	}
 }
 
@@ -183,6 +262,12 @@ html {
 		text-align: center;
 		margin-right: auto;
 	}
+	.logo-fuck {
+		margin-left: -60px;
+	}
+	.si-phone-fix {
+		margin-left: 0px;
+	}
 }
 
 @media only screen and (max-width: 830px) {
@@ -225,6 +310,12 @@ html {
 		margin-left: auto;
 		text-align: center;
 		margin-right: auto;
+	}
+	.logo-fuck {
+		margin-left: -80px;
+	}
+	.logo-fuck svg {
+		padding-left:20px;
 	}
 }
 
@@ -322,14 +413,13 @@ html {
 	svg {
 		margin-top: -10px;
 		height: 150px;
-		transform: rotate(16.5deg) scale(1) skew(1deg) translate(10px);
 		padding: 5px;
 		padding-top: 10px;
 	}
 	.logo {
 		position: absolute;
 		left: 50%;
-		margin-left: -85px;
+		margin-left: -100px;
 		top: -1%;
 	}
 
@@ -421,6 +511,11 @@ html {
 	.client-mail-fix {
 		width: 600px;
 		margin-left: 10%;
+	}
+
+	.hidsend-fix {
+		font-size: 45px;
+		line-height: 45px;
 	}
 }
 
@@ -518,6 +613,10 @@ html {
 		text-align: center;
 		margin-right: auto;
 	}	
+	.hidsend-fix {
+		font-size: 40px;
+		line-height: 45px;
+	}
 }
 
 
@@ -725,6 +824,9 @@ html {
 		text-align: center;
 		margin-right: auto;
 	}
+	.section-headding .btn {
+		width: 350px;
+	}
 
 }
 
@@ -828,6 +930,18 @@ html {
 		margin-left: auto;
 		text-align: center;
 		margin-right: auto;
+	}
+	.section-headding .btn {
+		width: 310px;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.section-form .btn-accent333 {
+		margin-left: 0px;
+	}
+	.section-form .btn-accent222 {
+			margin-left: 40px;
 	}
 
 }
@@ -999,6 +1113,9 @@ html {
 		text-align: center;
 		margin-right: auto;
 	}
+	.hidsend {
+		font-size: 35px;
+	}
 }
 
 @media only screen and (max-width: 360px) {
@@ -1157,8 +1274,21 @@ html {
 		margin-right: auto;
 	}
 }
+@media only screen and (max-width: 380px){
+.section-form .btn-accent333 {
+    margin-left: 0px;
+  }
+
+}
 
 @media only screen and (max-width: 325px) {
+	
+	.btn-accent {
+		font-size: 13.5px;
+	}
+	.btn-fix-fix22 {
+		padding-left: 10px;
+	}
 
 	.heading-text-block-fix {
 		font-size: 14px;
@@ -1220,7 +1350,7 @@ html {
 	}
 	.section-price .btn {
 		width: 300px;
-		padding-left: 4px;
+		padding-left: 12px;
 		font-size: 13px;
 	}
 	.col-1-3-fix-fix {
@@ -1300,5 +1430,19 @@ html {
 	.btn {
 		width: 280px !important;
 		padding-left: 5px;
+	}
+	.hidsend {
+		font-size: 33px;
+	}
+}
+
+@media only screen and (max-width: 310px) {
+	.btn-thanks-accent {
+		margin-left: -25px;
+	}
+}
+@media only screen and (max-width: 300px) {
+	.btn-thanks-accent {
+		margin-left: -40px;
 	}
 }
