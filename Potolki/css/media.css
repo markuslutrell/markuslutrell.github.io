@@ -1,0 +1,58 @@
+@media screen and (max-width: 1200px) {
+	.portfolio__item_img {
+	  text-align: center;
+	  width: 100%;
+	  padding: 0;
+	  margin: 0;
+	}
+	.portfolio__item_text {
+		margin-left: 6%;
+	}
+
+	.portfolio__item_img-last {
+		display: block;
+		width: 300px;
+		margin: 0 auto;
+	}
+	.portfolio__item_text-last {
+		text-align: center;
+		margin: 0;
+	}
+	.header__button {
+		width: 170px;	
+		font-size: 15px;
+	}
+	.menu {
+		padding: 0;
+		margin-left: -25px;
+	}
+	.phone__text {
+		padding: 0;
+		font-size: 21.9px;
+	}
+	.phone {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.main__header_text3 {
+		font-size: 40px;
+	}
+	.flex-end {
+		margin-left: 120px;
+	}
+	.measure {
+		right: 50px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.measure {
+		right: 10px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.portfolio__item_img-last {
+		width: 100%;
+	}
+}

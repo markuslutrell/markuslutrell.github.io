@@ -6,9 +6,11 @@
 	<title>Новый потолок</title>
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="fonts/fonts.css">
+
 </head>
 <body>
 	<div class="preloader">
@@ -32,17 +34,25 @@
 
 	<header>
 		<nav>
+
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-3 col-lg-3">
-						<a href="#" class="header__button">
+						<a href="#" id="logo" class="header__button">
 							Новый потолок
 						</a>
 					</div>
 					<div class="col-xl-6 col-lg-6">
-						<ul class="menu">
+						<ul id="menu" class="menu">
+							<div id="menu-toggle">
+					        <div id="menu-icon">
+					          <div class="bar"></div>
+					          <div class="bar"></div>
+					          <div class="bar"></div>
+					        </div>
+					      </div>
 							<li class="menu__item">
-								<a href="#" class="menu__item_link">
+								<a href="#kinds" class="menu__item_link">
 									Виды потолков
 								</a>
 							</li>
@@ -52,17 +62,17 @@
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__item_link">
+								<a href="#calc" class="menu__item_link">
 									Расчет стоимости
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__item_link">
+								<a href="#feedback" class="menu__item_link">
 									Отзывы
 								</a>
 							</li>
 							<li class="menu__item">
-								<a href="" class="menu__item_link">
+								<a href="#contacts" class="menu__item_link">
 									Контакты
 								</a>
 							</li>
@@ -71,7 +81,7 @@
 					<div class="col-xl-3 col-lg-3">
 						<div class="header__phone">
 							<div class="header__phone_first-row">
-								<img src="img/phone-call.png" alt="Phone" class="phone">
+								<img src="img/phone-call.png" alt="Phone" class="wibro phone">
 								<p class="phone__text">
 									+7 (962) 321 - 61 -21
 								</p>
@@ -87,7 +97,7 @@
 			</div>
 		</nav>
 
-		<div class="header__content">
+		<div id="hero-section" class="header__content">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-6 col-lg-6">
@@ -137,7 +147,7 @@
 			<div class="row">	
 				<div class="col-xl-2 col-md-4 col-6">
 					<div class="why__item">
-						<img src="img/why-1.png" alt="Fire" class="why__item_img">
+						<img src="img/why-1.png" alt="Fire" class="why__item_img why__item_img1">
 						<h3 class="why__item_header">
 							Не горят
 						</h3>
@@ -150,7 +160,7 @@
 				</div>
 				<div class="col-xl-2 col-md-4 col-6">
 					<div class="why__item">
-						<img src="img/bucket.png" alt="Bucket" class="why__item_img">
+						<img src="img/bucket.png" alt="Bucket" class="why__item_img why__item_img2">
 						<h3 class="why__item_header">
 							Не топят
 						</h3>
@@ -162,7 +172,7 @@
 				</div>
 				<div class="col-xl-2 col-md-4 col-6">
 					<div class="why__item">
-						<img src="img/money-bag.png" alt="Money" class="why__item_img">
+						<img src="img/money-bag.png" alt="Money" class="why__item_img why__item_img3">
 						<h3 class="why__item_header">
 							Не транжирят
 						</h3>
@@ -174,7 +184,7 @@
 				</div>
 				<div class="col-xl-2 col-md-4 col-6">
 					<div class="why__item">
-						<img src="img/duster.png" alt="Duster" class="why__item_img">
+						<img src="img/duster.png" alt="Duster" class="why__item_img why__item_img4">
 						<h3 class="why__item_header">
 							Не пылятся
 						</h3>
@@ -186,7 +196,7 @@
 				</div>
 				<div class="col-xl-2 col-md-4 col-6">
 					<div class="why__item">
-						<img src="img/award.png" alt="Award" class="why__item_img">
+						<img src="img/award.png" alt="Award" class="why__item_img why__item_img5">
 						<h3 class="why__item_header">
 							Не изнашиваются
 						</h3>
@@ -197,7 +207,7 @@
 				</div>
 				<div class="col-xl-2 col-md-4 col-6">
 					<div class="why__item">
-						<img src="img/lamp.png" alt="Lamp" class="why__item_img">
+						<img src="img/lamp.png" alt="Lamp" class="why__item_img why__item_img6">
 						<h3 class="why__item_header">
 							Не портят вид
 						</h3>
@@ -340,11 +350,426 @@
 		</div>
 	</section>
 
-	<script
-	  src="https://code.jquery.com/jquery-3.3.1.min.js"
-	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	  crossorigin="anonymous">
-	</script>
+	<section id="sure">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="sure__block">
+						<div class="sure__block_text">
+							Сомневаетесь в правильности своего выбора?<br>
+							<span>Оставьте заявку</span> и наш мастер <br>
+							бесплатно проконсультирует вас о том,<br>
+							<span>какой вид потолка вам подходит</span>
+						</div>
+						<div class="sure__block_btn">
+							<a href="#" class="wave_button main__button">
+								Да, мне нужна помощь
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<section id="why-us">
+		<div class="container">
+			<h2>Почему наши клиенты доверяют нам</h2>
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="why-us__item flex-end">
+						<img src="img/five.png" alt="Five" class="why-us__item_img">
+						<p class="why-us__item_text">
+							Лет на рынке
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="why-us__item">
+						<img src="img/chronometers.png" alt="Clock" class="why-us__item_img">
+						<p class="why-us__item_text">
+							1 час самый быстрый<br>
+							монтаж потолка
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="why-us__item flex-end">
+						<img src="img/worker.png" alt="Hat" class="why-us__item_img">
+						<p class="why-us__item_text">
+							10 лет опыт<br>
+							монтажников
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="why-us__item">
+						<img src="img/measure.png" alt="Measure" class="why-us__item_img">
+						<p class="why-us__item_text">
+							24 часа от замера<br>
+							до нового потолка
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="why-us__item flex-end">
+						<img src="img/contract.png" alt="Doc" class="why-us__item_img">
+						<p class="why-us__item_text">
+							12 лет гарантии<br>
+							по договору
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="why-us__item">
+						<img src="img/team.png" alt="Team" class="why-us__item_img">
+						<p class="why-us__item_text">
+							75 % клиентов, приходит<br>
+							к нам в компанию по рекомендации<br>
+							довольных друзей и коллег
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="calc">
+		<div class="container">
+			<h2>Расчёт стоимости натяжных потолков</h2>
+			<div class="row">
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<img src="img/calc-1.png" alt="Calc img 1" class="kinds__item_img">
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Натяжной потолок в коридор
+							</h3>
+							<p class="kinds__item_desc">
+								7 м<sup>2</sup>
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">5700 р</p>
+								<a href="" class="main__button">
+									<img src="img/calc.png" alt="" class="calc"> Заказать расчёт
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<img src="img/calc-2.png" alt="Calc img 2" class="kinds__item_img">
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Натяжной потолок в ванную
+							</h3>
+							<p class="kinds__item_desc">
+								4.8 м<sup>2</sup>
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">6800 р</p>
+								<a href="#" class="main__button">
+									<img src="img/calc.png" alt="Calc" class="calc"> Заказать расчёт
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<img src="img/calc-3.png" alt="Calc img 3" class="kinds__item_img">
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Натяжной потолок в детскую
+							</h3>
+							<p class="kinds__item_desc">
+								16 м<sup>2</sup>
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">23000 р</p>
+								<a href="#" class="main__button">
+									<img src="img/calc.png" alt="" class="calc"> Заказать расчёт
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<img src="img/calc-4.png" alt="Calc img 4" class="kinds__item_img">
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Натяжной потолок в кухню
+							</h3>
+							<p class="kinds__item_desc">
+								12 м<sup>2</sup>
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">18000 р</p>
+								<a href="#" class="main__button">
+									<img src="img/calc.png" alt="" class="calc"> Заказать расчёт
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<img src="img/calc-5.png" alt="Calc img 5" class="kinds__item_img">
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Натяжной потолок в спальню
+							</h3>
+							<p class="kinds__item_desc">
+								18 м<sup>2</sup>
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">19000 р</p>
+								<a href="#" class="main__button">
+									<img src="img/calc.png" alt="" class="calc"> Заказать расчёт
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<img src="img/calc-6.png" alt="Calc img 6" class="kinds__item_img">
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Натяжной потолок в гостинную
+							</h3>
+							<p class="kinds__item_desc">
+								28 м<sup>2</sup>
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">25000 р</p>
+								<a href="#" class="main__button">
+									<img src="img/calc.png" alt="" class="calc"> Заказать расчёт
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="portfolio">
+		<div class="container">
+			<h2>Выполненные проекты</h2>
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-1.jpg" alt="Portfolio work 1" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							Двухуровневый натяжной потолок в спальную комнату с диодной подсветкой RGB
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-2.jpg" alt="Portfolio work 2" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							Белый матовый потолок в студию со светильниками
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-3.jpg" alt="Portfolio work 3" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							Глянцевый натяжной потолок со светильниками Gx53 в складское помещение
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-4.jpg" alt="Portfolio work 4" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							Белый тканевый потолок в коридоре двухэтажной квартиры с точечными светильниками mr16
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-5.jpg" alt="Portfolio work 5" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							Матовый потолок в стоматологию с очень мощным освещением. 14 светильников Gx53. При включении света, белый потолок, кажется зелёным от стен
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-6.jpg" alt="Portfolio work 6" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							ПВХ натяжной потолок с двусторонней фотопечатью " Double vision". При включении подсветки на рисунке появляется Земля.
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-7.jpg" alt="Portfolio work 7" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							Двухуровневый резной потолок Apply в кухне с подсветкой по периметру между полотнами разных цветов
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-8.jpg" alt="Portfolio work 8" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							Белый ПВХ потолок в кухню-столовую с большим количеством светильников
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+					<div class="portfolio__item portfolio__item-last">
+						<img src="img/portfolio-9.jpg" alt="Portfolio work 9" class="portfolio__item_img portfolio__item_img-last">
+						<p class="portfolio__item_text portfolio__item_text-last">
+							Белый глянцевый потолок в кухню с точечными светильниками
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="feddback"></section>
+
+	<section id="form">
+		<div class="container">
+			<img src="img/measure-2.png" alt="Measure" class="measure">
+			<div class="row">
+				<div class="col-xl-1 col-0"></div>
+
+				<div class="col-xl-10 col-12">
+					<div class="form__block">
+						<div class="row">
+							<div class="col-lg-6">
+								<div class="form__text">
+									<span>Запишитесь</span> на бесплатный <br>
+									<span>замер потолка</span>. Замерщик<br>
+									приедет к вам <span>в течение<br>
+									2-х часов</span>
+								</div>
+
+								<p class="form__text_desc">
+									Или позвоните нам по номеру:
+								</p>
+
+								<a href="tel:+7(959)323-12-12" class="form__text_tel">
+									+7 (959) <span>323 - 12 - 12</span>
+								</a>
+							</div>
+							<div class="col-lg-6">
+								<div class="form__form">
+									<img src="img/user.png" alt="User" class="form__user-img">
+									<input type="text" placeholder="Как Вас зовут">
+									<img src="img/phone-call2.png" alt="Phone" class="form__phone-img">
+									<input type="tel" placeholder="Ваш номер телефона">
+									<a href="#" class="main__button">Записаться</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-1 col-0"></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contacts">
+		<h2>Как еще можно с нами связаться</h2>
+		<div class="contacts__content">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-1 col-0"></div>
+					<div class="col-lg-5 col-6">
+						<div class="contacts__content_column">
+							<div class="content__column_item content__column_item-link">
+								<img src="img/contacts-phone.png" alt="Icon" class="content__column_icon">
+								<a href="tel:+7(962)321-61-21" class="column__item_link">
+									+7 (962) 321 - 61 -21
+								</a>
+							</div>
+							<div class="content__column_item content__column_item-link">
+								<img src="img/contacts-mail.png" alt="Icon" class="content__column_icon">
+								<a href="mailto:216121evgen@gmail.com" class="column__item_link">
+									216121evgen@gmail.com
+								</a>
+							</div>
+							<div class="content__column_item">
+								<img src="img/contacts-inst.png" alt="Icon" class="content__column_icon">
+								<p class="column__item_text">
+									natyazhnie_potolki_moscow
+								</p>
+							</div>
+							<div class="content__column_item">
+								<img src="img/contacts-clock.png" alt="Icon" class="content__column_icon">
+								<p class="column__item_text">
+									Время работы: c <span>9:00 до 22:00</span><br>	
+									Без выходных
+								</p>
+							</div>
+							<div class="content__column_item">
+								<img src="img/contacts-location.png" alt="Icon" class="content__column_icon">
+								<p class="column__item_text">
+									г. Москва, ул. Северный квартал, д 1 
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2257.82526036764!2d37.717325115900934!3d55.535412880495805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aafc4cf8643a1%3A0xfe018129d7f386ab!2z0YPQuy4g0KHQtdCy0LXRgNC90YvQuSDQmtCy0LDRgNGC0LDQuywgMSwg0JLQuNC00L3QvtC1LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDE0MjcwMQ!5e0!3m2!1sru!2sua!4v1541705238327" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+		
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4">
+					<a href="#" class="policies">
+						Политика конфиденциальности
+					</a>
+				</div>
+				<div class="col-lg-4">
+					<div class="social-media">
+						<a href="#">
+							<img src="img/vk.png" alt="VK" class="social-media__icon">
+						</a>
+						<a href="#">
+							<img src="img/instagram.png" alt="Instagram" class="social-media__icon">
+						</a>
+					</div>
+					<p class="developer">
+						Разработка сайта: Gluemance.ru
+					</p>
+				</div>
+				<div class="col-lg-4 pt">
+					<a href="tel:+7(959)323-12-12" class="form__text_tel">
+						+7 (959) <span>323 - 12 - 12</span>
+					</a>
+					<p class="work-time">
+						Время работы: c 9:00 до 22:00 без выходных
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+	
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/animate-css.js"></script>
+
 	<script src="js/main.js"></script>
 </body>
 </html>
