@@ -2,6 +2,9 @@
 	.background__item2 {
 		right: -1200px;
 	}
+	.background__item3 {
+		left: -1500px
+	}
 }
 
 @media screen and (max-width: 1200px) {
@@ -191,6 +194,9 @@
 	#calc .main__button {
 		font-size: 14px;
 	}
+	.background__item3 {
+		left: -1700px
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -307,6 +313,9 @@
 	.background__item2 {
 		right: -1800px;
 	}
+	.background__item3 {
+		left: -1800px
+	}
 } 
 
 @media screen and (max-width: 420px) {
@@ -368,7 +377,6 @@
 	}
 
 	.slicknav_menu {
-
 		right: 5%;
 	}
 
@@ -402,6 +410,11 @@
 	 }
 	 .popup h3 {
 	 	font-size: 25px;
+	 }
+	 #sure .main__button {
+	  font-size: 17px;
+	 	width: 100%;
+
 	 }
 }
 
