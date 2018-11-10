@@ -188,6 +188,9 @@
 	.background__item2 {
 		right: -1500px;
 	}
+	#calc .main__button {
+		font-size: 14px;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -463,6 +466,15 @@
 	}
 	.background__item2 {
 		right: -1900px;
+	}
+
+	#calc .kinds__item_img p {
+		width: 280px;
+		height: 185px;
+	}
+	#calc .kinds__item_img {
+		width: 280px;
+		height: 185px;
 	}
 }
 

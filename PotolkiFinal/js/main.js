@@ -149,9 +149,6 @@ $('.js-button-campaign4').click(function() {
 	
 	$('.js-overlay-campaign4').fadeIn(50);
 	$('.js-overlay-campaign4').addClass('disabled');
-	$('.js-overlay-campaign').addClass('dn2');
-	$('.js-overlay-campaign2').addClass('dn2');
-	$('.js-overlay-campaign3').addClass('dn2');
 });
 
 // закрыть на крестик
@@ -168,6 +165,3 @@ $(document).mouseup(function (e) {
 		
 	}
 });
-
-
-
