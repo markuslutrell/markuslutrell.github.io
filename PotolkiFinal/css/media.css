@@ -413,9 +413,14 @@
 	 }
 	 #sure .main__button {
 	  font-size: 17px;
-	 	width: 100%;
 
 	 }
+	 .feedback__icon_second {
+	  animation-delay: 0s;
+	}
+	.feedback__icon_first {
+	  animation-delay: .25s;
+	}
 }
 
 @media screen and (max-width: 365px) {
