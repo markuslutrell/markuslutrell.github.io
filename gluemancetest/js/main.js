@@ -1,4 +1,4 @@
-$(window).on('load', function () {
+$("#header").ready(function () {
     $preloader = $('.preloader'),
       $loader = $preloader.find('.preloader');
     $loader.fadeOut();
