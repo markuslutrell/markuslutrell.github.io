@@ -27,7 +27,6 @@ $(document).ready(function() {
   $("#deal").animated("fadeIn");
   $("#money").animated("fadeIn");
   $(".feedback__item").animated("fadeIn");
-  $("#form").animated("fadeIn");
 });
 
 $('.advantages__mobile').slick({
@@ -78,6 +77,115 @@ $(document).ready(function(){
     //анимируем переход на расстояние - top за 1500 мс
     $('body,html').animate({scrollTop: top}, 800);
   });
+
+  $(".feedback__more_link1").click(function() {
+    $(".feedback__more_link1").addClass("dn");
+    $(".feedback__more_link2").removeClass("dn");
+    $(".more__feedback").addClass("db");
+  });
+
+  $(".feedback__more_link2").click(function() {
+    $(".feedback__more_link1").removeClass("dn");
+    $(".feedback__more_link2").addClass("dn");
+    $(".more__feedback").removeClass("db");
+  });
+
+
+  $(".feedback__link_more1").click(function() {
+    $(".feedback__link_more1").toggleClass("dn");
+    $(".feedback__item_text2-1").toggleClass("db");
+    $(".feedback__link_back1").toggleClass("db");
+  });
+
+  $(".feedback__link_back1").click(function() {
+    $(".feedback__link_more1").removeClass("dn");
+    $(".feedback__item_text2-1").removeClass("db");
+    $(".feedback__link_back1").removeClass("db");
+  });
+
+
+  $(".feedback__link_more2").click(function() {
+    $(".feedback__link_more2").toggleClass("dn");
+    $(".feedback__item_text2-2").toggleClass("db");
+    $(".feedback__link_back2").toggleClass("db");
+  });
+
+  $(".feedback__link_back2").click(function() {
+    $(".feedback__link_more2").removeClass("dn");
+    $(".feedback__item_text2-2").removeClass("db");
+    $(".feedback__link_back2").removeClass("db");
+  });
+
+  $(".feedback__link_more3").click(function() {
+    $(".feedback__link_more3").toggleClass("dn");
+    $(".feedback__item_text2-3").toggleClass("db");
+    $(".feedback__link_back3").toggleClass("db");
+  });
+
+  $(".feedback__link_back3").click(function() {
+    $(".feedback__link_more3").removeClass("dn");
+    $(".feedback__item_text2-3").removeClass("db");
+    $(".feedback__link_back3").removeClass("db");
+  });
+
+  $(".feedback__link_more4").click(function() {
+    $(".feedback__link_more4").toggleClass("dn");
+    $(".feedback__item_text2-4").toggleClass("db");
+    $(".feedback__link_back4").toggleClass("db");
+  });
+
+  $(".feedback__link_back4").click(function() {
+    $(".feedback__link_more4").removeClass("dn");
+    $(".feedback__item_text2-4").removeClass("db");
+    $(".feedback__link_back4").removeClass("db");
+  });
+
+  $(".feedback__link_more5").click(function() {
+    $(".feedback__link_more5").toggleClass("dn");
+    $(".feedback__item_text2-5").toggleClass("db");
+    $(".feedback__link_back5").toggleClass("db");
+  });
+
+  $(".feedback__link_back5").click(function() {
+    $(".feedback__link_more5").removeClass("dn");
+    $(".feedback__item_text2-5").removeClass("db");
+    $(".feedback__link_back5").removeClass("db");
+  });
+  $(".feedback__link_more6").click(function() {
+    $(".feedback__link_more6").toggleClass("dn");
+    $(".feedback__item_text2-6").toggleClass("db");
+    $(".feedback__link_back6").toggleClass("db");
+  });
+
+  $(".feedback__link_back6").click(function() {
+    $(".feedback__link_more6").removeClass("dn");
+    $(".feedback__item_text2-6").removeClass("db");
+    $(".feedback__link_back6").removeClass("db");
+  });
+
+  $(".feedback__link_more7").click(function() {
+    $(".feedback__link_more7").toggleClass("dn");
+    $(".feedback__item_text2-7").toggleClass("db");
+    $(".feedback__link_back7").toggleClass("db");
+  });
+
+  $(".feedback__link_back7").click(function() {
+    $(".feedback__link_more7").removeClass("dn");
+    $(".feedback__item_text2-7").removeClass("db");
+    $(".feedback__link_back7").removeClass("db");
+  });
+
+  $(".feedback__link_more8").click(function() {
+    $(".feedback__link_more8").toggleClass("dn");
+    $(".feedback__item_text2-8").toggleClass("db");
+    $(".feedback__link_back8").toggleClass("db");
+  });
+
+  $(".feedback__link_back8").click(function() {
+    $(".feedback__link_more8").removeClass("dn");
+    $(".feedback__item_text2-8").removeClass("db");
+    $(".feedback__link_back8").removeClass("db");
+  });
 });
 
 // Модальное окно
@@ -102,4 +210,8 @@ $(document).mouseup(function (e) {
     $('.js-overlay-campaign').fadeOut();
     
   }
+});
+
+$("feedback__more_link").click(function() {
+  $(".feedback__more_link").addClass("dn");
 });

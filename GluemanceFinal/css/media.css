@@ -212,6 +212,11 @@
 		left: 0;
 		bottom: 0;
 	}
+	.up-btn {
+		position: static;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
 }
 
 @media screen and (max-width: 996px) {
@@ -397,9 +402,41 @@
 		display: block;
 		text-align: center;
 	}
+	.feedback__more_link {
+		display: none !important;
+	} 
+
+	.more__feedback {
+		display: block;
+	}
+
+	.feedback__item_up {
+		padding: 20px 0;
+		text-align: center;
+	}
+	
+	.feedback__item_up img {
+		display: inline;
+	}
+
+	.feedback__item_down {
+		padding-left: 25px;
+	}
+
+	.feedback__item {
+		padding-bottom: 0px;
+	}
+
+	.up-btn {
+		padding: 0;
+	}
 }
 
 @media screen and (max-width: 768px) {
+	.family-rect {
+		width: 130px;
+		height: 130px;
+	}
 	h2 {
 		font-size: 40px;
 	}
@@ -515,6 +552,64 @@
 	}
 	.form-bg-right {
 		width: 70%;
+	}
+
+	.what-we-do-bg-rect-1 img{
+		width: 130px;
+		height: 130px;
+	}
+	.adv-bg-rec-2 img{
+		width: 130px;
+		height: 130px;
+	}
+	
+	.adv-bg-rec-3 {
+		right: -20px;
+	}
+
+	.adv-bg-rec-3 img {
+		width: 100px;
+		height: 100px;
+	}
+
+	.money__bg-rect1 {
+		right: -20px;
+		top:250px;
+	}
+	.money__bg-rect1 img {
+		width: 130px;
+		height: 130px;
+	}
+	.form__header {
+		margin-top: 0;
+	}
+	.form__arrow {
+		right: -170px;
+		top: -200px;
+	}
+	.form__text {
+		margin: 0;
+	}
+
+	#form input {
+		margin: 10px 0;
+	}
+
+	#form button {
+		margin-top: 30px;
+	}
+
+	.user {
+		top: 36px;
+	}
+
+	.email {
+		bottom: 43px;
+	}
+	.form__form {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
 
@@ -643,28 +738,39 @@
 	.money__text{
 		font-size: 27px;
 	}
+
+	.form__header {
+		margin-bottom: 10px;
+	}
+
+	.form__text {
+		margin-bottom: 10px;
+	}
+
 	#form form {
 		padding: 0;
 	}
 	#form button {
 		height: 65px;
 		margin-top: 30px;
+		width: 80%;
+		font-size: 20px;
 	}
 
 	#form input {
-		height: 80px;
+		height: 70px;
 	}
 	form img {
 		left: 20px;
 	}
 	.user {
-		top: 38px;
+		top: 25px;
 
 	}
 
 
 	.email {
-		bottom: 48px;
+		bottom: 32px;
 	}
 
 	#form input {
@@ -675,6 +781,7 @@
 	}
 	.form__form {
 		margin-bottom: 100px;
+		width: 100%;
 	}
 
 	.feedback__item_down {
@@ -685,9 +792,18 @@
 	.footer__tel {
 		font-size: 36px;
 	}
+	.form-bg-bottom {
+		display: none;
+	}
+	.form__arrow {
+		width: 230px;
+		height: 230px;
+		top: -150px;
+		right: -100px;
+	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
 	.portfolio__item {
 		height: 200px;
 	}
@@ -746,7 +862,7 @@
 	}
 	.form__header {
 		font-size: 28px;
-		margin-top: 0;
+		margin-top: 30px;
 	}
 	.form__text {
 		font-size: 20px;
@@ -754,22 +870,118 @@
 	.footer__tel {
 		font-size: 30px;
 	}
+	.form__form {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.form__arrow {
+		width: 200px;
+		height: 200px;
+		top: -100px;
+		right: -70px;
+	}
+
+	#form h2 {
+		margin-bottom: 200px;
+	}
+	.form-bg-main-flower {
+		width: 280px;
+		margin-left: -140px;
+		top: -180px;
+	}
+
+	.form__form {
+		border: none;
+	}
+	.commerce__content {
+		text-align: center;
+	}
+
+	.commerce__content h2 {
+		text-align: center !important;
+	}
+	.commerce__download_link {
+		text-align: left;
+	}
+	.commerce__content_download {
+		margin-left: 50px;
+	}
+	#what-we-do-better, #what-we-do-better h2, #what-we-do-better h3 {
+		text-align: center;
+	}
+	.boss__text {
+		text-align: center;
+	}
+
+	#boss h2 {
+		text-align: center;
+	}
+	.family__text {
+		text-align: center;
+	}
+	.money__text {
+		text-align: center;
+	}
+	.feedback__item_down {
+		text-align: center;
+	}
+	.feedback__link {
+		position: static;
+	}
+
+	h1 {
+		text-align: center;
+	}
+	.main-header__text {
+		text-align: center;
+	}
+	#family {
+		padding-bottom: 100px;
+	}
+	.deal__item {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	#feedback h2 {
+		margin-top: 50px;
+	}
 }
 
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 400px) {
 	.family__list_item {
 		width: 100%;
 	}
 	.light {
 		right: -470px;
+		top: -70px;
 	}
 	.light__circles {
 		right: 0px;
+		top: 350px;
 	}
 	#family h2 {
 		font-size: 35px;
 		padding-top: 20px;
+		text-align: center;
+		margin-top: -30px;
+		margin-bottom: 700px;
 	}
+
+	#form button {
+		width: 90%;
+	}
+	.family__list {
+		display: none;
+	}
+
+	#family h2 img {
+		display: none;
+	}
+	.commerce__content_download {
+		margin-left: 30px;
+	}
+	
 }
 
 @media screen and (max-width: 350px) {
@@ -792,5 +1004,12 @@
 	}
 	.footer__tel {
 		font-size: 27px;
+	}
+	
+}
+
+@media screen and (max-width: 330px) {
+	.commerce__content_download {
+		margin-left: 10px;
 	}
 }
