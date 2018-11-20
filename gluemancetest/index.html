@@ -2,48 +2,98 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="img/logo-min.png" type="image/x-icon">
-	<title>Gluemance - визуальные решения для бизнеса</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Новый потолок</title>
 	
-	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/header.css">
-	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="shortcut icon" href="img/favikon.jpg" type="image/x-icon">
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="css/slicknav.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	
+
 </head>
 <body>
 	<div class="preloader">
-		<div id="cube-loader">
-    		<div class="caption">
-	      		<div class="cube-loader">
-	        	<div class="cube loader-1"></div>
-	        	<div class="cube loader-2"></div>
-	        	<div class="cube loader-4"></div>
-	        	<div class="cube loader-3"></div>
-				</div>
-    		</div>
- 		</div>
+		<svg class="filter" version="1.1">
+		    <defs>
+		      <filter id="gooeyness">
+		        <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+		        <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
+		        <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+		      </filter>
+			</defs>
+		</svg>
+		<div class="dots">
+		  <div class="dot mainDot"></div>
+		  <div class="dot"></div>
+		  <div class="dot"></div>
+		  <div class="dot"></div>
+		  <div class="dot"></div>
+		</div>
 	</div>
 
 	<header id="header">
 		<nav>
+
 			<div class="container">
 				<div class="row">
-					<div class="col-md-6 col-sm-4 col-2">
-						<div class="logo">
-							<a href="index.html" class="logo-link">
-								<img src="img/logo-min.png" alt="Logo" class="logo-img">
-								<img src="img/logo-text-min.png" alt="Logo text" class="logo-text">
-							</a>
-						</div>
+					<div class="col-xl-3 col-lg-3 col-6">
+						<a href="#header" class="header__button">
+							Новый потолок
+						</a>
 					</div>
-					<div class="col-md-6 col-sm-8 col-10">
-						<div class="header__phone">
-							<div class="header__phone_item">
-								<a href="tel:+7(900)029-09-43" class="phone__item_tel">
-									+ 7 (900) 029 - 09 - 43
+					<div class="col-xl-6 col-lg-6 col-0 dn">
+						<ul id="menu" class="menu">
+							<div id="menu-toggle">
+					        <div id="menu-icon">
+					          <div class="bar"></div>
+					          <div class="bar"></div>
+					          <div class="bar"></div>
+					        </div>
+					      </div>
+							<li class="menu__item">
+								<a href="#kinds" class="menu__item_link">
+									Виды потолков
 								</a>
-								<a href="#" class="phone__item_text">
-									есть проект, давайте обсудим
+							</li>
+							<li class="menu__item">
+								<a href="#portfolio" class="menu__item_link">
+									Галлерея
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#calc" class="menu__item_link">
+									Расчет стоимости
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#feedback" class="menu__item_link">
+									Отзывы
+								</a>
+							</li>
+							<li class="menu__item">
+								<a href="#contacts" class="menu__item_link">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-6">
+						<div class="header__phone">
+							<div class="header__phone_first-row">
+								<img src="img/phone-call.png" alt="Phone" class="wibro phone">
+								<p class="phone__text">
+									+7 (962) 321 - 61 -21
+								</p>
+							</div>
+							<div class="header__phone_second-row">
+								<a href="#" class="js-button-campaign2 header__phone_link">
+									обратный звонок
 								</a>
 							</div>
 						</div>
@@ -54,190 +104,273 @@
 
 		<div class="header__content">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-7 col-12">
-						<div class="main-header">
-							<h1>Помогаем твоему бизнесу<br>
-							<span>зарабатывать больше</span></h1>
-
-							<p class="main-header__text">
-								Создание и продвижение продающих сайтов<br>
-								Маркетинг для твоего бизнеса под ключ
-							</p>
-						</div>
+				<div class="row column">
+					<div class="col-lg-6 col-md-12 bottomworker">
+						<img src="img/master.png" alt="Worker" class="worker">
 					</div>
-					<div class="col-lg-5 col-12 img-center">
-						<img src="img/main-man-min.png" alt="Graphic" class="header__main-img">
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<a href="#what-we-do" id="arrow-down-container" class="arrow-down-container">
-			<img src="img/arrow-down.png" alt="Arrow" class="arrow-down">
-		</a>
-	</header>
-	
-
-	<section id="what-we-do">
-		<div class="what-we-do-bg what-we-do-bg-1"></div>
-		<div class="what-we-do-bg what-we-do-bg-2"></div>
-		<div class="what-we-do-bg what-we-do-bg-3"></div>
-
-		<div class="what-we-do-bg-rect layer1 what-we-do-bg-rect-1">
-			<img src="img/bg-rect-min.png" alt="Bg">
-		</div>
-		<div class="what-we-do-bg-rect layer2 what-we-do-bg-rect-2">
-			<img src="img/bg-rect-2-min.png" alt="Bg">
-		</div>
-
-  
-  
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<h2>
-						Мы занимаемся упаковкой
-						бизнеса и продажей его услуг.
-					</h2>
-
-					<p class="what-we-do__text">
-						Обычно к нам приходят <span>с идеей в голове</span>, а уходят с <span>работающим 
-						бизнесом</span>. Мы придумаем название (нейминг), разработаем фирменный стиль, подготовим маркетинг - кит, создадим продающий сайт и настроим рекламную кампанию.
-
-					</p>
-
-					<div class="works-characteristic">
-						<h3>
-							Наши сайты можно охарактеризовать 3-мя словами:
-						</h3>
-
-						<div class="works-characteristic__container">
-							<div class="works-characteristic__item works-characteristic__item1">
-								<img src="img/star-min.png" alt="Star" class="works-characteristic__item_img">
-								<p class="works-characteristic__item_desc">Яркие</p>
+					<div class="col-lg-6 col-md-12">
+						<div class="main__header">
+							<div class="main__header_row main__header_row1">
+								<h1 class="main__header_text">Новый потолок</h1>
 							</div>
-							<div class="works-characteristic__item works-characteristic__item2">
-								<img src="img/shopping-bag-min.png" alt="Bag" class="works-characteristic__item_img">
-								<p class="works-characteristic__item_desc">Продающие</p>
+							<div class="main__header_row main__header_row2">
+								<p class="main__header_text main__header_text2">
+									через 24 часа
+								</p>
 							</div>
-							<div class="works-characteristic__item works-characteristic__item3">
-								<img src="img/wallet-min.png" alt="Wallet" class="works-characteristic__item_img">
-								<p class="works-characteristic__item_desc">
-									Прибыльные
+							<div class="main__header_row main__header_row3">
+								<p class="main__header_text main__header_text3">
+									с момента заявки
 								</p>
 							</div>
 						</div>
-					</div>
-				</div>
-				<div class="col-12"></div>
-			</div>
-		</div>
-	</section>
-	
-	<section id="portfolio">
-		<div class="portfolio__container">
-			<div class="portfolio__item portfolio__item_1">
-				<p class="portfolio__item_text">
-					Разработка Landing page для компании
-					Новый потолок
-				</p>
-			</div>
-			<div class="portfolio__item portfolio__item_2">
-				<p class="portfolio__item_text">
-					Разработка фирменного стиля для магазина велосипедов Absolute Drive
-				</p>
-			</div>
-			<div class="portfolio__item portfolio__item_3">
-				<p class="portfolio__item_text">
-					Разработка Landing page для домашней
-					кондитерской Cake`s from Marsi
-				</p>
-			</div>
-			<div class="portfolio__item portfolio__item_4">
-				<p class="portfolio__item_text">
-					Разработка Landing page для транспортной компании Ventum
-				</p>
-			</div>
-			<div class="portfolio__item portfolio__item_5">
-				<p class="portfolio__item_text">
-					Разработка Landing page для маркетинг агентства THE KONDOR
-				</p>
-			</div>
-			<div class="portfolio__item portfolio__item_6">
-				<p class="portfolio__item_text">
-					Разработка презентации для компании Symmetry
-				</p>
-			</div>
-			<div class="portfolio__item portfolio__item_7">
-				<p class="portfolio__item_text">
-					Разработка Landing page для компании по аренде спецтехники
-				</p>
-			</div>
-			<div class="portfolio__item portfolio__item_8">
-				<p class="portfolio__item_text">
-					Разработка концепт дизайна
-				</p>
-			</div>
-			<div class="portfolio__item portfolio__item_9">
-				<p class="portfolio__item_text">
-					Разработка дизайна широкоформатного баннера
-				</p>
-			</div>
-		</div>
-	</section>
 
-	<section id="clients">
+						<div class="header__text">
+							<h3 class="header__text_item">
+								Лучшая цена на юге Москвы<br>
+								и Московской области
+							</h3>
+							<p class="header__text_item2">
+								Получите бесплатный расчёт стоимости<br>
+								вашего потолка прямо сейчас
+							</p>
+						</div>
+
+						<a class="nohref main__button wave_button js-button-campaign3">
+							Получить расчёт
+						</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="why">
+		<div class="background__item1"></div>
 		<div class="container">
-			<h2>
-				Среди наших клиентов
-			</h2>
-			<div class="row">
-
-				<div class="col-md-3 col-6">
-					<div class="clients__item">
-						<img src="img/clients-1-min.png" alt="" class="clients__item_img">
+			<div class="background__item1"></div>
+			<h2>Почему выбирают натяжные потолки</h2>
+			<div class="row">	
+				<div class="col-xl-2 col-md-4 col-6">
+					<div class="why__item">
+						<img src="img/why-1.png" alt="Fire" class="why__item_img why__item_img1">
+						<h3 class="why__item_header">
+							Не горят
+						</h3>
+						<p class="why__item_text">
+							Производятся из
+							огнеупорных
+							материалов
+						</p>
 					</div>
 				</div>
-				<div class="col-md-3 col-6">
-					<div class="clients__item">
-						<img src="img/clients-2-min.png" alt="" class="clients__item_img clients__item_img2">
+				<div class="col-xl-2 col-md-4 col-6">
+					<div class="why__item">
+						<img src="img/bucket.png" alt="Bucket" class="why__item_img why__item_img2">
+						<h3 class="why__item_header">
+							Не топят
+						</h3>
+						<p class="why__item_text">
+							Спасают от затопа.
+							Водостойкие	
+						</p>
 					</div>
 				</div>
-				<div class="col-md-3 col-6">
-					<div class="clients__item">
-						<img src="img/clients-3-min.png" alt="" class="clients__item_img">
+				<div class="col-xl-2 col-md-4 col-6">
+					<div class="why__item">
+						<img src="img/money-bag.png" alt="Money" class="why__item_img why__item_img3">
+						<h3 class="why__item_header">
+							Не транжирят
+						</h3>
+						<p class="why__item_text">
+							Экономят
+							ваш бюджет
+						</p>
 					</div>
 				</div>
-				<div class="col-md-3 col-6">
-					<div class="clients__item">
-						<img src="img/clients-4-min.png" alt="" class="clients__item_img">
+				<div class="col-xl-2 col-md-4 col-6">
+					<div class="why__item">
+						<img src="img/duster.png" alt="Duster" class="why__item_img why__item_img4">
+						<h3 class="why__item_header">
+							Не пылятся
+						</h3>
+						<p class="why__item_text">
+							Не скапливают
+							пыль. Антистатичны
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-2 col-md-4 col-6">
+					<div class="why__item">
+						<img src="img/award.png" alt="Award" class="why__item_img why__item_img5">
+						<h3 class="why__item_header">
+							Не изнашиваются
+						</h3>
+						<p class="why__item_text">
+							Долговечны
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-2 col-md-4 col-6">
+					<div class="why__item">
+						<img src="img/lamp.png" alt="Lamp" class="why__item_img why__item_img6">
+						<h3 class="why__item_header">
+							Не портят вид
+						</h3>
+						<p class="why__item_text">
+							Гармонируют 
+							и дополняют
+							интерьер
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
-	<section id="commerce">
+
+	<section id="kinds">
+		<div class="container">
+			<h2>Какие бывают виды натяжных потолков</h2>
+			<div class="row">
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<img src="img/tkan.png" alt="Tkan" class="kinds__item_img">
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Тканевые потолки Descor
+							</h3>
+							<p class="kinds__item_desc">
+								Цены ОТ<br>
+								за кв/м
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">900 р</p>
+								<a class="js-button-campaign2 main__button shiny-btn">
+									Выбрать
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<img src="img/kind-2.png" alt="Kind 2" class="kinds__item_img">
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Потолки из ПВХ плёнки
+							</h3>
+							<p class="kinds__item_desc">
+								Цены ОТ<br>
+								за кв/м
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">500 р</p>
+								<a class="js-button-campaign2 main__button shiny-btn">
+									Выбрать
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<img src="img/kind-3.png" alt="Kind 3" class="kinds__item_img">
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Резные потолки Apply
+							</h3>
+							<p class="kinds__item_desc">
+								Цены ОТ<br>
+								за кв/м
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">2000 р</p>
+								<a class="js-button-campaign2 main__button shiny-btn">
+									Выбрать
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<img src="img/kind-4.png" alt="Kind 4" class="kinds__item_img">
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Одноуровневые потолки
+							</h3>
+							<p class="kinds__item_desc">
+								Цены ОТ<br>
+								за кв/м
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">500 р</p>
+								<a class="js-button-campaign2 main__button shiny-btn">
+									Выбрать
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<img src="img/kind-5.png" alt="Kind 5" class="kinds__item_img">
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Многоуровневые потолки
+							</h3>
+							<p class="kinds__item_desc">
+								Цены ОТ<br>
+								за кв/м
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">1700 р</p>
+								<a class="js-button-campaign2 main__button shiny-btn">
+									Выбрать
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<img src="img/kind-6.png" alt="Kind 6" class="kinds__item_img">
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Потолки Звёздное небо
+							</h3>
+							<p class="kinds__item_desc">
+								Цены ОТ<br>
+								за кв/м
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">9000 р</p>
+								<a class="js-button-campaign2 main__button shiny-btn">
+									Выбрать
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="sure">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-1 col-0"></div>
-				<div class="col-lg-10 col-12">
-					<div class="commerce__content">
-						<h2>
-							За 3 года мы с командой реализовали более 200 проектов по различным направлениям
-						</h2>
-
-						<p class="commerce__content_text">
-							Но разумеется, если я выложу на сайт абсолютно все проекты, я не приближу тебя к пониманию нашего профессионализма, поэтому мы сделаем проще. <span>Мы упаковали все наши кейсы в одном PDF файле.</span>
-						</p>
-						<p class="commerce__content_text">
-							Скачай его и сможешь подробнее узнать что мы умеем.
-						</p>
-						<div class="commerce__content_download">
-							<img src="img/download-commerce-min.png" alt="Download">
-							<a href="#" class="commerce__download_link">
-								Скачать коммерческое предложение
+				<div class="col-12">
+					<div class="sure__block column">
+						<div class="sure__block_text">
+							Сомневаетесь в правильности своего выбора?
+							<span>Оставьте заявку</span> и наш мастер 
+							бесплатно проконсультирует вас о том,
+							<span>какой вид потолка вам подходит</span>
+						</div>
+						<div class="sure__block_btn">
+							<a class="js-button-campaign2 wave_button main__button">
+								Да, мне нужна помощь
 							</a>
 						</div>
 					</div>
@@ -245,342 +378,649 @@
 			</div>
 		</div>
 	</section>
+	
 
-	<section id="advantages">
-		<div class="adv-bg adv-bg-1"></div>
-		<div class="adv-bg adv-bg-2"></div>
-		<div class="adv-bg adv-bg-3"></div>
-		<div class="adv-bg-rec adv-bg-rec-1"><img src="img/bg-rec-3-min.png" alt="Bg"></div>
-		<div class="adv-bg-rec adv-bg-rec-2"><img src="img/bg-rec-4-min.png" alt="Bg"></div>
-		
+	<section id="why-us">
+		<div class="background__item3"></div>
 		<div class="container">
+			<h2>Почему наши клиенты доверяют нам</h2>
 			<div class="row">
-				<div class="col-12">
-					<div class="advantages-circle">
-						<div class="adv-man">
-							<img src="img/man-min.png" alt="Man">
-						</div>
-						<div class="adv-item adv-item-1">
-							<img src="img/advantages-item-1-min.png" alt="Advantages">
-						</div>
-						<div class="adv-item adv-item-2">
-							<img src="img/advantages-item-2-min.png" alt="Advantages">
-						</div>
-						<div class="adv-item adv-item-3">
-							<img src="img/advantages-item-3-min.png" alt="Advantages">
-						</div>
-						<div class="adv-item adv-item-4">
-							<img src="img/advantages-item-4-min.png" alt="Advantages">
-						</div>
-						<div class="adv-item adv-item-5">
-							<img src="img/advantages-item-5-min.png" alt="Advantages">
-						</div>
-						<div class="adv-item adv-item-6">
-							<img src="img/advantages-item-6-min.png" alt="Advantages">
-						</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<div class="why-us__item flex-end">
+						<img src="img/five.png" alt="Five" class="why-us__item_img">
+						<p class="why-us__item_text">
+							Лет на рынке
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<div class="why-us__item">
+						<img src="img/chronometers.png" alt="Clock" class="why-us__item_img">
+						<p class="why-us__item_text">
+							1 час самый быстрый<br>
+							монтаж потолка
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<div class="why-us__item flex-end">
+						<img src="img/worker.png" alt="Hat" class="why-us__item_img">
+						<p class="why-us__item_text">
+							10 лет опыт<br>
+							монтажников
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<div class="why-us__item">
+						<img src="img/measure.png" alt="Measure" class="why-us__item_img">
+						<p class="why-us__item_text">
+							24 часа от замера<br>
+							до нового потолка
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<div class="why-us__item flex-end">
+						<img src="img/contract.png" alt="Doc" class="why-us__item_img">
+						<p class="why-us__item_text">
+							12 лет гарантии<br>
+							по договору
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6 col-12">
+					<div class="why-us__item">
+						<img src="img/team.png" alt="Team" class="why-us__item_img">
+						<p class="why-us__item_text">
+							75 % клиентов, приходит<br>
+							к нам в компанию по рекомендации<br>
+							довольных друзей и коллег
+						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<div class="container">
-			<div class="advantages__mobile">
-					<div class="advantages__mobile_item">
-						<p class="advantages__mobile_number advantages__mobile_number1">01</p>
-						<h2 class="advantages__mobile_header">
-							Сроки
-						</h2>
-						<p class="advantages__mobile_text">
-							Прописываем в договоре точные сроки и штрафы за их срыв. 
-						</p>
-					</div>
-					<div class="advantages__mobile_item">
-						<p class="advantages__mobile_number advantages__mobile_number2">
-							02
-						</p>
-						<h2 class="advantages__mobile_header">
-							3 года
-						</h2>
-						<p class="advantages__mobile_text">
-							Средний опыт наших 
-							сотрудников на профессиональных 
-							должностях. 
-						</p>
-					</div>
-					<div class="advantages__mobile_item">
-						<p class="advantages__mobile_number advantages__mobile_number3">
-							03
-						</p>
-						<h2 class="advantages__mobile_header">
-							более 200
-						</h2>
-						<p class="advantages__mobile_text">
-							Выполненных проектов под флагом
-								Gluemance.
-						</p>
-					</div>
-					<div class="advantages__mobile_item">
-						<p class="advantages__mobile_number advantages__mobile_number4">
-							04
-						</p>
-						<h2 class="advantages__mobile_header">
-							Под ключ
-						</h2>
-						<p class="advantages__mobile_text">
-							Вы можете прийти
-							к нам с одной идеей, а уйти с работающим бизнесом.
-						</p>
-					</div>
-					<div class="advantages__mobile_item">
-						<p class="advantages__mobile_number advantages__mobile_number5">
-							05
-						</p>
-						<h2 class="advantages__mobile_header">
-							Цена
-						</h2>
-						<p class="advantages__mobile_text">
-							Еженедельный анализ конкурентов помог нам добиться самых демократичных цен.
-						</p>
-					</div>
-					<div class="advantages__mobile_item">
-						<p class="advantages__mobile_number advantages__mobile_number6">06</p>
-						<h2 class="advantages__mobile_header">
-							Профи
-						</h2>
-						<p class="advantages__mobile_text">
-							В нашей команде собраны не только “рукастые” сотрудники, но и преподаватели контекста и веб - дизайна.
-						</p>
-					</div>
-			</div>
-		</div>
-
 	</section>
 	
-	
-	<section id="what-we-do-better">
-		<div class="adv-bg-rec adv-bg-rec-3"><img src="img/bg-rec-5-min.png" alt="Bg"></div>
+	<section id="calc">
 		<div class="container">
+			<h2>Расчёт стоимости натяжных потолков</h2>
 			<div class="row">
-				<div class="col-xl-2 col-lg-1 col-0"></div>
-				<div class="col-xl-10 col-lg-11 col-12">
-					<h2>
-						Что мы умеем лучше остальных
-					</h2>
-
-					<p class="what-we-do-better__text">
-						Я часто думаю, а что отличает <b><span>Gluemance</span></b> от бесконечного 
-						количества других web - студий, и каждый раз я отвечаю 
-						примерно одно и то же. 
-					</p>
-					
-					<h3>Мы умеем превосходить ожидания</h3>
-
-					<p class="what-we-do-better__text">
-						Почему? Всё просто, <span>если я принесу тебе денег, ты принесёшь их мне</span>,
-						именно поэтому нам не всё равно, как собран твой сайт, мы докопаемся 
-						до каждой точки в тексте если посчитаем, что её тут быть не должно.
-					</p>
-					<p class="what-we-do-better__text">
-						Мы дарим невидимое сердечко слева от твоего доменного имени и это 
-						частичка нашей души. Нет, мы не растеряем всю душу вкладываясь 
-						в каждый проект, ты регенирируешь в нас любовь к нашему делу своими 
-						отзывами и результатами.
-					</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="boss">
-		<div class="container">
-			<div class="row column-reverse">
-				<div class="col-xl-5 col-lg-4 col-12 boss__container">
-					<img class="boss__img" src="img/vladislav-min.png" alt="Boss">
-				</div>
-				<div class="col-xl-7 col-lg-8 col-12">
-						<h2>
-							Кто с тобой разговаривает?
-						</h2>
-
-						<p class="boss__text">
-							Привет, меня зовут <b>Вульман Владислав</b> и я основатель веб-студии <b><span>Gluemance</b></span>
-						</p>
-						<p class="boss__text">							Именно я общаюсь с тобой уже на 		протяжении 7 - ми блоков
-						</p>
-						<div class="boss__item">
-							<img src="img/about-me-icon1-min.png" alt="About Img" class="boss__item_img">
-							<p class="boss__item_text">
-								<b>Преподаватель факультета веб - дизайна</b> в                                                             Санкт - Петербургской школе телевидения
-							</p>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<div class="kinds__item_img kinds__item_img1">
+							<p>ПВХ- глянец кремовый</p>
 						</div>
-						<div class="boss__item">
-							<img src="img/about-me-icon2-min.png" alt="About Img" class="boss__item_img">
-							<p class="boss__item_text">
-								<b>Сооснователь маркетингового агенства</b>
-								THE KONDOR
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Натяжной потолок в коридор
+							</h3>
+							<p class="kinds__item_desc">
+								7 м<sup>2</sup>
 							</p>
-						</div>
-						<div class="boss__item">
-							<img src="img/about-me-icon3-min.png" alt="About Img" class="boss__item_img">
-							<p class="boss__item_text">
-								<b>Более 80% работы</b> провожу с выпускниками
-								и сотрудниками Бизнес Молодости и Like центра
-							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">5700 р</p>
+								<a class="js-button-campaign3 main__button shiny-btn">
+									<img src="img/calc.png" alt="" class="calc"> Заказать расчёт
+								</a>
+							</div>
 						</div>
 					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<div class="kinds__item_img kinds__item_img2">
+							<p>
+								ПВХ- чёрный сатин. 4 светильника,
+								работа по плитке.
+							</p>
+						</div>
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Натяжной потолок в ванную
+							</h3>
+							<p class="kinds__item_desc">
+								4.8 м<sup>2</sup>
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">6800 р</p>
+								<a class="js-button-campaign3 main__button shiny-btn">
+									<img src="img/calc.png" alt="Calc" class="calc"> Заказать расчёт
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<div class="kinds__item_img kinds__item_img3">
+							<p>
+								Двухуровневневая алюминиевая конструкция с диодной подсветкой. Потолок белый матовый 16 кв.м., 6 светильников и 1 люстра. 
+							</p>
+						</div>
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Натяжной потолок в детскую
+							</h3>
+							<p class="kinds__item_desc">
+								16 м<sup>2</sup>
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">23000 р</p>
+								<a class="js-button-campaign3 main__button shiny-btn">
+									<img src="img/calc.png" alt="" class="calc"> Заказать расчёт
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<div class="kinds__item_img kinds__item_img4">
+							<p>
+								Переход уровня из алюминиевой конструкции 3, 7 п.м. ПВХ- Нижний уровень жёлтый сатин, верхний белый матовый 12 кв.м. 12 светильников.
+							</p>
+						</div>
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Натяжной потолок в кухню
+							</h3>
+							<p class="kinds__item_desc">
+								12 м<sup>2</sup>
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">18000 р</p>
+								<a class="js-button-campaign3 main__button shiny-btn">
+									<img src="img/calc.png" alt="" class="calc"> Заказать расчёт
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<div class="kinds__item_img kinds__item_img5">
+							<p>
+								Натяжной потолок в спальню в сочетании с конструкцией из гипсокартона с подсветкой. ПВХ белый сатин 18 кв.м. Ниша под карниз с подсветкой.
+							</p>
+						</div>
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Натяжной потолок в спальню
+							</h3>
+							<p class="kinds__item_desc">
+								18 м<sup>2</sup>
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">19000 р</p>
+								<a class="js-button-campaign3 main__button shiny-btn">
+									<img src="img/calc.png" alt="" class="calc"> Заказать расчёт
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4 col-md-6 col-12">
+					<div class="kinds__item">
+						<div class="kinds__item_img kinds__item_img6">
+							<p>
+								28 кв.м. Двухуровневый ПВХ. 1 уровень кремовый глянцевый, 2 уровень кремовый матовый. 32 светильника.
+							</p>
+						</div>
+						<div class="kinds__item_border">
+							<h3 class="kinds__item_header">
+								Натяжной потолок в гостинную
+							</h3>
+							<p class="kinds__item_desc">
+								28 м<sup>2</sup>
+							</p>
+							<div class="price-and-button">
+								<p class="kinds__item_price">25000 р</p>
+								<a class="js-button-campaign3 main__button shiny-btn">
+									<img src="img/calc.png" alt="" class="calc"> Заказать расчёт
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="portfolio">
+		<div class="background__item2"></div>
+		<div class="container">
+			<div class="background__item2"></div>
+			<h2>Выполненные проекты</h2>
+			<div class="row">
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-1.png" alt="Portfolio work 1" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							Двухуровневый натяжной потолок в спальную комнату с диодной подсветкой RGB
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-2.png" alt="Portfolio work 2" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							Белый матовый потолок в студию со светильниками
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-3.png" alt="Portfolio work 3" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							Глянцевый натяжной потолок со светильниками Gx53 в складское помещение
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-4.png" alt="Portfolio work 4" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							Белый тканевый потолок в коридоре двухэтажной квартиры с точечными светильниками mr16
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-5.png" alt="Portfolio work 5" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							Матовый потолок в стоматологию с очень мощным освещением. 14 светильников Gx53. При включении света, белый потолок, кажется зелёным от стен
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-6.png" alt="Portfolio work 6" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							ПВХ натяжной потолок с двусторонней фотопечатью " Double vision". При включении подсветки на рисунке появляется Земля.
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-7.png" alt="Portfolio work 7" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							Двухуровневый резной потолок Apply в кухне с подсветкой по периметру между полотнами разных цветов
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
+					<div class="portfolio__item">
+						<img src="img/portfolio-8.png" alt="Portfolio work 8" class="portfolio__item_img">
+						<p class="portfolio__item_text">
+							Белый ПВХ потолок в кухню-столовую с большим количеством светильников
+						</p>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+					<div class="portfolio__item portfolio__item-last">
+						<img src="img/portfolio-9.png" alt="Portfolio work 9" class="portfolio__item_img portfolio__item_img-last">
+						<p class="portfolio__item_text portfolio__item_text-last">
+							Белый глянцевый потолок в кухню с точечными светильниками
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<section id="family">
+	<section id="feedback">
 		<div class="container">
-			<div class="family__header">
-				<div class="family__alert">
-					!
-				</div>
-				<p class="family__header_item">
-					Я собрал в одну команду не просто людей - это виртуозы своего дела,
-					акулы пера и сайтостроения, те, кто создаёт очереди из клиентов 
-					в твой бизнес каждый день.
-				</p>
-			</div>
-		</div>
+			<h2>Отзывы о нашей работе</h2>
+			<div class="row">
+				<div class="col-xl-1 col-0"></div>
+				<div class="col-xl-10 col-12">
 
-		<div class="family__list">
-			<div class="family__list_item"><img src="img/family-1-min.jpg" alt="Our Team"></div>
-			<div class="family__list_item"><img src="img/family-2-min.jpg" alt="Our Team"></div>
-			<div class="family__list_item"><img src="img/family-3-min.jpg" alt="Our Team"></div>
-			<div class="family__list_item"><img src="img/family-4-min.jpg" alt="Our Team"></div>
-			<div class="family__list_item"><img src="img/family-5-min.jpg" alt="Our Team"></div>
-			<div class="family__list_item"><img src="img/family-6-min.jpg" alt="Our Team"></div>
-			<div class="family__list_item"><img src="img/family-7-min.jpg" alt="Our Team"></div>
-		</div>
-		<div class="family__text_container">
-			<img src="img/bg-rec-6-min.png" alt="Background" class="family-rect">
-			<div class="light__block">
-				<img class="light" src="img/light-min.png" alt="Light">
-				<img src="img/light-circles-min.png" alt="Lights" class="light__circles">
+						<div class="feedback__slider">
+							<div class="col-lg-6 col-12">
+								<div class="feedback__slider_item">
+									<img src="img/feedback-img-1.png" class="feedback__slider_img feedback__slider_img-first" alt="Feedback IMG">
+									<div class="name">
+										<img src="img/avatar-1.png" alt="Avatar" class="feedback__icon feedback__icon_first">
+										<p class="feedback__slider_name">
+											Наталья Дашко<br>
+											<span>29.10.2018</span>
+										</p>
+										
+
+									</div>
+									<p class="slider__item_text">
+										Заказывали потолок в санузел на втором этаже частного дома в Видном. Крыша мансарда, мы думали - это сложность для натяжного потолка. Но сделали все очень красиво и быстро. Да ещё и другие компании просили больше денег, т.к.на стенах керамоганит. Спасибо большое компании Новый потолок!
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-12">
+								<div class="feedback__slider_item">
+									<img src="img/feedback-img-2.png" class="feedback__slider_img
+									feedback__slider_img-second" alt="Feedback IMG">
+									
+									<div class="name">
+										<img src="img/avatar-2.png" alt="Avatar" class="feedback__icon feedback__icon_second">
+										<p class="feedback__slider_name">
+											Игорь Миненко<br>
+											<span>4.11.2018</span>
+										</p>
+										
+									</div>
+
+									<p class="slider__item_text">
+										Заказывал монтаж натяжного потолка на небольшую прихожую в 7 м2. Монтаж произвели качественно, в обещенные сроки.  Монтажник Сергей все установил, объяснил нюансы эксплуатации, В общем все понравилось. Рекомендую!!! Выезжают даже на одну комнату.
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-12">
+								<div class="feedback__slider_item">
+									<img src="img/feedback-img-3.png" class="feedback__slider_img" alt="Feedback IMG">
+									<div class="name">
+										<img src="img/avatar-3.png" alt="Avatar" class="feedback__icon">
+										<p class="feedback__slider_name">
+											Максим Крашуев<br>
+											<span>21.10.2018</span>
+										</p>
+										
+
+									</div>
+									<p class="slider__item_text slider__item_text3">
+										Остался доволен ценой и качеством установки и материалами. Тщательно выбирал компанию на установку натяжных потолков, так как объект  большой и сложный. Приглашал многих, но предложение от компании "Новый потолок" оказалось самым выгодным. И замерщик Евгений предложил лучшее решение. Получилось около 140 метров потолка, второй этаж сложный в виде мансарды. Монтажники Максим и Роман справились на твердую пятерку. Устанавливали в 4 этапа, сначала 2 этаж профили, затем после поклейки обоев вторым этапом натягивали потолок. Ребята установщики проявляли чудеса эквилибристики работая на высоте более 3 метров, вывели все углы на пятерку. Молодцы.  Затем 1 этаж. Все сделали аккуратно и качественно. Уже 2 месяца прошло после установки никаких "косяков" не наблюдаю. Доволен потолками. Рекомендую.
+									</p>
+								</div>
+							</div>
+							<div class="col-lg-6 col-12">
+								<div class="feedback__slider_item">
+									<img src="img/feedback-img-4.png" class="feedback__slider_img" alt="Feedback IMG">
+									
+									<div class="name">
+										<img src="img/avatar-4.png" alt="Avatar" class="feedback__icon">
+										<p class="feedback__slider_name">
+											Екатерина Варова<br>
+											<span>6.11.2018</span>
+										</p>
+										
+									</div>
+
+									<p class="slider__item_text">
+										Спасибо специалистам всех уровней, начиная от принятия заявки до установки натяжного потолка. Вежливо, качественно и быстро. 
+										Работой сотрудников на адресе остались довольны. Спасибо, надеемся созданное Вами прослужит долго и будет всегда радовать глаз.
+										Успехов и процветания, удачи!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
 			</div>
+		</div>
+	</section>
+
+	<section id="form">
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-xl-1 col-0"></div>
+
+				<div class="col-xl-10 col-12">
+					<img src="img/measure-2.png" alt="Measure" class="measure">
+					<div class="form__block">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="form__text">
+									<span>Запишитесь</span> на бесплатный 
+									<span>замер потолка</span>. Замерщик
+									приедет к вам <span>в течение
+									2-х часов</span>
+								</div>
+
+								<p class="form__text_desc">
+									Или позвоните нам по номеру:
+								</p>
+
+								<a href="tel:+7(962)321-61-21" class="form__text_tel">
+									+7 (962) <span>321 - 61 - 21</span>
+								</a>
+							</div>
+							<div class="col-md-6">
+								<div class="form__form">
+									<form action="">
+										<!-- Hidden Required Fields -->
+										<input type="hidden" name="project_name" value="new-ceiling.ru">
+										<input type="hidden" name="admin_email" value="potolokpotolkovitch@yandex.ru">
+										<input type="hidden" name="form_subject" value="Замер потолка">
+										<!-- END Hidden Required Fields -->
+
+										<img src="img/user.png" alt="User" class="form__user-img">
+										<input required type="text" name="Имя" placeholder="Как Вас зовут">
+										<img src="img/phone-call2.png" alt="Phone" class="form__phone-img">
+										<input required type="tel" name="Телефон" placeholder="Ваш номер телефона">
+										<button type="submit" class=" main__button wave_button">Записаться</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-1 col-0"></div>
+			</div>
+		</div>
+	</section>
+
+	<section id="contacts">
+		<h2>Как еще можно с нами связаться</h2>
+		<div class="contacts__content">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-2 col-lg-1 col-0"></div>
-					<div class="col-xl-10 col-lg-11 col-12">
-						<h2>Семья <span>Gluemance</span> <img src="img/family-arrow-min.png" alt="Arrow"></h2>
-						<p class="family__text">
-							Знаешь, если бы меня попросили придумать девиз или фразу, которая охарактеризовывала <span>Gluemance</span>, я бы ответил <span>“Твоя идея - наше решение”</span>, ведь это именно то, чем мы занимаемся для своих клиентов. 
-						</p>
-						<p class="family__text">
-							Мы решаем их проблемы: <span>проблемы с конверсией сайта</span>, проблемы с <span>заявками</span>, проблемы <span>с дизайном и фирменным стилем</span>. 
-						</p>
-						<p class="family__text">
-							Мы постоянно учимся, от проекта к проекту увеличивая поток заявок для наших клиентов, <span>погружаясь в нишу настолько, насколько это возможно</span> для правильного подхода к продаже в сфере с которой мы работаем.
-						</p>
+					<div class="col-lg-1 col-0"></div>
+					<div class="col-lg-5 col-sm-12">
+						<div class="contacts__content_column">
+							<div class="content__column_item content__column_item-link">
+								<img src="img/contacts-phone.png" alt="Icon" class="content__column_icon">
+								<a href="tel:+7(962)321-61-21" class="column__item_link">
+									+7 (962) 321 - 61 -21
+								</a>
+							</div>
+							<div class="content__column_item content__column_item-link">
+								<img src="img/contacts-mail.png" alt="Icon" class="content__column_icon">
+								<a href="mailto:216121evgen@gmail.com" class="column__item_link">
+									216121evgen@gmail.com
+								</a>
+							</div>
+							<div class="content__column_item">
+								<img src="img/contacts-inst.png" alt="Icon" class="content__column_icon">
+								<p class="column__item_text">
+									natyazhnie_potolki_moscow
+								</p>
+							</div>
+							<div class="content__column_item">
+								<img src="img/contacts-clock.png" alt="Icon" class="content__column_icon">
+								<p class="column__item_text">
+									Время работы: c <span>9:00 до 22:00</span><br>	
+									Без выходных
+								</p>
+							</div>
+							<div class="content__column_item">
+								<img src="img/contacts-location.png" alt="Icon" class="content__column_icon">
+								<p class="column__item_text">
+									г. Москва, ул. Северный квартал, д 1 
+								</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2257.82526036764!2d37.717325115900934!3d55.535412880495805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x414aafc4cf8643a1%3A0xfe018129d7f386ab!2z0YPQuy4g0KHQtdCy0LXRgNC90YvQuSDQmtCy0LDRgNGC0LDQuywgMSwg0JLQuNC00L3QvtC1LCDQnNC-0YHQutC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDE0MjcwMQ!5e0!3m2!1sru!2sua!4v1541705238327" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
+		
 	</section>
 
-	<section id="deal">
+	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					<div class="deal__item deal__item1 flex-row123">
-						<img src="img/skills-img-1-min.png" alt="Deal Image">
-						<div class="deal__item_text">
-							<h4 class="item__text_h4">
-								Разработка продающих сайтов: 
-							</h4>
-							<p class="item__text_p">
-								Landing page <br>
-								Корпоративных сайтов <br>
-								Интернет - магазинов
-							</p>
-						</div>
-					</div>
+				<div class="col-lg-4 col-12">
+					<a href="https://vk.com/dev/uprivacy" class="policies">
+						Политика конфиденциальности
+					</a>
 				</div>
-
-				<div class="col-lg-6 col-12">
-					<div class="deal__item deal__item2">
-						<img src="img/skills-img-2-min.png" alt="Deal Image">
-						<div class="deal__item_text">
-							<h4 class="item__text_h4">
-								Маркетинг - кит 
-							</h4>
-							<p class="item__text_p">
-								Презентация компании,<br>
-								для увеличения продаж
-							</p>
-						</div>
+				<div class="col-lg-4 col-12">
+					<div class="social-media">
+						<a href="https://vk.com/evgen216121"
+						target="_blank">
+							<img src="img/vk.png" alt="VK" class="social-media__icon">
+						</a>
+						<a href="https://www.instagram.com/natyazhnie_potolki_moscow/?hl=ru" target="_blank">
+							<img src="img/instagram.png" alt="Instagram" class="social-media__icon">
+						</a>
 					</div>
+					<a href="https://vk.com/vladblacky" class="developer" target="_blank">
+						Разработка сайта: Gluemance.ru
+					</a>
 				</div>
-
-				<div class="col-lg-6 col-12">
-					<div class="deal__item deal__item3">
-						<img src="img/skills-img-3-min.png" alt="Deal Image">
-						<div class="deal__item_text">
-							<h4 class="item__text_h4">
-								Оформление социальных
-								сетей 
-							</h4>
-							<p class="item__text_p">
-								Вконтакте<br>
-								Инстаграм<br>
-								Фейсбук
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-12">
-					<div class="deal__item flex-row123 deal__item4">
-						<img src="img/skills-img-4-min.png" alt="Deal Image">
-						<div class="deal__item_text">
-							<h4 class="item__text_h4">
-								Разработка фирменного стиля 
-								компании
-							</h4>
-							<p class="item__text_p">
-								Разработка логотипов<br>
-								Создание айдентики<br>
-								Разработка бренд - буков
-							</p>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-12">
-					<div class="deal__item flex-row123 deal__item5">
-						<img src="img/skills-img-5-min.png" alt="Deal Image">
-						<div class="deal__item_text">
-							<h4 class="item__text_h4">
-								Настройка и ведение рекламных
-								кампаний
-							</h4>
-							<p class="item__text_p">
-								Яндекс - Директ<br>
-								Google AdWords	
-							</p>
-						</div>
-					</div>
+				<div class="col-lg-4 col-12 pt">
+					<a href="tel:+7(962)321-61-21" class="form__text_tel">
+						+7 (962) <span>321 - 61 - 21</span>
+					</a>
+					<p class="work-time">
+						Время работы: c 9:00 до 22:00 без выходных
+					</p>
 				</div>
 			</div>
 		</div>
-	</section>
+	</footer>
+
+	<div class="overlay js-overlay-campaign">
+		<div class="popup js-popup-campaign">
+			<h3>Заполните поля для
+			вызова мастера на
+			бесплатный замер 
+			</h3>
+
+			<div class="form__form">
+									<form action="">
+										<!-- Hidden Required Fields -->
+										<input type="hidden" name="project_name" value="new-ceiling.ru">
+										<input type="hidden" name="admin_email" value="potolokpotolkovitch@yandex.ru">
+										<input type="hidden" name="form_subject" value="Замер потолка">
+										<!-- END Hidden Required Fields -->
+
+										<img src="img/user.png" alt="User" class="form__user-img">
+										<input required name="Имя" type="text" placeholder="Как Вас зовут">
+										<img src="img/phone-call2.png" alt="Phone" class="form__phone-img">
+										<input required name="Телефон" type="tel" placeholder="Ваш номер телефона">
+										<button type="submit" class=" main__button wave_button">Записаться</button>
+										<a href="https://vk.com/dev/uprivacy" class="policies">
+											Политика конфиденциальности
+										</a>
+									</form>
+								</div>
+				<div class="close-popup js-close-campaign"></div>
+			</div>
+	</div>
+
+	<div class="overlay js-overlay-campaign2">
+		<div class="popup js-popup-campaign2">
+			<h3>Заполните поля для
+			того, чтобы получить
+			консультацию 
+
+			</h3>
+
+			<div class="form__form">
+									<form action="">
+										<!-- Hidden Required Fields -->
+										<input type="hidden" name="project_name" value="new-ceiling.ru">
+										<input type="hidden" name="admin_email" value="potolokpotolkovitch@yandex.ru">
+										<input type="hidden" name="form_subject" value="Консультация">
+										<!-- END Hidden Required Fields -->
+
+										<img src="img/user.png" alt="User" class="form__user-img">
+										<input required name="Имя" type="text" placeholder="Как Вас зовут">
+										<img src="img/phone-call2.png" alt="Phone" class="form__phone-img">
+										<input required name="Телефон" type="tel" placeholder="Ваш номер телефона">
+										<button type="submit" class=" main__button wave_button">Записаться</button>
+										<a href="https://vk.com/dev/uprivacy" class="policies">
+											Политика конфиденциальности
+										</a>
+									</form>
+								</div>
+				<div class="close-popup js-close-campaign2"></div>
+			</div>
+	</div>
+	<div class="overlay js-overlay-campaign3">
+		<div class="popup js-popup-campaign3">
+			<h3>Заполните поля для
+				расчёта стоимости
+				будущего потолка
+
+
+
+			</h3>
+
+			<div class="form__form">
+									<form action="">
+										<!-- Hidden Required Fields -->
+										<input type="hidden" name="project_name" value="new-ceiling.ru">
+										<input type="hidden" name="admin_email" value="potolokpotolkovitch@yandex.ru">
+										<input type="hidden" name="form_subject" value="Расчет стоимости">
+										<!-- END Hidden Required Fields -->
+
+										<img src="img/user.png" alt="User" class="form__user-img">
+										<input required name="Имя" type="text" placeholder="Как Вас зовут">
+										<img src="img/phone-call2.png" alt="Phone" class="form__phone-img">
+										<input required name="Телефон" type="tel" placeholder="Ваш номер телефона">
+										<button type="submit" class=" main__button wave_button">Записаться</button>
+										<a href="https://vk.com/dev/uprivacy" class="policies">
+											Политика конфиденциальности
+										</a>
+									</form>
+								</div>
+				<div class="close-popup js-close-campaign3"></div>
+			</div>
+	</div>
+	<div class="overlay js-overlay-campaign4">
+		<div class="popup js-popup-campaign4">
+			<div class="success__border">
+				<img src="img/success.png" alt="Sucess">
+				<p class="success__text">
+					Спасибо<br>
+					<span>Мы получили Ваш ответ и скоро Вам перезвоним</span>
+				</p>
+			</div>	
+			</div>
+				<div class="close-popup js-close-campaign4"></div>
+			</div>
+	</div>
+
+	<!--[if IE]>
+		<style>
+		    .preloader {
+		        display: none;
+		    }
+		</style>
+	<![endif]-->
+
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
 
 
 	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
-	
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-	
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script src="js/unimail.js"></script>
+
+	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
+	
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/animate-css.js"></script>
+	
 	<script src="js/slick.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
 
 	<script src="js/main.js"></script>
 </body>
