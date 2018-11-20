@@ -105,7 +105,7 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 100px;
 }
 
 .slick-dots
@@ -136,7 +136,7 @@
     border-radius: 50%;
 
     cursor: pointer;
-    background-color: #191919;
+    background-color: #293335;
 }
 .slick-dots li button
 {
@@ -179,7 +179,7 @@
     content: '';
     display: block;
     margin: auto;
-    background: #ffb23b; 
+    background: #007795; 
     text-align: center;
     border-radius: 50%;
 
