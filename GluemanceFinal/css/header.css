@@ -85,6 +85,10 @@
 	transition: .3s ease;
 }
 
+a {
+	cursor: pointer;
+}
+
 header, section{
 	animation-delay: .5s;
 }
