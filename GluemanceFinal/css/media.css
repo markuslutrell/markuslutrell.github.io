@@ -828,9 +828,17 @@
 	form img {
 		left: 40px;
 	}
+	#form input {
+		padding-left: 60px;
+		border-radius: 25px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+	}
+	.family__alert {
+		margin: 0;
+	}
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
 	.portfolio__item {
 		height: 200px;
 	}
@@ -986,18 +994,33 @@
 		display: none;
 	}
 	.family__text1 {
-		padding-top: 700px;
+		padding-top: 0px;
+	}
+	
+	.family-rect {
+		display: none;
+	}
+	.family__text3 {
+		padding-bottom: 500px;
+	}
+	.what-we-do-bg-2 {
+		display: none;
 	}
 	.light {
 		right: -470px;
-		top: -80px;
+		top: 620px;
 	}
 	.light__circles {
 		right: -50px;
-		top: 320px;
+		top: 1050px;
 	}
-	.inputs {
+	.inputs  {
 		padding: 0;
+	}
+
+	.inputs input {
+		padding-left: 30px;
+		border: none;
 	}
 	form img {
 		left: 25px;
@@ -1005,6 +1028,7 @@
 	.adv-bg-rec-3, .money__bg-rect1 img, .money__bg-rect2 img, .what-we-do-bg-rect-1 img {
 		width: 50px;
 		height: 50px;
+		z-index: -100000000;
 	}
 
 }
@@ -1032,7 +1056,17 @@
 	.commerce__content_download {
 		margin-left: 30px;
 	}
+	.family__text3 {
+		padding-bottom: 600px;
+	}
 
+	.light {
+		top: 700px;
+	}
+
+	.light__circles {
+		top: 1120px;
+	}
 	
 }
 
@@ -1060,7 +1094,13 @@
 	.advantages__mobile_text {
 		font-size: 16px;
 	}
-	
+	.light {
+		top: 900px;
+	}
+
+	.light__circles {
+		top: 1350px;
+	}
 }
 
 @media screen and (max-width: 330px) {
