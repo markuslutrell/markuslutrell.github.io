@@ -1,3 +1,27 @@
+.up__btn {
+	display: block;
+	position: fixed;
+	left: 30px;
+	bottom: 30px;
+	height: 50px;
+	width: 50px;
+	background: rgba(0,0,0,.15);
+	cursor: pointer;
+	z-index: 9999;
+	text-align: center;
+	font-size: 30px;
+	border-radius: 50%;
+	line-height: 50px;
+	color: #293335;
+	transform: rotate(-90deg);
+	opacity: .5;
+}
+
+.up__btn:hover {
+	background: rgba(0,0,0,.2);
+	opacity: 1;
+}
+
 #cube-loader {
   align-items: center;
   display: flex;
