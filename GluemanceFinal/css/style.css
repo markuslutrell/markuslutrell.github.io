@@ -1226,3 +1226,7 @@ footer {
 .up-btn {
 	display: none;
 }
+
+.slick-dots {
+	top: auto !important;
+}
