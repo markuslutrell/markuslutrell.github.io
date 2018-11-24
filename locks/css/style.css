@@ -1,0 +1,473 @@
+.problems__item_text {
+	display: flex;
+	align-items: flex-start;
+}
+.problems__item_text-content {
+	font-size: 19px;
+}
+.problems__item_text-header {
+	font-size: 21px;
+	font-family: 'AvenirNextCyrBold';
+}
+
+#problems {
+	padding-bottom: 100px;
+	background: #fff;
+}
+
+.problems__item_text {
+	margin-top: 20px;
+}
+
+.problems__item_text1 img {
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+.problems__item_text2 img {
+	padding-top: 20px;
+	padding-right: 27px;
+	padding-left: 10px;
+} 
+
+.problems__item_text3 img {
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-left: 15px;
+} 
+
+.problem__img img{
+	width: 100%;
+}
+
+.problem__img {
+	margin-top: 25px;
+	margin-bottom: 25px;
+	position: relative;
+}
+
+.problem__img_bg {
+	position: absolute;
+	width: 65%;
+	right: -32px;
+	height: 115%;
+	top: -28px;
+	background-color: #31cc76;
+	z-index: -1;
+}
+
+#time {
+	background: url(../img/bg-2-min.jpg) no-repeat center top / cover;
+	color: #fff;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.time__header {
+	font-size: 45px;
+	font-family: 'AvenirNextCyrBold';
+}
+
+.time__text {
+	font-size: 22px;
+	font-weight: bold;
+	padding-right: 50px;
+	margin: 20px 0;
+}
+
+#time .main__btn {
+	justify-content: flex-start;
+
+}
+
+#time .main__btn_item {
+	background-image: linear-gradient(to top, #ffb347 0%, #ffcc33 100%);
+	color: #293335;
+}
+
+.main__btn_item:hover {
+	transform: scale(1.01);
+}
+
+.main__btn_item2 {
+	margin-top: 40px;
+}
+
+.clock {
+	padding-top: 100px;
+	margin-left: -60px;
+}
+
+table {
+	width: 100%;
+	border: 1px solid #000000;
+	border-spacing: 0px;
+	border-bottom: none;
+	font-size: 24px;
+}
+
+.right-table {
+	width: 285px;
+	text-align: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-left: 1px solid #000000;
+	border-bottom: 1px solid #000000;
+}
+
+.left-table {
+	padding-left: 65px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #000000;
+}
+
+.reasons__img_block {
+	position: relative;
+	z-index: 0;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.reasons__bg {
+	position: absolute;
+	width: 60%;
+	height: 119%;
+	margin-left: -30px;
+	top: -30px;
+	background-color: #31cc76;
+	z-index: -1;
+}
+
+.reasons__header{
+	font-size: 30px;
+	margin-bottom: 54px;
+	font-family: 'AvenirNextCyrBold';
+}
+
+.reasons__text {
+	font-size: 20px;
+}
+
+.reasons__img_block img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.reasons__img_block2 {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+
+#kinds {
+	background-color: #f9f9f9;
+	padding-bottom: 40px;
+}
+
+#kinds h2 {
+	padding-top: 40px;
+}
+
+.firms__block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.firm {
+	filter: grayscale(1); 
+	transition: 0.3s ease;
+	cursor: pointer;
+	margin: 15px 0px;
+
+}
+
+.firm:hover {
+	filter: grayscale(0); 
+	transform: scale(1.05);
+}
+
+.feedback__item_name {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.feedback__item {
+	background-color: #ffffff;
+	border-radius: 10px;
+	padding: 30px;
+	box-shadow: 3px 4px 62px rgba(0, 0, 0, 0.19);
+}
+
+.slick-track {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.slick-current {
+	transition: .3s ease;
+	transform: scale(1.25);
+	margin: 0 auto;
+	width: 600px;
+	box-shadow: 3px 4px 62px rgba(0, 0, 0, 0.19);
+	border-radius: 10px;
+}
+
+.swiper-wrapper {
+	height: 500px;
+	padding-bottom: 100px;
+}
+
+#feedback {
+	padding-bottom: 150px;
+}
+
+footer {
+	color: #fff;
+	padding-top: 60px;
+	padding-bottom: 0px;
+	background: url(../img/bg-3-min.jpg) no-repeat center top / cover;
+}
+
+address {
+	font-size: 24px;
+}
+
+.social__media {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding-top: 20px;
+}
+
+.social__media img {
+	margin-right: 10px;
+	transition: .3s ease
+}
+
+.social__media img:hover {
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+
+.contacts__header {
+	font-size: 36px;
+	font-family: 'AvenirNextCyrBold';
+	text-align: center;
+	margin-top: -20px;
+}
+
+.contacts__tel {
+	font-family: 'AvenirNextCyrBold';
+	font-size: 30px;
+	text-align: center;
+	display: block;
+	color: #fff;
+	text-decoration: none;
+}
+
+.contacts__tel1 {
+	margin-bottom: 0;
+}
+
+.contacts__tel2 {
+	margin-top: 0;
+}
+
+.developer {
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	margin-top: 70px;
+}
+
+.developer span {
+	color: #fff;
+	text-decoration: underline;
+}
+
+.developer span:hover {
+	text-decoration: none;
+}
+
+.call__text {
+	text-align: center;
+	font-size: 24px;
+	padding-top: 20px;
+}
+.call__btn {
+	box-shadow: 3px 4px 46px rgba(0, 0, 0, 0.52);
+	background-image: linear-gradient(to top, #ffb347 0%, #ffcc33 100%);
+	width: 191px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-family: 'AvenirNextCyrBold';
+	display: block;
+	margin: 0 auto;
+	border-radius: 7px;
+	font-size: 14px;
+	color: #293335;
+	cursor: pointer;
+}
+
+.call__btn:hover {
+	transform: scale(1.05);
+	box-shadow: 3px 4px 50px rgba(0, 0, 0, 0.62);
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(250, 250, 250, 0.8);
+  display: none;
+  z-index: 100;
+}
+
+.popup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  color: #fff;
+  border-radius: 10px;
+  width: 786px;
+  background-color: #31cc76;
+  height: 632px;
+}
+
+.close-popup {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.close-popup:before {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 3px;
+	width: 20px;
+	top: 11px;
+	left: 4px;
+	transform: rotate(-45deg);
+}
+
+.close-popup:after {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	height: 3px;
+	width: 20px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: 4px;
+}
+.order-popup {
+	position: relative;
+}
+
+.man {
+	position: absolute;
+	top: -163px;
+	right: -25px;
+	z-index: -1;
+}
+
+.popup__header {
+	padding-left: 96px;
+	font-size: 36px;
+	font-family: 'AvenirNextCyrBold';
+	margin-top: 0;
+	margin-top: 80px;
+}
+
+.popup__text {
+	font-size: 18px;
+	padding-left: 96px;
+	padding-right: 350px;
+	margin-top: 0;
+}
+
+input {
+	width: 315px;
+	height: 60px;
+	border: 1px solid #cbcbcb;
+	background-color: #ffffff;
+	border-radius: 12px;
+	padding-left: 60px;
+	font-size: 14px;
+	display: block;
+	margin: 14px 0;
+}
+
+form {
+	padding-left: 96px;
+	position: relative;
+	margin-top: 50px;
+}
+.user {
+	position: absolute;
+	top: 18px;
+	left: 115px;
+}
+
+.telephone {
+	position: absolute;
+	top: 92px;
+	left: 112px;
+}
+
+.popup button {
+	width: 190px;
+	height: 50px;
+	box-shadow: 3px 4px 46px rgba(0, 0, 0, 0.29);
+	background-image: linear-gradient(to top, #ffb347 0%, #ffcc33 100%);
+	border: none;
+	border-radius: 7px;
+	font-size: 15px;
+	font-family: 'AvenirNextCyrBold';
+	color: #293335;
+	margin-top: 40px;
+}
+
+.popup button:hover {
+	transform: scale(1.05);
+}
+
+.thanks-popup-container {
+	background: url(../img/popup-bg-min.jpg);
+}
+
+.thanks-popup__header{
+	text-align: center;
+	font-size: 36px;
+	font-family: 'AvenirNextCyrBold';
+	margin-top: 250px;
+}
+
+.thanks-popup__text {
+	font-size: 24px;
+	text-align: center;
+	padding: 0px 160px;
+}
+
+.slick-dots {
+	top: auto !important;
+}
