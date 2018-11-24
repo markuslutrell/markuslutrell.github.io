@@ -11,6 +11,11 @@ body {
 
 }
 
+section {
+	z-index: 100;
+	position: relative;
+}
+
 a, button {
 		transition: .3s ease;
 }
@@ -28,6 +33,8 @@ span {
 	padding-top: 21px;
 	font-weight: bold;
 }
+
+
 
 .logo__img img {
 	width: 72px;
@@ -48,6 +55,8 @@ span {
 	margin-bottom: 5px;
 	margin-top: 20px;
 }
+
+
 
 .header__phone {
 	display: flex;
@@ -86,6 +95,7 @@ span {
 	text-align: right;
 	margin-top: 20px;
 }
+
 
 .header__content {
 	background: url(../img/bg-1-min.jpg) no-repeat center top / cover;
@@ -236,6 +246,7 @@ h2 {
 	font-family: 'AvenirNextCyrBold';
 	padding-top: 80px;
 	padding-bottom: 50px;
+	margin: 0;
 }
 
 @media screen and (max-width: 1200px) {

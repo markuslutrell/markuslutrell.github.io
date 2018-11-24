@@ -13,6 +13,20 @@ $('.main__btn_item2').hover(function () {
     $('.js-hover2').attr('src', 'img/locked2.png');
 });
 
+$(document).ready(function() {
+  $(".header__content_text").animated("zoomIn");
+  $(".what-we-do").animated("zoomIn");
+  $("h2").animated("zoomIn");
+  $(".problems__item_text").animated("fadeInLeft");
+  $(".problem__img").animated("fadeInRight");
+  $("#time").animated("fadeIn");
+  $("table").animated("zoomIn");
+  $("#reasons .problems__item_text").animated("fadeInRight");
+  $(".reasons__img_block").animated("fadeInLeft");
+  $(".firms__block").animated("zoomIn");
+  $(".swiper-wrapper").animated("zoomIn");
+  $("footer").animated("fadeIn");
+});
 
 $('.swiper-wrapper').slick({
   centerMode: true,
