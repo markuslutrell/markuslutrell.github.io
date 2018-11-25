@@ -237,6 +237,17 @@ header .main__btn {
 	bottom: 30px;
 	left: 50%;
 	margin-left: -9.5px;
+	animation: bouncing 1s 0s infinite alternate both;
+}
+
+@keyframes bouncing {  
+     0% {
+		transform:translateY(0%);
+	}
+	100% {
+	  	transform:translateY(-30%);
+	}
+	
 }
 
 h2 {

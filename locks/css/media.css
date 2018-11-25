@@ -309,6 +309,17 @@
 	.thanks-popup-container {
 		height: auto;
 	}
+	.problem__img_bg {
+		top: -10px;
+		right: -10px;
+	}
+	.reasons__bg {
+		top: -10px;
+		width: 50%;
+		height: 109%;
+		margin-left: -53%;
+	}
+
 }
 
 @media screen and (max-width: 360px) {
@@ -323,5 +334,11 @@
 	}
 	.reasons__text {
 		font-size: 16px;
+	}
+	.reasons__bg {
+		top: -10px;
+		width: 50%;
+		height: 111%;
+		margin-left: -53%;
 	}
 }
