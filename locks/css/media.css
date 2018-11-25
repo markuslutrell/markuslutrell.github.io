@@ -163,7 +163,7 @@
 
 @media screen and (max-width: 600px) {
 	.problem__img_bg {
-		right: -5px;
+		right: -15px;
 		top: -15px;
 		height: 107%;
 	}
@@ -180,6 +180,7 @@
 	}
 }
 
+
 @media screen and (max-width: 500px) {
 	.right-table {
 		width: 100px;
@@ -192,6 +193,7 @@
 		margin-left: -55%;
 		width: 60%;
 		top: -20px;
+		height: 116%;
 	}
 	.reasons__img_block img {
 		width: 100%;
@@ -231,6 +233,11 @@
 	}
 	#feedback {
 		padding-bottom: 0;
+	}
+	.problem__img_bg {
+		right: -10px;
+		top: -10px;
+		height: 105%;
 	}
 }
 
@@ -319,12 +326,24 @@
 		height: 109%;
 		margin-left: -53%;
 	}
+	.problem__img_bg {
+		right: -10px;
+		top: -10px;
+		height: 105.6%;
+		width: 60%;
+	}
 
 }
 
 @media screen and (max-width: 360px) {
 	.popup__header {
 		margin-top: 30px;
+	}
+	.problem__img_bg {
+		right: -10px;
+		top: -10px;
+		height: 106.5%;
+		width: 60%;
 	}
 }
 
