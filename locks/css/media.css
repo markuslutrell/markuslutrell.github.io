@@ -361,3 +361,24 @@
 		margin-left: -53%;
 	}
 }
+
+@media screen and (max-width: 320px) {
+	.reasons__bg {
+		top: -10px;
+		width: 55%;
+		height: 112%;
+		margin-left: -54%;
+	}
+	.problem__img_bg {
+		height: 108%;
+	}
+}
+
+@media screen and (max-width: 280px) {
+	.reasons__bg {
+		height: 115%;
+	}
+	.problem__img_bg {
+		height: 109%;
+	}
+}
