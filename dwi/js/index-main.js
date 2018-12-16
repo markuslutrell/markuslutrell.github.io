@@ -13,17 +13,10 @@ $(".wrapper .tab").click(function() {
 }).eq(0).addClass("active-tab");
 
 $(document).ready(function() {
-
   $(".fade-left").animated("fadeInLeft");
   $(".fade-right").animated("fadeInRight");
 });
 
-$(window).resize(function() {
-    width = $(window).width();
-    if (width > 996) {
-         $(".main__img").animated("fadeInRight");
-    }
-});
 
  
 
