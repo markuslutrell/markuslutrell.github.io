@@ -407,7 +407,7 @@ section {
 }
 
 #moving {
-	background: url(../img/bg-min.png) no-repeat center top / cover;
+	background: #2c323b;
 	color: #fff;
 }
 
@@ -419,6 +419,11 @@ section {
 	display: flex;
 	align-items: center;
 	height: 100%;
+	width: 100%;
+}
+
+.moving__img img {
+	width: 100%;
 }
 
 .h1002 {
@@ -772,7 +777,7 @@ input[type="radio"]:checked + label:after {
 }
 
 #form .form-bg-1, #form .form-bg-2 {
-	bottom: 0;
+	bottom: 90px;
 }
 
 .sidemenu .right {

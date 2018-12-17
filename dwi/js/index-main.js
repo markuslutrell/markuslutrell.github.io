@@ -60,7 +60,8 @@ $('#fullpage').fullpage({
     navigation: true,
     controlArrows: false,
     menu: 'header',
-
+    verticalCentered: true,
+    responsiveWidth: 996,
     afterLoad: function(anchorLink, index) {
       if (index == 5) {
           $('#fp-nav').addClass('now');

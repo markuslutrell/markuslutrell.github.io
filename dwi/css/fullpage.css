@@ -98,11 +98,24 @@ html.fp-enabled,
 #fp-nav {
     position: fixed;
     z-index: 100;
-    left: 200px;
+    left: 10%;
     bottom: 30px;
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
 }
+
+@media screen and (max-width: 1500px) {
+    #fp-nav {
+        left: 5%;
+    } 
+}
+
+@media screen and (max-width: 1300px) {
+    #fp-nav {
+        left: 3%;
+    } 
+}
+
 #fp-nav.fp-right {
     right: 17px;
 }
