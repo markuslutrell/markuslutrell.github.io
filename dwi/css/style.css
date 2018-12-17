@@ -719,4 +719,5 @@
 
 .now, .now a.active span{
 	color: #fff !important;
+	transition: 0s;
 }
