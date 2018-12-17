@@ -716,3 +716,7 @@
 	transform: rotate(45deg);
 	left: -4px;
 }
+
+.now, .now a.active span{
+	color: #fff !important;
+}

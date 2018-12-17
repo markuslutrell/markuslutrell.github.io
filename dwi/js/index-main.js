@@ -54,3 +54,23 @@ $(document).mouseup(function (e) {
     
   }
 });
+
+$('#fullpage').fullpage({
+  sectionSelector: '.section',
+    navigation: true,
+    controlArrows: false,
+    menu: 'header',
+
+    afterLoad: function(anchorLink, index) {
+      if (index == 5) {
+          $('#fp-nav').addClass('now');
+      } else if (index == 3) {
+        $('#fp-nav').addClass('now');
+      }
+      else {
+        $('#fp-nav').removeClass('now');
+      }
+  } 
+
+
+});
