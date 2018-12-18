@@ -1,4 +1,4 @@
-$("head").ready(function () {
+$(document).ready(function() {
     $preloader = $('.preloader'),
     $loader = $preloader.find('.preloader');
     $loader.fadeOut();
@@ -8,7 +8,7 @@ $("head").ready(function () {
 $('.logo').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
       /* Плавная прокрутка наверх */
       $('body, html').animate({
-        scrollTop: 0
+        scrollTop: 150
       }, 1000);
     });
 
