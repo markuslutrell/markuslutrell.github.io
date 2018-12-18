@@ -18,6 +18,7 @@
 	
 </head>
 <body>
+	<div class="preloader"></div>
 	<div class="sidemenu">
 		    <nav class="left">
 		    	<div class="form__item">
@@ -118,7 +119,7 @@
 				</div>
 				<div class="col-lg-6 col-10">
 					<div class="header-right">
-						<div class="header-btn">
+						<div class="js-button-campaign header-btn">
 							Обратный звонок
 						</div>
 						<div class="header-bar">
@@ -272,7 +273,41 @@
 	    	</div>
 	    </section>
 	
-	
+		
+	<div class="overlay js-overlay-campaign">
+		<div class="popup js-popup-campaign">
+			<div class="thanks-popup">
+				<div class="form__item">
+	    				<form>
+	    					<p class="form__header">
+	    						Обратная связь
+	    					</p>
+	    					<p class="form__text">
+	    						Оставьте свои контакты и мы свяжемся с вами в ближайшее время
+	    					</p>
+
+	    					<div class="inputs">
+	    						<input required name="Имя" placeholder="Введите Ваше имя" type="text">
+	    						<input required name="Телефон" placeholder="Введите Ваш телефон" type="text">
+	    						<input required name="E-mail" placeholder="Введите Ваш e-mail" type="text">
+
+	    						<button class="main__text_btn form__btn" type="confirm">
+	    							Оставить заявку
+	    						</button>
+								<div class="license__block">
+		    						<input required id="license" type="checkbox">
+									<label for="license">
+										Принимаю условия <a href="#">политики конфиденциальности</a>
+									</label>
+								</div>
+	    					</div>
+	    				</form>
+					
+	    			</div>
+			</div>
+			<div class="close-popup js-close-campaign"></div>
+		</div>
+	</div>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="js/jquery.square_menu.min.js"></script>

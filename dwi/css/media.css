@@ -1,7 +1,7 @@
 @media screen and (max-width: 1600px) {
 	.main__img {
 		bottom: 0;
-		margin-left: -100px;
+		margin-left: -70px;
 	}
 	#form {
 		margin-top: 0;
@@ -69,9 +69,32 @@
 		width: 140%;
 		margin-left: -50px;
 	}
+	.work__header:before {
+		content: '';
+		width: 30px;
+		left: -30px;
+		top: 80px;
+	}
 }
 
 @media screen and (max-width: 996px) {
+	.work__header:before {
+		width: 20px;
+		left: -12px;
+		top: 12px;
+	}
+	.main-form .form-bg-1, .main-form .form-bg-2 {
+		bottom: 0;
+	}
+	.main-form .social__media {
+		padding-bottom: 30px;
+	}
+	.main-form {
+		padding-bottom: 0;
+	}
+	.height100 {
+		height: auto;
+	}
 	.bg-element-3 {
 		left: -30px;
 		top: 50px;
@@ -85,13 +108,19 @@
 	}
 
 	#moving {
-		height: auto;
+		height: auto !important;
+		padding-bottom: 100px;
 	}
 
 	#offer {
-		height: auto;
+		height: auto !important;
+		padding-bottom: 50px;
 	}
-
+	
+	#main {
+		height: auto !important;
+		margin-bottom: 150px;
+	}
 	.offer__img img {
 		width: 100%;
 		margin-bottom: 50px;
@@ -113,19 +142,26 @@
 		display: -o-flex;
 		display: flex;
 		flex-direction: column-reverse;
+		flex-wrap: nowrap !important;
 	}
 
 	.portfolio-main-img {
 		width: 100%;
-		margin-left: 0;
+		margin-left: 0px;
 	}
-
+	
 	.header__feedback {
 		bottom: 200px;
 		right: -20px;
 	}
 	#portfolio {
-		margin-top: 450px;
+		height: auto;
+		margin-top: 400px;
+	}
+	.portfolio__text {
+		height: auto;
+	}
+	.h100 {
 		height: auto;
 	}
 	.main__img {
@@ -243,11 +279,38 @@
 	}
 	#form {
 		height: auto;
-		padding-bottom: 50px;
+	}
+	.offer__img {
+		text-align: center;
+	}
+	.commerce-bg-item  {
+		top: -20px;
+		left: -30px;
 	}
 } 
 
 @media screen and (max-width: 768px) {
+	.work__header:before {
+		display: none;
+	}
+	.work__header:after {
+		content: '';
+		display: block;
+		height: 2px;
+		width: 50px;
+		margin: 10px auto;
+		background-color: #212222;
+
+	}
+	.scroll-down {
+		margin-bottom: 50px;
+	}
+	.h100 {
+		padding-bottom: 0;
+	}
+	#portfolio {
+		margin-top: 0px;
+	}
 	.bg-element-4 {
 		top: 50px;
 		right: 50px;
@@ -257,6 +320,7 @@
 	}
 	.bg-element-2 {
 		left: 0px;
+		bottom: 50px;
 	}
 	
 	.bg-element-5 {
@@ -287,7 +351,10 @@
 		margin: 0 auto;
 		position: static; 
 	}
-
+	.commerce-bg-item  {
+		top: 5px;
+		left: -20px;
+	}
 	#main .main__text_btn {
 		margin-left: auto;
 		margin-right: auto;
@@ -297,6 +364,7 @@
 		margin-left: 0;
 		margin-bottom: 200px;
 		top: 50px;
+		display: none;
 	}
 
 	.main__img img {
@@ -304,6 +372,7 @@
 	}
 	#portfolio {
 		padding-top: 0;
+		padding-bottom: 100px;
 	}
 	.moving__text {
 		text-align: center;
@@ -325,7 +394,8 @@
 	}
 
 	.moving__img {
-		margin-top: 50px;
+		margin-top: 0;
+		margin-bottom: 50px;
 	}
 
 	.offer__text_btn {
@@ -334,9 +404,7 @@
 		margin-right: auto;
 	}
 
-	.moving__img img {
-		width: 100%;
-	}
+
 
 	.moving__text_btn {
 		margin-left: auto;
@@ -464,6 +532,10 @@
 		width: 280px;
 	}
 
+	.team-bg-1, .team-bg-2 {
+		width: auto !important;
+	}
+
 	.team__img_border {
 		width: 290px;
 		height: 290px;
@@ -512,6 +584,9 @@
 	.popup {
 		width: 86%;
 		z-index: 9;
+	}
+	.moving__img img{
+		width: 100%;
 	}
 }
 
@@ -563,6 +638,9 @@
 	.master {
 		margin-bottom: 100px;
 		margin-top: 100px;
+	}
+	.header__feedback {
+		display: none;
 	}
 }
 

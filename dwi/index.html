@@ -12,16 +12,15 @@
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
 	<link rel="stylesheet" href="css/header.css">
 	<link rel="stylesheet" href="fonts/fonts.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/fullpage.css">
-	<link rel="stylesheet" href="css/media.css">
+
 
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
-	
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-
+	<div class="preloader"></div>
 	<div class="sidemenu">
 		    <nav class="left">
 		    	<div class="form__item">
@@ -108,7 +107,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 col-2">
-					<a href="index.html" class="logo">
+					<a href="#" class="logo">
 						<img src="img/logo-min.png" alt="Logo">
 						<p class="logo-text">
 							Студия разработки визуальных решений
@@ -117,7 +116,7 @@
 				</div>
 				<div class="col-lg-6 col-10">
 					<div class="header-right">
-						<div class="header-btn">
+						<div class="js-button-campaign header-btn">
 							Обратный звонок
 						</div>
 						<div class="header-bar">
@@ -212,10 +211,8 @@
 	    <section class="section" id="portfolio">
 	    	<div class="container">
 	    		<img src="img/bg-item-3-min.png" alt="BG" class="bg-element-3">
-	    		<div class="row">
-	    			<div class="col-lg-1 h1000">
-	    				
-	    			</div>
+	    		<div class="row dfcol">
+	    			<div class="col-lg-1 col-0"></div>
 	    			<div class="col-xl-5 col-lg-6 h100 ">
 	    				<div class="portfolio__text">
 	    					<h2>
@@ -244,22 +241,23 @@
 	   		<div class="container height100">
 			   <img src="img/bg-item-4-min.png" alt="BG" class="bg-element-4">
 			   <img src="img/bg-item-5-min.png" alt="BG" class="bg-element-5">
-	    		<div class="row height100 dfcol">
-	    			<div class="col-xl-6 col-lg-6 height100 h1002 dfc">
+	    		<div class="row height100">
+	    			<div class="col-lg-1 col-0"></div>
+	    			<div class="col-xl-6 col-lg-6 col-12 height100 h1002 dfc">
 	    				<div class="moving__img">
-	    					<img src="img/FreeAnimatediPhoneX.gif" alt="Phone">
+	    					<img src="img/iphone-min.png" alt="Phone">
 	    				</div>
 	    			</div>
-	    			<div class="col-xl-6 col-lg-5 height100  dfc">
+	    			<div class="col-xl-5 col-lg-5 col-12 height100  dfc">
 	    				<div class="moving__text">
 	    					<h2>
 	    						Продвижение
 	    					</h2>
 	    					<p class="moving__text_p">
-	    						За 2 года существования, успели поработать с более чем 30 сферами бизнеса.
+	    						За 2 года существования, успели поработать с более чем 30 сферами бизнеса, в среднем на постоянном ведении находится 4-7 групп ВК, 3-4 странички Instagram и 1-3 кампании Яндекс Директ и Google Adwords.
 	    					</p>
 	    					<p class="moving__text_p">
-	    						Знаем как привести клиентов из Яндекс Директ и Google Adwords.
+	    						Приводим клиентов из рекламных сетей Яндекса, Google, Вконтакте, Facebook, Instagram
 	    					</p>
 
 	    					<a href="moving.html" class="main__text_btn moving__text_btn">
@@ -272,10 +270,9 @@
 	    </section>
 	    <section class="section" id="offer">
 	   		<div class="container">
-	    		<div class="row h100">
-	    			<div class="col-lg-1 h1000">
-	    				
-	    			</div>
+	   			<img src="img/bg-item-1-min.png" alt="BG" class="commerce-bg-item">
+	    		<div class="row h100 dfcol">
+	    			<div class="col-lg-1 col-0"></div>
 	    			<div class="col-xl-5 col-lg-6 h1003">
 	    				<div class="offer__text">
 	    					<h2>
@@ -288,7 +285,7 @@
 	    						90% клиентов остаются довольны после встречи, ведь скорее всего мы уже решали вашу проблему и знаем что нужно делать в конкретно вашем случае.
 	    					</p>
 
-	    					<a href="#"  class="js-button-campaign main__text_btn offer__text_btn">
+	    					<a  class="js-button-campaign main__text_btn offer__text_btn">
 	    						Записаться на встречу
 	    					</a>
 	    			</div>
@@ -302,7 +299,7 @@
 	    	</div>
 	    </section>
 
-	    <section class="section" id="form">
+	    <section class="section main-form" id="form">
 	   		<div class="container">
 	   			<img src="img/form-bg-1-min.png" alt="BG" class="form-bg-1">
 	   			<img src="img/form-bg-2-min.png" alt="BG" class="form-bg-2">
@@ -374,7 +371,6 @@
 	    					</p>
 
 	    					<div class="inputs">
-	    						s
 	    						<input required name="Имя" placeholder="Введите Ваше имя" type="text">
 	    						<input required name="Телефон" placeholder="Введите Ваш телефон" type="text">
 	    						<input required name="E-mail" placeholder="Введите Ваш e-mail" type="text">
@@ -397,6 +393,8 @@
 		</div>
 	</div>
 	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="js/jquery.square_menu.min.js"></script>
 	<script src="js/fullpage.js"></script>
@@ -406,5 +404,6 @@
 	<script src="js/unimail.js"></script>
 	<script src="js/mgGlitch.min.js"></script>
 	<script src="js/index-main.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

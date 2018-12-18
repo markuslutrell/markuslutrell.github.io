@@ -112,7 +112,7 @@ html.fp-enabled,
 
 @media screen and (max-width: 1300px) {
     #fp-nav {
-        left: 3%;
+        left: 1%;
     } 
 }
 
@@ -169,10 +169,10 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
-    margin: -6px 0 0 -6px;
+
     border-radius: 100%;
     color: #212222;
-    font-size: 20px;
+    transform: scale(1.2);
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -182,10 +182,10 @@ html.fp-enabled,
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     color: #909090;
     font-size: 18px;
     font-weight: 700;
