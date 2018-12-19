@@ -5,14 +5,6 @@ $(document).ready(function() {
     $preloader.delay(350).fadeOut('slow');
 });
 
-$('.logo').click(function () { // При клике по кнопке "Наверх" попадаем в эту функцию
-      /* Плавная прокрутка наверх */
-      $('body, html').animate({
-        scrollTop: 150
-      }, 1000);
-    });
-
-
 $(".tab_item").not(":first").hide();
 $(".wrapper .tab").click(function() {
   $(".wrapper .tab").removeClass("active-tab").eq($(this).index()).addClass("active-tab");

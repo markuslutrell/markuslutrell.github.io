@@ -181,10 +181,10 @@ section {
 
 
 .maybe-slider-bar {
-	width: 44px;
+	width: 40px;
 	height: 1px;
 	background-color: #212222;
-	margin: 9px 25px;
+	margin: 9px 15px;
 }
 
 .maybe-slider {
@@ -198,6 +198,7 @@ section {
 	font-family: 'Gotham Pro';
 	font-weight: 700;
 	margin-bottom: 50px;
+	font-size: 17px;
 }
 
 .maybe-slider span {
@@ -218,6 +219,9 @@ section {
 	color: #fff;
 }
 
+#main {
+	height: 90vh;
+}
 
 .main__text_btn {
 	border: 2px solid #212222;
@@ -247,6 +251,7 @@ section {
 .main__img {
 	position: absolute;
 	margin-left: 30px;
+	top: 30px;
 }
 
 .main__img img {
@@ -259,7 +264,7 @@ section {
 
 .social__media {
 	position: absolute;
-	bottom: 30px;
+	bottom: 150px;
 	right: 20px;
 	clip: auto !important;
 	right: 0 !important;
@@ -458,6 +463,10 @@ section {
 	height: 100%;
 }
 
+.offer__text h2 {
+	margin-top: 0;
+}
+
 .moving__text_p {
 	color: #cdcdcd;
 	margin-top: 10px;
@@ -516,11 +525,14 @@ section {
 	margin-bottom: 10px;
 
 }
+.offer__text {
+	margin-top: -50px;
+}
 
 .offer__text_btn {
 	background-color: #212222;
 	color: #fff;
-	margin-top: 10vh;
+	margin-top: 50px;
 	box-shadow: -5px 2px 24px rgba(0, 0, 0, 0.32);
 }
 
@@ -866,4 +878,9 @@ input[type="radio"]:checked + label:after {
 .category-header {
 	text-align: center;
 	margin-top: 40px;
+}
+
+
+#main {
+	padding-top: 150px;
 }

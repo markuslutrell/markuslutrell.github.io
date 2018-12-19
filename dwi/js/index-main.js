@@ -30,12 +30,15 @@ $( ".glitch-img" ).mgGlitch({
 });
 
 $('#fullpage').fullpage({
-  sectionSelector: '.section',
+  sectionSelector: 'section',
     navigation: true,
     controlArrows: false,
     scrollingSpeed: 1000,
+    menu: 'header',
+    offsetSections: 'header',
     verticalCentered: true,
     responsiveWidth: 996,
+    scrollOverflow: true,
     afterLoad: function(anchorLink, index) {
       if (index == 5) {
           $('#fp-nav').addClass('now');
@@ -45,7 +48,8 @@ $('#fullpage').fullpage({
       else {
         $('#fp-nav').removeClass('now');
       }
-  } 
-
-
+       $('.logo').click(function () {
+          index == 1;
+      })
+  }
 });

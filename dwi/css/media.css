@@ -1,7 +1,11 @@
 @media screen and (max-width: 1600px) {
 	.main__img {
-		bottom: 0;
+		bottom: 50px;
 		margin-left: -70px;
+		width: 450px;
+	}
+	.main__img img{
+		width: 430px;
 	}
 	#form {
 		margin-top: 0;
@@ -21,6 +25,13 @@
 	.measure img{
 		width: 110%;
 		margin-bottom: 50px;
+	}
+
+	#main {
+		padding-top: 105px;
+	}
+	.social__media {
+		bottom: 70px;
 	}
 }
 
@@ -78,6 +89,9 @@
 }
 
 @media screen and (max-width: 996px) {
+	.main__img {
+		display: none;
+	}
 	.work__header:before {
 		width: 20px;
 		left: -12px;
@@ -119,7 +133,7 @@
 	
 	#main {
 		height: auto !important;
-		margin-bottom: 150px;
+		margin-bottom: 0;
 	}
 	.offer__img img {
 		width: 100%;
@@ -156,7 +170,7 @@
 	}
 	#portfolio {
 		height: auto;
-		margin-top: 400px;
+		margin-top: 0px;
 	}
 	.portfolio__text {
 		height: auto;
@@ -168,6 +182,7 @@
 		text-align: center;
 		bottom: -550px;
 		right: 100px;
+		z-index: 10 !important;
 	}
 	.main__img img {
 		width: 500px;
@@ -286,6 +301,12 @@
 	.commerce-bg-item  {
 		top: -20px;
 		left: -30px;
+	}
+	.offer__text {
+		margin-top: 0px;
+	}
+	section {
+		height: auto;
 	}
 } 
 
