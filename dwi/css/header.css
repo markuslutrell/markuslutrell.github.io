@@ -5,12 +5,12 @@ html {
 	scroll-behavior: smooth;
 }
 * {
-	transition: .3s ease;
+	
 	outline: none;
 }
 
-p, h2, h3, h4, h5, h6, h1, ul, li, .social__media a {
-	transition: 0s !important;
+a, button, .main__button, .header-btn, .main__img, .menu-btn, .tab, .social__media a i{
+	transition: .3s ease;
 }
 
 a {
