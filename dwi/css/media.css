@@ -3,9 +3,14 @@
 		bottom: 50px;
 		margin-left: -70px;
 		width: 450px;
+		right: 150px;
 	}
 	.main__img img{
 		width: 430px;
+		margin-bottom: -45px;
+	}
+	.main__img2 img {
+		width: 470px;
 	}
 	#form {
 		margin-top: 0;
@@ -33,9 +38,35 @@
 	.social__media {
 		bottom: 70px;
 	}
+	.slide-item2 .main__img{
+		margin-right: 0px;
+	}
 }
 
 @media screen and (max-width: 1200px) {
+	#main .h100 {
+		padding-top: 0px;
+	}
+	.slide-item1 .header__feedback{
+		bottom: 272px;
+	}
+	#main .h1001010 h1 {
+		font-size: 30px;
+	}
+	.main__img2 img {
+		width: 450px;
+		margin-top: -50px;
+	}
+	.main__img img{
+		margin-bottom: 0px;
+		margin-right: 0;
+	}
+	#main .slide-item2 .social__media {
+		bottom: 38px;
+	}
+	#main .slide-item1 .social__media {
+		bottom: 10px;
+	}
 	.menu-bg {
 		right: -200px;
 		height: 120%;
@@ -46,7 +77,7 @@
 	}
 	.main__img {
 		bottom: 100px;
-		right: 50px;
+		right: 0px;
 	}
 	.menu-bg {
 		right: -200px;
@@ -166,7 +197,7 @@
 	
 	.header__feedback {
 		bottom: 200px;
-		right: -20px;
+		right: -35px;
 	}
 	#portfolio {
 		height: auto;
@@ -308,9 +339,15 @@
 	section {
 		height: auto;
 	}
+	.bar1, .bar2 {
+		display: none;
+	}
 } 
 
 @media screen and (max-width: 768px) {
+	.portfolio-popup {
+		width: 95%;
+	}
 	.work__header:before {
 		display: none;
 	}
@@ -608,6 +645,9 @@
 	}
 	.moving__img img{
 		width: 100%;
+	}
+	.bar {
+		display: none;
 	}
 }
 

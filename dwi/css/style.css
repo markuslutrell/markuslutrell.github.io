@@ -93,6 +93,12 @@
 .portfolio__item10 {
 	background: url(../img/portfolio-img-10-min.jpg);
 }  
+.portfolio__item11 {
+	background: url(../img/portfolio-img-11-min.jpg);
+}  
+.portfolio__item12 {
+	background: url(../img/portfolio-img-12-min.jpg);
+}  
 
 .portfolio__item a {
 	display: block;
@@ -692,31 +698,38 @@
 	position: fixed;
 	top: -25px;
 	right: -28px;
-	width: 23px;
-	height: 23px;
+	width: 20px;
+	height: 20px;
 	cursor: pointer;
+	transition: .3s ease;
+}
+
+.close-popup:hover {
+	transform: scale(1.1);
 }
 
 .close-popup:before {
 	content: '';
 	background-color: #000;
 	position: absolute;
-	height: 1px;
-	width: 31px;
+	height: 3.5px;
+	width: 25px;
 	top: 11px;
 	left: -4px;
 	transform: rotate(-45deg);
+	border-radius: 2px;
 }
 
 .close-popup:after {
 	content: '';
 	background-color: #000;
 	position: absolute;
-	height: 1px;
-	width: 31px;
+	height: 3.5px;
+	width: 25px;
 	top: 11px;
 	transform: rotate(45deg);
 	left: -4px;
+	border-radius: 2px;
 }
 
 .now, .now a.active span{
@@ -763,4 +776,105 @@
 
 #fullpage {
 	
+}
+
+.bars {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+	height: 200%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 200%;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+
+.bar {
+	width: 1px;
+	height: 200%;
+	background-color: #b8b8b8;
+	margin-top: -500px;
+	opacity: 0.15;
+}
+#moving-page {
+	overflow: hidden;
+}
+
+header .bars {
+	z-index: 10000000;
+}
+
+.bars__container {
+	height: 200%;
+	position: absolute;
+	top: 0;
+	margin: 0 auto;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#moving .bars {
+	z-index: 0;
+}
+
+.main__text_btn {
+	position: relative;
+	z-index: 5;
+}
+
+#main-portfolio {
+	overflow: hidden;
+}
+
+#upakovka {
+	overflow-y: hidden;
+}
+
+#sure {
+	overflow-y: hidden;
+}
+
+#team {
+	overflow-y: hidden;
+}
+
+#feedback {
+	z-index: 0;
+}
+
+#contacts .bars {
+	z-index: 1;
+}
+
+#contacts .social__media, #contacts .contacts__item {
+	position: relative;
+	z-index: 2;
+}
+
+#moving .bar {
+	opacity: 0.1;
+}
+
+.portfolio-popup {
+	width: 80%;
+	height: 95%;
+	overflow-y: scroll;
+	border-radius: 20px;
+}
+
+.portfolio-popup img {
+	width: 100%;
+}
+
+.portfolio-popup .close-popup{
+	top: 20px;
+	right: 20px;
 }

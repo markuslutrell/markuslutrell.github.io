@@ -2,7 +2,7 @@ $(document).ready(function() {
     $preloader = $('.preloader'),
     $loader = $preloader.find('.preloader');
     $loader.fadeOut();
-    $preloader.delay(350).fadeOut('slow');
+    $preloader.delay(450).fadeOut('slow');
 });
 
 $(".tab_item").not(":first").hide();
@@ -17,7 +17,7 @@ $(".wrapper .tab").click(function() {
 // открыть по кнопке
 $('.js-button-campaign').click(function() { 
   
-  $('.js-overlay-campaign').fadeIn(50);
+  $('.js-overlay-campaign').fadeIn(150);
   $('.js-overlay-campaign').addClass('disabled');
 });
 
@@ -37,3 +37,31 @@ $(document).mouseup(function (e) {
     
   }
 });
+
+// Модальное окно
+
+// открыть по кнопке
+$('.js-button-campaign2').click(function() { 
+  
+  $('.js-overlay-campaign2').fadeIn(150);
+  $('.js-overlay-campaign2').addClass('disabled');
+});
+
+
+
+// закрыть на крестик
+$('.js-close-campaign2').click(function() { 
+  $('.js-overlay-campaign2').fadeOut();
+  
+});
+
+// закрыть по клику вне окна
+$(document).mouseup(function (e) { 
+  var popup = $('.js-popup-campaign2');
+  if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+    $('.js-overlay-campaign2').fadeOut();
+    
+  }
+});
+
+
