@@ -2,8 +2,8 @@
 $(document).ready(function() {
   $(".fade-left").animated("fadeInLeft");
   $(".fade-right").animated("fadeInRight");
+  $(".fade-bottom").animated("fadeInUp");
 });
-
 
  
 
@@ -35,14 +35,29 @@ $('#fullpage').fullpage({
       else {
         $('#fp-nav').removeClass('now');
       }
+
+      if (index != 1) {
+        $('header').addClass('header-shadow');
+      } else {
+        $('header').removeClass('header-shadow');
+      }
+
+      $('.logo').click(function () {
+        index == 1;
+      });
+      $(".fade-left").animated("fadeInLeft", 2000);
+      $(".fade-right").animated("fadeInRight", 2000);
+      $(".fade-bottom").animated("fadeInUp",2000);
+      $(".fade-in").animated("fadeIn",2000);
   }
 });
 
 $('.slider').slick({
   fade: true,
-  dots: true,
-  arrows: false,
+  dots: false,
+  arrows: true,
   autoplay: true,
-  autoplaySpeed: 5000,
+  autoplaySpeed: 3000,
   speed: 1000
 });
+

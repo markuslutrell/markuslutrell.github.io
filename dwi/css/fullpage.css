@@ -106,13 +106,18 @@ html.fp-enabled,
 
 @media screen and (max-width: 1500px) {
     #fp-nav {
-        left: 5%;
+        left: 4%;
     } 
 }
 
 @media screen and (max-width: 1300px) {
     #fp-nav {
         left: 1%;
+    } 
+}
+@media screen and (max-width: 1200px) {
+    #fp-nav {
+        left: .5%;
     } 
 }
 

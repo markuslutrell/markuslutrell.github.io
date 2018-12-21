@@ -450,11 +450,6 @@
 	text-transform: uppercase;
 }
 
-.moving-page__item_list-link a:hover {
-	border: none;
-	border-bottom: 2px solid #fff;
-}
-
 .moving-page__item_list ul {
 	list-style: none;
 	padding-left: 0;
@@ -540,6 +535,7 @@
 #form {
 	position: relative;
 	z-index: 10;
+	padding-top: 150px;
 }
 
 .notebook-main {
@@ -799,7 +795,7 @@
 
 .bar {
 	width: 1px;
-	height: 200%;
+	height: 150%;
 	background-color: #b8b8b8;
 	margin-top: -500px;
 	opacity: 0.15;
@@ -877,4 +873,34 @@ header .bars {
 .portfolio-popup .close-popup{
 	top: 20px;
 	right: 20px;
+}
+
+.header-shadow {
+	box-shadow: -5px 2px 27px rgba(0, 0, 0, 0.15);
+	transition: .3s ease;
+}
+#bar-header {
+	transition: .3s ease;
+}
+
+.cpointer {
+	cursor: pointer;
+	transition: .3s
+}
+
+.cpointer:hover {
+	box-shadow: -5px 2px 100px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-popup .close-popup {
+	position: fixed;
+}
+
+.popup-portfolio-overlay .close-popup{
+	top: 30px;
+	right: 50px;
+}
+
+.animated {
+	animation-delay: 0s;
 }

@@ -25,10 +25,12 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: #000;
     border: none;
     outline: none;
-    background: transparent;
+    background: #000;
+    z-index: 10000;
+    opacity: 0;
 }
 .slick-prev:hover,
 .slick-prev:focus,
@@ -37,7 +39,7 @@
 {
     color: transparent;
     outline: none;
-    background: transparent;
+    background: #000;
 }
 .slick-prev:hover:before,
 .slick-prev:focus:before,
@@ -68,7 +70,8 @@
 
 .slick-prev
 {
-    left: -25px;
+    top: 140px;
+    left: 25px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -77,17 +80,116 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: '1';
+    font-family: "Gotham Pro";
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '→';
+    content: '1';
 }
 
 .slick-next
-{
-    right: -25px;
+{   
+    top: 140px;
+    left: 100px;
 }
+
+@media screen and (max-width: 1600px) {
+    .slick-prev
+    {
+        top: 90px;
+        left: 25px;
+    }
+    .slick-next
+    {
+        top: 90px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .slick-prev
+    {
+        top: 80px;
+        left: 30px;
+    }
+    .slick-next
+    {
+        top: 80px;
+        left: 105px;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    .slick-prev
+    {
+        top: 110px;
+        left: 25px;
+    }
+    .slick-next
+    {
+        top: 110px;
+        left: 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slick-prev
+    {
+        top: 60px;
+        left: 210px;
+    }
+    .slick-next
+    {
+        top: 60px;
+        left: 280px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slick-prev
+    {
+        top: 60px;
+        left: 210px;
+    }
+    .slick-next
+    {
+        top: 60px;
+        left: 280px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slick-prev
+    {
+        top: 60px;
+        left: 50%;
+        margin-left: -48px;
+    }
+    .slick-next
+    {
+        top: 60px;
+        right: 50%;
+        left: auto;
+        margin-right: -48px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .slick-prev
+    {
+        top: 10px;
+        left: 50%;
+        margin-left: -48px;
+    }
+    .slick-next
+    {
+        top: 10px;
+        right: 50%;
+        left: auto;
+        margin-right: -48px;
+    }
+}
+
 [dir='rtl'] .slick-next
 {
     right: auto;
@@ -95,11 +197,12 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: '2';
+    font-family: "Gotham Pro";
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    content: '2';
 }
 
 /* Dots */
