@@ -131,6 +131,16 @@
 }
 
 @media screen and (max-width: 996px) {
+	#portfolio h2, #moving h2, #offer h2 {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		margin: 0;
+		overflow: hidden;
+	}
+	#portfolio h2:before, #moving h2:before, #offer h2:before {
+		font-size: 108px;
+		margin-top: -56px;
+	}
 	#form {
 		height: auto;
 	}
@@ -353,9 +363,6 @@
 	section {
 		height: auto;
 	}
-	.bar1, .bar2 {
-		display: none;
-	}
 } 
 
 @media screen and (max-width: 768px) {
@@ -559,9 +566,20 @@
 	.moving-page__item_list2 {
 		margin-bottom: 100px;
 	}
+	#portfolio h2:before, #moving h2:before, #offer h2:before {
+		font-size: 80px;
+		left: 0;
+		margin-top: -45px;
+		text-align: center;
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 576px) {
+	#portfolio h2:before, #moving h2:before, #offer h2:before {
+		font-size: 58px;
+		margin-top: -34px;
+	}
 	#main {
 		height: auto;
 	}
@@ -669,9 +687,6 @@
 	.moving__img img{
 		width: 100%;
 	}
-	.bar {
-		display: none;
-	}
 	.popup-portfolio-overlay .close-popup{
 		top: 30px;
 		right: 50px;
@@ -687,6 +702,10 @@
 }
 
 @media screen and (max-width: 400px) {
+	#portfolio h2:before, #moving h2:before, #offer h2:before {
+		font-size: 50px;
+		margin-top: -29px;
+	}
 	#main .h1001010 h1 {
 		font-size: 20px;
 		margin-top: 0;
@@ -751,6 +770,10 @@
 }
 
 @media screen and (max-width: 350px) {
+	#portfolio h2:before, #moving h2:before, #offer h2:before {
+		font-size: 45px;
+		margin-top: -26px;
+	}
 	.sure__bg-1 {
 		top: 550px;
 	}

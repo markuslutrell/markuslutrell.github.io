@@ -126,7 +126,7 @@
 	display: block;
 	width: 39px;
 	height: 2px;
-	background-color: #fff000;
+	background-color: #d8c1ae;
 	margin: 10px auto;
 }
 
@@ -286,6 +286,10 @@
 
 #contacts .social__media a i{
 	color: #fff;
+}
+
+.social__media a i:hover {
+	color: #d8c1ae !important;
 }
 
 .contacts-bg-1 {
@@ -729,7 +733,7 @@
 }
 
 .now, .now a.active span{
-	color: #fff !important;
+	color: #d8c1ae !important;
 	transition: 0s;
 }
 .h11010 {
@@ -899,8 +903,4 @@ header .bars {
 .popup-portfolio-overlay .close-popup{
 	top: 30px;
 	right: 50px;
-}
-
-.animated {
-	animation-delay: 0s;
 }
