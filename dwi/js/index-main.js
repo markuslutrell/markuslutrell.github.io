@@ -1,8 +1,21 @@
 
 $(document).ready(function() {
-  $(".fade-left").animated("fadeInLeft");
-  $(".fade-right").animated("fadeInRight");
-  $(".fade-bottom").animated("fadeInUp");
+  $(".fade-left0").animated("fadeInLeft");
+      $(".fade-right0").animated("fadeInRight");
+      $(".fade-bottom0").animated("fadeInUp");
+      $(".fade-in0").animated("fadeIn");
+      $(".fade-left1").animated("fadeInLeft");
+      $(".fade-right1").animated("fadeInRight");
+      $(".fade-bottom1").animated("fadeInUp");
+      $(".fade-in1").animated("fadeIn");
+      $(".fade-left2").animated("fadeInLeft");
+      $(".fade-right2").animated("fadeInRight");
+      $(".fade-bottom2").animated("fadeInUp");
+      $(".fade-in2").animated("fadeIn");
+      $(".fade-left3").animated("fadeInLeft");
+      $(".fade-right3").animated("fadeInRight");
+      $(".fade-bottom3").animated("fadeInUp");
+      $(".fade-in3").animated("fadeIn");
 });
 
  
@@ -21,7 +34,7 @@ $('#fullpage').fullpage({
   controlArrows: false,
     navigation: true,
     controlArrows: false,
-    scrollingSpeed: 1000,
+    scrollingSpeed: 800,
     menu: 'header',
     verticalCentered: true,
     responsiveWidth: 996,
@@ -45,10 +58,22 @@ $('#fullpage').fullpage({
       $('.logo').click(function () {
         index == 1;
       });
-      $(".fade-left").animated("fadeInLeft", 2000);
-      $(".fade-right").animated("fadeInRight", 2000);
-      $(".fade-bottom").animated("fadeInUp",2000);
-      $(".fade-in").animated("fadeIn",2000);
+      $(".fade-left0").animated("fadeInLeft");
+      $(".fade-right0").animated("fadeInRight");
+      $(".fade-bottom0").animated("fadeInUp");
+      $(".fade-in0").animated("fadeIn");
+      $(".fade-left1").animated("fadeInLeft");
+      $(".fade-right1").animated("fadeInRight");
+      $(".fade-bottom1").animated("fadeInUp");
+      $(".fade-in1").animated("fadeIn");
+      $(".fade-left2").animated("fadeInLeft");
+      $(".fade-right2").animated("fadeInRight");
+      $(".fade-bottom2").animated("fadeInUp");
+      $(".fade-in2").animated("fadeIn");
+      $(".fade-left3").animated("fadeInLeft");
+      $(".fade-right3").animated("fadeInRight");
+      $(".fade-bottom3").animated("fadeInUp");
+      $(".fade-in3").animated("fadeIn");
   }
 });
 
