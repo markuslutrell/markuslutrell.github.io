@@ -11,6 +11,24 @@ $(".wrapper .tab").click(function() {
   $(".tab_item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("active-tab");
 
+$(document).ready(function() {
+  $(".fade-left0").animated("fadeInLeft");
+      $(".fade-right0").animated("fadeInRight");
+      $(".fade-bottom0").animated("fadeInUp");
+      $(".fade-in0").animated("fadeIn");
+      $(".fade-left1").animated("fadeInLeft");
+      $(".fade-right1").animated("fadeInRight");
+      $(".fade-bottom1").animated("fadeInUp");
+      $(".fade-in1").animated("fadeIn");
+      $(".fade-left2").animated("fadeInLeft");
+      $(".fade-right2").animated("fadeInRight");
+      $(".fade-bottom2").animated("fadeInUp");
+      $(".fade-in2").animated("fadeIn");
+      $(".fade-left3").animated("fadeInLeft");
+      $(".fade-right3").animated("fadeInRight");
+      $(".fade-bottom3").animated("fadeInUp");
+      $(".fade-in3").animated("fadeIn");
+});
 
 // Модальное окно
 
