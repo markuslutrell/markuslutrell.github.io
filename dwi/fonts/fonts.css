@@ -18,3 +18,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Gotham Pro - Black';
+    src: url('GothamPro-Black.ttf') format('truetype');
+}
