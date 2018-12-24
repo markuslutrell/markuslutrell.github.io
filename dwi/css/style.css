@@ -904,3 +904,143 @@ header .bars {
 	top: 30px;
 	right: 50px;
 }
+
+#typography-page .slide-item1 .main__text_btn{
+	font-size: 12px;
+}
+#typography-page .slide-item2 .main__text_btn{
+	font-size: 14px;
+}
+
+#typography-page .header__feedback a {
+	color: #ff8064;
+}
+
+#typography-page .header__feedback a {
+	color: #ff8064;
+}
+
+#typography-page .header__feedback_rect {
+	background: #ff8064;
+}
+
+#typography-page .main__text_btn:hover {
+	background: #ff8064;
+	box-shadow: 0 14px 40px rgba(255, 128, 100, 0.71);
+	border-color: #ff8064;
+	color: #fff !important;
+}
+
+
+#typography-page #main .social__media a i:hover{
+	color: #ff8064 !important;
+}
+#typography-page .right__menu_block .social__media a i:hover{
+	color: #ff8064 !important;
+}
+#typography-page .header-btn:hover {
+	border-color: #ff8064;
+	background: #ff8064;
+	box-shadow: 0 14px 40px rgba(255, 128, 100, 0.71); 
+}
+
+#typography-page .menu__block_header {
+	color: #ff8064;
+}
+
+#typography-page .menu__block_bar {
+	background: #ff8064;
+}
+
+#typography-page .menu__block_list li a:hover{
+	color: #ff8064 !important; 
+}
+
+#typography-page .now .active span{
+	color: #ff8064 !important; 
+}
+
+#print {
+	position: relative;
+	background: url(../img/bg-min.png) no-repeat center top / cover;
+}
+
+#print .bars {
+	z-index: 0;
+}
+
+.print-bg-text {
+	font-size: 30px;
+	font-family: "Gotham Pro";
+	font-weight: 700;
+	color: #ff8064;
+	transform: rotate(270deg);
+	position: absolute;
+	bottom: 210px;
+	right: -157px;
+}
+
+.print-bg-text:before {
+	content: 'Print';
+	display: block;
+	position: absolute;
+	left: -10px;
+	top: 50%;
+	margin-top: -73px;
+	font-family: "Gotham Pro - Black";
+	font-size: 130px;
+	text-transform: uppercase;
+	opacity: 0.03;
+	color: #ffffff;
+}
+
+.reasons__item {
+	font-family: "Gotham Pro";
+	font-size: 14px;
+	position: relative;
+	margin-left: 100px;
+	padding-right: 40px;
+}
+
+.reasons__item:before {
+	content: '1';
+	display: block;
+	position: absolute;
+	font-size: 150px;
+	font-family: "Gotham Pro - Black";
+	color: #ff8064;
+	top: -70px;
+	left: -40px;
+	z-index: -1;
+}
+
+.reasons__item2:before {
+	content: '2';
+}
+
+.reasons__item3:before {
+	content: '3';
+}
+
+.reasons__item4:before {
+	content: '4';
+}
+
+.reasons__item5:before {
+	content: '5';
+}
+
+.reasons__item6:before {
+	content: '6';
+}
+
+.reasons__item_header {
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+.reasons__item_text {
+	font-size: 14px;
+	font-weight: 400;
+}
