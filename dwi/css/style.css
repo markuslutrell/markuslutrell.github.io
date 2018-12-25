@@ -966,7 +966,7 @@ header .bars {
 }
 
 #print .bars {
-	z-index: 0;
+	z-index: -1;
 }
 
 .print-bg-text {
@@ -999,7 +999,7 @@ header .bars {
 	font-size: 14px;
 	position: relative;
 	margin-left: 100px;
-	padding-right: 40px;
+	padding-right: 30px;
 }
 
 .reasons__item:before {
@@ -1037,10 +1037,271 @@ header .bars {
 .reasons__item_header {
 	text-transform: uppercase;
 	font-weight: 700;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .reasons__item_text {
 	font-size: 14px;
 	font-weight: 400;
+	color: #212222; 
+	line-height: 18px;
+}
+
+#reasons h2 {
+	margin-bottom: 150px;
+}
+
+#reasons h2:before {
+	content: 'Reasons';
+	display: block;
+	color: #212222;
+	font-family: "Gotham Pro - Black";
+	font-size: 130px;
+	font-weight: 400;
+	text-transform: uppercase;
+	position: absolute;
+	left: 10px;
+	top: -56px;
+	opacity: .03;
+	z-index: -1;
+}
+
+#typography-form {
+	background: url(../img/bg-min.png) no-repeat center top / cover;
+}
+
+#typography-form h2 {
+	color: #ff8064;
+	font-size: 30px;
+	font-weight: 700;
+	position: relative;
+	margin-bottom: 70px;
+}
+
+#typography-form h2:before {
+	content: 'Last step';
+	display: block;
+	opacity: 0.03;
+	color: #ffffff;
+	font-family: "Gotham Pro - Black";
+	font-size: 130px;
+	font-weight: 400;
+	text-transform: uppercase;
+	position: absolute;
+	left: -10px;
+	top: 50%;
+	margin-top: -73px;
+}
+
+.typography-form__text {
+	font-size: 18px;
+	color: #ffffff;
+	font-family: "Gotham Pro";
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
+.typography-form-df {
+	background: #fff;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 25px 0;
+}
+
+#typography-form form {
+	margin-top: 100px;
+}
+
+#typography-form input {
+	height: 42px;
+	padding-left: 25px;
+	border: none;
+	opacity: .9;
+}
+
+#typography-form button {
+	width: 231px;
+	height: 42px;
+	border: 2px solid #212222;
+	line-height: 38px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+	font-family: 'Gotham Pro';
+	background: transparent;
+	margin-right: 20px;
+}
+
+#typography-form button:hover {
+	border: 2px solid #ff8064;
+	color: #fff;
+	background-color: #ff8064;
+	box-shadow: 0 14px 40px rgba(255, 128, 100, 0.71);
+}
+
+.file-send {
+	cursor: pointer;
+}
+
+.file-upload {
+	position: relative; /* Даем возможность делать позиционирование, внутри данного элемента */
+	overflow: hidden; /* Все что выходит за пределы - скрываем */
+	width: 20%; /* Задаем ширину кнопки выбора файла */
+	height: 30px; /* Задаем высоту кнопки выбора файла */
+	border-radius: 3px;
+	padding: 8px 4px;
+	color: #ff8064;
+	text-align: center;
+	margin: 40px auto;
+	
+}
+.file-upload:hover {
+	text-decoration: none;
+}
+.file-upload input[type="file"]{
+	display: none; /* Обязательно скрываем настоящий Input File */
+}
+.file-upload label {
+	/* Растягиваем label на всю возможную площадь блока .file-upload */
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 201.5px;
+	height: 100%;
+	cursor: pointer;
+	border-bottom: 1px solid #593a33;
+	transition: .3s ease;
+}
+
+.file-upload label:hover {
+	border: none;
+}
+
+.file-upload span {
+	line-height: 36px; /* Делаем вертикальное выравнивание текста, который написан на кнопке */
+}
+
+#typography-form .social__media{
+	position: static;
+	text-align: center;
+	margin-top: 100px;
+}
+
+#typography-form .social__media a i {
+	color: #fff;
+}
+
+#typography-form .social__media a i:hover {
+	color: #ff8064 !important;
+}
+
+.typography-slide__form {
+	color: #fff;
+}
+
+.typography-slide__number {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	color: #a9a9a9;
+	font-size: 13px;
+	font-family: "Gotham Pro";
+	font-weight: 700;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.typography-slide__number_bar {
+	background-color: #a9a9a9;
+	height: 1px;
+	width: 33px;
+	margin: 0 17px;
+
+}
+
+.typography-slide__number span {
+	color: #ff8064;
+}
+
+
+
+.radio__block {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	padding-right: 50px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.radio__block input {
+	margin-right: 15px;
+}
+
+.radio__block label {
+	cursor: pointer;
+	font-size: 18px;
+	color: #a9a9a9;
+}
+
+input[type=range] {-webkit-appearance: none; margin: 5.8px 0; background-color: transparent !important; width: 100%; margin-top: 100px;}
+
+input[type=range]:focus {outline: none;}
+
+input[type=range]::-webkit-slider-runnable-track {cursor: pointer; background: #a9a9a9; border-radius: 0px;}
+
+input[type=range]::-webkit-slider-thumb {border-radius: 0px; background: #ff8064; cursor: pointer; -webkit-appearance: none; margin-top: -7.8px;}
+
+input[type=range]:focus::-webkit-slider-runnable-track {background: #a9a9a9;}
+
+input[type=range]::-moz-range-track {width: 100%; cursor: pointer; background: #a9a9a9; border-radius: 0px;}
+
+input[type=range]::-moz-range-thumb {border-radius: 0px; background: #ff8064; cursor: pointer;}
+
+input[type=range]::-ms-track {width: 100%; cursor: pointer; background: transparent; border-color: transparent; color: transparent;}
+
+input[type=range]::-ms-fill-lower {background: #a9a9a9; border-radius: 0px;}
+
+input[type=range]::-ms-fill-upper {background: #a9a9a9; border-radius: 0px; }
+
+input[type=range]::-ms-thumb {border-radius: 28px; background: #ff8064; cursor: pointer;}
+
+
+/* Track */
+input[type=range]::-webkit-slider-runnable-track {height: 2px;}
+input[type=range]::-moz-range-track {height: 2px;}
+input[type=range]::-ms-track {height: 2px;}
+
+/* Thumb */
+input[type=range]::-webkit-slider-thumb {height: 10px; width:10px;}
+input[type=range]::-moz-range-thumb {height: 10px; width:10px;}
+input[type=range]::-ms-thumb {height: 10px; width: 10px;}
+
+input[type=range]::-webkit-slider-thumb {margin-top: -4px;}
+input[type=range]::-moz-range-thumb {margin-top: -4px;}
+input[type=range]::-ms-thumb {margin-top: -4px;}
+
+.polzunok-numbers {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.polzunok {
+	width: 410px;
 }
