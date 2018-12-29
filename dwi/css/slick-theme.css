@@ -190,6 +190,116 @@
     }
 }
 
+#print .slick-prev,
+#print .slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 40%;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 20;
+    opacity: 1;
+    transform: scaleY(2.1);
+}
+#print .slick-next
+{
+    left: auto;
+    right: -100px;
+}
+#print .slick-prev:hover,
+#print .slick-prev:focus,
+#print .slick-next:hover,
+#print .slick-next:focus
+{
+    color: #ff8064;
+    outline: none;
+}
+#print .slick-prev:hover:before,
+#print .slick-prev:focus:before,
+#print .slick-next:hover:before,
+#print .slick-next:focus:before
+{
+    opacity: 1;
+    color: #ff8064;
+}
+#print .slick-prev.slick-disabled:before,
+#print .slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+#print .slick-prev:before,
+#print .slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+#print .slick-prev
+{
+    left: -100px;
+}
+[dir='rtl'] #print .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+#print .slick-prev:before
+{
+    content: '<';
+}
+[dir='rtl'] #print .slick-prev:before
+{
+    content: '→';
+
+}
+
+#print .slick-next
+{
+    right: -25px;
+}
+[dir='rtl'] #print .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+#print .slick-next:before
+{
+    content: '>';
+}
+[dir='rtl'] #print .slick-next:before
+{
+    content: '←';
+}
+
+
+
+
 [dir='rtl'] .slick-next
 {
     right: auto;

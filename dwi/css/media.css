@@ -57,7 +57,37 @@
 	}
 }
 
+@media screen and (max-width: 1300px) {
+	#print .slick-prev {
+		left: -50px;
+	}
+	#print .slick-next {
+		right: 0px;
+	}
+	.print-bg-text {
+		font-size: 25px;
+		right: -100px;
+	}
+	.print-bg-text:before {
+		font-size: 100px;
+		margin-top: -56px;
+
+	}
+}
+
 @media screen and (max-width: 1200px) {
+	.typography-slide__img5 {
+		margin-top: -150px;
+	}
+	#print .main__text_btn {
+		margin-top: 30px;
+	}
+	.typography-slide__header {
+		margin-bottom: 30px;
+	}
+	input[type=range] {
+		margin-top: 50px;
+	}
 	#reasons h2 {
 		margin-bottom: 50px;
 	}
@@ -79,10 +109,10 @@
 		margin-right: 0;
 	}
 	#main .slide-item2 .social__media {
-		bottom: 38px;
+		bottom: 113px;
 	}
 	#main .slide-item1 .social__media {
-		bottom: 10px;
+		bottom: 80px;
 	}
 	.menu-bg {
 		right: -200px;
@@ -134,9 +164,64 @@
 		left: -30px;
 		top: 80px;
 	}
+	.file-upload {
+		width: auto;
+		text-align: center;
+	}
+	.file-upload label {
+		width: 100%;
+		border: none;
+		text-decoration: underline;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	#print .slick-prev {
+		left: -30px;
+	}
+	#print .slick-next {
+		right: 20px;
+	}
 }
 
 @media screen and (max-width: 996px) {
+	.polzunok {
+		width: 100%;
+	}
+	#print .main__text_btn {
+		width: 100%;
+	}
+	#typography-form button {
+		margin-top: 50px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.typography-form-df {
+		padding: 30px;
+	}
+	.typography-form-df {
+		flex-wrap: wrap;
+	}
+	.typography-form-df input {
+		width: 45%;
+		border-bottom: 2px solid #212222 !important;
+		margin: 10px 0px;
+	}
+	#typography-form .social__media {
+		margin-top: 50px;
+	}
+	.typography-slide__img {
+		width: 100%;
+	}
+
+	#print .slick-prev {
+		left: -100px;
+	}
+	#print .slick-next {
+		right: -100px;
+	}
 	#portfolio h2, #moving h2, #offer h2 {
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -220,14 +305,29 @@
 		flex-wrap: nowrap !important;
 	}
 
+	#reasons h2 {
+		text-align: center;
+	}
+
 	.portfolio-main-img {
 		width: 100%;
 		margin-left: 0px;
+	}
+
+	#typography-page .portfolio-main-img {
+		width: 70%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 	
 	.header__feedback {
 		bottom: 200px;
 		right: -35px;
+	}
+
+	#typography-page .slide-item2 .header__feedback {
+		bottom: 300px;
 	}
 	#portfolio {
 		height: auto;
@@ -369,9 +469,56 @@
 	section {
 		height: auto;
 	}
+	.print-bg-text:before {
+		font-size: 80px;
+		margin-top: -45px;
+	}
+	.print-bg-text {
+		right: -50px;
+	}
+	#typography-page {
+		overflow-x: hidden;
+	}
 } 
 
+@media screen and (max-width: 900px) {
+	#print .slick-prev {
+		left: -40px;
+	}
+	#print .slick-next {
+		right: -40px;
+	}
+	#print {
+		overflow-x: hidden;
+	}
+	.print-bg-text {
+		right: -50px;
+	}
+}
+
+
+
 @media screen and (max-width: 768px) {
+	#reasons h2 {
+		position: relative;
+	}
+	#reasons h2:before {
+		font-size: 100px;
+		text-align: center;
+		left: auto;
+		top: 50%;
+		margin-top: -56px;
+	}
+	.print-bg-text {
+		right: -100px;
+		bottom: 50px;
+	}
+	.typography-slide__img {
+		display: none !important;
+	}
+	#typography-page .portfolio-main-img {
+		width: 100%;
+	}
 	.portfolio-popup {
 		width: 95%;
 	}
@@ -579,9 +726,41 @@
 		text-align: center;
 		width: 100%;
 	}
+	.typography-slide__number {
+		margin-top: 0;
+	}
+	#print {
+		padding-top: 0;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.print-bg-text {
+		right: -50px;
+		bottom: 30px;
+	}
+	#print .slick-next {
+		right: -10px;
+	}
 }
 
 @media screen and (max-width: 576px) {
+	.typography-form-df input {
+		width: 100%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	#reasons h2:before {
+		font-size: 80px;
+		margin-top: -39px;
+	}
+	.polzunok {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.typography-slide__form {
+		width: 100%;
+	}
 	#portfolio h2:before, #moving h2:before, #offer h2:before {
 		font-size: 58px;
 		margin-top: -34px;
@@ -698,6 +877,14 @@
 		right: 50px;
 		z-index: 100;
 	}
+	.typography-slide__number {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+	}
 }
 
 @media screen and (max-width: 450px) {
@@ -705,9 +892,15 @@
 		font-size: 25px;
 		margin-top: 0;
 	}
+	.print-bg-text {
+		display: none;
+	}
 }
 
 @media screen and (max-width: 400px) {
+	.typography-slide__number {
+		margin-top: 50px;
+	}
 	#portfolio h2:before, #moving h2:before, #offer h2:before {
 		font-size: 50px;
 		margin-top: -29px;

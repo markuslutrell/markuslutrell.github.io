@@ -86,6 +86,22 @@ $('.slider').slick({
   speed: 1000
 });
 
+$('.typography-slider').slick({
+  fade: true,
+  dots: false,
+  arrows: true,
+  speed: 1000,
+  swipe: false,
+    responsive: [
+    {
+      breakpoint: 580,
+      settings: {
+        swipe: true
+      }
+    }
+  ]
+});
+
 $('#fullpage2').fullpage({
   sectionSelector: 'section',
     navigation: true,
@@ -132,5 +148,97 @@ $('#fullpage2').fullpage({
   }
 });
 
+$(function() {
+var el;
+$("#polzunok__item").change(function() {
+el = $(this);
+el
+.next("#ong")
+.text(el.val() + ' (шт)');
+})
+.trigger('change');
+});
 
-document.getElementById("current-value").innerHTML= polzunok__item.getAttribute('value');
+$(function() {
+var el;
+$("#polzunok__item2").change(function() {
+el = $(this);
+el
+.next("#ong2")
+.text(el.val() + ' (шт)');
+})
+.trigger('change');
+});
+
+
+$(function() {
+var el;
+$("#polzunok__item3").change(function() {
+el = $(this);
+el
+.next("#ong3")
+.text(el.val() + ' (шт)');
+})
+.trigger('change');
+});
+
+
+$(function() {
+var el;
+$("#polzunok__item4").change(function() {
+el = $(this);
+el
+.next("#ong4")
+.text(el.val() + ' (шт)');
+})
+.trigger('change');
+});
+
+
+$(function() {
+var el;
+$("#polzunok__item5").change(function() {
+el = $(this);
+el
+.next("#ong5")
+.text(el.val() + ' (шт)');
+})
+.trigger('change');
+});
+
+
+$(function() {
+var el;
+$("#polzunok__item6").change(function() {
+el = $(this);
+el
+.next("#ong6")
+.text(el.val() + ' (шт)');
+})
+.trigger('change');
+});
+
+
+$(function() {
+var el;
+$("#polzunok__item7").change(function() {
+el = $(this);
+el
+.next("#ong7")
+.text(el.val() + ' (шт)');
+})
+.trigger('change');
+});
+
+
+$(function() {
+var el;
+$("#polzunok__item8").change(function() {
+el = $(this);
+el
+.next("#ong8")
+.text(el.val() + ' (шт)');
+})
+.trigger('change');
+});
+

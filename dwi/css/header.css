@@ -972,11 +972,11 @@ input[type="checkbox"]:checked + label:after {
 }
 
 #main .social__media {
-	bottom: 0px;
+	bottom: 5px;
 }
 
 #main .slide-item2 .social__media {
-	bottom: 22px;
+	bottom: 30px;
 }
 
 .slide-item1 .header__feedback{

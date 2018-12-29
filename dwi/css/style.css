@@ -976,7 +976,7 @@ header .bars {
 	color: #ff8064;
 	transform: rotate(270deg);
 	position: absolute;
-	bottom: 210px;
+	bottom: 150px;
 	right: -157px;
 }
 
@@ -1217,8 +1217,8 @@ header .bars {
 	font-size: 13px;
 	font-family: "Gotham Pro";
 	font-weight: 700;
-	margin-top: 100px;
-	margin-bottom: 50px;
+	margin-top: 70px;
+	margin-bottom: 60px;
 }
 
 .typography-slide__number_bar {
@@ -1294,14 +1294,93 @@ input[type=range]::-moz-range-thumb {margin-top: -4px;}
 input[type=range]::-ms-thumb {margin-top: -4px;}
 
 .polzunok-numbers {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: space-between;
+	position: relative;
+}
+
+.max-number {
+	position: absolute;
+	right: 0;
 }
 
 .polzunok {
 	width: 410px;
+}
+
+.max-number {
+	margin-top: -20px;
+}
+
+output, .max-number {
+	font-size: 14px;
+	color: #fefefe;
+}
+
+#print .main__text_btn {
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+	width: 410px;
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.typography-slide__header {
+	font-size: 14px;
+	font-family: "Gotham Pro";
+	font-weight: 700;
+	color: #ff8064;
+	margin-bottom: 50px;
+}
+
+.typography-slide__img5 {
+	margin-top: -50px;
+}
+
+input[type="radio"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+input[type="radio"] + label {
+  position: relative;
+  padding: 0 0 0 35px;
+  cursor: pointer;
+}
+input[type="radio"] + label:before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #FFF;
+}
+input[type="radio"] + label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 3px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff8064;
+  opacity: 0;
+  transition: .2s;
+}
+input[type="radio"]:checked + label:after {
+  opacity: 1;
+}
+
+#polzunok__item1 {
+	margin-top: 80px;
+}
+
+#polzunok__item2 {
+	margin-top: 50px;
+}
+
+#portfolio h2:before {
+	content: 'typography';
 }
