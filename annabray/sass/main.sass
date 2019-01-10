@@ -1,0 +1,442 @@
+$roboto-thin: 'Roboto Thin'
+$roboto-bold: 'Roboto Bold'
+$roboto-regular: 'Roboto Regular'
+$roboto-light: 'Roboto Light'
+$lifehack: 'Lifehack Sans'
+$main-text-color: #121212
+$green: #2fd87b
+
+body 
+	overflow-x: hidden
+	margin: 0
+	padding: 0
+	font-family: $roboto-regular
+	color: $main-text-color
+	font-size: 14px
+
+a
+	text-decoration: none
+	color: $main-text-color
+	transition: .3s ease
+
+h1, h2 
+	font-family: $lifehack
+	font-size: 60px
+	font-weight: 400
+	margin: 0
+
+h2
+	text-align: center
+
+h3
+	font-size: 36px
+	font-family: $lifehack
+	font-weight: 400
+
+h2
+	&:after 
+		content: ''
+		display: block
+		width: 65px
+		height: 2px
+		background: $green
+		margin: 20px auto
+
+.menu__block_list
+	display: flex
+	justify-content: space-between
+	list-style: none
+	margin-top: 30px
+	padding: 0
+
+.menu-item
+	padding-bottom: 5px
+	transition: .3s ease
+	border-bottom: 1px solid #fff
+	font-family: $roboto-regular
+	&:hover
+		border-color: $green
+
+.header__right
+	display: flex
+	margin-top: 25px
+	justify-content: flex-end
+	.header-phone
+		height: 31px
+		margin-right: 15px
+
+.header__phone
+	font-size: 18px
+	font-family: $roboto-bold
+	margin-top: 4px
+
+.header__price
+	font-size: 12px
+
+.header__address
+	font-family: $lifehack
+	font-size: 24px
+
+
+#main
+	background: url(../img/main-bg-min.jpg) no-repeat center center
+	.container
+		position: relative
+
+.main__header
+	display: flex
+
+.main__header
+	margin-top: 50px
+
+h1:after
+	content: ''
+	display: inline-block
+	width: 47px
+	height: 1px
+	background: $main-text-color
+	margin-bottom: 17px
+	margin-left: 25px
+	margin-right: 35px
+
+.main__header_alt
+	padding-top: 27px
+
+.main__text
+	font-size: 21px
+	font-family: $roboto-light
+	margin-top: 40px
+
+.main__subtext
+	padding-right: 250px
+	margin-top: 70px
+	font-family: $roboto-light
+	margin-bottom: 30px
+
+.main__btn
+	color: #fff
+	padding: 25px
+	display: inline-block
+	box-sizing: border-box
+	background-color: $green
+	box-shadow: inset -4px -5px 0 #0bc442, 0 0 35px rgba(47, 216, 123, .6)
+	border-radius: 5px
+	margin-bottom: 50px
+	position: relative
+	overflow: hidden
+	transition: .3s ease-in-out
+
+.main__btn:before 
+  content: ""
+  background: linear-gradient(90deg, rgba(255,255,255,.1), rgba(255,255,255,.5))
+  height: 150px
+  width: 50px
+  position: absolute
+  top: -8px
+  left: -200px
+  transform: skewX(-45deg)
+
+.main__btn:hover 
+  color: #fff
+  transform: scale(1.03)
+
+.main__btn:hover:before 
+  left: 350px
+  transition: .5s ease-in-out
+
+.main__right_text
+	position: absolute
+	right: 5px
+	bottom: 10px
+
+#who-i-am
+	padding-top: 120px
+	h2
+		text-align: left
+		&:after
+			margin-left: 0
+			margin-bottom: 60px
+
+.who-i-am__text
+	padding-right: 150px
+
+#advantages
+	padding-top: 150px
+	padding-bottom: 50px
+
+.advantages__item
+	text-align: center
+
+
+#offer
+	background: url(../img/bg-2-min.jpg) no-repeat center center / cover
+	padding: 220px 0
+
+.offer__block
+	padding-top: 55px
+	padding-bottom: 30px
+	border: 11px solid #f5f2ee
+	background-color: #fff
+	text-align: center
+	h2:after
+		display: none
+
+.offer__block_phone
+	width: 50px
+	height: 50px
+	margin-top: 50px
+	margin-bottom: 25px
+
+.offer__block_phone_text
+	font-size: 36px
+	font-family: $roboto-light
+	margin-bottom: 40px
+
+.offer__block_address
+	font-family: $lifehack
+	font-size: 36px
+
+#properties
+	padding-top: 50px
+	padding-bottom: 180px
+	h2
+		margin-bottom: 70px
+
+.properties__item
+	display: flex
+	align-items: center
+	margin-bottom: 15px
+	h3
+		margin: 0
+		margin-bottom: 20px
+
+.properties__text
+	font-family: $roboto-thin
+	font-size: 18px
+	padding-right: 300px
+	font-weight: 400
+
+.properties__container_text
+	margin-left: 50px
+
+#complication
+	padding-bottom: 70px
+
+.complication__item
+	width: 300px
+	padding-top: 20px
+	padding-bottom: 50px
+	margin: 0 auto
+
+.complication__item h3
+	text-align: center
+	padding-top: 50px
+	padding-left: 25px
+	padding-right: 25px
+	margin-bottom: 20px
+
+
+.complication__item1
+	background: url(../img/complication-bg-1-min.png) no-repeat center center
+
+.complication__item2
+	background: url(../img/complication-bg-2-min.png) no-repeat center center
+
+.complication__item3
+	background: url(../img/complication-bg-3-min.png) no-repeat center center
+
+.complication__item4
+	background: url(../img/complication-bg-4-min.png) no-repeat center center
+
+.complication__item5
+	background: url(../img/complication-bg-5-min.png) no-repeat center center
+
+.complication__item6
+	background: url(../img/complication-bg-6-min.png) no-repeat center center
+
+
+.complication__item_btn
+	border: 1px solid $green
+	background-color: #ffffff
+	border-radius: 20px
+	padding: 7px 20px
+	text-align: center
+	margin-bottom: 50px
+	&:hover
+		background: $green
+		color: #fff
+
+.complication__item_content
+	background: #fff
+	width: 221px
+	height: 221px
+	margin: 0px auto
+	padding-bottom: 50px
+	text-align: center
+	border-radius: 50%
+
+#order
+	background: url(../img/bg-3-min.jpg) no-repeat center center / cover
+
+.order__form
+	padding: 60px 65px 40px 65px
+	background: #fff
+	border: 11px solid #f5f2ee
+	margin: 200px 0
+	form
+		text-align: center
+		.main__btn
+			border: none
+			font-size: 24px
+			padding: 30px 72px
+			margin-top: 25px
+			margin-bottom: 0
+		.inputs
+			display: flex
+			input 
+				width: 280px
+				height: 69px
+				border: 1px solid rgba(0,0,0,.2)
+				border-radius: 5px
+				margin-top: 5px
+				margin-bottom: 5px
+				padding-left: 50px
+				font-size: 18px
+			textarea
+				width: 282px !important
+				height: 148px
+				border-radius: 5px
+				border: 1px solid rgba(0,0,0,.2)
+				margin-top: 5px
+				padding-top: 25px
+				padding-left: 50px
+				font-family: $roboto-regular
+				font-size: 18px
+
+.left__inputs, .right__inputs
+	position: relative
+
+.order__header
+	font-size: 30px
+	text-align: center
+	font-weight: 300
+	margin-bottom: 40px
+
+.user, .email, .pen
+	position: absolute
+
+.user
+	top: 27px
+	left: 22px
+
+.email
+	bottom: 32px
+	left: 20px
+
+.pen
+	top: 35px
+	left: 18px
+
+#posts 
+	margin-top: 30px
+
+.tabs
+	display: flex
+	justify-content: center
+	margin-top: 80px
+	margin-bottom: 70px
+	.tab
+		margin-left: 25px
+		margin-right: 25px
+		font-family: $lifehack
+		font-size: 30px
+		cursor: pointer
+		border-bottom: 1px solid #fff
+		transition: .3s ease
+		&:hover
+			border-color: $green
+
+.posts__slide_header
+	font-size: 36px
+	font-family: $lifehack
+	text-align: center
+	height: 60px
+
+.tab.active
+	border-color: $green
+
+.posts__slide_content
+	font-size: 18px
+
+.posts__slide_next
+	text-align: center
+	text-decoration: underline
+	margin-top: 50px
+
+#contacts
+	padding-top: 200px
+	text-align: center
+	h2
+		padding-left: 90px
+		padding-right: 90px
+		margin-bottom: 60px
+
+.instagram
+	display: inline-block
+	margin-bottom: 80px
+
+.instagram img
+	transition: .3s ease
+
+.instagram img:hover
+	transform: scale(1.05)
+
+.contacts__content
+	font-size: 24px
+
+.contacts__content
+	font-size: 24px
+	font-family: $roboto-light
+
+footer
+	padding: 100px 0
+	background: url(../img/footer-bg-min.png) no-repeat center top / cover
+
+.policies
+	font-size: 14px
+	text-decoration: underline
+	text-align: center
+	padding-top: 50px
+
+.logo
+	font-size: 60px
+	text-align: center
+	font-family: $lifehack
+	span
+		display: block
+		font-family: $roboto-light
+		font-size: 12px
+
+.logo__individual
+	letter-spacing: 5.04px
+	margin-left: 6px
+	margin-top: -10px
+
+.logo__psychology
+	letter-spacing: -0.48px
+
+.developer__link
+	margin-top: 30px
+
+.developer__link img
+	padding-left: 25px
+	margin-bottom: -7px
+
+
+.policies__block
+	margin-top: 45px
+	text-align: center
+
+.developer__block
+	margin-top: 35px
+	text-align: center
