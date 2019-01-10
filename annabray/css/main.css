@@ -205,6 +205,9 @@ h1:after {
   padding-right: 300px;
   font-weight: 400; }
 
+.properties__container {
+  margin-left: 100px; }
+
 .properties__container_text {
   margin-left: 50px; }
 
