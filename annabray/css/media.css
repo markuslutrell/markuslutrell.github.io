@@ -1,0 +1,261 @@
+@media screen and (max-width: 1200px) {
+	.main__subtext {
+		padding-right: 200px;
+	}
+	.who-i-am__text {
+		padding-right: 50px;
+	}
+	.properties__text {
+		padding-right: 200px;
+	}
+}
+
+@media screen and (max-width: 996px) {
+	.woman__block {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.properties__text {
+		padding-right: 50px;
+	}
+	.properties__item {
+
+	}
+	.properties__container {
+		margin-left: 0;
+	}
+	.advantages__item {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	#contacts h2 {
+		padding: 0;
+	}
+	.slicknav_menu {
+		display: block;
+	}
+	.menu__block_list {
+		display: none;
+	}
+	.menu-item {
+		background: #fff;
+		margin: 0;
+	}
+	.slicknav_btn, .slicknav_nav {
+		left: 13%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.slicknav_btn, .slicknav_nav {
+		left: 11%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.slicknav_btn, .slicknav_nav {
+		left: 6%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.properties__text {
+		padding-right: 0;
+	}
+	#properties {
+		padding-bottom: 100px;
+	}
+	.main__header_alt {
+		display: block;
+	}
+	.main__header {
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+	}
+	h1:after {
+		display: block;
+		margin: 20px auto;
+	}
+	#main {
+		text-align: center;
+	}
+	.main__subtext {
+		padding: 0;
+	}
+	.main__right_text {
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		bottom: -10px;
+	}
+	#who-i-am h2 {
+		text-align: center;
+	}
+	#who-i-am h2:after {
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.who-i-am__text {
+		text-align: center;
+		padding: 0;
+	}
+	#advantages {
+		padding-top: 100px;
+	}
+	.offer__block {
+		margin-left: 0;
+		width: 100%;
+	}
+	.left__inputs, .right__inputs {
+		width: 100%  !important;
+	}
+	.order__form form .inputs {
+		flex-wrap: wrap;
+	}
+	.tabs .tab {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.logo {
+		margin-top: 30px;
+	}
+	.order__form form .main__btn {
+		width: 100%;
+	}
+	#contacts {
+		padding-top: 100px;
+	}
+	footer {
+		padding-top: 50px;
+	}
+	#posts {
+		padding-bottom: 800px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#posts {
+		padding-bottom: 900px;
+	}
+	.slick-prev:after, .slick-next:after {
+		display: none;
+	}
+	#offer {
+		padding: 100px 0;
+	}
+	.properties__container_text {
+		margin-left: 10px;
+	}
+	.order__form {
+		padding: 30px 32.5px 20px 32.5px;
+	}
+	.order__form {
+		margin: 100px 0
+	}
+	.tabs {
+		flex-wrap: wrap;
+	}
+	.tabs .tab {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+
+	.main__right_text {
+		bottom: -30px;
+	}
+	.properties__item {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+	.order__form form .main__btn {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	#posts {
+		padding-bottom: 1200px;
+	}
+	.slicknav_btn, .slicknav_nav {
+		left: 2%;
+	}
+	.slicknav_menutxt {
+		display: none !important;
+	}
+	.slicknav_icon, .slicknav_icon-bar {
+		width: 25px !important;
+	}
+	.slicknav_icon-bar {
+		margin-top: 5px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+
+	.header__right .header-phone {
+		margin-right: 5px;
+	}
+	.slicknav_btn {
+		left: 0px;
+	}
+	.slicknav_nav {
+		left: 10px;
+	}
+	.advantages__item_img {
+		width: 100%;
+	}
+	.order__form {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.woman {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.header__right .header-phone {
+		display: none;
+	}
+	.slicknav_btn {
+		top: 25px;
+	}
+	.header__text_block {
+		margin-right: -10px;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.order__form form .main__btn {
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+	.order__form form .inputs input {
+		font-size: 14px;
+	}
+
+	.order__form form .inputs textarea {
+		font-size: 14px;
+	}
+	.order__form form .main__btn {
+		font-size: 18px;
+	}
+	.order__header {
+		font-size: 25px;
+	}
+	h2 {
+		font-size: 50px;
+	}
+	#posts {
+		padding-bottom: 1400px;
+	}
+}

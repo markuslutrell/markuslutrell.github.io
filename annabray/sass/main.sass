@@ -6,6 +6,9 @@ $lifehack: 'Lifehack Sans'
 $main-text-color: #121212
 $green: #2fd87b
 
+html
+	overflow-x: hidden
+
 body 
 	overflow-x: hidden
 	margin: 0
@@ -13,6 +16,9 @@ body
 	font-family: $roboto-regular
 	color: $main-text-color
 	font-size: 14px
+
+button
+	cursor: pointer
 
 a
 	text-decoration: none
@@ -54,8 +60,18 @@ h2
 	transition: .3s ease
 	border-bottom: 1px solid #fff
 	font-family: $roboto-regular
-	&:hover
-		border-color: $green
+
+.menu-item:after 
+    background-color: $green
+    display: block
+    content: ""
+    height: 1px
+    margin-top: 5px
+    width: 0%
+    transition: .2s ease-in-out 
+
+.menu-item:hover:after, .menu-item:focus:after 
+  width: 100%
 
 .header__right
 	display: flex
@@ -158,6 +174,7 @@ h1:after
 			margin-bottom: 60px
 
 .who-i-am__text
+	font-family: $roboto-light
 	padding-right: 150px
 
 #advantages
@@ -176,8 +193,11 @@ h1:after
 	padding-top: 55px
 	padding-bottom: 30px
 	border: 11px solid #f5f2ee
+	border-radius: 3px
 	background-color: #fff
 	text-align: center
+	width: 108%
+	margin-left: -30px
 	h2:after
 		display: none
 
@@ -215,6 +235,9 @@ h1:after
 	font-size: 18px
 	padding-right: 300px
 	font-weight: 400
+
+.properties__container
+	margin-left: 100px
 
 .properties__container_text
 	margin-left: 50px
@@ -256,6 +279,7 @@ h1:after
 
 
 .complication__item_btn
+	display: inline
 	border: 1px solid $green
 	background-color: #ffffff
 	border-radius: 20px
@@ -283,6 +307,7 @@ h1:after
 	background: #fff
 	border: 11px solid #f5f2ee
 	margin: 200px 0
+	font-family: $roboto-light
 	form
 		text-align: center
 		.main__btn
@@ -294,7 +319,7 @@ h1:after
 		.inputs
 			display: flex
 			input 
-				width: 280px
+				width: 100%
 				height: 69px
 				border: 1px solid rgba(0,0,0,.2)
 				border-radius: 5px
@@ -302,19 +327,23 @@ h1:after
 				margin-bottom: 5px
 				padding-left: 50px
 				font-size: 18px
+				font-family: $roboto-light
 			textarea
-				width: 282px !important
+				width: 100% !important
 				height: 148px
 				border-radius: 5px
 				border: 1px solid rgba(0,0,0,.2)
 				margin-top: 5px
 				padding-top: 25px
 				padding-left: 50px
-				font-family: $roboto-regular
+				font-family: $roboto-light
 				font-size: 18px
 
 .left__inputs, .right__inputs
 	position: relative
+	width: 48%
+	margin-left: .5%
+	margin-right: .5%
 
 .order__header
 	font-size: 30px
@@ -340,12 +369,14 @@ h1:after
 #posts 
 	margin-top: 30px
 
-.tabs
+.tab-menu
 	display: flex
 	justify-content: center
 	margin-top: 80px
 	margin-bottom: 70px
-	.tab
+	padding: 0
+	flex-wrap: wrap
+	li
 		margin-left: 25px
 		margin-right: 25px
 		font-family: $lifehack
@@ -353,8 +384,12 @@ h1:after
 		cursor: pointer
 		border-bottom: 1px solid #fff
 		transition: .3s ease
+		content: 20px
+		margin-bottom: 20px
 		&:hover
 			border-color: $green
+
+
 
 .posts__slide_header
 	font-size: 36px
@@ -365,8 +400,12 @@ h1:after
 .tab.active
 	border-color: $green
 
+.tab_item
+	opacity: 0
+
 .posts__slide_content
 	font-size: 18px
+	font-family: $roboto-light
 
 .posts__slide_next
 	text-align: center
@@ -440,3 +479,110 @@ footer
 .developer__block
 	margin-top: 35px
 	text-align: center
+
+.slicknav_menu
+	display: none
+
+
+.tab-wrapper 
+  margin: 0px auto
+  width: 100%
+
+
+.tab-menu li 
+  position: relative
+  background-color: #fff
+  display: inline-block
+  cursor: pointer
+  z-index: 0
+
+
+.tab-menu li:hover 
+
+
+.tab-menu li.active 
+  height: auto
+  border-bottom: 1px solid $green
+
+
+.tab-menu li.active:hover 
+
+
+.tab-content 
+  position: relative
+  margin: 0 auto
+
+
+.tab-content>div 
+  background-color: #fff
+  box-sizing: border-box
+  width: 100%
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 10
+
+
+
+
+.tab-hide 
+  display: block
+  height: 0
+  overflow: hidden
+  visibility: hidden
+  transition: .3s ease
+
+#posts
+	padding-bottom: 500px
+	.row
+		margin: 0 auto
+
+.posts__slide_header
+	position: relative
+	.mynext
+		position: absolute
+		left: 25px
+		top: 15px
+		font-size: 14px
+		font-family: $roboto-light
+	.myprev
+		position: absolute
+		right: 25px
+		top: 15px
+		font-size: 14px
+		font-family: $roboto-light
+
+.complication__item
+	position: relative
+	cursor: pointer
+
+.complication__item_content-hover
+	background: #fff
+	position: absolute
+	top: 0
+	height: 100%
+	width: 100%
+	border-radius: 50%
+	transition: .2s ease
+	transform: scale(0)
+	h3
+		padding-top: 0
+
+
+.complication__item1:hover .complication__item_content-hover1
+	transform: scale(1)
+
+.complication__item2:hover .complication__item_content-hover2
+	transform: scale(1)
+
+.complication__item3:hover .complication__item_content-hover3
+	transform: scale(1)
+
+.complication__item4:hover .complication__item_content-hover4
+	transform: scale(1)
+
+.complication__item5:hover .complication__item_content-hover5
+	transform: scale(1)
+
+.complication__item6:hover .complication__item_content-hover6
+	transform: scale(1)

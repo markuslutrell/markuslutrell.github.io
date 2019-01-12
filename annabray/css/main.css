@@ -1,3 +1,6 @@
+html {
+  overflow-x: hidden; }
+
 body {
   overflow-x: hidden;
   margin: 0;
@@ -5,6 +8,9 @@ body {
   font-family: "Roboto Regular";
   color: #121212;
   font-size: 14px; }
+
+button {
+  cursor: pointer; }
 
 a {
   text-decoration: none;
@@ -45,8 +51,18 @@ h2:after {
   transition: .3s ease;
   border-bottom: 1px solid #fff;
   font-family: "Roboto Regular"; }
-  .menu-item:hover {
-    border-color: #2fd87b; }
+
+.menu-item:after {
+  background-color: #2fd87b;
+  display: block;
+  content: "";
+  height: 1px;
+  margin-top: 5px;
+  width: 0%;
+  transition: .2s ease-in-out; }
+
+.menu-item:hover:after, .menu-item:focus:after {
+  width: 100%; }
 
 .header__right {
   display: flex;
@@ -148,6 +164,7 @@ h1:after {
       margin-bottom: 60px; }
 
 .who-i-am__text {
+  font-family: "Roboto Light";
   padding-right: 150px; }
 
 #advantages {
@@ -165,8 +182,11 @@ h1:after {
   padding-top: 55px;
   padding-bottom: 30px;
   border: 11px solid #f5f2ee;
+  border-radius: 3px;
   background-color: #fff;
-  text-align: center; }
+  text-align: center;
+  width: 108%;
+  margin-left: -30px; }
   .offer__block h2:after {
     display: none; }
 
@@ -246,6 +266,7 @@ h1:after {
   background: url(../img/complication-bg-6-min.png) no-repeat center center; }
 
 .complication__item_btn {
+  display: inline;
   border: 1px solid #2fd87b;
   background-color: #ffffff;
   border-radius: 20px;
@@ -272,7 +293,8 @@ h1:after {
   padding: 60px 65px 40px 65px;
   background: #fff;
   border: 11px solid #f5f2ee;
-  margin: 200px 0; }
+  margin: 200px 0;
+  font-family: "Roboto Light"; }
   .order__form form {
     text-align: center; }
     .order__form form .main__btn {
@@ -284,27 +306,31 @@ h1:after {
     .order__form form .inputs {
       display: flex; }
       .order__form form .inputs input {
-        width: 280px;
+        width: 100%;
         height: 69px;
         border: 1px solid rgba(0, 0, 0, 0.2);
         border-radius: 5px;
         margin-top: 5px;
         margin-bottom: 5px;
         padding-left: 50px;
-        font-size: 18px; }
+        font-size: 18px;
+        font-family: "Roboto Light"; }
       .order__form form .inputs textarea {
-        width: 282px !important;
+        width: 100% !important;
         height: 148px;
         border-radius: 5px;
         border: 1px solid rgba(0, 0, 0, 0.2);
         margin-top: 5px;
         padding-top: 25px;
         padding-left: 50px;
-        font-family: "Roboto Regular";
+        font-family: "Roboto Light";
         font-size: 18px; }
 
 .left__inputs, .right__inputs {
-  position: relative; }
+  position: relative;
+  width: 48%;
+  margin-left: .5%;
+  margin-right: .5%; }
 
 .order__header {
   font-size: 30px;
@@ -330,20 +356,24 @@ h1:after {
 #posts {
   margin-top: 30px; }
 
-.tabs {
+.tab-menu {
   display: flex;
   justify-content: center;
   margin-top: 80px;
-  margin-bottom: 70px; }
-  .tabs .tab {
+  margin-bottom: 70px;
+  padding: 0;
+  flex-wrap: wrap; }
+  .tab-menu li {
     margin-left: 25px;
     margin-right: 25px;
     font-family: "Lifehack Sans";
     font-size: 30px;
     cursor: pointer;
     border-bottom: 1px solid #fff;
-    transition: .3s ease; }
-    .tabs .tab:hover {
+    transition: .3s ease;
+    content: 20px;
+    margin-bottom: 20px; }
+    .tab-menu li:hover {
       border-color: #2fd87b; }
 
 .posts__slide_header {
@@ -355,8 +385,12 @@ h1:after {
 .tab.active {
   border-color: #2fd87b; }
 
+.tab_item {
+  opacity: 0; }
+
 .posts__slide_content {
-  font-size: 18px; }
+  font-size: 18px;
+  font-family: "Roboto Light"; }
 
 .posts__slide_next {
   text-align: center;
@@ -429,3 +463,95 @@ footer {
 .developer__block {
   margin-top: 35px;
   text-align: center; }
+
+.slicknav_menu {
+  display: none; }
+
+.tab-wrapper {
+  margin: 0px auto;
+  width: 100%; }
+
+.tab-menu li {
+  position: relative;
+  background-color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 0; }
+
+.tab-menu li.active {
+  height: auto;
+  border-bottom: 1px solid #2fd87b; }
+
+.tab-content {
+  position: relative;
+  margin: 0 auto; }
+
+.tab-content > div {
+  background-color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10; }
+
+.tab-hide {
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: .3s ease; }
+
+#posts {
+  padding-bottom: 500px; }
+  #posts .row {
+    margin: 0 auto; }
+
+.posts__slide_header {
+  position: relative; }
+  .posts__slide_header .mynext {
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    font-size: 14px;
+    font-family: "Roboto Light"; }
+  .posts__slide_header .myprev {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: 14px;
+    font-family: "Roboto Light"; }
+
+.complication__item {
+  position: relative;
+  cursor: pointer; }
+
+.complication__item_content-hover {
+  background: #fff;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  transition: .2s ease;
+  transform: scale(0); }
+  .complication__item_content-hover h3 {
+    padding-top: 0; }
+
+.complication__item1:hover .complication__item_content-hover1 {
+  transform: scale(1); }
+
+.complication__item2:hover .complication__item_content-hover2 {
+  transform: scale(1); }
+
+.complication__item3:hover .complication__item_content-hover3 {
+  transform: scale(1); }
+
+.complication__item4:hover .complication__item_content-hover4 {
+  transform: scale(1); }
+
+.complication__item5:hover .complication__item_content-hover5 {
+  transform: scale(1); }
+
+.complication__item6:hover .complication__item_content-hover6 {
+  transform: scale(1); }
