@@ -29,6 +29,9 @@
 	.advantages {
 		margin-top: 20px;
 	}
+	.example {
+		right: -22px;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -101,6 +104,9 @@
 	}
 	.footer__header {
 		margin-top: 30px;
+	}
+	.example__container {
+		right: 0px;
 	}
 }
 
@@ -206,5 +212,21 @@
 	}
 	.product__item {
 		margin-left: 0;
+	}
+	.example {
+		right: -12px;
+	}
+	.jq-selectbox__select {
+		width: 120px !important;
+		margin-right: 5px;
+	}
+	.main__container_buttons label {
+		width: 120px;
+	}
+	.main__container_buttons {
+		padding: 0 5px;
+	}
+	.example__container {
+		right: 10px;
 	}
 }
