@@ -770,7 +770,7 @@ header {
 .contacts__text {
   font-size: 14px;
   font-weight: 500;
-  margin-top: 24px;
+  margin-top: 10px;
   padding-right: 150px; }
 
 .phones__title {
@@ -1000,7 +1000,7 @@ input:focus:-ms-input-placeholder {
   -webkit-box-shadow: -5px 2px 62px rgba(0, 0, 0, 0.2);
           box-shadow: -5px 2px 62px rgba(0, 0, 0, 0.2);
   background-color: #272727;
-  max-width: 480px; }
+  width: 480px; }
   .popup .contacts__form {
     background: transparent;
     -webkit-box-shadow: none;
@@ -1058,6 +1058,9 @@ input:focus:-ms-input-placeholder {
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
   left: 9px; }
+
+.quiz {
+  background: #000 !important; }
 
 /*--------------------Media Queries--------------------*/
 @media screen and (max-width: 1600px) {
@@ -1150,6 +1153,8 @@ input:focus:-ms-input-placeholder {
     margin-top: 30px; } }
 
 @media screen and (max-width: 996px) {
+  h1 {
+    padding-top: 30px; }
   .main__img {
     text-align: center;
     margin-top: -30px;
@@ -1210,4 +1215,190 @@ input:focus:-ms-input-placeholder {
     padding-left: 10px;
     padding-right: 10px; }
   .lion {
-    right: 30px; } }
+    right: 30px; }
+  .main__content_text {
+    padding-right: 0; }
+  .commerce__content_text {
+    padding-right: 0; }
+  .portfolio__item_hover .item__hover_text .portfolio__item_desc {
+    padding-right: 30px; } }
+
+@media screen and (max-width: 768px) {
+  .logo__text {
+    display: none; }
+  .logo__item:after {
+    display: none; }
+  .logo {
+    margin-top: 4px; }
+  .portfolio__item {
+    height: 127px; }
+  .main__img {
+    opacity: .3;
+    margin-top: -150px; }
+    .main__img img {
+      width: 100%; }
+  .contacts__content {
+    text-align: center;
+    margin-top: 0px; }
+  .contacts__text {
+    margin-top: 0;
+    margin-bottom: 5px; }
+  #contacts h2 {
+    text-align: center;
+    margin-bottom: 10px; }
+    #contacts h2:after {
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto; }
+  .phones__title {
+    margin-top: 15px;
+    margin-bottom: 10px; }
+  #contacts .ac {
+    margin-top: 5px; }
+  .contacts__form_subheader {
+    margin-bottom: 10px; }
+  .contacts__form {
+    margin-left: 0; } }
+
+@media screen and (max-width: 576px) {
+  #services h2 {
+    margin-top: 0; }
+  .services__item {
+    height: 150px; }
+    .services__item .services__item_title {
+      margin-top: 15px; }
+  .header__bar {
+    margin-left: 20px; }
+  .menu__btn {
+    margin-left: 18px; }
+  h1 {
+    font-size: 30px; }
+  .portfolio__item_hover .item__hover_text .portfolio__item_desc {
+    padding-right: 10px; }
+  .portfolio__item_hover .item__hover_text .portfolio__item_title {
+    font-size: 20px; }
+  .popup {
+    width: 88%; }
+  .popup .contacts__form {
+    padding-left: 5px;
+    padding-right: 5px; }
+  .contacts__form .inputs {
+    padding: 0; }
+  .contacts__form_header {
+    font-size: 26px; }
+  .popup .inputs {
+    padding-left: 25px;
+    padding-right: 25px; } }
+
+@media screen and (max-width: 420px) {
+  .services__item_img img {
+    height: 45px; }
+  .services__item_title {
+    font-size: 15px;
+    margin-bottom: 20px; }
+  .services__item {
+    height: 130px; }
+  .contacts__form button {
+    margin-top: 5px;
+    margin-bottom: 0px; }
+  .contacts__form_header {
+    margin-bottom: 5px; }
+  .contacts__form input {
+    margin-top: 12px;
+    margin-bottom: 12px; }
+  #contacts .social__media {
+    display: none; }
+  #contacts h2 {
+    margin-top: 15px; }
+  .lion {
+    opacity: .5; }
+  .contacts__form input[type="checkbox"]:checked + label, .contacts__form input[type="checkbox"]:not(:checked) + label {
+    padding-left: 20px;
+    font-size: 11px; } }
+
+@media screen and (max-width: 375px) {
+  .services__item {
+    padding-left: 10px; }
+  .header__bar {
+    margin-left: 10px; }
+  .menu__btn {
+    margin-left: 9px; }
+  h1 {
+    padding-top: 0;
+    margin-top: 50px; }
+  h2 {
+    font-size: 30px; }
+  .main__content {
+    margin-top: 20px; }
+  .quiz__btn {
+    margin-left: 10px; }
+  .commerce__btn-2 {
+    margin-left: 10px; }
+  #portfolio h2 {
+    margin-top: 30px; }
+  .portfolio__item {
+    height: 100px; }
+  .portfolio__item_hover .item__hover_text .portfolio__item_desc {
+    margin-top: 0;
+    text-align: center;
+    padding: 0; }
+  .portfolio__item_hover .item__hover_text {
+    position: static;
+    text-align: center; }
+  #contacts h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 5px; }
+  .phones {
+    display: none; }
+  .contacts__form input[type="checkbox"]:checked + label, .contacts__form input[type="checkbox"]:not(:checked) + label {
+    padding-left: 18px; }
+  .policies label {
+    font-size: 11px; }
+  .popup {
+    width: 95%; } }
+
+@media screen and (max-width: 350px) {
+  .services__item .services__item_title {
+    font-size: 12px; }
+  .header__bar {
+    display: none; }
+  .menu__btn {
+    margin-left: 5px; }
+  h1 {
+    padding-top: 0;
+    margin-top: 30px; }
+  .arrow {
+    display: none; }
+  .services__item {
+    height: 110px; }
+  .services__item_img {
+    margin-top: -20px; }
+  #services .container {
+    padding-top: 35px; }
+  .contacts__text {
+    font-size: 13px; }
+  .contacts__form_subheader {
+    font-size: 12px; }
+  .contacts__form .contacts__form_header {
+    font-size: 26px; }
+  .popup {
+    width: 96%; } }
+
+@media screen and (max-width: 330px) {
+  h1 {
+    padding-top: 0;
+    margin-top: 10px; }
+  .portfolio__item {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  #portfolio h2 {
+    margin-bottom: 15px; }
+  .policies label {
+    font-size: 10px; }
+  .commerce__content h2 {
+    margin-top: 0; }
+  #commerce .container {
+    padding-top: 50px; }
+  .popup {
+    width: 97%; } }

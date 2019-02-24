@@ -3,9 +3,6 @@ $(document).ready(function() {
         scrollOverflow: true,
         anchors:['firstSection', 'secondSection', 'thirdSection', 'foursSection', 'fifthSection'],
         verticalCentered: true,
-        // afterLoad: function(anchorLink, index) {
-        //     $("h1").animated("fadeInUp");
-        // },
     });
 });
 
