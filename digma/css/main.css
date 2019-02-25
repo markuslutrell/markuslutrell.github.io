@@ -66,7 +66,8 @@ body {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
-          justify-content: space-between; }
+          justify-content: space-between;
+  margin-top: -40px; }
   .progressbar .progressbar__link {
     width: 13px;
     height: 13px;
@@ -475,7 +476,7 @@ header {
   height: 100%; }
 
 .main__content {
-  margin-top: 25vh; }
+  margin-top: 21vh; }
 
 .main__content_text {
   font-size: 14px;
@@ -503,6 +504,7 @@ header {
             box-shadow: inset 0 6px 24px 3px rgba(190, 64, 1, 0.79), 0 0 26px 3px rgba(249, 105, 33, 0.2); }
 
 .main__img {
+  margin-top: 17vh;
   opacity: .8; }
 
 .main__buttons {
@@ -533,9 +535,6 @@ header {
   position: absolute;
   bottom: 5vh;
   margin-bottom: 2px; }
-
-.main__img {
-  margin-top: 19vh; }
 
 .social__media {
   position: absolute;
@@ -942,7 +941,7 @@ input:focus:-ms-input-placeholder {
 .lion {
   position: absolute;
   right: 18%;
-  bottom: 40%;
+  bottom: 43%;
   margin-bottom: -280px; }
 
 .contacts__form input[type="checkbox"]:checked,
@@ -1314,7 +1313,9 @@ input:focus:-ms-input-placeholder {
     letter-spacing: 5px;
     width: 600px; }
   .overlayMenu ul li {
-    font-size: 30px; } }
+    font-size: 30px; }
+  .services__item {
+    border: 3px solid rgba(111, 111, 111, 0.1); } }
 
 @media screen and (max-width: 420px) {
   .services__item_img img {
@@ -1352,7 +1353,42 @@ input:focus:-ms-input-placeholder {
   .overlayMenu ul li {
     font-size: 25px; }
   .overlayMenu {
-    padding-right: 50px; } }
+    padding-right: 50px; }
+  .portfolio__item {
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .portfolio__item_hover .item__hover_text .portfolio__item_desc {
+    margin-top: 0;
+    text-align: center;
+    padding: 0; }
+  .portfolio__item_hover .item__hover_text {
+    position: static;
+    text-align: center; }
+  #portfolio h2 {
+    margin-top: 20px; }
+  .commerce__content_text p {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  #commerce .container {
+    padding-top: 20px; }
+  .contacts__form .inputs {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .contacts__form {
+    padding: 10px 0; }
+  .contacts__form input {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .contacts__text {
+    font-size: 13px; }
+  h1 {
+    padding-top: 0;
+    margin-top: 50px; }
+  h2 {
+    font-size: 30px; }
+  .commerce__content h2 {
+    margin-bottom: 20px; } }
 
 @media screen and (max-width: 375px) {
   .services__item {
@@ -1361,28 +1397,12 @@ input:focus:-ms-input-placeholder {
     margin-left: 10px; }
   .menu__btn {
     margin-left: 9px; }
-  h1 {
-    padding-top: 0;
-    margin-top: 50px; }
-  h2 {
-    font-size: 30px; }
   .main__content {
     margin-top: 20px; }
   .quiz__btn {
     margin-left: 10px; }
   .commerce__btn-2 {
     margin-left: 10px; }
-  #portfolio h2 {
-    margin-top: 30px; }
-  .portfolio__item {
-    height: 100px; }
-  .portfolio__item_hover .item__hover_text .portfolio__item_desc {
-    margin-top: 0;
-    text-align: center;
-    padding: 0; }
-  .portfolio__item_hover .item__hover_text {
-    position: static;
-    text-align: center; }
   #contacts h2 {
     text-align: center;
     margin-bottom: 10px;
@@ -1398,13 +1418,22 @@ input:focus:-ms-input-placeholder {
   .menu__digma-design {
     font-size: 40px;
     letter-spacing: 5px;
-    width: 500px; } }
+    width: 500px; }
+  .services__item {
+    height: 100px; }
+  .services__item .services__item_title {
+    font-size: 12px;
+    margin-top: 7px; }
+  .services__item_img {
+    margin-top: -20px; }
+  #services .container {
+    padding-top: 35px; }
+  .arrow {
+    display: none; } }
 
 @media screen and (max-width: 350px) {
   .menu__digma-design {
     width: 450px; }
-  .services__item .services__item_title {
-    font-size: 12px; }
   .header__bar {
     display: none; }
   .menu__btn {
@@ -1412,14 +1441,6 @@ input:focus:-ms-input-placeholder {
   h1 {
     padding-top: 0;
     margin-top: 30px; }
-  .arrow {
-    display: none; }
-  .services__item {
-    height: 110px; }
-  .services__item_img {
-    margin-top: -20px; }
-  #services .container {
-    padding-top: 35px; }
   .contacts__text {
     font-size: 13px; }
   .contacts__form_subheader {
