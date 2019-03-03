@@ -282,7 +282,35 @@
   #form .form__right {
     text-align: center; }
     #form .form__right textarea {
-      height: 150px; } }
+      height: 150px; }
+  .popup {
+    width: 90%;
+    height: 98%;
+    overflow-y: scroll; }
+  .popup .form__flex-container {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .popup .form__left {
+    margin-right: 0;
+    text-align: center; }
+  .popup .form__right {
+    text-align: center; }
+    .popup .form__right textarea {
+      height: 150px; }
+  .close-popup:before {
+    background-color: #111; }
+  .close-popup:after {
+    background-color: #111; }
+  .popup .close-popup {
+    top: 4px;
+    right: 20px; }
+  .demo-btn {
+    display: none; } }
 
 @media screen and (max-width: 576px) {
   .services__item_portfolio-img {
@@ -367,7 +395,17 @@
   .promotion__img .promotion__plate .plate__container {
     width: 100%; }
     .promotion__img .promotion__plate .plate__container img {
-      right: 50px; } }
+      right: 50px; }
+  .popup {
+    width: 99%;
+    height: 99%; }
+  .close-popup:before {
+    background-color: #111; }
+  .close-popup:after {
+    background-color: #111; }
+  .popup .close-popup {
+    top: 0px;
+    right: -15px; } }
 
 @media screen and (max-width: 355px) {
   .promotion__img .promotion__plate .plate__container {
@@ -417,11 +455,17 @@
   #form button {
     width: 100%;
     margin-top: 15px; }
+  .popup button {
+    width: 100%;
+    margin-top: 15px; }
   .form__container input {
     width: 260px; }
   .form__container .tab {
     width: 65px; }
   #form .form__right textarea {
+    width: 260px;
+    padding-top: 15px; }
+  .popup .form__right textarea {
     width: 260px;
     padding-top: 15px; }
   .mask {
