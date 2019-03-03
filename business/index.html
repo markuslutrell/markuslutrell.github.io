@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,20 +13,29 @@
 	<link rel="stylesheet" href="libs/css/slick-theme.css">
 	<link rel="stylesheet" href="libs/css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/preloader.css">
+	<link rel="stylesheet" href="libs/css/animate.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-	<div class="preloader"></div>
+	<div class="preloader">
+		<div class="loader">
+		  <div class="circle"></div>
+		  <div class="circle"></div>
+		  <div class="circle"></div>
+		</div>
+	</div>
 	<header>
 		<div class="container">
 			<nav>
 				<div class="row">
-					<div class="col-xl-3">
+					<div class="col-lg-3 col-md-4 col-5">
 						<a href="" class="logo">
 							Бизнес Элемент
 						</a>
 					</div>
-					<div class="col-xl-7">
+					<div class="col-lg-7 col-0">
 						<div class="menu">
 							<ul>
 								<li><a href="#">Создание сайтов</a></li>
@@ -37,7 +46,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-xl-2">
+					<div class="col-lg-2 col-md-8 col-7">
 						<div class="header__social_media">
 							<a href="#">
 								<i class="fas fa-phone" aria-hidden="true"></i>
@@ -62,9 +71,14 @@
 		<section id="main">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-7">
-						<div class="main__container wrapper">
-							<h1>
+					<div class="col-lg-8">
+						<div class="main__container wrapper2">
+							<div class="pr-text">
+								<img class="pr-text-item" src="img/main-text.png" alt="IMG">
+								<img src="img/main-text-back1.png" alt="Back" class="pr-text-back1">
+								<img src="img/main-text-back2.png" alt="Back" class="pr-text-back2">
+							</div>
+							<h1 class="textillate-demo">
 								За 14 дней сделаем лендинг который увеличит прибыль или вернём деньги
 							</h1>
 							<p class="main__subheader">
@@ -76,29 +90,29 @@
 									Выберите удобный способ связи:
 								</p>
 								<div class="main__contact_links tabs">
-									<a href="#" class="tab contacts__link_item contacts__link_item-email">
+									<span class="tab2 contacts__link_item contacts__link_item-email">
 										<i class="far fa-envelope"></i> E-mail
-									</a>
-									<a href="#" class="tab contacts__link_item contacts__link_item-viber">
+									</span>
+									<span class="tab2 contacts__link_item contacts__link_item-viber">
 										<i class="fab fa-viber"></i>Viber
-									</a>
-									<a href="#" class="tab contacts__link_item">
+									</span>
+									<span class="tab2 contacts__link_item">
 										<i class="contacts__link_item-whatsapp fab fa-whatsapp"></i>WhatsApp
-									</a>
-									<a href="#" class="tab contacts__link_item ">
+									</span>
+									<span class="tab2 contacts__link_item ">
 										<i class="contacts__link_item-telegram fab fa-telegram-plane"></i>Telegram
-									</a>
+									</span>
 								</div>
 							</div>
 							<div class="tab_content">
-								<div class="tab_item">
+								<div class="tab_item2">
 									<div class="main__form">
 										<p class="main__form_title">
 											Ваш контактный e-mail:
 										</p>
 										<div class="main__form_container">
 											<input placeholder="businses@mail.ru" type="email" required>
-											<button>
+											<button class="main__btn">
 												<i class="fas fa-arrow-right"></i>Узнать стоимость
 											</button>
 										</div>
@@ -108,14 +122,14 @@
 										на обработку персональных данных
 									</p>
 								</div>
-								<div class="tab_item">
+								<div class="tab_item2">
 									<div class="main__form">
 										<p class="main__form_title">
 											Введите номер или логин Viber:
 										</p>
 										<div class="main__form_container">
-											<input type="email" required>
-											<button>
+											<input type="text" placeholder="+7 (800) 45-35-36" required>
+											<button class="main__btn">
 												<i class="fas fa-arrow-right"></i>Узнать стоимость
 											</button>
 										</div>
@@ -125,14 +139,14 @@
 										на обработку персональных данных
 									</p>
 								</div>
-								<div class="tab_item">
+								<div class="tab_item2">
 									<div class="main__form">
 										<p class="main__form_title">
 											Введите номер или логин WhatsApp:
 										</p>
 										<div class="main__form_container">
-											<input type="email" required>
-											<button>
+											<input type="text" placeholder="+7 (800) 45-35-36" required>
+											<button class="main__btn">
 												<i class="fas fa-arrow-right"></i>Узнать стоимость
 											</button>
 										</div>
@@ -142,14 +156,14 @@
 										на обработку персональных данных
 									</p>
 								</div>
-								<div class="tab_item">
+								<div class="tab_item2">
 									<div class="main__form">
 										<p class="main__form_title">
 											Введите номер или логин Telegram:
 										</p>
 										<div class="main__form_container">
-											<input type="email" required>
-											<button>
+											<input placeholder="@login" type="text" required>
+											<button class="main__btn">
 												<i class="fas fa-arrow-right"></i>Узнать стоимость
 											</button>
 										</div>
@@ -160,48 +174,6 @@
 									</p>
 								</div>
 							</div>
-								<!-- <div class="wrapper">
-									    <div class="tabs">
-									        <span class="tab">
-									        	<i class="far fa-envelope"></i> E-mail
-									        </span>
-									        <span class="tab">
-									        	<i class="fab fa-viber"></i>Viber
-									        </span>
-									        <span class="tab">
-									        	<i class="contacts__link_item-whatsapp fab fa-whatsapp"></i>WhatsApp
-									        </span>
-									        <span class="tab">
-									        	<i class="contacts__link_item-telegram fab fa-telegram-plane"></i>Telegram
-									        </span>
-									    </div>
-									    <div class="tab_content">
-									        <div class="tab_item">
-												<div class="input__title">
-													Ваш контактный e-mail:
-												</div>
-												<input type="text">
-									        </div>
-									        <div class="tab_item">
-									        	<div class="input__title">
-													Введите номер или логин Viber:
-												</div>
-												<input type="text">
-									        </div>
-									        <div class="tab_item">
-												<div class="input__title">
-													Введите номер или логин WhatsApp:
-												</div>
-												<input type="text">
-									        </div>
-									        <div class="tab_item">
-									        	<div class="input__title">
-													Введите номер или логин Telegram:
-												</div>
-												<input type="text">
-									        </div>
-									    </div>
-									</div> -->
 							</form>
 						</div>
 					</div>
@@ -212,9 +184,10 @@
 		<section id="services">
 			<div class="container">
 				<div class="services__container">
+					<img src="img/fish.png" alt="Fish" class="fish">
 					<div class="row">
-						<div class="col-xl-4">
-							<div class="services__item">
+						<div class="col-xl-4 col-md-6">
+							<div class="services__item services__item1">
 								<div class="services__item_text-container">
 									<div class="services__item_title">
 										Landing page
@@ -248,14 +221,14 @@
 										
 									</div>
 								</div>
-								<div class="services__item_button">
+								<div class="main__btn services__item_button">
 									Получить консультацию
 								</div>
 							</div>
 						</div>
 
-						<div class="col-xl-4">
-							<div class="services__item">
+						<div class="col-xl-4 col-md-6">
+							<div class="services__item services__item2">
 								<div class="services__item_text-container">
 									<div class="services__item_title">
 										Интернет-магазин
@@ -281,14 +254,14 @@
 										</div>
 									</div>
 								</div>
-								<div class="services__item_button">
+								<div class="main__btn services__item_button">
 									Получить консультацию
 								</div>
 							</div>
 						</div>
 						
-						<div class="col-xl-4">
-							<div class="services__item">
+						<div class="col-xl-4 col-md-6">
+							<div class="services__item services__item3">
 								<div class="services__item_text-container">
 									<div class="services__item_title">
 										Корпоративный сайт
@@ -314,14 +287,14 @@
 										</div>
 									</div>
 								</div>
-								<div class="services__item_button">
+								<div class="main__btn services__item_button">
 									Получить консультацию
 								</div>
 							</div>
 						</div>
 
-						<div class="col-xl-4">
-							<div class="services__item">
+						<div class="col-xl-4 col-md-6">
+							<div class="services__item services__item4">
 								<div class="services__item_text-container">
 									<div class="services__item_title">
 										Сайт-Визитка
@@ -347,15 +320,15 @@
 										</div>
 									</div>
 								</div>
-								<div class="services__item_button">
+								<div class="main__btn services__item_button">
 									Получить консультацию
 								</div>
 							</div>
 						</div>
 
 
-						<div class="col-xl-4">
-							<div class="services__item">
+						<div class="col-xl-4 col-md-6">
+							<div class="services__item services__item5">
 								<div class="services__item_text-container">
 									<div class="services__item_title">
 										Эксклюзивный сайт
@@ -383,14 +356,14 @@
 										</div>
 									</div>
 								</div>
-								<div class="services__item_button">
+								<div class="main__btn services__item_button">
 									Получить консультацию
 								</div>
 							</div>
 						</div>
 
-						<div class="col-xl-4">
-							<div class="services__item services__item_portfolio">
+						<div class="col-xl-4 col-md-6">
+							<div class="services__item services__item6 services__item_portfolio">
 								<div class="services__item_text-container">
 									<div class="services__item_portfolio-header">
 										Портфолио
@@ -409,7 +382,7 @@
 										<img src="img/macbook.png" alt="Mac">
 									</div>
 								</div>
-								<div class="services__item_button">
+								<div class="main__btn services__item_button">
 									Перейти в портфолио
 								</div>
 							</div>
@@ -421,7 +394,7 @@
 		<section id="promotion">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-6">
+					<div class="col-lg-6 col-md-7">
 						<div class="promotion__text_container">
 							<div class="promotion__text_subheader">
 								Да, мы точно уверены в результате:
@@ -434,15 +407,24 @@
 								<strong>Приведём клиентов в ваш бизнес</strong> с помощью настройки рекламных кампаний в Яндекс Директ и Google Adwords
 								<strong>с денежной гарантией результата</strong>
 							</div>
-							<a href="#" class="section__btn">
+							<a href="#" class="main__btn section__btn">
 								Обсудить условия
 							</a>
 						</div>
 					</div>
-					<div class="col-xl-6">
+					<div class="col-lg-6 col-md-5">
 						<div class="promotion__img">
 							<img src="img/note.png" alt="Note" class="note">
-							<img src="img/pr-text.png" alt="PR" class="pr-text">
+							<div class="promotion__plate">
+								<div class="dots__container">
+									<img src="img/dots.png" alt="Dots" class="dots">
+								</div>
+								<div class="plate__container">
+									<img src="img/pr-text.png" alt="PR" class="pr-text">
+									<img src="img/pr-text-back1.png" alt="IMG" class="promotion__plate-back1">
+									<img src="img/pr-text-back2.png" alt="IMG" class="promotion__plate-back2">
+								</div>
+							</div>
 							<img src="img/page.png" class="page" alt="Page">
 						</div>
 					</div>
@@ -453,13 +435,13 @@
 		<section id="coverage">
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-7">
+					<div class="col-xl-7 col-lg-6 col-md-5">
 						<div class="coverage__img">
 							<img src="img/diver.png" alt="Mask" class="skafandr">
 							<img src="img/iphone.png" alt="iPhone" class="iphone">
 						</div>
 					</div>
-					<div class="col-xl-5">
+					<div class="col-xl-5 col-lg-6 col-md-7">
 						<div class="coverage__text_container">
 							<div class="coverage__text_subheader">
 								Почему задыхаются 90% всех бизнесов
@@ -474,13 +456,13 @@
 							<div class="coverage__text">
 								Время десктопных сайтов постепенно уходит на задний план, именно поэтому <strong>все наши сайты имеют адаптивную вёрстку или мобильную версию</strong>
 							</div>
-							<a href="#" class="section__btn">
+							<a href="#" class="main__btn section__btn">
 								Узнать подробнее
 							</a>
-							<a href="#" class="demo-btn">
+							<div class="js-button-campaign demo-btn">
 								<span>Смотреть демо</span>
 								<img src="img/arrow.png" alt="Arrow">
-							</a>
+							</div>
 							<img src="img/mask.png" alt="Mask" class="mask">
 						</div>
 					</div>
@@ -495,7 +477,7 @@
 				</h2>
 				<div class="portfolio__container">
 					<div class="row">
-						<div class="col-xl-4">
+						<div class="col-lg-4 col-md-6">
 							<a href="#" class="portfolio__item">
 								<div class="portfolio__item_img">
 									<img src="img/portfolio-item-1.jpg" alt="Portfolio Item">
@@ -512,7 +494,41 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-xl-4">
+						<div class="col-lg-4 col-md-6">
+							<a href="#" class="portfolio__item">
+								<div class="portfolio__item_img">
+									<img src="img/portfolio-item-2.jpg" alt="Portfolio Item">
+								</div>
+								<div class="portfolio__item_hover">
+									<div class="portfolio__item_text-container">
+										<div class="portfolio__item_title">
+											АSIO
+										</div>
+										<div class="portfolio__item_text">
+											Социальная сеть для коучей
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-6">
+							<a href="#" class="portfolio__item">
+								<div class="portfolio__item_img">
+									<img src="img/portfolio-item-3.jpg" alt="Portfolio Item">
+								</div>
+								<div class="portfolio__item_hover">
+									<div class="portfolio__item_text-container">
+										<div class="portfolio__item_title">
+											АSIO
+										</div>
+										<div class="portfolio__item_text">
+											Социальная сеть для коучей
+										</div>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-lg-4 col-md-6">
 							<a href="#" class="portfolio__item">
 								<div class="portfolio__item_img">
 									<img src="img/portfolio-item-1.jpg" alt="Portfolio Item">
@@ -529,7 +545,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-xl-4">
+						<div class="col-lg-4 col-md-6">
 							<a href="#" class="portfolio__item">
 								<div class="portfolio__item_img">
 									<img src="img/portfolio-item-1.jpg" alt="Portfolio Item">
@@ -546,7 +562,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-xl-4">
+						<div class="col-lg-4 col-md-6">
 							<a href="#" class="portfolio__item">
 								<div class="portfolio__item_img">
 									<img src="img/portfolio-item-1.jpg" alt="Portfolio Item">
@@ -563,7 +579,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-xl-4">
+						<div class="col-lg-4 col-md-6">
 							<a href="#" class="portfolio__item">
 								<div class="portfolio__item_img">
 									<img src="img/portfolio-item-1.jpg" alt="Portfolio Item">
@@ -580,7 +596,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-xl-4">
+						<div class="col-lg-4 col-md-6">
 							<a href="#" class="portfolio__item">
 								<div class="portfolio__item_img">
 									<img src="img/portfolio-item-1.jpg" alt="Portfolio Item">
@@ -597,41 +613,7 @@
 								</div>
 							</a>
 						</div>
-						<div class="col-xl-4">
-							<a href="#" class="portfolio__item">
-								<div class="portfolio__item_img">
-									<img src="img/portfolio-item-1.jpg" alt="Portfolio Item">
-								</div>
-								<div class="portfolio__item_hover">
-									<div class="portfolio__item_text-container">
-										<div class="portfolio__item_title">
-											АSIO
-										</div>
-										<div class="portfolio__item_text">
-											Социальная сеть для коучей
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-xl-4">
-							<a href="#" class="portfolio__item">
-								<div class="portfolio__item_img">
-									<img src="img/portfolio-item-1.jpg" alt="Portfolio Item">
-								</div>
-								<div class="portfolio__item_hover">
-									<div class="portfolio__item_text-container">
-										<div class="portfolio__item_title">
-											АSIO
-										</div>
-										<div class="portfolio__item_text">
-											Социальная сеть для коучей
-										</div>
-									</div>
-								</div>
-							</a>
-						</div>
-						<div class="col-xl-4">
+						<div class="col-lg-4 col-md-6">
 							<a href="#" class="portfolio__item">
 								<div class="portfolio__item_img">
 									<img src="img/portfolio-item-1.jpg" alt="Portfolio Item">
@@ -660,7 +642,7 @@
 				<div class="feedback__slider">
 					<div class="feedback__slide">
 						<div class="row">
-							<div class="col-xl-6">
+							<div class="col-md-6">
 								<div class="feedback__slide_img">
 									<img src="img/potolki.jpg" alt="Potolki">
 
@@ -669,7 +651,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="col-xl-6">
+							<div class="col-md-6">
 								<div class="feedback__slide_text">
 									<div class="slide__text_title">
 										Евгений Карпов
@@ -686,7 +668,7 @@
 					</div>
 					<div class="feedback__slide">
 						<div class="row">
-							<div class="col-xl-6">
+							<div class="col-md-6">
 								<div class="feedback__slide_img">
 									<img src="img/potolki.jpg" alt="Potolki">
 
@@ -695,7 +677,7 @@
 									</a>
 								</div>
 							</div>
-							<div class="col-xl-6">
+							<div class="col-md-6">
 								<div class="feedback__slide_text">
 									<div class="slide__text_title">
 										Евгений Карпов
@@ -719,30 +701,35 @@
 					Что говорим мы
 				</h2>
 				<div class="row">
-					<div class="col-xl-6">
+					<div class="col-lg-6 col-md-7">
 						<div class="about__text_container">
 							<img src="img/shark.png" alt="Shark" class="shark">
 							<div class="about__text_title">
-								Рахметов Руслан 
+								Рахметов Руслан и Ганчурин Роман 
 							</div>
 							<div class="about__text_subtitle">
 								<b>Основатель</b> “Бизнес Элемент”
 							</div>
-							<div class="about__text_content">
+							<div class="about__text_content about__text_content1">
 								На сегодняшний день, список компаний которые разрабатывают и продвигают сайты можно листать до глубокой старости и не найти ни одного толкового предложения
 							</div>
-							<div class="about__text_content">
+							<div class="about__text_content about__text_content2">
 								Мы убеждены, наши клиенты хотят чувствовать себя легко и непринуждённо, без боязни перед результатом и без звонков дизайнера в 3 ночи для уточнения деталей
 							</div>
-							<div class="about__text_content">
+							<div class="about__text_content about__text_content3">
 								Именно поэтому, 3 года работы на фрилансе, полная шишек голова, тонна опыта и проверенный делом штат сотрудников, дают нам возможность сегодня гарантировать результат подкрепляя свои слова денежной гарантией
 							</div>
-							<div class="about__text_content">
+							<div class="about__text_content about__text_content4">
 								Единственной серьёзной гарантией из существующих на данный момент
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-6"></div>
+					<div class="col-lg-6 col-md-5">
+						<div class="about__img">
+							<img class="man" src="img/man.png" alt="Man">
+							<!-- <img class="air" src="img/air.png" alt="Air"> -->
+						</div>
+					</div>
 				</div>
 				<div class="about__bottom-text">
 					Из интервью для сайта Freelancer.ru в 2017 году
@@ -821,7 +808,7 @@
 								<textarea name="Сообщение"></textarea>
 							</div>
 						</div>
-						<button>
+						<button class="main__btn">
 							Отправить заявку
 						</button>
 						<div class="policies">
@@ -835,7 +822,7 @@
 		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="col-xl-4">
+					<div class="col-md-4">
 						<div class="footer__menu">
 							<div class="footer__menu_header">
 								Карта сайта:
@@ -849,7 +836,7 @@
 							</ul>
 						</div>
 					</div>
-					<div class="col-xl-4">
+					<div class="col-md-4">
 						<div class="footer__contacts">
 							<div class="footer__contacts_header">
 								Свяжитесь с нами:
@@ -886,7 +873,7 @@
 							</a>
 						</div>
 					</div>
-					<div class="col-xl-4">
+					<div class="col-md-4">
 						<a href="#" class="footer__logo">
 							Бизнес Элемент
 						</a>
@@ -895,9 +882,25 @@
 			</div>
 		</footer>
 	</div>
+	
+	<div class="demo-mockup overlay js-overlay-campaign">
+		<div class="demo-mockup-popup js-popup-campaign">
+			<div class="demo-mockup__container">
+				<img src="img/iPhoneXRBlue.png" alt="iPhone" class="iphone-mockup">
+				<iframe src="http://new-ceiling.ru/" width="375" height="667" frameborder="0"></iframe>
+			</div>
+			<div class="close-popup js-close-campaign"></div>
+		</div>
+	</div>
 
 	<script src="libs/js/jquery.min.js"></script>
 	<script src="libs/js/slick.min.js"></script>
+	<script src="libs/js/animate-css.js"></script>
+	<script src="libs/js/waypoints.min.js"></script>
+	<script src="libs/js/jQuery.scrollSpeed.js"></script>
+	<script src="libs/js/jquery.textillate.js"></script>
+	<script src="libs/js/jquery.lettering.js"></script>
+	<script src="libs/js/jquery.fittext.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>

@@ -117,10 +117,6 @@
     margin-bottom: 30px;
 }
 
-.slick-prev:hover .slick-prev:before,.slick-next:hover .slick-next:before
-{
-    content: url(../../../../img/arrow-active.png);
-}
 
 .slick-dots
 {
