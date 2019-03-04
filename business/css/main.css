@@ -142,10 +142,8 @@ header {
               transform: translateY(-75px); }
 
 /*-----------------Main----------------------*/
-#main {
-  margin-top: -50px; }
-  #main form {
-    margin-top: 15px; }
+#main form {
+  margin-top: 15px; }
 
 h1 {
   font-size: 36px;
@@ -1482,3 +1480,7 @@ footer {
           animation-delay: 1s; }
   .about__img .man {
     width: 100%; }
+
+audio {
+  position: absolute;
+  z-index: -20; }

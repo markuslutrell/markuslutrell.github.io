@@ -76,6 +76,12 @@ $(window).scroll(function() {
     $(".dots__container").addClass('dots__animation')
 });
 
+$(window).scroll(function() { 
+  if ($(this).scrollTop() > $("#services").offset().top - 200) 
+    $("#bulk").attr("autoplay", "")
+    $("#bgsound").attr("muted", "")
+});
+
 $(function (){ 
     $(' .textillate-demo ').textillate({
         in: {
