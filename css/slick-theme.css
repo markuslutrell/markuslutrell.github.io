@@ -1,9 +1,20 @@
 @charset 'UTF-8';
 /* Slider */
-
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
 
 /* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
 
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
 /* Arrows */
 .slick-prev,
 .slick-next
@@ -12,16 +23,14 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    bottom: 45px;
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     padding: 0;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    z-index: 0;
 
     cursor: pointer;
 
@@ -56,10 +65,6 @@
 .slick-next:before
 {
 
-    font-size: 20px;
-    line-height: 1;
-
-    opacity: .75;
     color: white;
 
     -webkit-font-smoothing: antialiased;
@@ -68,7 +73,9 @@
 
 .slick-prev
 {
-    left: -25px;
+    right: 450px;
+    z-index: 2;
+    transform: rotate(180deg);
 }
 [dir='rtl'] .slick-prev
 {
@@ -77,8 +84,31 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: url(../img/arrow-slider.png);
+    width: 100%;
 }
+
+.slick-prev:hover{
+    transform: rotate(0deg);
+    margin-bottom: 1px;
+    margin-left: 2px;
+}
+
+.slick-next:hover{
+    transform: rotate(180deg);
+    margin-bottom: -1px;
+    margin-left: 2px;
+}
+
+.slick-prev:hover:before
+{
+    content: url(../img/arrow-active.png);
+}
+.slick-next:hover:before
+{
+    content: url(../img/arrow-active.png);
+}
+
 [dir='rtl'] .slick-prev:before
 {
     content: '→';
@@ -86,7 +116,7 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 410px;
 }
 [dir='rtl'] .slick-next
 {
@@ -95,7 +125,7 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: url(../img/arrow-slider.png);
 }
 [dir='rtl'] .slick-next:before
 {
@@ -105,8 +135,9 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
+
 
 .slick-dots
 {
@@ -129,14 +160,12 @@
 
     display: inline-block;
 
-    width: 11px;
-    height: 11px;
+    width: 20px;
+    height: 20px;
     margin: 0 5px;
     padding: 0;
-    border-radius: 50%;
 
     cursor: pointer;
-    background-color: #293335;
 }
 .slick-dots li button
 {
@@ -145,8 +174,8 @@
 
     display: block;
 
-    width: 11px;
-    height: 11px;
+    width: 20px;
+    height: 20px;
     padding: 5px;
 
     cursor: pointer;
@@ -164,32 +193,32 @@
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
 {
-    opacity: .95;
+    opacity: 1;
 }
 .slick-dots li button:before
 {
+    font-family: 'slick';
+    font-size: 6px;
+    line-height: 20px;
 
     position: absolute;
-    top: -1px;
-    left: -1px;
+    top: 0;
+    left: 0;
 
-    width: 13px;
-    height: 13px;
+    width: 20px;
+    height: 20px;
 
-    content: '';
-    display: block;
-    margin: auto;
-    background: #007795; 
+    content: '•';
     text-align: center;
-    border-radius: 50%;
 
-    opacity: 0;
+    opacity: .25;
+    color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: 1;
-
+    opacity: .75;
+    color: black;
 }
