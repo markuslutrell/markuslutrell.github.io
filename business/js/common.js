@@ -76,10 +76,6 @@ $(window).scroll(function() {
     $(".dots__container").addClass('dots__animation')
 });
 
-$(function() { 
- jQuery.scrollSpeed(50, 1000)
-});
-
 $(function (){ 
     $(' .textillate-demo ').textillate({
         in: {

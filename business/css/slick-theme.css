@@ -27,8 +27,8 @@
 
     display: block;
 
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     padding: 0;
     z-index: 0;
 
@@ -76,7 +76,6 @@
     right: 450px;
     z-index: 2;
     transform: rotate(180deg);
-    margin-top: -8px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -85,7 +84,29 @@
 }
 .slick-prev:before
 {
-    content: url(../img/arrow.png);
+    content: url(../img/arrow-slider.png);
+    width: 100%;
+}
+
+.slick-prev:hover{
+    transform: rotate(0deg);
+    margin-bottom: 1px;
+    margin-left: 2px;
+}
+
+.slick-next:hover{
+    transform: rotate(180deg);
+    margin-bottom: -1px;
+    margin-left: 2px;
+}
+
+.slick-prev:hover:before
+{
+    content: url(../img/arrow-active.png);
+}
+.slick-next:hover:before
+{
+    content: url(../img/arrow-active.png);
 }
 
 [dir='rtl'] .slick-prev:before
@@ -104,7 +125,7 @@
 }
 .slick-next:before
 {
-    content: url(../img/arrow.png);
+    content: url(../img/arrow-slider.png);
 }
 [dir='rtl'] .slick-next:before
 {
