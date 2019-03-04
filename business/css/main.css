@@ -149,7 +149,7 @@ h1 {
   font-size: 36px;
   font-weight: 900;
   letter-spacing: 1.44px;
-  margin-top: 170px; }
+  margin-top: 140px; }
 
 .main__subheader {
   padding-right: 150px;
@@ -301,7 +301,7 @@ h1 {
   .main__container .pr-text {
     position: absolute;
     right: 110px;
-    bottom: -10px;
+    bottom: -30px;
     -webkit-animation-delay: 2s;
             animation-delay: 2s; }
     .main__container .pr-text img {
@@ -1011,20 +1011,20 @@ h1 {
     text-decoration: none; }
 
 .about__text_content1 {
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s; }
+
+.about__text_content2 {
+  -webkit-animation-delay: .75s;
+          animation-delay: .75s; }
+
+.about__text_content3 {
   -webkit-animation-delay: 1s;
           animation-delay: 1s; }
 
-.about__text_content2 {
+.about__text_content4 {
   -webkit-animation-delay: 1.25s;
           animation-delay: 1.25s; }
-
-.about__text_content3 {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s; }
-
-.about__text_content4 {
-  -webkit-animation-delay: 1.75s;
-          animation-delay: 1.75s; }
 
 /*------------------About----------------------*/
 #about {
@@ -1124,7 +1124,8 @@ h1 {
     width: 286px;
     -webkit-border-radius: 3px;
             border-radius: 3px;
-    padding-left: 30px; }
+    padding-left: 30px;
+    opacity: .6; }
   .form__container .tabs {
     -webkit-border-radius: 3px;
             border-radius: 3px;
