@@ -1,0 +1,4 @@
+@media screen and (max-width: 1600px) {
+  .secret-wrapper__image img {
+    width: 950px;
+    left: -100px; } }
