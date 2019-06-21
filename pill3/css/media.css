@@ -6,24 +6,19 @@
 @media screen and (max-width: 1500px) {
   .effect-wrapper__effect-1 {
     position: absolute;
-    top: 100px;
-    right: 200px;
-    width: 600px; }
+    right: 430px; }
   .effect-wrapper__effect-2 {
     position: absolute;
-    bottom: 10px;
-    right: 220px;
-    width: 500px; }
+    bottom: -30px; }
   .effect-wrapper__effect-3 {
-    position: absolute;
-    top: 20px;
-    left: 160px;
-    width: 600px; }
+    position: absolute; }
   .effect-wrapper__effect-4 {
-    position: absolute;
-    bottom: 140px;
-    left: 160px;
-    width: 650px; }
+    left: 420px;
+    bottom: 150px; }
+    .effect-wrapper__effect-4 .effect__item--header img {
+      position: absolute;
+      top: -44px;
+      left: -320px; }
   .effect-wrapper {
     position: relative;
     width: 300px; }
@@ -32,25 +27,70 @@
 
 @media screen and (max-width: 1366px) {
   .effect-wrapper__effect-1 {
-    position: absolute;
-    top: 80px;
-    right: 180px;
-    width: 575px; }
+    top: 140px;
+    right: 350px; }
+    .effect-wrapper__effect-1 .effect__item--header img {
+      position: absolute;
+      bottom: -35px;
+      right: -220px; }
+    .effect-wrapper__effect-1 .effect__item--header h3 {
+      margin-bottom: 15px; }
+      .effect-wrapper__effect-1 .effect__item--header h3:after {
+        content: url(../img/vector-1.png);
+        display: block;
+        position: absolute;
+        left: -25px;
+        top: 25px; }
   .effect-wrapper__effect-2 {
     position: absolute;
-    bottom: 0px;
-    right: 240px;
-    width: 480px; }
+    bottom: -30px;
+    right: 220px;
+    width: 398px; }
+    .effect-wrapper__effect-2 .effect__item--header img {
+      position: absolute;
+      top: -115px;
+      right: -20px; }
+    .effect-wrapper__effect-2 .effect__item--header h3 {
+      margin-bottom: 15px; }
+      .effect-wrapper__effect-2 .effect__item--header h3:after {
+        content: url(../img/vector-3.png);
+        display: block;
+        position: absolute;
+        left: 2px;
+        top: -72px;
+        -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+                transform: rotate(180deg); }
   .effect-wrapper__effect-3 {
     position: absolute;
-    top: 25px;
-    left: 140px;
-    width: 580px; }
+    left: 380px; }
+    .effect-wrapper__effect-3 .effect__item--header img {
+      position: absolute;
+      bottom: 20px;
+      left: -210px; }
+    .effect-wrapper__effect-3 .effect__item--header h3 {
+      margin-bottom: 15px; }
+      .effect-wrapper__effect-3 .effect__item--header h3:after {
+        content: url(../img/vector-3.png);
+        display: block;
+        position: absolute;
+        right: 200px;
+        top: 25px; }
   .effect-wrapper__effect-4 {
-    position: absolute;
-    bottom: 160px;
-    left: 100px;
-    width: 600px; }
+    left: 350px;
+    bottom: 150px; }
+    .effect-wrapper__effect-4 .effect__item--header img {
+      position: absolute;
+      top: -40px;
+      left: -210px; }
+    .effect-wrapper__effect-4 .effect__item--header h3 {
+      margin-bottom: 15px; }
+      .effect-wrapper__effect-4 .effect__item--header h3:after {
+        content: url(../img/vector-4.png);
+        display: block;
+        position: absolute;
+        right: 100px;
+        top: -12px; }
   .effect-wrapper {
     position: relative;
     width: 300px; }
@@ -60,36 +100,96 @@
     width: 1100px; } }
 
 @media screen and (max-width: 1200px) {
-  #form h2 {
-    width: 900px; }
+  .effect__item--header h3 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0; }
+  .effect__item--content {
+    font-size: 14px;
+    line-height: 21px; }
   .effect-wrapper__effect-1 {
-    position: absolute;
-    top: 70px;
-    right: 130px;
-    width: auto; }
+    top: 60px;
+    right: 275px;
+    width: 263px; }
+    .effect-wrapper__effect-1 .effect__item--header img {
+      position: absolute;
+      bottom: 62px;
+      right: -100px;
+      width: 25px; }
+    .effect-wrapper__effect-1 .effect__item--header h3 {
+      margin-bottom: 15px; }
+      .effect-wrapper__effect-1 .effect__item--header h3:after {
+        content: url(../img/vector-1-pad.png);
+        display: block;
+        position: absolute;
+        left: 0px;
+        top: 27px; }
   .effect-wrapper__effect-2 {
     position: absolute;
-    bottom: -83px;
-    right: 125px;
-    width: auto; }
+    bottom: -85px;
+    right: 275px;
+    width: 263px; }
+    .effect-wrapper__effect-2 .effect__item--header img {
+      position: absolute;
+      top: -52px;
+      right: -98px;
+      width: 25px; }
+    .effect-wrapper__effect-2 .effect__item--header h3 {
+      margin-bottom: 15px; }
+      .effect-wrapper__effect-2 .effect__item--header h3:after {
+        content: url(../img/vector-2-pad.png);
+        display: block;
+        position: absolute;
+        left: 2px;
+        top: -37px;
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none; }
+  .effect-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    height: auto; }
+    .effect-wrapper .effect-wrapper__bottle {
+      width: 179px;
+      margin-left: auto;
+      margin-right: auto; }
   .effect-wrapper__effect-3 {
     position: absolute;
-    top: -10px;
-    left: 90px;
-    width: auto; }
+    left: 250px;
+    width: 263px;
+    top: -5px; }
+    .effect-wrapper__effect-3 .effect__item--header img {
+      position: absolute;
+      bottom: 88px;
+      left: -90px;
+      width: 25px; }
+    .effect-wrapper__effect-3 .effect__item--header h3 {
+      margin-bottom: 15px; }
+      .effect-wrapper__effect-3 .effect__item--header h3:after {
+        content: url(../img/vector-3-pad.png);
+        display: block;
+        position: absolute;
+        right: 100px;
+        top: 28px; }
   .effect-wrapper__effect-4 {
-    position: absolute;
-    bottom: 42px;
-    left: 100px;
-    width: auto; }
-  .effect-wrapper {
-    position: relative;
-    width: 179px;
-    height: auto;
-    margin-top: 50px;
-    margin-bottom: 280px; }
-    .effect-wrapper .effect-wrapper__bottle {
-      width: 179px; }
+    left: 250px;
+    bottom: 15px;
+    width: 263px; }
+    .effect-wrapper__effect-4 .effect__item--header img {
+      position: absolute;
+      top: -20px;
+      left: -100px;
+      width: 25px; }
+    .effect-wrapper__effect-4 .effect__item--header h3 {
+      margin-bottom: 15px; }
+      .effect-wrapper__effect-4 .effect__item--header h3:after {
+        content: url(../img/vector-4-pad.png);
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: -5px; }
+  #form h2 {
+    width: 900px; }
   .header__content-wrapper--right img {
     width: 300px; }
   .header__content {
@@ -548,4 +648,37 @@
       margin-top: 4px;
       margin-bottom: 4px; }
   .effect__items {
-    display: block; } }
+    display: block; }
+  .effect__item--header h3 {
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0; }
+  .effect__item--content {
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 5px;
+    margin-bottom: 25px; }
+  .effect__item--header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .effect__item--header img {
+      padding-right: 12px; }
+  .effect__item {
+    position: static; }
+    .effect__item .effect__item--header img {
+      position: static; }
+    .effect__item .effect__item--header h3 {
+      margin-bottom: 0px; }
+      .effect__item .effect__item--header h3:after {
+        display: none; }
+  .effect__item--content {
+    width: 280px; } }
