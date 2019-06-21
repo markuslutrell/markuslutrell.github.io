@@ -715,3 +715,30 @@ nav {
 
 #form h2 {
   width: 1250px; }
+
+.price {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .price .old-price {
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
+    text-decoration: line-through;
+    padding-top: 23px; }
+  .price .new-price {
+    font-size: 48px;
+    color: #EFC734;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold; }

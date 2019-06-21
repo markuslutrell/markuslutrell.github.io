@@ -295,6 +295,13 @@
   #timer-text-8e6ceb30694b29353583fb7e3966a8600-minutes,
   #timer-text-8e6ceb30694b29353583fb7e3966a8600-secundes {
     font-size: 14px !important; }
+  .price {
+    margin-top: 0; }
+    .price .old-price {
+      font-size: 20px;
+      padding-top: 10px; }
+    .price .new-price {
+      font-size: 32px; }
   .form {
     width: 267px;
     margin-top: 20px;
@@ -681,4 +688,32 @@
       .effect__item .effect__item--header h3:after {
         display: none; }
   .effect__item--content {
-    width: 280px; } }
+    width: 280px; }
+  .header__content-wrapper {
+    display: block; }
+  #last-block .header__content-wrapper--right img {
+    padding-right: 0;
+    margin: 0;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto; }
+  .header__content-wrapper--right img {
+    padding-right: 0;
+    margin: 0;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto; }
+  .header__content-wrapper--right {
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto; }
+  .header__content-wrapper--left {
+    margin-left: 35px; }
+  .price {
+    margin-top: 0;
+    margin-left: -40px; }
+    .price .old-price {
+      font-size: 20px;
+      padding-top: 10px; }
+    .price .new-price {
+      font-size: 32px; } }
