@@ -93,7 +93,8 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   height: 100%;
-  margin: 0; }
+  margin: 0;
+  margin-right: -30px; }
   .menu .menu__item_link {
     font-weight: bold;
     display: block;
@@ -688,7 +689,7 @@ h2 {
   padding-bottom: 3px; }
 
 .calc-form__wrapper {
-  padding: 40px 15px;
+  padding: 40px 0px;
   -webkit-border-radius: 40px;
           border-radius: 40px;
   margin-bottom: 20px;
@@ -706,7 +707,10 @@ h2 {
   cursor: pointer; }
 
 .calc-form__tabs {
-  text-align: center; }
+  text-align: center;
+  border-bottom: 1px solid #a2a2a2;
+  width: 100%;
+  padding-bottom: 6px; }
 
 .calc-price__item_label {
   font-size: 18px;
@@ -737,10 +741,16 @@ h2 {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  margin-top: 40px; }
+  margin-top: 40px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .calc-price__item {
   margin: 13px 32px; }
+  .calc-price__item:last-child {
+    width: 220px; }
 
 select.calc-price__item_input {
   -webkit-box-sizing: border-box;
@@ -767,10 +777,17 @@ select.calc-price__item_input {
   border: 2px solid #ff6e0f;
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
-  transition: .3s ease; }
+  transition: .3s ease;
+  margin-right: auto;
+  margin-left: -13px;
+  line-height: 48px; }
   .calc-price__btn:hover {
     background: transparent;
     color: #ff6e0f; }
+
+#calc .policies {
+  width: 130%;
+  margin-left: -27px; }
 
 input[type=checkbox], input[type=radio] {
   display: none; }
@@ -817,7 +834,6 @@ input[type=radio]:checked + label:before {
   font-size: 20px; }
 
 .policies {
-  margin-left: -15px;
   margin-top: 10px; }
   .policies label {
     font-size: 10px;
@@ -838,7 +854,7 @@ input[type=radio]:checked + label:before {
   position: absolute;
   right: -415px;
   bottom: -265px;
-  z-index: 2; }
+  z-index: -1; }
 
 .calc-price__item_input, .calc-price__item, .calc-form__tabs {
   position: relative;
@@ -1503,3 +1519,81 @@ footer {
   width: 471px;
   padding: 40px;
   text-align: center; }
+
+.question__popup_content {
+  margin-left: -50px; }
+
+.js-button-campaign5 {
+  cursor: pointer; }
+
+.policies-popup__header {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center; }
+
+.policies-popup__p {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.policies-popup {
+  height: 95vh;
+  overflow-y: scroll;
+  width: 95%;
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  -webkit-box-shadow: -1px 1px 26px 3px rgba(0, 0, 1, 0.14);
+          box-shadow: -1px 1px 26px 3px rgba(0, 0, 1, 0.14);
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 0; }
+
+.policies-popup__close {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  top: 15px;
+  right: 15px; }
+
+.policies-popup__p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .policies-popup__p span {
+    font-weight: 700; }
+
+.policies-popup_link {
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .policies-popup_link:hover {
+    text-decoration: none; }
+
+.docs-popup__header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px; }
+
+.docs-popup {
+  -webkit-box-shadow: -1px 1px 26px 3px rgba(0, 0, 1, 0.14);
+          box-shadow: -1px 1px 26px 3px rgba(0, 0, 1, 0.14);
+  -webkit-border-radius: 40px;
+          border-radius: 40px;
+  padding-left: 60px;
+  padding-bottom: 30px; }
+
+.docs-popup__list {
+  padding: 0; }
+
+.docs-popup__list_item {
+  margin-top: 11px;
+  margin-bottom: 11px;
+  font-size: 18px;
+  font-weight: 500; }

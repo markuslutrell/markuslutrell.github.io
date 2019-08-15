@@ -154,3 +154,47 @@ $(document).mouseup(function (e) {
     
   }
 });
+
+// открыть по кнопке
+$('.js-button-campaign5').click(function() { 
+  
+  $('.js-overlay-campaign5').fadeIn();
+  $('.js-overlay-campaign5').addClass('disabled');
+});
+
+// закрыть на крестик
+$('.js-close-campaign').click(function() { 
+  $('.js-overlay-campaign5').fadeOut();
+  
+});
+
+// закрыть по клику вне окна
+$(document).mouseup(function (e) { 
+  var popup = $('.js-popup-campaign5');
+  if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+    $('.js-overlay-campaign5').fadeOut();
+    
+  }
+});
+
+// открыть по кнопке
+$('.js-button-campaign6').click(function() { 
+  
+  $('.js-overlay-campaign6').fadeIn();
+  $('.js-overlay-campaign6').addClass('disabled');
+});
+
+// закрыть на крестик
+$('.js-close-campaign').click(function() { 
+  $('.js-overlay-campaign6').fadeOut();
+  
+});
+
+// закрыть по клику вне окна
+$(document).mouseup(function (e) { 
+  var popup = $('.js-popup-campaign6');
+  if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+    $('.js-overlay-campaign6').fadeOut();
+    
+  }
+});

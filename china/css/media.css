@@ -63,7 +63,8 @@
             transform: scale(0);
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
-    transition: .3s ease; }
+    transition: .3s ease;
+    margin: 0; }
     .menu .menu__item_link {
       display: block;
       height: 35px;
@@ -279,14 +280,21 @@
   .calc-popup__table_row {
     width: 100%; }
   .popup {
-    height: 95vh;
+    max-height: 95vh;
     overflow-y: scroll; }
   .close-popup {
     top: 0px;
     right: 0px;
     border-color: #fff;
     -webkit-box-shadow: none;
-            box-shadow: none; } }
+            box-shadow: none; }
+  .question__popup_content {
+    margin-left: 0px; }
+  .policies-popup__close {
+    top: 15px;
+    right: 15px; }
+  .docs-popup {
+    padding: 30px; } }
 
 @media screen and (max-width: 576px) {
   html {
