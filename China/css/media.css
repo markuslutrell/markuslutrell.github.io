@@ -1,0 +1,414 @@
+@media screen and (max-width: 1600px) {
+  .main__bg {
+    right: -325px; } }
+
+@media screen and (max-width: 1200px) {
+  html {
+    margin: 0; }
+  .cabinet__btn--mobile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .cabinet__btn--desktop {
+    display: none; }
+  .menu {
+    margin-left: 10px; }
+  .main__bg {
+    right: -525px; }
+  .why__wrapper {
+    margin: 0; }
+  .why__item-1 {
+    left: -35px; }
+  .why__item-2 {
+    right: -25px; }
+  .why__man {
+    margin-left: -55px; }
+  .principles__item {
+    width: 300px; }
+  .dealers__wrapper {
+    margin-left: -50px; }
+  .principles__item-5 {
+    width: 100%; }
+  .principles__plate {
+    right: 0; }
+  .calc-form__building_2 {
+    right: -550px; } }
+
+@media screen and (max-width: 992px) {
+  html {
+    margin: 0; }
+  .nav__phone {
+    font-size: 16px;
+    margin-right: 10px; }
+  .mobile-menu {
+    display: block; }
+  .menu {
+    position: absolute;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: -10;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    top: 80px !important;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease; }
+    .menu .menu__item_link {
+      display: block;
+      height: 35px;
+      width: 200px;
+      line-height: 35px;
+      background: #fcfcfc;
+      padding-left: 30px;
+      border-bottom: 1px solid #dfdfdf; }
+      .menu .menu__item_link:hover {
+        color: #fff;
+        background: #ff6e0f;
+        border-bottom: 1px solid #ff6e0f; }
+    .menu .menu__item_link:after {
+      display: none; }
+  .main__bg {
+    right: -725px; }
+  .why__man {
+    display: none; }
+  .why__item {
+    background-color: #ffffff;
+    -webkit-box-shadow: 1px -1px 26px 3px rgba(0, 0, 1, 0.14);
+            box-shadow: 1px -1px 26px 3px rgba(0, 0, 1, 0.14);
+    -webkit-border-radius: 25px;
+            border-radius: 25px;
+    padding-top: 30px;
+    position: relative;
+    left: 0;
+    right: 0;
+    width: 335px; }
+  .why-bg-1, .why-bg-2 {
+    display: none; }
+  .why__item_header {
+    margin-top: 0; }
+  .why__wrapper {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .why__circle {
+    bottom: -275px; }
+  #why {
+    padding-bottom: 250px; }
+  .why__item_header {
+    margin-left: 25px; }
+  .why__item_list {
+    margin-left: 35px; }
+  .colrev {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+  .principles__header {
+    text-align: center;
+    padding: 0; }
+  .principles__wrapper {
+    margin: 0;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .principles__item-5 {
+    width: 610px;
+    margin-bottom: 50px; }
+  .dealers__wrapper {
+    margin-left: 0;
+    margin-top: 25px; }
+  .principles__plate {
+    right: 50%;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+    top: 100px; }
+  #principles h2 {
+    margin-bottom: 150px; }
+  .calc-price__wrapper {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .btn.calc-price__btn {
+    margin: 10px auto; }
+  .form__wrapper {
+    width: 100%; }
+  .form__header {
+    padding: 0 50px; }
+  .form__subheader {
+    margin-left: 0;
+    text-align: center; }
+  footer {
+    text-align: center; }
+  .footer__address {
+    text-align: center;
+    margin-top: 25px; }
+  .footer__contacts {
+    margin-top: 25px; }
+  .footer__social {
+    margin-top: 25px; }
+  .footer__bottom_wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .footer__rights {
+    margin: 15px 0; }
+  .footer__docs-btn {
+    margin-left: auto;
+    margin-right: auto; }
+  .footer__call {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .footer__call_number {
+    margin-bottom: 20px; } }
+
+@media screen and (max-width: 768px) {
+  html {
+    margin: 0; }
+  .menu {
+    left: 0; }
+  .main__bg {
+    display: none; }
+  .why__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .why__item-1 {
+    margin-bottom: 25px; }
+  .principles__item {
+    width: 100%; }
+  .principles__item-5 {
+    width: 100%; }
+  .principles__item-1 img {
+    margin-right: 38px;
+    padding-left: 25px; }
+  .principles__item-2 img {
+    margin-right: 25px; }
+  .principles__item-3 img {
+    margin-right: 23px; }
+  .principles__item-4 img {
+    margin-right: 19px; }
+  .principles__item-5 img {
+    margin-right: 32px; }
+  .calc-price__item {
+    margin: 13px 5px; }
+  .calc-form__tabs span {
+    display: inline-block;
+    height: 20px;
+    margin-top: 7px;
+    margin-bottom: 7px; }
+  .calc-price__item-tr {
+    display: none; }
+  .calc-price__btn {
+    margin-top: 0; }
+  .form-tab__input_wrapper {
+    margin: 0 3px; }
+  .popup {
+    width: 95%; }
+  .question__popup_img {
+    display: none; }
+  .question__popup {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .calc-popup__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .calc-popup__content {
+    margin-left: auto;
+    margin-right: auto; }
+  .calc-popup {
+    padding-left: 30px;
+    padding-right: 30px; }
+  .calc-popup__table_row {
+    width: 100%; }
+  .popup {
+    height: 95vh;
+    overflow-y: scroll; }
+  .close-popup {
+    top: 0px;
+    right: 0px;
+    border-color: #fff;
+    -webkit-box-shadow: none;
+            box-shadow: none; } }
+
+@media screen and (max-width: 576px) {
+  html {
+    margin: 0; }
+  .mobile-hidden-phone {
+    display: none; }
+  .mobile-menu {
+    margin-right: 0; }
+  nav {
+    padding: 27px 0 27px 0; }
+  .menu {
+    top: 84px !important;
+    left: 50%;
+    margin-left: -100px; }
+  .main__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .main__btn_1 {
+    margin-right: 0;
+    margin-bottom: 20px; }
+  h1 {
+    font-size: 38px;
+    margin-top: 50px;
+    margin-bottom: 40px; }
+    h1 span {
+      font-size: 30px; }
+  .main__list_item {
+    font-size: 20px; }
+  #principles h2 {
+    margin-bottom: 200px; }
+  .principles__plate {
+    top: 150px; }
+  .slick-prev {
+    left: 25px; }
+  .slick-next {
+    right: 25px; }
+  .calc-form__building_2, .calc-form__building_1 {
+    display: none; }
+  .calc-price__item_input {
+    width: 170px;
+    font-size: 16px;
+    height: 40px; }
+  .calc-price__item_label {
+    font-size: 16px; }
+  .calc-price__item {
+    margin-left: 3px;
+    margin-right: 3px; }
+  .calc-form__wrapper {
+    padding: 30px 10px; }
+  .form-tab__input_wrapper {
+    margin: 0; }
+  .form-tab__input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+  .form-tabs {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .form-tab {
+    margin: 5px 10px; }
+  .form__header {
+    padding: 0; }
+  .form-tab__input_text {
+    margin-top: 15px; } }
+
+@media screen and (max-width: 400px) {
+  .calc-form__wrapper {
+    padding: 30px 20px; }
+  .calc-price__item {
+    width: 100%; }
+  .calc-price__item_input {
+    width: 100%;
+    font-size: 16px;
+    height: 43px; }
+  .logo img {
+    width: 100px;
+    padding-top: 5px; }
+  .why__item {
+    width: 310px; }
+  .why__item_header {
+    margin-left: 10px; }
+  .why__item_list {
+    margin-left: 25px; }
+  .why__item-2 .why__item_header {
+    margin-left: 10px; }
+  .why__item-2 .why__item_list {
+    margin-left: 25px; }
+  .dealers__img {
+    width: 370px; }
+  .dealers__btn {
+    width: 250px;
+    height: 55px;
+    margin-top: -85px; }
+  .calc-price__btn {
+    width: 100%; }
+  .policies {
+    text-align: center;
+    margin-left: 0; }
+  .calc-popup__table_row {
+    font-size: 13px; }
+  .calc-popup__table_row:last-child {
+    font-size: 16px; }
+  .calc-form__tab {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 15px; }
+  .question__popup_subheader {
+    padding: 0 30px; }
+  .question__popup_header {
+    padding-top: 10px; } }
