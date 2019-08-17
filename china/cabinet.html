@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>Личный кабинет</title>
+
+	<link rel="shortcut icon" href="img/logo.png" type="image/png">
+
+	<link rel="stylesheet" href="libs/css/normalize.css">
+	<link rel="stylesheet" href="libs/css/animate.css">
+	<link rel="stylesheet" href="libs/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+	<section id="authorisation">
+		<img src="img/bg-4.png" alt="Background" class="authorisation__bg">
+
+		<div class="authorisation__wrapper">
+        <div class="authorisation__tabs">
+	        <span class="authorisation__tab">Авторизация</span>
+	        <span class="authorisation__tab">Регистрация</span>      
+        </div>
+        <div class="authorisation__tab_content">
+		     <div class="authorisation__tab_item">
+		   		<form class="authorisation__form">
+		   			<div class="authorisation__form_input">
+		   				<div class="authorisation__form_input-header">
+		   					Email:
+		   				</div>
+		   				<input placeholder="Россия" type="text" class="authorisation__form_input-item">
+		   			</div>
+		   			<div class="authorisation__form_input">
+		   				<div class="authorisation__form_input-header">
+		   					Пароль:
+		   				</div>
+		   				<input placeholder="Россия" type="text" class="authorisation__form_input-item">
+		   			</div>
+		   			<button class="btn authorisation__form_btn">
+		   				Войти в личный кабинет
+		   			</button>
+		   			<a href="#" class="authorisation__form_forgot">
+		   				Забыли пароль?
+		   			</a>
+		   		</form>
+		     </div>
+		     <div class="authorisation__tab_item">
+		     	<form class="authorisation__form registration__form">
+		   			<div class="authorisation__form_input">
+		   				<input placeholder="Email*" type="text" class="authorisation__form_input-item">
+		   			</div>
+		   			<div class="authorisation__form_input">
+		   				<input placeholder="Пароль*" type="text" class="authorisation__form_input-item">
+		   			</div>
+		   			<div class="authorisation__form_input">
+		   				<input placeholder="ФИО*" type="text" class="authorisation__form_input-item">
+		   			</div>
+		   			<div class="authorisation__form_input">
+		   				<input placeholder="Телефон" type="text" class="authorisation__form_input-item">
+		   			</div>
+		   			<div class="authorisation__form_input">
+		   				<input placeholder="Город" type="text" class="authorisation__form_input-item">
+		   			</div>
+		   			<button class="btn authorisation__form_btn">
+		   				Зарегистрироваться 
+		   			</button>
+		   			<div class="policies">
+	      				<input class="policies__checkbox" type="checkbox" id="pol-11">
+	      				<label for="pol-11">
+	      					Принимаю условия <span class="js-button-campaign5">Политики Конфиденциальности</span>
+	      				</label>
+	      			</div>
+		   		</form>
+		     </div>
+        </div>
+		</div>
+	</section>
+	
+	<section id="cabinet">
+		<header class="cabinet__header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4 col-sm-2">
+						<a href="index.html" class="cabinet__logo">
+							<img src="img/logo2.png" alt="Logo">
+						</a>
+					</div>
+					<div class="col-md-8 col-sm-10">
+						<div class="cabinet__header_content">
+							<div class="cabinet__header_name">
+								<img src="img/portrait.png" alt="User"> Иванов Иван
+							</div>
+							<div class="cabinet__header_wallet">
+								<img src="img/yuan.png" alt="Money"> 2341.00
+							</div>
+							<a href="#" class="cabinet__header_btn">Выход</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="cabinet-main">
+			
+				<div class="cabinet-main__wrapper">
+		         <div class="cabinet-main__menu">
+		         	<div class="container">
+			            <span class="cabinet-main__menu-item">Мои заказы</span>
+			            <span class="cabinet-main__menu-item">Оплата</span>
+			            <span class="cabinet-main__menu-item">Взаиморасчеты</span>
+			            <span class="cabinet-main__menu-item">Вопрос-Ответ</span>
+			            <span class="cabinet-main__menu-item">Мои данные</span>       
+		            </div>
+		         </div>
+		         <div class="tab_content">
+		         	<div class="container">
+		               <div class="cabinet-main__tab_item">
+		               	<div class="cabinet-main__orders">
+		               		<div class="cabinet-main__nav">
+		               			Главная <span>></span> Мои заказы 
+		               		</div>
+		               		<div class="cabinet-main__orders_wrapper">
+		               			<div class="cabinet-main__orders_header">
+		               				<span>Мои заказы</span>
+		               				<div class="cabinet-main__orders_btn">
+		               					Создать заказ
+		               				</div>
+		               			</div>
+										<div class="cabinet-main__orders_content">
+											<div class="orders__content_navigation">
+											  <span class="orders__content_navigation-item">Активные</span>
+											  <span class="orders__content_navigation-item">Требуется уточнение</span>
+											  <span class="orders__content_navigation-item">Завершенные</span>        
+											</div>
+											<div class="orders__content">
+											  <div class="orders__content_item">
+											  	<table>
+											  		<thead>
+											  			<th>Заказ</th>
+											  			<th>Создан </th>
+											  			<th>Изменен</th>
+											  			<th>Позиции</th>
+											  			<th>Сумма</th>
+											  			<th>Комиссия</th>
+											  			<th>Баланс</th>
+											  			<th>Статус</th>
+											  		</thead>
+											  		<tbody>
+											  			<tr>
+											  				<td>
+											  					#25459
+											  				</td>
+											  				<td>
+											  					11.08.2019
+											  				</td>
+											  				<td>11.08.2019</td>
+											  				<td></td>
+											  				<td>0.00</td>
+											  				<td>100.00</td>
+											  				<td>2500.00</td>
+											  				<td><span class="td_orange">Обработка заказа</span></td>
+											  			</tr>
+
+											  			<tr>
+											  				<td>
+											  					#25459
+											  				</td>
+											  				<td>
+											  					11.08.2019
+											  				</td>
+											  				<td>11.08.2019</td>
+											  				<td></td>
+											  				<td>0.00</td>
+											  				<td>100.00</td>
+											  				<td>2500.00</td>
+											  				<td>Создание заказа</td>
+											  			</tr>
+
+											  			<tr>
+											  				<td>
+											  					#25459
+											  				</td>
+											  				<td>
+											  					11.08.2019
+											  				</td>
+											  				<td>11.08.2019</td>
+											  				<td></td>
+											  				<td>0.00</td>
+											  				<td>100.00</td>
+											  				<td>2500.00</td>
+											  				<td><span class="td_orange">Требуется согласование</span></td>
+											  			</tr>
+
+											  			<tr>
+											  				<td>
+											  					#25459
+											  				</td>
+											  				<td>
+											  					11.08.2019
+											  				</td>
+											  				<td>11.08.2019</td>
+											  				<td></td>
+											  				<td>0.00</td>
+											  				<td>100.00</td>
+											  				<td>2500.00</td>
+											  				<td><span class="td_red">Требуется оплата</span></td>
+											  			</tr>
+											  		</tbody>
+											  	</table>
+											  </div>
+											  <div class="orders__content_item">
+											  	<table>
+											  		<thead>
+											  			<th>Заказ</th>
+											  			<th>Создан </th>
+											  			<th>Изменен</th>
+											  			<th>Позиции</th>
+											  			<th>Сумма</th>
+											  			<th>Комиссия</th>
+											  			<th>Баланс</th>
+											  			<th>Статус</th>
+											  		</thead>
+											  		<tbody>
+											  			<tr>
+											  				<td>
+											  					#25459
+											  				</td>
+											  				<td>
+											  					11.08.2019
+											  				</td>
+											  				<td>11.08.2019</td>
+											  				<td></td>
+											  				<td>0.00</td>
+											  				<td>100.00</td>
+											  				<td>2500.00</td>
+											  				<td><span class="td_orange">Обработка заказа</span></td>
+											  			</tr>
+
+											  			<tr>
+											  				<td>
+											  					#25459
+											  				</td>
+											  				<td>
+											  					11.08.2019
+											  				</td>
+											  				<td>11.08.2019</td>
+											  				<td></td>
+											  				<td>0.00</td>
+											  				<td>100.00</td>
+											  				<td>2500.00</td>
+											  				<td>Создание заказа</td>
+											  			</tr>
+
+											  			<tr>
+											  				<td>
+											  					#25459
+											  				</td>
+											  				<td>
+											  					11.08.2019
+											  				</td>
+											  				<td>11.08.2019</td>
+											  				<td></td>
+											  				<td>0.00</td>
+											  				<td>100.00</td>
+											  				<td>2500.00</td>
+											  				<td><span class="td_orange">Требуется согласование</span></td>
+											  			</tr>
+
+											  			<tr>
+											  				<td>
+											  					#25459
+											  				</td>
+											  				<td>
+											  					11.08.2019
+											  				</td>
+											  				<td>11.08.2019</td>
+											  				<td></td>
+											  				<td>0.00</td>
+											  				<td>100.00</td>
+											  				<td>2500.00</td>
+											  				<td><span class="td_red">Требуется оплата</span></td>
+											  			</tr>
+											  		</tbody>
+											  	</table>
+											  </div>
+											  
+											  <div class="orders__content_item">
+											  	<table>
+											  		<thead>
+											  			<th>Заказ</th>
+											  			<th>Создан </th>
+											  			<th>Изменен</th>
+											  			<th>Позиции</th>
+											  			<th>Сумма</th>
+											  			<th>Комиссия</th>
+											  			<th>Баланс</th>
+											  			<th>Статус</th>
+											  		</thead>
+											  		<tbody>
+											  			<tr>
+											  				<td>
+											  					#25459
+											  				</td>
+											  				<td>
+											  					11.08.2019
+											  				</td>
+											  				<td>11.08.2019</td>
+											  				<td></td>
+											  				<td>0.00</td>
+											  				<td>100.00</td>
+											  				<td>2500.00</td>
+											  				<td><span class="td_orange">Обработка заказа</span></td>
+											  			</tr>
+
+											  			<tr>
+											  				<td>
+											  					#25459
+											  				</td>
+											  				<td>
+											  					11.08.2019
+											  				</td>
+											  				<td>11.08.2019</td>
+											  				<td></td>
+											  				<td>0.00</td>
+											  				<td>100.00</td>
+											  				<td>2500.00</td>
+											  				<td>Создание заказа</td>
+											  			</tr>
+
+											  			<tr>
+											  				<td>
+											  					#25459
+											  				</td>
+											  				<td>
+											  					11.08.2019
+											  				</td>
+											  				<td>11.08.2019</td>
+											  				<td></td>
+											  				<td>0.00</td>
+											  				<td>100.00</td>
+											  				<td>2500.00</td>
+											  				<td><span class="td_orange">Требуется согласование</span></td>
+											  			</tr>
+
+											  			<tr>
+											  				<td>
+											  					#25459
+											  				</td>
+											  				<td>
+											  					11.08.2019
+											  				</td>
+											  				<td>11.08.2019</td>
+											  				<td></td>
+											  				<td>0.00</td>
+											  				<td>100.00</td>
+											  				<td>2500.00</td>
+											  				<td><span class="td_red">Требуется оплата</span></td>
+											  			</tr>
+											  		</tbody>
+											  	</table>
+											  </div>
+											</div>
+										</div>
+		               		</div>
+									
+
+
+		               		<div class="order__content">
+										<div class="order__content_item">
+											<div class="content__item_header">
+												Информация о заказе 
+											</div>
+											<div class="content__item_text">
+												<div class="content__item_text-row">
+													<span>ФИО</span><span>Иванов Иван</span>
+												</div>
+												<div class="content__item_text-row">
+													<span>Город</span><span>Москва</span>
+												</div>
+												<div class="content__item_text-row">
+													<span>Телефон</span><span>89507320075</span>
+												</div>
+												<div class="content__item_text-row">
+													<span>E-mail</span><span>ivanov.52@bk.ru</span>
+												</div>
+												<div class="content__item_text-row">
+													<span>Комиссия</span><span>0%</span>
+												</div>
+												<div class="content__item_text-row">
+													<span>Вес заказа (оплаченный)</span><span>0кг.</span>
+												</div>
+												<div class="content__item_text-row">
+													<span>Комиссия за конв. валюты</span><span>4%</span>
+												</div>
+												<div class="content__item_text-row">
+													<span>Статус</span><span>Черновик</span>
+												</div>
+											</div>
+										</div>
+										<div class="order__content_item">
+											<div class="content__item_header">
+												Финансовая информация
+											</div>
+											<div class="content__item_text">
+												<div class="content__item_text-row">
+													<span>Общая сумма заказа</span><span>168.00 ¥</span>
+												</div>
+												<div class="content__item_text-row">
+													<span>Комиссия</span><span>12.00 ¥</span>
+												</div>
+												<div class="content__item_text-row">
+													<span>Оплачено</span><span>0.00 ¥</span>
+												</div>
+												<div class="content__item_text-row">
+													<span>Курс юаня</span><span>0.00 руб.</span>
+												</div>
+												<div class="content__item_text-row">
+													<span>Баланс</span><span>-168.00 ¥</span>
+												</div>
+												<div class="content__item_text-row">
+													<span>Баланс в рублях</span><span>0.00 р</span>
+												</div>
+											
+											</div>
+										</div>
+										<div class="order__content_item order__content_item--btns">
+											<a href="#" class="btn order__content_btn">
+												Экспорт в Excel
+											</a>
+											<a href="#" class="btn order__content_btn">
+												Задать вопрос по заказу
+											</a>
+											<a href="#" class="btn order__content_btn">
+												Оформить заказ
+											</a>
+										</div>
+										<div class="order__content_item order__content_item--long">
+											<div class="cabinet-main__orders_header">
+			               				<span>Позиции</span>
+			               				<div class="cabinet-main__orders_btn js-button-campaign7">
+			               					Создать позицию +
+			               				</div>
+			               			</div>
+			               			<div class="order__content_table">
+				               			<table>
+											  		<thead>
+											  			<th>Заказ</th>
+											  			<th>Цена</th>
+											  			<th>Количество</th>
+											  			<th>Доставка по Китаю</th>
+											  			<th>Комиссия</th>
+											  			<th>Итого</th>
+											  			<th></th>
+											  		</thead>
+											  		<tbody>
+											  			<tr>
+											  				<td>
+											  					#25459-1
+											  				</td>
+											  				<td>
+											  					12.00 ¥
+											  				</td>
+											  				<td>12 шт.</td>
+											  				<td>12.00 ¥</td>
+											  				<td>12.00 ¥</td>
+											  				<td>168.00 ¥</td>
+											  				<td>
+												  				<span class="order__content_icon">
+												  					<img src="img/pen.png" alt="Icon">
+												  				</span>
+												  				<span class="order__content_icon">
+												  					<img src="img/trash.png" alt="Icon">
+												  				</span>
+											  				</td>
+											  			</tr>
+											  		</tbody>
+											  	</table>
+											</div>
+										</div>
+									</div>
+
+
+		               	</div>
+		               </div>
+		               <div class="cabinet-main__tab_item">
+		               	<div class="cabinet-main__orders">
+		               		<div class="cabinet-main__nav">
+		               			Главная <span>></span> Заказы
+		               		</div>
+		               		<div class="cabinet-main__orders_wrapper cabinet-main__pay_wrapper">
+		               			<div class="cabinet-main__pay_header">
+		               				Оплата
+		               			</div>
+										<div class="cabinet-main__pay_content">
+											<p class="cabinet-main__pay_p">
+												Оплатить заказ Вы можете следующими способами:
+											</p>
+											<p class="cabinet-main__pay_p">
+												<b>
+													- Наличными в наших офисах в Санкт-Петербурге, Омске и Москве.
+												</b>
+											</p>
+											<p class="cabinet-main__pay_p">
+												Платежи принимаются в российских рублях. Комиссия не взимается.
+											</p>
+											<p class="cabinet-main__pay_p">
+												<b>- Наличными нашим представителям в Краснодаре и Красноярске.</b><br>
+												Представитель приедет по запросу. Оплата в рублях. Комиссия не взимается.
+											</p>
+											<p class="cabinet-main__pay_p">
+												<b></b>
+											</p>
+											<p class="cabinet-main__pay_p">
+											<b>- Оплата на расчетный счет организации</b><br>
+											Предварительно сообщите менеджеру реквизиты плательщика. Счет для оплаты придет вам на E-Mail.
+											</p>
+											
+											<p class="cabinet-main__pay_p cabinet-main__pay_p-big">
+												Предоставляем «закрывающие» документы: Договор оферты, Счет, Акт выполненных работ.
+											</p>
+											<p class="cabinet-main__pay_p">
+												Комиссия — 11%.
+											</p>
+											<p class="cabinet-main__pay_p">
+												При оплате КАРГО доставки через Маньчжурию оплата на РС без комиссии.
+											</p>
+										</div>
+		               		</div>
+		               	</div>
+		               </div>
+
+		               <div class="cabinet-main__tab_item">
+		               	<div class="cabinet-main__calcs">
+		               		<div class="cabinet-main__nav">
+		               			Главная <span>></span> Взаиморасчеты
+		               		</div>
+		               		<div class="cabinet-main__calcs_wrapper">
+			               		<div class="cabinet-main__pay_header">
+			               			Взаиморасчеты
+			               		</div>
+			               		<form class="cabinet-main__calcs_form">
+			               			<input placeholder="Дата от" type="date" class="cabinet-main__calcs_form-date">
+			               			<input placeholder="Дата от" type="date" class="cabinet-main__calcs_form-date">
+
+			               			<select class="cabinet-main__calcs_form-select calc-price__item_input">
+												<option value="12345">Заказ</option>
+												<option value="12346">12346</option>
+												<option value="12347">12347</option>
+			               			</select>
+
+			               			<button class="btn cabinet-main__calcs_form-btn">
+			               				Фильтровать
+			               			</button>
+			               			<button class="btn cabinet-main__calcs_form-btn">
+			               				Экспорт в EXCEL
+			               			</button>
+			               		</form>
+
+			               		<div class="cabinet-main__calcs_table">
+			               			<table>
+										  		<thead>
+										  			<th>Дата</th>
+										  			<th>Наименование операции </th>
+										  			<th>Сумма</th>
+										  			<th>Номер заказа</th>
+										  		</thead>
+										  		<tbody>
+											  			
+											  	</tbody>
+										  	</table>
+			               		</div>
+				               	<a href="#" class="btn cabinet-main__calcs_btn">
+				               		Экспорт в EXCEL
+				               	</a>
+		               		</div>
+		               	</div>
+			      		</div>
+
+							<div class="cabinet-main__tab_item">
+		               	<div class="cabinet-main__orders">
+		               		<div class="cabinet-main__nav">
+		               			Главная <span>></span> Вопрос-Ответ
+		               		</div>
+		               		<div class="cabinet-main__orders_wrapper cabinet-main__pay_wrapper">
+		               			<div class="cabinet-main__question_header">
+		               				Вопрос-Ответ
+		               			</div>
+
+										<div class="cabinet-main__question_content">
+											<div class="cabinet-main__question_subheader">
+		               					На странице мы собрали ответы на частые вопросы наших клиентов.
+		               				</div>
+											<p class="cabinet-main__pay_p">
+												Как мне создать новый заказ в личном кабинете?
+											</p>
+											<p class="cabinet-main__pay_p">
+												Что означают статусы позиций в моем заказе?
+											</p>
+											<p class="cabinet-main__pay_p">
+												Как я могу отслеживать движение своего заказа? Есть ли треккинг?
+											</p>
+											<p class="cabinet-main__pay_p">
+												Почему в позиции стоит платная доставка по Китаю? На странице продавца она бесплатная…
+											</p>
+											<p class="cabinet-main__pay_p">
+												Почему меняется цена при выкупе определенных товаров?
+											</p>
+											<p class="cabinet-main__pay_p">
+												Когда начнут выкупать мой заказ?
+											</p>
+											
+											<p class="cabinet-main__pay_p">
+												Когда менеджер ответит на мой запрос?
+											</p>
+											<p class="cabinet-main__pay_p">
+												Зачем нужна обрешетка груза?
+											</p>
+											<p class="cabinet-main__pay_p">
+												Что такое минимальная комиссия за позицию?
+											</p>
+										</div>
+		               		</div>
+		               	</div>
+		               </div>
+
+		               <div class="cabinet-main__tab_item">
+		               	<div class="cabinet-main__orders">
+		               		<div class="cabinet-main__nav">
+		               			Главная <span>></span> Мои данные
+		               		</div>
+		               		<div class="cabinet-main__orders_wrapper cabinet-main__pay_wrapper">
+		               			<div class="cabinet-main__question_header">
+		               				Мои данные
+		               			</div>
+
+										<div class="cabinet-main__data">
+											<form>
+												<div class="cabinet-main__data_input">
+													<div class="cabinet-main__data_input-title">
+														Имя:
+													</div>
+													<input placeholder="Россия" type="text" class="cabinet-main__data_input-item">
+												</div>
+												<div class="cabinet-main__data_input">
+													<div class="cabinet-main__data_input-title">
+														Паспортные данные:
+													</div>
+													<input placeholder="Россия" type="text" class="cabinet-main__data_input-item">
+												</div>
+												<div class="cabinet-main__data_input">
+													<div class="cabinet-main__data_input-title">
+														Email:
+													</div>
+													<input placeholder="Россия" type="text" class="cabinet-main__data_input-item">
+												</div>
+												<div class="cabinet-main__data_input">
+													<div class="cabinet-main__data_input-title">
+														Телефон:
+													</div>
+													<input placeholder="Россия" type="text" class="cabinet-main__data_input-item">
+												</div>
+												<div class="cabinet-main__data_input">
+													<div class="cabinet-main__data_input-title">
+														Город:
+													</div>
+													<input placeholder="Россия" type="text" class="cabinet-main__data_input-item">
+												</div>
+												<div class="cabinet-main__data_input">
+													<div class="cabinet-main__data_input-title">
+														Сменить Пароль:
+													</div>
+													<input placeholder="Россия" type="text" class="cabinet-main__data_input-item">
+												</div>
+												<button class="btn">
+													Сохранить 
+												</button>
+											</form>
+										</div>
+		               		</div>
+		               	</div>
+		               </div>
+	               </div>
+		         </div>
+				</div>
+		</div>
+	</section>
+
+	<div class="overlay js-overlay-campaign7">
+		<div class="popup position-popup js-popup-campaign7">
+			<div class="position-popup__header">
+				<span>Создать позицию</span>
+			</div>
+			<div class="position-popup__wrapper">
+				<form>
+					<div class="position-popup__left">
+						<div class="position-popup__input">
+							<div class="position-popup__input_header">
+								Ссылка:
+							</div>
+							<input type="text" placeholder="https://vk.com*" class="position-popup__input_item">
+						</div>
+
+						<div class="position-popup__input short-inputs__wrapper">
+							<div>
+								<div class="position-popup__input_header">
+									Цена:
+								</div>
+								<input type="text" placeholder="0.00" class="position-popup__input_item">
+							</div>
+							<div>
+								<div class="position-popup__input_header">
+									Доставка по Китаю:
+								</div>
+								<input type="text" placeholder="0.00" class="position-popup__input_item">
+							</div>
+						</div>
+						<div class="position-popup__input short-inputs__wrapper">
+							<div>
+								<div class="position-popup__input_header">
+									Количество:
+								</div>
+								<input type="text" placeholder="Количество" class="position-popup__input_item">
+							</div>
+							<div>
+								<div class="position-popup__mark">
+									Необязательное, указывать, 
+									если есть на странице товара
+								</div>
+							</div>
+						</div>
+						<div class="position-popup__radios">
+							<div class="position-popup__radio-item">
+								<input type="checkbox" id="radio1">
+								<label for="radio1">Заказать фотоотчет (+6 ¥)</label>
+							</div>
+							
+							<div class="position-popup__radio-item">
+								<input type="checkbox" id="radio2">
+								<label for="radio2">Заказать замер (+6 ¥)</label>
+							</div>
+							<div class="position-popup__radio-item">
+								<input type="checkbox" id="radio3">
+								<label for="radio3">Упаковать в пузырчатую пленку (+3 ¥/кг)</label>
+							</div>
+						</div>
+					</div>
+					<div class="position-popup__right">
+						<div class="position-popup__input_header">
+							Количество:
+						</div>
+						<textarea placeholder="Описание дополнительной услуги"></textarea>
+						<input class="fileselect" type="file">
+
+						<button class="btn position-popup__btn">
+							Сохранить файл 
+						</button>
+					</div>
+				</form>
+			</div>
+			<div class="close-popup policies-popup__close js-close-campaign"></div>
+		</div>
+	</div>
+	
+	<div class="overlay js-overlay-campaign5">
+		<div class="popup policies-popup js-popup-campaign5">
+			<div class="policies-popup__header">
+				Политика конфиденциальности
+			</div>
+			<p class="policies-popup__p">
+				Настоящий документ «Политика конфиденциальности» (далее – по тексту – «Политика») представляет собой правила использования сайтом —
+				www.optiway.online [ИП Мелихан Юрий Михайлович] (далее – Оператор) персональной информации Пользователя, которую Оператор, включая всех
+				лиц, входящих в одну группу с Оператором, могут получить о Пользователе во время использования им любого из сайтов, сервисов, служб, программ, 
+				продуктов или услуг Оператора (далее – Сайт) и в ходе исполнения Оператором любых соглашений и договоров с Пользователем. Согласие 
+				Пользователя с Политикой, выраженное им в рамках отношений с одним из перечисленных лиц, распространяется на все остальные перечисленные лица.
+			</p>
+			<p class="policies-popup__p">
+				Использование Сайта означает безоговорочное согласие Пользователя с настоящей 
+				Политикой и указанными в ней условиями обработки его персональной информации; в случае несогласия с 
+				этими условиями Пользователь должен воздержаться от использования Сайта.
+			</p>
+			<p class="policies-popup__p">
+				1.Общие положения политики
+			</p>
+			<p class="policies-popup__p">
+				1.1. Настоящая Политика является неотъемлемой частью Публичной оферты (далее – «Оферта»), размещенной и/или доступной в сети Интернет по 
+				адресу: https://optiway.online/ofertaoptiway.pdf, а также иных заключаемых с Пользователем договоров, когда это прямо предусмотрено их условиями.
+			</p>
+			<p class="policies-popup__p">
+				1.2. Настоящая Политика составлена в соответствии с Федеральным законом «О персональных данных» № 152-ФЗ от 27 июля 2006 г., а также иными
+				нормативно-правовыми актами Российской Федерации в области защиты и обработки персональных данных и действует в отношении всех персональных
+				данных, которые Оператор может получить от Пользователя, являющегося стороной по гражданско-правовому договору.
+			</p>
+			<p class="policies-popup__p">
+				1.3. Оператор имеет право вносить изменения в настоящую Политику. При внесении изменений в заголовке Политики указывается дата последнего 
+				обновления редакции. Новая редакция Политики вступает в силу с момента ее размещения на сайте, если иное не предусмотрено новой редакцией 
+				Политики.
+			</p>
+			<p class="policies-popup__p">
+				1.4. К настоящей Политике, включая толкование ее положений и порядок принятия, исполнения, изменения и прекращения, подлежит применению
+ 				законодательство Российской Федерации.
+			</p>
+			<p class="policies-popup__p">
+				2.Персональная информация Пользователей, которую обрабатывает Сайт
+			</p>
+			<p class="policies-popup__p">
+				2.1. Под персональной информацией в настоящей Политике понимается:
+			</p>
+			<p class="policies-popup__p">
+				2.1.1. информация, предоставляемая Пользователем самостоятельно при регистрации (создании учётной записи) или в процессе использования Сайта,
+				включая персональные данные Пользователя. Обязательная для предоставления Сайтом информация помечена специальным образом. Иная информация 
+				предоставляется Пользователем на его усмотрение;
+			</p>
+			<p class="policies-popup__p">
+				2.1.2.данные, которые передаются в автоматическом режиме Сайту в процессе их использования с помощью установленного на устройстве Пользователя
+				программного обеспечения, в том числе IP-адрес, данные файлов cookie, информация о браузере Пользователя (или иной программе, с помощью которой 
+				осуществляется доступ к Сайту), технические характеристики оборудования и программного обеспечения, используемых Пользователем, дата и время
+				доступа к Сайту, адреса запрашиваемых страниц и иная подобная информация;
+			</p>
+			<p class="policies-popup__p">
+				2.1.3. иная информация о Пользователе, обработка которой предусмотрена условиями использования Сайта.
+			</p>
+			<p class="policies-popup__p">
+				2.2. Настоящая Политика применима только к информации, обрабатываемой в ходе использования Сайта. Сайт не контролирует и не несет 
+				ответственность за обработку информации сайтами третьих лиц, на которые Пользователь может перейти по ссылкам, доступным на Сайте.
+			</p>
+			<p class="policies-popup__p">
+				2.3. Сайт не проверяет достоверность персональной информации, предоставляемой Пользователем, и не имеет возможности оценивать
+ 				его дееспособность.
+			</p>
+			<p class="policies-popup__p">
+				3.Цели обработки персональной информации Пользователей
+			</p>
+			<p class="policies-popup__p">
+				3.1. Сайт собирает и хранит только ту персональную информацию, которая необходима для предоставления сервисов или исполнения соглашений 
+				и договоров с Пользователем, за исключением случаев, когда законодательством предусмотрено обязательное хранение персональной
+ 				информации в течение определенного законом срока.
+			</p>
+			<p class="policies-popup__p">
+				3.2. Персональную информацию Пользователя Сайт обрабатывает в следующих целях:
+			</p>
+			<p class="policies-popup__p">
+				3.2.1. идентификация стороны в рамках сервисов, соглашений и договоров с Сайтом;
+			</p>
+			<p class="policies-popup__p">
+				3.2.2. предоставление Пользователю персонализированных сервисов и услуг, а также исполнение соглашений и договоров;
+			</p>
+			<p class="policies-popup__p">
+				3.2.3. направление уведомлений, запросов и информации, касающихся использования Сайта, исполнения соглашений и договоров, а также 
+				обработка запросов и заявок от Пользователя;
+			</p>
+			<p class="policies-popup__p">
+				3.2.4. улучшение качества работы Сайта, удобства его использования для Пользователя, разработка новых услуг и сервисов;
+			</p>
+			<p class="policies-popup__p">
+				3.2.5. таргетирование рекламных материалов;
+			</p>
+			<p class="policies-popup__p">
+				3.2.6. проведение статистических и иных исследований, на основе обезличенных данных.
+			</p>
+			<p class="policies-popup__p">
+				4. Условия обработки персональной информации Пользователей и её передачи третьим лицам
+			</p>
+			<p class="policies-popup__p">
+				4.1. В отношении персональной информации Пользователя сохраняется ее конфиденциальность, кроме случаев добровольного предоставления 
+				Пользователем информации о себе для общего доступа неограниченному кругу лиц.
+			</p>
+			<p class="policies-popup__p">
+				4.2. Сайт вправе передать персональную информацию Пользователя третьим лицам в следующих случаях:
+			</p>
+			<p class="policies-popup__p">
+				4.3.1. Пользователь выразил согласие на такие действия;
+			</p>
+			<p class="policies-popup__p">
+				4.3.2. Передача необходима для использования Пользователем определенного сервиса либо для исполнения определенного соглашения
+ 				или договора с Пользователем;
+			</p>
+			<p class="policies-popup__p">
+				4.3.3. Передача необходима для функционирования и работоспособности самого Сайта;
+			</p>
+			<p class="policies-popup__p">
+				4.3.4. Передача предусмотрена российским или иным применимым законодательством в рамках установленной законодательством процедуры;
+			</p>
+			<p class="policies-popup__p">
+				4.3.5. Такая передача происходит в рамках продажи или иной передачи бизнеса (полностью или в части), при этом к приобретателю переходят все 
+				обязательства по соблюдению условий настоящей Политики применительно к полученной им персональной информации;
+			</p>
+			<p class="policies-popup__p">
+				4.3.6. В целях обеспечения возможности защиты прав и законных интересов Сайта или третьих лиц в случаях, когда Пользователь нарушает 
+				Пользовательское соглашение Сайта, настоящую Политику, либо документы, содержащие условия использования конкретных сервисов.
+			</p>
+			<p class="policies-popup__p">
+				4.3.7. В результате обработки персональной информации Пользователя путем ее обезличивания получены обезличенные статистические данные, 
+				которые передаются третьему лицу для проведения исследований, выполнения работ или оказания услуг по поручению Сайта.
+			</p>
+			<p class="policies-popup__p">
+				5.Изменение и удаление персональной информации.
+			</p>
+			<p class="policies-popup__p">
+				Обязательное хранение данных
+			</p>
+			<p class="policies-popup__p">
+				5.1. Пользователь может в любой момент изменить (обновить, дополнить) предоставленную им персональную информацию или её часть.
+			</p>
+			<p class="policies-popup__p">
+				5.2. Права, предусмотренные п. 5.1. настоящей Политики могут быть ограничены в соответствии с требованиями законодательства. Например, такие 
+				ограничения могут предусматривать обязанность Сайта сохранить измененную или удаленную Пользователем информацию на срок, установленный 
+				законодательством, и передать такую информацию в соответствии с законодательно установленной процедурой государственному органу.
+			</p>
+			<p class="policies-popup__p">
+				6.Обработка персональной информации при помощи файлов Cookie и счетчиков
+			</p>
+			<p class="policies-popup__p">
+				6.1. Файлы cookie, передаваемые Сайтом оборудованию Пользователя и оборудованием Пользователя Сайту, могут использоваться Сайтом для
+				предоставления Пользователю персонализированных сервисов, для таргетирования рекламы, которая показывается Пользователю, в статистических
+				и исследовательских целях, а также для улучшения Сайта.
+			</p>
+			<p class="policies-popup__p">
+				6.2. Пользователь осознает, что оборудование и программное обеспечение, используемые им для посещения сайтов в сети интернет, могут обладать
+				функцией запрещения операций с файлами cookie (для любых сайтов или для определенных сайтов), а также удаления ранее полученных файлов cookie.
+			</p>
+			<p class="policies-popup__p">
+				6.3. Яндекс вправе установить, что предоставление определенного сервиса или услуги возможно только при условии, что прием и 
+				получение файлов cookie разрешены Пользователем.
+			</p>
+			<p class="policies-popup__p">
+				6.4. Структура файла cookie, его содержание и технические параметры определяются Сайтом и могут изменяться без 
+				предварительного уведомления Пользователя.
+			</p>
+			<p class="policies-popup__p">
+				6.5. Счетчики, размещенные Сайтом, могут использоваться для анализа файлов cookie Пользователя, для сбора и обработки статистической 
+				информации об использовании Сайта, а также для обеспечения работоспособности Сайта в целом или их отдельных функций в частности. 
+				Технические параметры работы счетчиков определяются Сайтом и могут изменяться без предварительного уведомления Пользователя.
+			</p>
+			<p class="policies-popup__p">
+				7.Защита персонально информации Пользователя
+			</p>
+			<p class="policies-popup__p">
+				7.1. Сайт предпринимает необходимые и достаточные организационные и технические меры для защиты персональной информации 
+				Пользователя от неправомерного или случайного доступа, уничтожения, изменения, блокирования, копирования, распространения, 
+				а также от иных неправомерных действий с ней третьих лиц.
+			</p>
+			<p class="policies-popup__p">
+				8.Изменение Политики конфиденциальности
+			</p>
+			<p class="policies-popup__p">
+				8.1. Сайт имеет право вносить изменения в настоящую Политику конфиденциальности. При внесении изменений в актуальной редакции указывается 
+				дата последнего обновления. Новая редакция Политики вступает в силу с момента ее размещения, если иное не предусмотрено новой редакцией 
+				Политики. Действующая редакция постоянно доступна на странице по адресу www.optiway.online/politic.
+			</p>
+			<p class="policies-popup__p">
+				9.Контакты и вопросы по персональным данным
+			</p>
+			<p class="policies-popup__p">
+				9.1. Все предложения, вопросы, запросы и иные обращения по поводу настоящей Политики и использования своих персональных данных
+ 				Пользователь вправе направлять Сайту:
+			</p>
+			<p class="policies-popup__p">
+				-по адресу электронной почты: optiway.online@yandex.ru
+			</p>
+			<p class="policies-popup__p">
+				Дата <span>публикации: 15.08.2019 г.</span>
+			</p>
+			<a href="Polzovatelskoe_soglashenie.docx" class="policies-popup_link">
+				Пользовательское соглашение: pdf
+			</a>
+			<a href="Publichnaya_oferta.docx" class="policies-popup_link">
+				Оферта: pdf
+			</a>
+			<div class="close-popup policies-popup__close js-close-campaign"></div>
+		</div>
+	</div>
+
+	<script src="libs/js/jquery.min.js"></script>
+	<script src="libs/js/slick.min.js"></script>
+	<script src="libs/js/animate-css.js"></script>
+	<script src="libs/js/waypoints.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

@@ -60,8 +60,23 @@ $(".form-tabs__wrapper .form-tab").click(function() {
     $(".form-tab_item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("active");
 
+$(".authorisation__tab_item").not(":first").hide();
+$(".authorisation__wrapper .authorisation__tab").click(function() {
+    $(".authorisation__wrapper .authorisation__tab").removeClass("active").eq($(this).index()).addClass("active");
+    $(".authorisation__tab_item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
 
+$(".cabinet-main__tab_item").not(":first").hide();
+$(".cabinet-main__wrapper .cabinet-main__menu-item").click(function() {
+    $(".cabinet-main__wrapper .cabinet-main__menu-item").removeClass("active").eq($(this).index()).addClass("active");
+    $(".cabinet-main__tab_item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
 
+$(".orders__content_item").not(":first").hide();
+$(".cabinet-main__orders_content .orders__content_navigation-item").click(function() {
+    $(".cabinet-main__orders_content .orders__content_navigation-item").removeClass("active").eq($(this).index()).addClass("active");
+    $(".orders__content_item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
 
 // Модальное окно
 
@@ -198,3 +213,26 @@ $(document).mouseup(function (e) {
     
   }
 });
+
+// открыть по кнопке
+$('.js-button-campaign7').click(function() { 
+  
+  $('.js-overlay-campaign7').fadeIn();
+  $('.js-overlay-campaign7').addClass('disabled');
+});
+
+// закрыть на крестик
+$('.js-close-campaign').click(function() { 
+  $('.js-overlay-campaign7').fadeOut();
+  
+});
+
+// закрыть по клику вне окна
+$(document).mouseup(function (e) { 
+  var popup = $('.js-popup-campaign7');
+  if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+    $('.js-overlay-campaign7').fadeOut();
+    
+  }
+});
+
