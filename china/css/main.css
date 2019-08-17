@@ -2506,3 +2506,9 @@ footer {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
+
+.cabinet-main__question_content dd {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 60px; }
