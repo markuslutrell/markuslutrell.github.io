@@ -338,8 +338,11 @@ h1 {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-left: 14px;
-    margin-right: 14px; }
+    margin-left: 12px;
+    margin-right: 12px; }
+
+span.five {
+  margin-left: 35px; }
 
 .bonus__wrapper {
   display: -webkit-flex;
@@ -973,9 +976,10 @@ footer .header__container {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 320px;
+  width: 335px;
   margin-left: 10px;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  font-size: 14px; }
   .catalogue__price-first .weight {
     margin-left: -3px; }
 
