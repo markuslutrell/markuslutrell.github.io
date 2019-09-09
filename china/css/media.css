@@ -42,7 +42,33 @@
     margin-right: 25px; }
   .cabinet-main__calcs_form {
     padding-left: 30px;
-    padding-right: 30px; } }
+    padding-right: 30px; }
+  #lc .principles__item {
+    width: 250px; }
+  #lc .btn {
+    width: 240px;
+    height: 56px;
+    line-height: 51px;
+    padding-left: 40px; }
+  #lc .principles__item-5 {
+    width: 100%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  #lc h2 {
+    margin-bottom: 30px; }
+  #lc .lc-right {
+    padding: 0; }
+  #lc .lc-subheader {
+    text-align: center; } }
 
 @media screen and (max-width: 992px) {
   html {
@@ -404,7 +430,10 @@
   .position-popup__mark {
     margin-left: 0;
     text-align: center;
-    margin-top: 15px; } }
+    margin-top: 15px; }
+  .calc-popup__info {
+    text-align: center;
+    padding-right: 0; } }
 
 @media screen and (max-width: 576px) {
   html {
@@ -505,7 +534,12 @@
     padding-right: 20px; }
   .cabinet-main__orders_btn {
     width: 120px;
-    font-size: 12px; } }
+    font-size: 12px; }
+  #lc .main__buttons {
+    margin-left: 0;
+    width: 100%; }
+  #lc .principles__item-3 img {
+    margin-right: 20px; } }
 
 @media screen and (max-width: 400px) {
   .calc-form__wrapper {
