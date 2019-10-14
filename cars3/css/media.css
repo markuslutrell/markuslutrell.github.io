@@ -1,0 +1,266 @@
+@media screen and (max-width: 1600px) {
+  .dop-form {
+    right: 0; } }
+
+@media screen and (max-width: 1200px) {
+  #form form, footer form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  input {
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  button {
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  dl {
+    width: 750px; }
+  dt.btn {
+    height: 70px;
+    width: 150px;
+    bottom: 33px;
+    right: -180px; }
+  #feedback .subheader {
+    padding: 0; }
+  #slider .slider__subheader {
+    padding: 0; }
+  #buy .subheader {
+    padding: 0; }
+  .buy__item {
+    width: 255px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    margin-bottom: 25px; }
+    .buy__item .buy__item_header:before {
+      left: 0; }
+  .buy__items {
+    margin-top: 0px; }
+  footer h2 {
+    text-align: center; }
+  footer .subheader {
+    text-align: center; } }
+
+@media screen and (max-width: 996px) {
+  dl {
+    width: 75%;
+    padding: 25px; }
+  .feedback__header {
+    font-size: 20px; }
+  .advantages__items_right {
+    margin-top: 34px; }
+  .main__wrapper {
+    background: none; }
+  .slider__item_header {
+    font-size: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  .slider__item_list .slider__list_item {
+    font-size: 18px; }
+  .slider__item_price {
+    margin-top: 40px;
+    font-size: 30px; }
+  .buy__items {
+    margin-bottom: 50px; }
+  .dop-form {
+    right: 50px;
+    bottom: 50px; }
+  .main__btn {
+    margin-bottom: 170px;
+    margin-left: auto;
+    margin-right: auto; }
+  .main__btn {
+    margin-bottom: 50px; }
+  .main__wrapper {
+    padding-bottom: 25px; } }
+
+@media screen and (max-width: 768px) {
+  .feedback__name {
+    margin-left: 20px;
+    margin-right: 25px; }
+  .auto__inner-slider {
+    margin-right: 40px; }
+  .slider__item_content {
+    text-align: center; }
+  dt.btn {
+    font-size: 16px;
+    height: 60px;
+    width: 130px;
+    bottom: 40px;
+    right: -145px; }
+  .main__items {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .main__item {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  h1 {
+    font-size: 52px; }
+    h1 span {
+      font-size: 28px; }
+  .feedback__contacts {
+    right: -120px; }
+  .feedback__files {
+    right: -125px; }
+  .feedback__files_item {
+    width: 42px;
+    height: 42px; }
+  .main__items {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .main__item {
+    width: 180px;
+    text-align: center; }
+  .slick-prev {
+    left: 39%;
+    top: auto;
+    bottom: -50px; }
+  .slick-next {
+    right: 41%;
+    top: auto;
+    bottom: -50px; } }
+
+@media screen and (max-width: 576px) {
+  .feedback__prev-info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .feedback__name {
+    margin: 0;
+    padding-bottom: 15px; }
+  dl {
+    width: 65%;
+    margin-left: auto;
+    margin-right: 120px; }
+  dt.btn {
+    width: 100px;
+    height: 50px;
+    font-size: 14px;
+    right: -110px;
+    padding-right: 15px;
+    bottom: 45px; }
+    dt.btn:after {
+      right: 15px; }
+  dt.active:after {
+    margin-top: 2px; }
+  .leave__btn {
+    margin-left: 0; }
+  .buy__item {
+    text-align: center; }
+  .buy__item_text {
+    margin-right: 0; }
+  .buy__item_header {
+    margin-left: 0; }
+  .buy__item_header-4 {
+    padding-right: 0; }
+  .buy__item .buy__item_header:before {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .buy__item {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .footer__phone {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; }
+  .footer__phone_item {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .header .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center; }
+  .header__text {
+    margin-bottom: 20px; }
+  h1 {
+    text-align: center; }
+  .main__btn {
+    margin-left: auto;
+    margin-right: auto; }
+  .advantages__item_3 {
+    height: auto;
+    padding: 30px 40px; }
+    .advantages__item_3 img {
+      width: 200px; }
+  .advantages__item_2 {
+    height: auto;
+    padding: 30px 30px; }
+    .advantages__item_2 img {
+      width: 150px; }
+    .advantages__item_2 .advantages__item_text-wrapper {
+      margin-left: 0; }
+  .dop-form {
+    right: 25px;
+    bottom: 25px; }
+    .dop-form input {
+      width: 210px;
+      height: 65px; }
+  .dop-form .btn {
+    width: 70px;
+    height: 70px; }
+  * {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s; }
+  dl p {
+    font-size: 15px;
+    line-height: 20px; }
+  dd {
+    padding-top: 10px; } }
+
+@media screen and (max-width: 400px) {
+  .main__btn {
+    width: 100%; }
+  .main__btn img {
+    padding-left: 3px; }
+  .advantages__items_left img {
+    width: 280px; }
+  .feedback__contacts {
+    right: -110px; }
+  .feedback__files {
+    right: -115px; }
+  .slick-prev {
+    left: 35%; }
+  .slick-next {
+    right: 37%; }
+  .advantages__item_header {
+    font-size: 32px; }
+  .advantages__item_3 {
+    padding: 30px; }
+  .advantages__item_3 img {
+    opacity: .25; }
+  .advantages__item_text {
+    font-size: 19px; } }
