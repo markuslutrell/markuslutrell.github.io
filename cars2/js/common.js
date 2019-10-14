@@ -1,4 +1,5 @@
-$(".auto__slider").slick({
+$(document).ready(function() {
+  $(".auto__slider").slick({
   arrows: true,
   slidesToShow: 1,
   infinite: true,
@@ -13,6 +14,9 @@ $(".auto__inner-slider").slick({
   slidesToScroll: 1,
   swipe: false,
 });
+});
+
+
 
 increment = 1;
 
@@ -38,7 +42,7 @@ $(".more__btn").click(function() {
       increment++;
     } else {
       $(".hidden__content").slideUp();
-      $(this).text('Еще отзывы');
+      $(this).text('Еще');
       increment++;
     }
 
@@ -113,6 +117,14 @@ $(document).ready(function() { // Ждём загрузки страницы
     });
   });
   
+});
+
+$(".fake-btn").click(function(){ 
+     $(".dop-form").addClass("active-input");
+});
+
+$(".close-form").click(function(){ 
+     $(".dop-form").removeClass("active-input");
 });
 
 // (function($){

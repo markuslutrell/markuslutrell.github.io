@@ -452,7 +452,7 @@ footer {
     margin-bottom: 10px; }
 
 .slider__item_header {
-  font-size: 36px;
+  font-size: 34px;
   margin-bottom: 40px;
   margin-top: 40px;
   font-family: 'Code Pro', sans-serif; }
@@ -469,7 +469,9 @@ footer {
   color: #464646; }
 
 .auto__inner-slider_item img {
-  width: 100%; }
+  width: 100%;
+  -webkit-border-radius: 5px;
+          border-radius: 5px; }
 
 .auto__inner-slider {
   margin-left: 30px;
@@ -687,13 +689,12 @@ dt.active + dd > .feedback__contacts, dt.active + dd > .feedback__files {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  position: absolute;
-  right: -200px;
-  bottom: 200px; }
+  position: fixed;
+  right: 75px;
+  bottom: 75px;
+  z-index: 10000; }
   .dop-form .btn {
-    width: 90px;
-    -webkit-animation: pulse 5s ease infinite;
-            animation: pulse 5s ease infinite; }
+    width: 90px; }
     .dop-form .btn:hover img {
       -webkit-transform: none;
           -ms-transform: none;
@@ -710,11 +711,83 @@ dt.active + dd > .feedback__contacts, dt.active + dd > .feedback__files {
     margin-right: 20px;
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
-    transition: .3s ease; }
+    transition: .3s ease;
+    -webkit-transform: scaleY(0);
+        -ms-transform: scaleY(0);
+            transform: scaleY(0); }
     .dop-form input:focus {
       -webkit-transform: scale(1.05);
           -ms-transform: scale(1.05);
               transform: scale(1.05); }
+  .dop-form button {
+    display: none; }
+  .dop-form .close-form {
+    width: 20px;
+    position: absolute;
+    left: -30px;
+    cursor: pointer;
+    height: 20px;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+    opacity: 0; }
+    .dop-form .close-form span {
+      position: absolute;
+      width: 20px;
+      height: 1px;
+      background: #000;
+      top: 9px; }
+      .dop-form .close-form span:first-child {
+        -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg); }
+      .dop-form .close-form span:last-child {
+        -webkit-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+                transform: rotate(-45deg); }
+    .dop-form .close-form:hover {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
+  .dop-form .fake-btn {
+    -webkit-animation: pulse 5s ease infinite;
+            animation: pulse 5s ease infinite; }
+
+.dop-form.active-input input {
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1); }
+
+.dop-form.active-input button {
+  display: block;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 12px; }
+
+.dop-form.active-input .fake-btn {
+  display: none; }
+
+.dop-form.active-input .close-form {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  opacity: 1; }
 
 @-webkit-keyframes pulse {
   0% {
@@ -935,3 +1008,7 @@ dl:nth-child(7) {
     -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
             transform: scale(1.1); }
+
+.advantages {
+  position: relative;
+  z-index: -1; }
