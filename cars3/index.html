@@ -19,12 +19,17 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-	<header>
+	<header id="header">
 		<div class="header">
 			<div class="container">
-				<div class="header__text">
-					Быстро и дорого покупаем автомобили<br>
-					в Челябинске и Челябинской области
+				<div class="header__text__container">
+					<a href="#header" class="logo">
+						Автовыкуп
+					</a>
+					<div class="header__text">
+						Быстро и дорого покупаем автомобили<br>
+						в Челябинске и Челябинской области
+					</div>
 				</div>
 				<div class="header__phone">
 					<div class="header__phone_item">
@@ -85,7 +90,7 @@
 						</div>
 					</div>
 
-					<div class="btn main__btn">
+					<div class="btn js-button-campaign main__btn">
 						Продать автомобиль <img src="img/main-btn-arrow.png" alt="Arrow">
 					</div>
 
@@ -188,11 +193,11 @@
 								<ul class="slider__item_list">
 									<li class="slider__list_item">Пробег: <b>160 000 км</b></li>
 									<li class="slider__list_item">Состояние: <b>Крашена вся кроме крыши</b></li>
-									<li class="slider__list_item">Запрет на регистрацию: <b>Не в запрете</b></li>
-									<li class="slider__list_item">Находится в залоге у банка: <b>Не в залоге</b></li>
+									<li class="slider__list_item">Запрет на регистрацию: <b>-</b></li>
+									<li class="slider__list_item">Находится в залоге у банка: <b>-</b></li>
 								</ul>
 								<div class="slider__item_price">
-									245 000 р.
+									<span>Цена выкупа:</span>245 000 р.
 								</div>
 							</div>
 						</div>
@@ -227,11 +232,11 @@
 								<ul class="slider__item_list">
 									<li class="slider__list_item">Пробег: <b>140 000 км</b></li>
 									<li class="slider__list_item">Состояние: <b>В родной краске, Кпп (Dsg) - после ремонта</b></li>
-									<li class="slider__list_item">Запрет на регистрацию: <b>Не в запрете</b></li>
-									<li class="slider__list_item">Находится в залоге у банка: <b>Не в залоге</b></li>
+									<li class="slider__list_item">Запрет на регистрацию: <b>-</b></li>
+									<li class="slider__list_item">Находится в залоге у банка: <b>-</b></li>
 								</ul>
 								<div class="slider__item_price">
-									360 000 р.
+									<span>Цена выкупа:</span>360 000 р.
 								</div>
 							</div>
 						</div>
@@ -266,11 +271,11 @@
 								<ul class="slider__item_list">
 									<li class="slider__list_item">Пробег: <b>240 000 км</b></li>
 									<li class="slider__list_item">Состояние: <b>Крашена вся передняя часть</b></li>
-									<li class="slider__list_item">Запрет на регистрацию: <b>Не в запрете</b></li>
-									<li class="slider__list_item">Находится в залоге у банка: <b>Не в залоге</b></li>
+									<li class="slider__list_item">Запрет на регистрацию: <b>-</b></li>
+									<li class="slider__list_item">Находится в залоге у банка: <b>-</b></li>
 								</ul>
 								<div class="slider__item_price">
-									260 000 р.
+									<span>Цена выкупа:</span>260 000 р.
 								</div>
 							</div>
 						</div>
@@ -305,11 +310,11 @@
 								<ul class="slider__item_list">
 									<li class="slider__list_item">Пробег: <b>112 000 км</b></li>
 									<li class="slider__list_item">Состояние: <b>Крашена крыша, требует ремонта по кузову</b></li>
-									<li class="slider__list_item">Запрет на регистрацию: <b>Не в запрете</b></li>
-									<li class="slider__list_item">Находится в залоге у банка: <b>Не в залоге</b></li>
+									<li class="slider__list_item">Запрет на регистрацию: <b>-</b></li>
+									<li class="slider__list_item">Находится в залоге у банка: <b>-</b></li>
 								</ul>
 								<div class="slider__item_price">
-									140 000 р.
+									<span>Цена выкупа:</span>140 000 р.
 								</div>
 							</div>
 						</div>
@@ -344,11 +349,11 @@
 								<ul class="slider__item_list">
 									<li class="slider__list_item">Пробег: <b>190 000 км</b></li>
 									<li class="slider__list_item">Состояние: <b>Битый в заднюю часть</b></li>
-									<li class="slider__list_item">Запрет на регистрацию: <b>Не в запрете</b></li>
-									<li class="slider__list_item">Находится в залоге у банка: <b>Не в залоге</b></li>
+									<li class="slider__list_item">Запрет на регистрацию: <b>-</b></li>
+									<li class="slider__list_item">Находится в залоге у банка: <b>-</b></li>
 								</ul>
 								<div class="slider__item_price">
-									135 000 р.
+									<span>Цена выкупа:</span>135 000 р.
 								</div>
 							</div>
 						</div>
@@ -395,11 +400,11 @@
 				 			22.09.2019
 				 		</div>
 				 		<div class="feedback__name">
-				 			Арсений. Москва <br>
-				 			<span>Lada Granta</span>
+				 			Сергей. Челябинск <br>
+				 			<span>Nissan Note</span>
 				 		</div>
 				 		<div class="feedback__header">
-				 			Как меня кинули на 20 000 рублей
+				 			Серьезная фирма
 				 		</div>
 				 	</div>
 			     <dt class="btn">Читать</dt>
@@ -425,10 +430,15 @@
 			     				<div class="feedback__files_item">
 			     					<img class="mini" src="img/slider-img-2.jpg" alt="Dop">
 			     				</div>
+			     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-3.jpg" alt="Dop">
+			     				</div>
+			     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-4.jpg" alt="Dop">
+			     				</div>
 			     			</div>
 			     		</div>
-			     		<p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что рамки и место обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и административных условий.</p>
-			     		<p>Идейные соображения высшего порядка, а также рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. С другой стороны постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития. Таким образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Таким образом дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+			     		<p>Доволен, что обратился именно к этим ребятам! Серьезная фирма, работают оперативно. Свою машину, думал, продам за копейки. Здесь провели полный осмотр и забрали её за солидную сумму! Документы все в порядке. Претензий нет. Благодарю!</p>
 			     </dd>
 			 </dl>
 
@@ -436,14 +446,14 @@
 			<dl>
 				 	<div class="feedback__prev-info">
 				 		<div class="feedback__date">
-				 			22.09.2019
+				 			10.07.2019
 				 		</div>
 				 		<div class="feedback__name">
-				 			Арсений. Москва <br>
-				 			<span>Lada Granta</span>
+				 			Арсений. Челябинск <br>
+				 			<span>Volkswagen Passat</span>
 				 		</div>
 				 		<div class="feedback__header">
-				 			Как меня кинули на 20 000 рублей
+				 			Быстро и качественно!
 				 		</div>
 				 	</div>
 			     <dt class="btn">Читать</dt>
@@ -469,24 +479,29 @@
 			     				<div class="feedback__files_item">
 			     					<img class="mini" src="img/slider-img-6.jpg" alt="Dop">
 			     				</div>
+			     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-7.jpg" alt="Dop">
+			     				</div>
+			     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-8.jpg" alt="Dop">
+			     				</div>
 			     			</div>
 			     		</div>
-			     		<p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что рамки и место обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и административных условий.</p>
-			     		<p>Идейные соображения высшего порядка, а также рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. С другой стороны постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития. Таким образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Таким образом дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+			     		<p>Так уж случилось, что нужно срочно было продать личное авто. Подсказали друзья данную компанию. Созвонились, пообщались. Всё доступно рассказали. При встрече (отмечу, видно, что работают профессионалы) всё оформили и сразу же и рассчитались. Быстро и качественно!</p>
 			     </dd>
 			 </dl>
 			
 			<dl>
 			 	<div class="feedback__prev-info">
 			 		<div class="feedback__date">
-			 			22.09.2019
+			 			13.11.2018
 			 		</div>
 			 		<div class="feedback__name">
-			 			Арсений. Москва <br>
-			 			<span>Lada Granta</span>
+			 			Николай. Челябинск <br>
+			 			<span>Volkswagen Golf 5</span>
 			 		</div>
 			 		<div class="feedback__header">
-			 			Как меня кинули на 20 000 рублей
+			 			Прошло всё без лишней суеты и забот
 			 		</div>
 			 	</div>
 		     <dt class="btn">Читать</dt>
@@ -507,15 +522,20 @@
 		     			</div>
 		     			<div class="feedback__files_container">
 		     				<div class="feedback__files_item">
-			     					<img class="mini" src="img/slider-img-9.jpg" alt="Dop">
-			     				</div>
-			     				<div class="feedback__files_item">
-			     					<img class="mini" src="img/slider-img-10.jpg" alt="Dop">
-			     				</div>
+		     					<img class="mini" src="img/slider-img-9.jpg" alt="Dop">
+		     				</div>
+		     				<div class="feedback__files_item">
+		     					<img class="mini" src="img/slider-img-10.jpg" alt="Dop">
+		     				</div>
+		     				<div class="feedback__files_item">
+		     					<img class="mini" src="img/slider-img-11.jpg" alt="Dop">
+		     				</div>
+		     				<div class="feedback__files_item">
+		     					<img class="mini" src="img/slider-img-12.jpg" alt="Dop">
+		     				</div>
 		     			</div>
 		     		</div>
-		     		<p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что рамки и место обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и административных условий.</p>
-		     		<p>Идейные соображения высшего порядка, а также рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. С другой стороны постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития. Таким образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Таким образом дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+		     		<p>Лично мой опыт положительный от сделки с компанией. Прошло всё без лишней суеты и забот. Оценка, оформление нужных бумаг и расчет. Всё! Молодцы! Так держать!</p>
 			     </dd>
 			 </dl>
 			
@@ -523,14 +543,64 @@
 				<dl>
 			 	<div class="feedback__prev-info">
 			 		<div class="feedback__date">
-			 			22.09.2019
+			 			11.09.2018
 			 		</div>
 			 		<div class="feedback__name">
-			 			Арсений. Москва <br>
-			 			<span>Lada Granta</span>
+			 			Александр. Челябинск <br>
+			 			<span>
+									Chevrolet Lacetti
+								</span>
 			 		</div>
 			 		<div class="feedback__header">
-			 			Как меня кинули на 20 000 рублей
+			 			Быстро! Рекомендую!
+			 		</div>
+			 	</div>
+		     <dt class="btn">Читать</dt>
+		     <dd>
+		     		<div class="feedback__contacts">
+		     			<div class="feedback__contacts_text">
+		     				Контакты:
+		     			</div>
+		     			<div class="feedback__contacts_icons">
+		     				<a href="#" class="feedback__contacts_link"><img src="img/facebook.png" alt="Facebook"></a>
+		     				<a href="#" class="feedback__contacts_link"><img src="img/inst.png" alt="Instagram"></a>
+		     			</div>
+		     		</div>
+
+		     		<div class="feedback__files">
+		     			<div class="feedback__files_header">
+		     				Доп. файлы
+		     			</div>
+		     			<div class="feedback__files_container">
+		     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-20.jpg" alt="Dop">
+			     				</div>
+			     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-17.jpg" alt="Dop">
+			     				</div>
+			     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-18.jpg" alt="Dop">
+			     				</div>
+			     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-19.jpg" alt="Dop">
+			     				</div>
+		     			</div>
+		     		</div>
+		     		<p>Машине было 10 лет. Решил поменять. Продал её именно этой компании. Внушили доверие еще на начальном этапе сотрудничества. Оценщик приехал быстро в назначенное время и назначенное место. Длилась продажа порядка часа. Быстро! Рекомендую!</p>
+			     </dd>
+			 </dl>
+
+			 <dl>
+			 	<div class="feedback__prev-info">
+			 		<div class="feedback__date">
+			 			22.05.2019
+			 		</div>
+			 		<div class="feedback__name">
+			 			Владислав. Челябинск <br>
+			 			<span>Hyundai Accent</span>
+			 		</div>
+			 		<div class="feedback__header">
+			 			Я доволен!
 			 		</div>
 			 	</div>
 		     <dt class="btn">Читать</dt>
@@ -556,23 +626,41 @@
 			     				<div class="feedback__files_item">
 			     					<img class="mini" src="img/slider-img-14.jpg" alt="Dop">
 			     				</div>
+			     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-15.jpg" alt="Dop">
+			     				</div>
+			     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-16.jpg" alt="Dop">
+			     				</div>
 		     			</div>
 		     		</div>
-		     		<p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что рамки и место обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и административных условий.</p>
-		     		<p>Идейные соображения высшего порядка, а также рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. С другой стороны постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития. Таким образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Таким образом дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+		     		<p>Вот буквально на днях состоялась сделка – продал машину. Респект за хорошее качество обслуживания, оперативную оценку и консультацию. По деньгам тоже всё супер. Я доволен!</p>
 			     </dd>
 			 </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
 			 <dl>
 			 	<div class="feedback__prev-info">
 			 		<div class="feedback__date">
-			 			22.09.2019
+			 			18.04.2019
 			 		</div>
 			 		<div class="feedback__name">
-			 			Арсений. Москва <br>
-			 			<span>Lada Granta</span>
+			 			Алексей. Челябинск <br>
+			 			<span>Honda Accord</span>
 			 		</div>
 			 		<div class="feedback__header">
-			 			Как меня кинули на 20 000 рублей
+			 			Цена, признаюсь приятно удивила
 			 		</div>
 			 	</div>
 		     <dt class="btn">Читать</dt>
@@ -587,28 +675,82 @@
 		     			</div>
 		     		</div>
 
-		     		<div class="feedback__files">
+		     		<!-- <div class="feedback__files">
 		     			<div class="feedback__files_header">
 		     				Доп. файлы
 		     			</div>
 		     			<div class="feedback__files_container">
 		     				<div class="feedback__files_item">
-			     					<img class="mini" src="img/slider-img-17.jpg" alt="Dop">
+			     					<img class="mini" src="img/slider-img-13.jpg" alt="Dop">
 			     				</div>
 			     				<div class="feedback__files_item">
-			     					<img class="mini" src="img/slider-img-18.jpg" alt="Dop">
+			     					<img class="mini" src="img/slider-img-14.jpg" alt="Dop">
+			     				</div>
+			     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-15.jpg" alt="Dop">
+			     				</div>
+			     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-16.jpg" alt="Dop">
 			     				</div>
 		     			</div>
-		     		</div>
-		     		<p>С другой стороны постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Повседневная практика показывает, что рамки и место обучения кадров представляет собой интересный эксперимент проверки существенных финансовых и административных условий.</p>
-		     		<p>Идейные соображения высшего порядка, а также рамки и место обучения кадров требуют определения и уточнения позиций, занимаемых участниками в отношении поставленных задач. С другой стороны постоянный количественный рост и сфера нашей активности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Повседневная практика показывает, что рамки и место обучения кадров представляет собой интересный эксперимент проверки модели развития. Таким образом сложившаяся структура организации влечет за собой процесс внедрения и модернизации направлений прогрессивного развития. Таким образом дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p>
+		     		</div> -->
+		     		<p>Если кому то надо продать срочно машину, лично рекомендую обратиться именно сюда. Узнал о фирме недавно. Знакомый продал им машину. И я обратился тоже. Честно скажу, машина моя была не в лучшем состоянии. Специалисты быстро отреагировали на мою заявку, оценили всё как положено. Цена, признаюсь приятно удивила. По обоюдному согласию мы провели выкуп за каких то 30-40 минут. Остались довольны все!</p>
 			     </dd>
 			 </dl>
+
+			 <dl>
+			 	<div class="feedback__prev-info">
+			 		<div class="feedback__date">
+			 			26.03.2019
+			 		</div>
+			 		<div class="feedback__name">
+			 			Илья. Челябинск <br>
+			 			<span>Ford Focus</span>
+			 		</div>
+			 		<div class="feedback__header">
+			 			Всё серьезно и солидно!
+			 		</div>
+			 	</div>
+		     <dt class="btn">Читать</dt>
+		     <dd>
+		     		<div class="feedback__contacts">
+		     			<div class="feedback__contacts_text">
+		     				Контакты:
+		     			</div>
+		     			<div class="feedback__contacts_icons">
+		     				<a href="#" class="feedback__contacts_link"><img src="img/facebook.png" alt="Facebook"></a>
+		     				<a href="#" class="feedback__contacts_link"><img src="img/inst.png" alt="Instagram"></a>
+		     			</div>
+		     		</div>
+
+		     		<!-- <div class="feedback__files">
+		     			<div class="feedback__files_header">
+		     				Доп. файлы
+		     			</div>
+		     			<div class="feedback__files_container">
+		     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-13.jpg" alt="Dop">
+			     				</div>
+			     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-14.jpg" alt="Dop">
+			     				</div>
+			     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-15.jpg" alt="Dop">
+			     				</div>
+			     				<div class="feedback__files_item">
+			     					<img class="mini" src="img/slider-img-16.jpg" alt="Dop">
+			     				</div>
+		     			</div>
+		     		</div> -->
+		     		<p>Позвонил проконсультироваться по поводу продажи авто. Ответили быстро, не смотря на то, что уже было около восьми вечера. Договорились о встрече с оценщиком. В общем остался рад. Так как подготовили нужные документы быстро, а деньги (кстати, дали чуть больше, чем предлагали другие фирмы) выплачены на месте. Всё серьезно и солидно!</p>
+			     </dd>
+			 </dl>
+
 			</div>
 
 			 <div class="more__section">
 			 	<div class="more__btn">
-					Ещё
+					Читать ещё
 				</div>
 			 </div>
 
@@ -623,8 +765,8 @@
 				Как происходит выкуп авто
 			</h2>
 			<div class="subheader">
-				Мы подготовили для вас пошаговую инструкцию
-				по продаже вашего автомобиля
+				Мы подготовили для вас <b>пошаговую инструкцию</b>
+				по <b>продаже</b> вашего автомобиля
 			</div>
 			<div class="buy__items">
 				<div class="row">
@@ -649,7 +791,7 @@
 								телефону
 							</div>
 							<div class="buy__item_text">
-								Учитвая всё то, что 
+								Учитывая всё то, что 
 								повысит стоимость выкупа
 							</div>
 						</div>
@@ -709,10 +851,43 @@
 					Наша группа ВК
 				</a>
 			</div>
-			<div class="footer__policies_block">
-				<a target="_blank" href="https://vk.com/dev/uprivacy" class="footer__policies">
-					Политика конфиденциальности
-				</a>
+			<div class="row">
+				<div class="col-lg-4 col-md-12">
+					<a href="#header" class="logo">
+						Автовыкуп
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-12">
+					<ul class="footer__menu">
+						<li class="footer__menu_item">
+							<a href="#advantages">
+								О нас          
+							</a>
+						</li>
+						<li class="footer__menu_item">
+							<a href="#slider">
+								Выкупленные
+							</a>
+						</li>
+						<li class="footer__menu_item">
+							<a href="#buy">
+								Процесс
+							</a>
+						</li>
+						<li class="footer__menu_item">
+							<a href="#feedback">
+								Отзывы
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-lg-4 col-md-12">
+					<div class="footer__policies_block">
+						<a target="_blank" href="https://vk.com/dev/uprivacy" class="footer__policies">
+							Политика конфиденциальности
+						</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>
@@ -731,25 +906,78 @@
 		</div>
 	</form>
 
-	<!-- <div class="overlay js-overlay-campaign3">
-		<div class="popup js-popup-campaign3">
+	<div class="overlay js-overlay-campaign">
+		<div class="popup-form js-popup-campaign">
 			<div class="popup__header">
-				Оставьте заявку
+				Хотите быстро
+				продать авто?
 			</div>
-			<div class="popup__text">
-				Мы перезвоним вам для уточнения заказа
+			<div class="popup__subheader">
+				Оставьте свои данные в форме
 			</div>
 			<form>
-				<input placeholder="Телефон" type="tel">
-				<textarea placeholder="Сообщение"></textarea>
+				<input type="text" placeholder="Как Вас зовут?">
+				<input placeholder="Номер телефона" type="tel">
+				<textarea placeholder="Комментарий"></textarea>
 				<button class="btn">
-					Отправить
+					Продать автомобиль <img src="img/main-btn-arrow.png" alt="arrow">
 				</button>
+				<div class="popup-policies">
+					Нажимая на кнопку Вы соглашаетесь <br>
+					с <a target="_blank" href="https://vk.com/dev/uprivacy" class="footer__policies">политикой конфиденциальности</a>
+				</div>
 			</form>
 			
-			<div class="close-popup js-close-campaign"></div>
+			<div class="close-popup-form js-close-campaign">
+				Закрыть
+			</div>
 		</div>
-	</div> -->
+	</div>
+
+	<div class="overlay js-overlay-campaign">
+		<div class="popup-form js-popup-campaign">
+			<div class="popup__header">
+				Хотите быстро
+				продать авто?
+			</div>
+			<div class="popup__subheader">
+				Оставьте свои данные в форме
+			</div>
+			<form>
+				<input type="text" placeholder="Как Вас зовут?">
+				<input placeholder="Номер телефона" type="tel">
+				<textarea placeholder="Комментарий"></textarea>
+				<button class="btn">
+					Продать автомобиль <img src="img/main-btn-arrow.png" alt="arrow">
+				</button>
+				<div class="popup-policies">
+					Нажимая на кнопку Вы соглашаетесь <br>
+					с <a target="_blank" href="https://vk.com/dev/uprivacy" class="footer__policies">политикой конфиденциальности</a>
+				</div>
+			</form>
+			
+			<div class="close-popup-form js-close-campaign">
+				Закрыть
+			</div>
+			<div class="close-popup-form-mobile js-close-campaign">
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="overlay js-overlay-campaign2">
+		<div class="popup-form thanks-popup js-popup-campaign2">
+			<div class="thanks-popup__header">
+				Спасибо <br>за обращение
+			</div>
+			<div class="thanks-popup__text">
+				Мы перезвоним в течении 7-ми минут
+			</div>
+			<div class="btn js-close-campaign thanks-popup__btn">
+				Вернуться на главную
+			</div>
+		</div>
+	</div>
 
 	<script src="libs/js/jquery.min.js"></script>
 	<script src="libs/js/slick.min.js"></script>

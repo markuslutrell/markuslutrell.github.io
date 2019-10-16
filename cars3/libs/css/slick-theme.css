@@ -103,7 +103,7 @@
 }
 .slick-prev:before
 {
-    content: url(../../img/next.png);
+    content: url(../../img/slider-arrow.png);
     display: block;
 }
 
@@ -125,7 +125,7 @@
 }
 .slick-next:before
 {
-    content: url(../../img/next.png);
+    content: url(../../img/slider-arrow.png);
     display: block;
 }
 [dir='rtl'] .slick-next:before
@@ -227,7 +227,7 @@
 
 .auto__inner-slider .slick-prev
 {
-    left: -36px;
+    left: -35px;
     z-index: 5000;
     transform: none;
     opacity: 1;

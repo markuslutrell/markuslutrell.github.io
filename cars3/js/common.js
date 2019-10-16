@@ -42,7 +42,7 @@ $(".more__btn").click(function() {
       increment++;
     } else {
       $(".hidden__content").slideUp();
-      $(this).text('Еще');
+      $(this).text('Читать ещё');
       increment++;
     }
 
@@ -127,58 +127,31 @@ $(".close-form").click(function(){
      $(".dop-form").removeClass("active-input");
 });
 
-// (function($){
-//   $(function() {
-//     $('.mobile__menu_btn').on('click', function() {
-//       $('.menu').toggleClass('active');
-//     });
-//   });
-// })(jQuery);
-
-// (function($){
-//   $(function() {
-//     $('.js-more').on('click', function() {
-//       $('.feedback__slide-hide').toggleClass('active');
-//       $(this).addClass("hide");
-//       $('.js-less').toggleClass('hide');
-//     });
-//   });
-// })(jQuery);
-
-// (function($){
-//   $(function() {
-//     $('.js-less').on('click', function() {
-//       $('.feedback__slide-hide').toggleClass('active');
-//       $(this).addClass("hide");
-//       $('.js-more').toggleClass('hide');
-//     });
-//   });
-// })(jQuery);
 
 
-// // Модальное окно
+// Модальное окно
 
-// // открыть по кнопке
-// $('.js-button-campaign').click(function() { 
+// открыть по кнопке
+$('.js-button-campaign').click(function() { 
   
-//   $('.js-overlay-campaign').fadeIn();
-//   $('.js-overlay-campaign').addClass('disabled');
-// });
+  $('.js-overlay-campaign').fadeIn();
+  $('.js-overlay-campaign').addClass('disabled');
+});
 
-// // закрыть на крестик
-// $('.js-close-campaign').click(function() { 
-//   $('.js-overlay-campaign').fadeOut();
+// закрыть на крестик
+$('.js-close-campaign').click(function() { 
+  $('.js-overlay-campaign').fadeOut();
   
-// });
+});
 
-// // закрыть по клику вне окна
-// $(document).mouseup(function (e) { 
-//   var popup = $('.js-popup-campaign');
-//   if (e.target!=popup[0]&&popup.has(e.target).length === 0){
-//     $('.js-overlay-campaign').fadeOut();
+// закрыть по клику вне окна
+$(document).mouseup(function (e) { 
+  var popup = $('.js-popup-campaign');
+  if (e.target!=popup[0]&&popup.has(e.target).length === 0){
+    $('.js-overlay-campaign').fadeOut();
     
-//   }
-// });
+  }
+});
 
 
 // // открыть по кнопке
