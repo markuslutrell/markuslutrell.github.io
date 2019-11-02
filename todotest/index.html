@@ -46,15 +46,10 @@
 		      	</p>
 		      	<div class="todo__item_bottom">
 			      	<div class="todo__item_priority">Normal</div>
-			      	<select onclick="validation()" class="todo__item_select">
-			      		<option value="" disabled selected hidden>...</option>
-			      		<option value="done">done</option>
-			      		<option value="edit">edit</option>
-			      		<option value="delete">delete</option>
-			      	</select>
+			      	<select class="todo__item_select" onclick="validation();showModalWinEdit()"><option value="..." selected="" hidden="">...</option><option value="done">done</option><option value="edit">edit</option><option value="delete">delete</option></select>
 		      	</div>
 		      </li>
-
+				
 		      <li class="todo__item">
 		      	<h2 class="todo__item_header">
 		      		load task
@@ -64,12 +59,7 @@
 		      	</p>
 		      	<div class="todo__item_bottom">
 			      	<div class="todo__item_priority">Low</div>
-			      	<select onclick="validation()" class="todo__item_select">
-			      		<option class="active-option" value="" disabled selected hidden>...</option>
-			      		<option value="done">done</option>
-			      		<option value="edit">edit</option>
-			      		<option value="delete">delete</option>
-			      	</select>
+			      	<select class="todo__item_select" onclick="validation();showModalWinEdit()"><option value="..." selected="" hidden="">...</option><option value="done">done</option><option value="edit">edit</option><option value="delete">delete</option></select>
 		      	</div>
 		      </li>
 
@@ -82,16 +72,12 @@
 		      	</p>
 		      	<div class="todo__item_bottom">
 			      	<div class="todo__item_priority">High</div>
-			      	<select onclick="validation()" class="todo__item_select">
-			      		<option value="" disabled selected hidden>...</option>
-			      		<option value="done">done</option>
-			      		<option value="edit">edit</option>
-			      		<option value="delete">delete</option>
-			      	</select>
+			      	<select class="todo__item_select" onclick="validation();showModalWinEdit()"><option value="..." selected="" hidden="">...</option><option value="done">done</option><option value="edit">edit</option><option value="delete">delete</option></select>
 		      	</div>
 		      </li>
 		   </ul>
 		</div>
+
 		<div id="popupWin" class="popup-form">
 			<div class="popup-form__title">Title:</div>
 			<input type="text" placeholder="Title" class="popup-form__input">
@@ -110,6 +96,27 @@
 			<div class="popup-form__buttons">
 				<button id="cancel" class="popup-form__button close-popup">Cancel</button>
 				<button id="save"  class="popup-form__button">Save</button>
+			</div>
+		</div>
+
+		<div id="popupWinEdit" class="popup-form">
+			<div class="popup-form__title">Title:</div>
+			<input type="text" placeholder="Title" class="popup-form__input">
+			<div class="popup-form__title">
+				Description
+			</div>
+			<textarea class="popup-form__text" placeholder="Description"></textarea>
+			<div class="popup-form__title">
+				Priority
+			</div>
+			<select name="SelectEdit" class="popup-form__select">
+				<option value="High" class="popup-form__option">High</option>
+				<option value="Normal" class="popup-form__option">Normal</option>
+				<option value="Low" class="popup-form__option">Low</option>
+			</select>
+			<div class="popup-form__buttons">
+				<button id="cancelEdit" class="popup-form__button close-popup">Cancel</button>
+				<button id="saveEdit"  class="popup-form__button">Save</button>
 			</div>
 		</div>
 	</main>

@@ -1,7 +1,9 @@
 // Popup window 
 let darkLayer = document.createElement('div');
 let modalWin = document.getElementById('popupWin');
-   
+let modalWinEdit = document.getElementById('popupWinEdit');
+let allTasks = document.querySelectorAll(".todo__item");   
+let editValue = document.querySelectorAll(".todo__item_select");
 
 function showModalWin() {
    
@@ -39,7 +41,7 @@ save.addEventListener("click", function() {
   priority = priority.options[priority.selectedIndex].text;
 
   if (title != "") {
-  		task.innerHTML = '<h2 class="todo__item_header">' + title + '</h2>' + '<p class="todo__item_desc">' + desc + '</p>' + '<div class="todo__item_bottom"><div class="todo__item_priority">' + priority + '</div>' + '<select class="todo__item_select" onclick="validation()"><option value="" disabled selected hidden>...</option><option value="done">done</option><option value="edit">edit</option><option value="delete">delete</option></select></div></li>';
+  		task.innerHTML = '<h2 class="todo__item_header">' + title + '</h2>' + '<p class="todo__item_desc">' + desc + '</p>' + '<div class="todo__item_bottom"><div class="todo__item_priority">' + priority + '</div>' + '<select class="todo__item_select" onclick="validation();showModalWinEdit()"><option value="..." selected hidden>...</option><option value="done">done</option><option value="edit">edit</option><option value="delete">delete</option></select></div></li>';
   		task.className = "todo__item";
   		container.appendChild(task);
   		task.className = "todo__item";
@@ -47,11 +49,12 @@ save.addEventListener("click", function() {
 	   modalWin.style.display = 'none';
 	   document.querySelector(".popup-form__input").value = "";
   		document.querySelector(".popup-form__text").value = "";
+  		allTasks = document.querySelectorAll(".todo__item");
+  		editValue = document.querySelectorAll(".todo__item_select");
+
   } else {
   		alert("Please, type the title");
   }
-
-  
 });
 
 //Done task
@@ -181,4 +184,101 @@ document.querySelector("#priorityFilter").onclick = function(){
 		});
 	}
 
+};
+
+// Editing popup 
+
+
+
+// allTasks.forEach(function(element){
+// 	element.lastChild.previousElementSibling.lastElementChild.addEventListener("click", function() {
+// 	editValue.forEach(function(elem){
+// 		if (elem.value == 'edit') {
+// 			darkLayer.id = 'shadow';
+// 			document.body.appendChild(darkLayer);
+// 		   modalWinEdit.style.display = 'block';
+// 		   elem.value = "...";
+// 		   saveEdit.addEventListener("click", function() {
+// 		     let editTask = elem.parentNode.parentNode;
+// 		     let editTitle = document.querySelector("#popupWinEdit .popup-form__input");
+// 			  let editPriority = document.querySelector("#popupWinEdit .popup-form__select");
+// 			  let editDesc = document.querySelector("#popupWinEdit .popup-form__text");
+
+// 			  editTitle = editTitle.value;
+// 			  editDesc = editDesc.value;
+// 			  editPriority = editPriority.options[editPriority.selectedIndex].text;
+
+// 			  if (editTitle != "") {
+// 			  		editTask.innerHTML = '<h2 class="todo__item_header">' + editTitle + '</h2>' + '<p class="todo__item_desc">' + editDesc + '</p>' + '<div class="todo__item_bottom"><div class="todo__item_priority">' + editPriority + '</div>' + '<select class="todo__item_select" onclick="validation();"><option value="" disabled selected hidden>...</option><option value="done">done</option><option value="edit">edit</option><option value="delete">delete</option></select></div></li>';
+// 				   darkLayer.parentNode.removeChild(darkLayer); 
+// 				   modalWinEdit.style.display = 'none';
+// 				   document.querySelector("#popupWinEdit .popup-form__input").value = "";
+// 			  		document.querySelector("#popupWinEdit .popup-form__text").value = "";
+// 			  		allTasks = document.querySelectorAll(".todo__item");
+//   					editValue = document.querySelectorAll(".todo__item_select");
+// 			  		console.log(elem)
+// 			  } else {
+// 			  		alert("Please, type the title");
+// 			  }
+// 			});
+// 		 } 
+// 		 darkLayer.onclick = function () { 
+// 		      darkLayer.parentNode.removeChild(darkLayer); 
+// 		      modalWinEdit.style.display = 'none'; 
+// 		      return false;
+// 		    };
+
+// 		   cancelEdit.onclick = function () {  
+// 		      darkLayer.parentNode.removeChild(darkLayer); 
+// 		      modalWinEdit.style.display = 'none';
+// 		  		return false;
+// 		    };
+// 	});
+// 	});
+// });
+
+
+function showModalWinEdit() {
+	let editValue = document.querySelectorAll(".todo__item_select");
+
+
+	editValue.forEach(function(elem){
+		if (elem.value == 'edit') {
+			darkLayer.id = 'shadow';
+			document.body.appendChild(darkLayer);
+		   modalWinEdit.style.display = 'block';
+		   elem.value = "...";
+		   saveEdit.addEventListener("click", function() {
+		     let editTask = elem.parentNode.parentNode;
+		     let editTitle = document.querySelector("#popupWinEdit .popup-form__input");
+			  let editPriority = document.querySelector("#popupWinEdit .popup-form__select");
+			  let editDesc = document.querySelector("#popupWinEdit .popup-form__text");
+
+			  editTitle = editTitle.value;
+			  editDesc = editDesc.value;
+			  editPriority = editPriority.options[editPriority.selectedIndex].text;
+
+			  if (editTitle != "") {
+			  		editTask.innerHTML = '<h2 class="todo__item_header">' + editTitle + '</h2>' + '<p class="todo__item_desc">' + editDesc + '</p>' + '<div class="todo__item_bottom"><div class="todo__item_priority">' + editPriority + '</div>' + '<select class="todo__item_select" onclick="validation();showModalWinEdit()"><option value="" disabled selected hidden>...</option><option value="done">done</option><option value="edit">edit</option><option value="delete">delete</option></select></div></li>';
+				   darkLayer.parentNode.removeChild(darkLayer); 
+				   modalWinEdit.style.display = 'none';
+				   document.querySelector("#popupWinEdit .popup-form__input").value = "";
+			  		document.querySelector("#popupWinEdit .popup-form__text").value = "";
+			  } else {
+			  		alert("Please, type the title");
+			  }
+			});
+		 } 
+		 darkLayer.onclick = function () { 
+		      darkLayer.parentNode.removeChild(darkLayer); 
+		      modalWinEdit.style.display = 'none'; 
+		      return false;
+		    };
+
+		   cancelEdit.onclick = function () {  
+		      darkLayer.parentNode.removeChild(darkLayer); 
+		      modalWinEdit.style.display = 'none';
+		  		return false;
+		    };
+	});
 };
