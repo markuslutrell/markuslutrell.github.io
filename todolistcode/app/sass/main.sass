@@ -1,0 +1,239 @@
+/*------------Variables---------------*/
+
+$border: 2px solid #000
+
+/*--------------- ----------------*/
+*
+	box-sizing: border-box
+
+body
+	margin: 0
+	padding: 0
+	font-family: Arial, sans-serif
+	font-size: 16px
+ul
+	list-style: none
+	padding: 0
+header
+	border-bottom: $border
+	position: fixed
+	top: 0
+	width: 100%
+	background: #fff
+	z-index: 4
+
+.todo__header, .footer-name
+	margin: 0
+	padding: 20px
+	font-size: 25px
+	font-weight: bold
+
+footer
+	border-top: $border
+	position: fixed
+	bottom: 0
+	width: 100%
+	background: #fff
+	z-index: 4
+#todo__wrapper
+	margin: 70px auto
+	width: 1024px
+
+.todo__inputs
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-top: 30px
+	position: relative
+
+.todo__input
+	font-size: 16px
+	border: $border
+
+.todo__search
+	width: 400px
+	height: 45px
+	padding-left: 50px
+	display: block
+.todo__select
+	height: 45px
+	width: 200px
+	padding-left: 15px
+	padding-right: 15px
+.todo__create
+	width: 175px
+	height: 45px
+	background: none
+	border-radius: 15px
+	outline: none
+	cursor: pointer
+
+.todo__search_label
+	position: absolute
+	left: 20px
+
+.todo__item_header
+	margin: 0
+
+.todo__items
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	padding-top: 25px
+	flex-wrap: wrap
+	margin-left: -92px
+.todo__item
+	border: $border
+	padding: 35px 25px
+	width: 280px
+	min-height: 280px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	font-weight: bold
+	margin-top: 25px
+	margin-bottom: 25px
+	margin-left: 92px
+
+
+
+.todo__item_priority
+	width: 80px
+	height: 40px
+	border: 2px dashed #000
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	border-radius: 20px
+
+.todo__item_select
+	width: 40px
+	height: 40px
+	border-radius: 10px
+	border: $border
+	font-size: 16px
+	color: #fff
+	position: relative
+	outline: none 
+	cursor: pointer 
+	background: transparent
+	z-index: 1
+	option
+		color: #000
+.todo__item_bottom
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	position: relative
+	&:after
+		content: "..."
+		display: block
+		color: #000
+		font-size: 16px
+		position: absolute
+		right: 13px
+		bottom: 10px
+		z-index: 0
+
+.todo__item_header
+	font-size: 16px
+
+#shadow
+	width: 100%
+	height: 10000%
+	top: 0
+	left: 0
+	background-color: rgba(255, 255, 255, 0.8)
+	position: fixed
+	overflow: hidden
+	z-index: 2
+
+.popup-form
+	position: fixed
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	background-color: #fff
+	padding: 15px
+	z-index: 3
+	border: $border
+	display: none
+
+.popup-form__input, .popup-form__text, .popup-form__select
+	width: 200px
+	display: block
+	padding-left: 20px
+	font-family: Arial, sans-serif
+	border: $border
+	font-size: 16px
+
+.popup-form__input, .popup-form__select
+	height: 40px
+
+.popup-form__text
+	height: 80px
+	padding-top: 15px
+
+.popup-form__title
+	margin: 10px 0
+
+.popup-form__buttons
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	margin-top: 15px
+	.popup-form__button
+		width: 90px
+		height: 40px
+		border-radius: 10px
+		background: #fff
+		border: $border
+		cursor: pointer
+
+.active
+	display: block
+
+.todo__item.done
+	background-color: #ccc
+	position: relative
+	&:after
+		content: "\2713"
+		display: flex
+		width: 15px
+		height: 15px
+		background: #fff
+		border: $border
+		justify-content: center
+		align-items: center
+		font-size: 14px
+		position: absolute
+		right: -2px
+		top: -8px
+	.todo__item_select
+		color: #ccc
+	.todo__item_bottom:after
+		color: #000
+
+.hide, .hide-status
+	display: none
