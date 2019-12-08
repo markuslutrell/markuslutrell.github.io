@@ -1,3 +1,42 @@
+$("footer").animated(".preloader", 2000);
+
+$(window).on('load',(function() {
+  setTimeout(function () { 
+    $(".preloader").delay(100).fadeOut(2000).remove();   
+  }, 1000); 
+
+  setTimeout(function(){
+       $('#fullpage').fullpage({
+      autoScrolling:true,
+      navigation: true,
+      responsiveWidth: 1200,
+      scrollOverflow: true,
+      anchors: ['main-section', 'offer', 'steps', 'main-form', 'sevenp-section', 'team-section', 'footer-section'],
+      afterLoad: function(anchorLink, index){
+        $(".main-block__item-1, .main-block__item-3").animated("fadeInLeft", 2000);
+        $(".main-block__item-2, .main-block__item-4").animated("fadeInRight", 2000);
+        $(".heart, .heart__shadow").animated("fadeIn", 2000);
+        $(".advantages__item").animated("fadeInLeft", 2000);
+        $(".advantages__header, .advantages__offer").animated("fadeInDown", 2000);
+        $("#form h2, #footer h2").animated("fadeIn", 1000);
+        $("#form input, #form button, #footer input, #footer button").animated("fadeInUp", 1000);
+        $(".sevenP__item-1, .sevenP__item-2, .sevenP__item-3").animated("fadeInLeft", 2000);
+        $(".sevenP__item-5, .sevenP__item-6, .sevenP__item-7").animated("fadeInRight", 2000);
+        $(".sevenP__item-4").animated("fadeInUp", 2000);
+        $(".sevenP-img").animated("fadeIn", 3000);
+        $(".sevenP-shadow").animated("fadeInUp", 2000);
+        $(".team__slider").animated("fadeInUp", 2000);
+        $("h2").animated("fadeIn", 2000);
+        $(".left-card").animated("fadeInDown", 2000);
+        $(".right-card").animated("fadeInUp", 2000);
+      }
+    });
+     }, 1000);
+}));
+
+
+
+
 // $(document).ready(function() {
 
 //     //E-mail Ajax Send
@@ -77,32 +116,6 @@ $(document).ready(function() {
     
 //   }
 // });
-
-$(document).ready(function() {
-  $('#fullpage').fullpage({
-    autoScrolling:true,
-    navigation: true,
-    scrollOverflowReset: true,
-    afterLoad: function(anchorLink, index){
-
-      $(".main-block__item-1, .main-block__item-3").animated("fadeInLeft", 2000);
-      $(".main-block__item-2, .main-block__item-4").animated("fadeInRight", 2000);
-      $(".heart, .heart__shadow").animated("fadeIn", 2000);
-      $(".advantages__item").animated("fadeInLeft", 2000);
-      $(".advantages__header, .advantages__offer").animated("fadeInDown", 2000);
-      $("#form h2").animated("fadeIn", 1000);
-      $("#form input, #form button").animated("fadeInUp", 1000);
-      $(".sevenP__item-1, .sevenP__item-2, .sevenP__item-3").animated("fadeInLeft", 2000);
-      $(".sevenP__item-5, .sevenP__item-6, .sevenP__item-7").animated("fadeInRight", 2000);
-      $(".sevenP__item-4").animated("fadeInUp", 2000);
-      $(".sevenP-img").animated("fadeIn", 3000);
-      $(".sevenP-shadow").animated("fadeInUp", 2000);
-    }
-  });
-
-  //methods
-  // $.fn.fullpage.setAllowScrolling(false);
-});
 
 
 $( ".heart" ).mgGlitch({

@@ -19,10 +19,22 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+	<div class="preloader">	
+		<div class="loader">
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+		</div>
+		<div class="preloader-images">
+			<img src="img/team-1.png" alt="IMG" class="preloader-img">
+			<img src="img/team-2.png" alt="IMG" class="preloader-img">
+			<img src="img/team-3.png" alt="IMG" class="preloader-img">
+		</div>
+	</div>
 	<header>
 		<div class="container">
 			<div class="header__left-block">
-				<a href="index.html" class="logo">
+				<a href="#main-section" class="logo">
 					<div class="logo__icon"></div>
 					<div class="logo__text">
 						Агентство<br>
@@ -30,7 +42,7 @@
 						маркетинга
 					</div>
 				</a>
-				<ul class="menu">
+				<!-- <ul class="menu">
 					<li class="menu__item">
 						<a href="#">Наши услуги</a>
 					</li>
@@ -43,12 +55,12 @@
 					<li class="menu__item">
 						<a href="#">Контакты</a>
 					</li>
-				</ul>
+				</ul> -->
 			</div>
 
 			<div class="header__right-block">
 				<a href="tel:+7 (963) 2800-800" class="header__phone">+7 (963) 2800-800</a>
-				<div class="header__btn">оставить заявку</div>
+				<a href="#main-form" class="header__btn">оставить заявку</a>
 			</div>
 		</div>
 	</header>
@@ -90,8 +102,41 @@
 		</section>
 
 
-		<section id="advantages" class="section"><h1>Section 2</h1></section>
-		<section class="section">
+		<section id="cards" class="section">
+			<div class="container">
+				<div class="left-card">
+					<div class="left-card__front front-side">
+						Мало клиентов? <span></span>
+					</div>
+					<div class="left-card__back back-side">
+						Хочешь мы привлечем больше?
+					</div>
+				</div>
+				<div class="right-card">
+					<div class="right-card__front front-side">
+						Поток есть, но сделок мало?
+					</div>
+					<div class="right-card__back back-side">
+						Хочешь мы сделаем %
+						отказов меньше?
+						<div class="right-card__button-wrapper">
+							<div class="right-card__button">
+								<a href="#main-form">Хочу</a>
+							</div>
+							<img src="img/arrow.png" alt="arrow" class="arrow arrow-1">
+							<img src="img/arrow.png" alt="arrow" class="arrow arrow-2">
+							<img src="img/arrow.png" alt="arrow" class="arrow arrow-3">
+							<img src="img/arrow.png" alt="arrow" class="arrow arrow-4">
+							<img src="img/arrow.png" alt="arrow" class="arrow arrow-5">
+							<img src="img/arrow.png" alt="arrow" class="arrow arrow-6">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="advantages" class="section">
 			<div class="container">
 				<div class="advantages__wrapper">
 					<div class="advantages__left">
@@ -136,6 +181,7 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="section" id="form">
 			<div class="container normal">
 				<h2>
@@ -315,15 +361,59 @@
 					</div>
 
 				</div>
-				<div class="space"></div>
-				<div class="space"></div>
-				<div class="space"></div>
-				<div class="space"></div>
-				<div class="space"></div>
 			</div>
 		</section>
+
+		<section class="section" id="footer">
+			<div class="container">
+				<h2>
+					Рассчитать маркетинговый бюджет целиком
+					или заказать <span>отдельный вид работ</span>
+				</h2>
+				<form>
+					<input type="text" placeholder="Ваше имя">
+					<input type="tel" placeholder="Ваш телефон">
+					<input type="email" placeholder="Ваша почта">
+					<button>GO</button>
+				</form>
+			</div>
+			
+			<footer>
+				<div class="container">
+					<div class="header__left-block">
+						<a href="#main-section" class="logo">
+							<div class="logo__icon"></div>
+							<div class="logo__text">
+								Агентство<br>
+								комплексного<br>
+								маркетинга
+							</div>
+						</a>
+						<!-- <ul class="menu">
+							<li class="menu__item">
+								<a href="#">Наши услуги</a>
+							</li>
+							<li class="menu__item">
+								<a href="#">Как мы это делаем</a>
+							</li>
+							<li class="menu__item">
+								<a href="#">Кейсы</a>
+							</li>
+							<li class="menu__item">
+								<a href="#">Контакты</a>
+							</li>
+						</ul> -->
+					</div>
+
+					<div class="header__right-block">
+						<a href="mailto:dao@mail.ru" class="header__mail">dao@mail.ru</a>
+						<a href="tel:+7 (963) 2800-800" class="header__phone">+7 (963) 2800-800</a>
+						<a href="#main-form" class="header__btn">оставить заявку</a>
+					</div>
+				</div>
+			</footer>
+		</section>
 	</div>
-	
 
 
 
@@ -358,7 +448,7 @@
 	<script src="libs/js/jquery.min.js"></script>
 	<script src="libs/js/mgGlitch.js"></script>
 	<script src="libs/js/fullpage.min.js"></script>
-	<script src="libs/js/fullpage.extensions.min.js"></script>
+	<script src="libs/js/scrolloverflow.min.js"></script>
 	<script src="libs/js/animate-css.js"></script>
 	<script src="libs/js/waypoints.min.js"></script>
 	<script src="libs/js/slick.min.js"></script>

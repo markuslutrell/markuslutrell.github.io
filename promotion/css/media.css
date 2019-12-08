@@ -1,0 +1,70 @@
+@media screen and (max-width: 1600px) {
+  .container {
+    width: 1200px; }
+  .main-block__wrapper {
+    -webkit-transform: scale(0.75);
+        -ms-transform: scale(0.75);
+            transform: scale(0.75); }
+  .left-card, .right-card {
+    width: 590px;
+    height: 560px; }
+  .left-card__front, .left-card__back, .right-card__front, .right-card__back {
+    padding: 30px; }
+  .right-card__button-wrapper .arrow {
+    margin: 0 15px; }
+  #fullpage {
+    margin-top: 40px; }
+  .main-block__wrapper {
+    height: 650px; }
+  .advantages__wrapper {
+    -webkit-transform: scale(0.75);
+        -ms-transform: scale(0.75);
+            transform: scale(0.75); }
+  #form h2, #footer h2 {
+    margin-left: 200px;
+    margin-right: 200px; }
+  .advantages__item:last-child {
+    margin-top: -100px; }
+  .advantages__item {
+    margin-top: -75px; }
+  .advantages__item:first-child {
+    margin-top: 0px; }
+  #sevenP .container {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8); }
+  .sevenP_wrapper {
+    height: 650px; }
+  .sevenP__item-2, .sevenP__item-6 {
+    top: 260px; }
+  .sevenP__item {
+    z-index: 2; }
+  .sevenP__item_text {
+    line-height: 35px; }
+  .advantages__offer {
+    margin-left: 100px; }
+  .advantages__header {
+    margin-left: 0; }
+  #team .container {
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7); }
+  #team h2 {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: -20px; }
+  .team__slide_text {
+    line-height: 28px; }
+  footer {
+    bottom: 85px;
+    padding-top: 50px; }
+  .team__slide img {
+    width: 280px; } }
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 996px;
+    overflow-x: hidden; }
+  header {
+    top: 0;
+    width: 100%; } }
