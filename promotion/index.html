@@ -31,41 +31,28 @@
 			<img src="img/team-3.png" alt="IMG" class="preloader-img">
 		</div>
 	</div>
-	<header>
-		<div class="container">
-			<div class="header__left-block">
-				<a href="#main-section" class="logo">
-					<div class="logo__icon"></div>
-					<div class="logo__text">
-						Агентство<br>
-						комплексного<br>
-						маркетинга
-					</div>
-				</a>
-				<!-- <ul class="menu">
-					<li class="menu__item">
-						<a href="#">Наши услуги</a>
-					</li>
-					<li class="menu__item">
-						<a href="#">Как мы это делаем</a>
-					</li>
-					<li class="menu__item">
-						<a href="#">Кейсы</a>
-					</li>
-					<li class="menu__item">
-						<a href="#">Контакты</a>
-					</li>
-				</ul> -->
-			</div>
-
-			<div class="header__right-block">
-				<a href="tel:+7 (963) 2800-800" class="header__phone">+7 (963) 2800-800</a>
-				<a href="#main-form" class="header__btn">оставить заявку</a>
-			</div>
-		</div>
-	</header>
+	<div id="moveItem"></div>
 	<div id="fullpage">
 		<section id="main-block" class="section">
+			<header>
+				<div class="container">
+					<div class="header__left-block">
+						<a href="#main-section" class="logo">
+							<div class="logo__icon"></div>
+							<div class="logo__text">
+								Агентство<br>
+								комплексного<br>
+								маркетинга
+							</div>
+						</a>
+					</div>
+
+					<div class="header__right-block">
+						<a href="tel:+7 (963) 2800-800" class="header__phone">+7 (963) 2800-800</a>
+						<a href="#main-form" class="header__btn">оставить заявку</a>
+					</div>
+				</div>
+			</header>
 			<div class="container">
 				<div class="main-block__wrapper">
 					<div class="main-block__heart">
@@ -109,7 +96,18 @@
 						Мало клиентов? <span></span>
 					</div>
 					<div class="left-card__back back-side">
-						Хочешь мы привлечем больше?
+						Хочешь мы<br> привлечем больше?
+						<div class="right-card__button-wrapper">
+							<div class="right-card__button">
+								<a href="#main-form">Хочу</a>
+							</div>
+							<img src="img/arrow.png" alt="arrow" class="arrow arrow-1">
+							<img src="img/arrow.png" alt="arrow" class="arrow arrow-2">
+							<img src="img/arrow.png" alt="arrow" class="arrow arrow-3">
+							<img src="img/arrow.png" alt="arrow" class="arrow arrow-4">
+							<img src="img/arrow.png" alt="arrow" class="arrow arrow-5">
+							<img src="img/arrow.png" alt="arrow" class="arrow arrow-6">
+						</div>
 					</div>
 				</div>
 				<div class="right-card">
@@ -155,8 +153,11 @@
 								<img src="img/1.png" alt="1">
 							</div>
 							<div class="advantages__item_text">
-								Делаем комплексную<br>
-								диагностику компании
+								<span></span>
+								<div class="advantages__item_animated-text">
+									Делаем комплексную<br>
+									диагностику компании
+								</div>
 							</div>
 						</div>
 						<div class="advantages__item">
@@ -164,8 +165,11 @@
 								<img src="img/2.png" alt="2">
 							</div>
 							<div class="advantages__item_text">
-								Проводим расчет<br>
-								стоимости проекта.
+								<span></span>
+								<div class="advantages__item_animated-text">
+									Проводим расчет<br>
+									стоимости проекта.
+								</div>
 							</div>
 						</div>
 						<div class="advantages__item">
@@ -173,8 +177,11 @@
 								<img src="img/3.png" alt="3">
 							</div>
 							<div class="advantages__item_text">
-								Показываем<br>
-								первые результаты
+								<span></span>
+								<div class="advantages__item_animated-text">
+									Показываем<br>
+									первые результаты
+								</div>
 							</div>
 						</div>
 					</div>
@@ -284,7 +291,8 @@
 
 				<div class="team__slider">
 					<div class="team__slide">
-						<img src="img/team-1.png" alt="Team">
+						<div class="team__slide_img team__slide_img1"></div>
+						<!-- <img src="img/team-1.png" alt="Team"> -->
 						<div class="team__slide_header">
 							МАРКЕТОЛОГ ПРОЕКТА
 						</div>
@@ -295,8 +303,8 @@
 							работу различных специалистов
 						</div>
 					</div>
-					<div class="team__slide">
-						<img src="img/team-2.png" alt="Team">
+					<div class="team__slide"> 
+						<div class="team__slide_img team__slide_img2"></div>
 						<div class="team__slide_header">
 							МАРКЕТОЛОГ – СТРАТЕГ
 						</div>
@@ -308,7 +316,7 @@
 						</div>
 					</div>
 					<div class="team__slide">
-						<img src="img/team-3.png" alt="Team">
+						<div class="team__slide_img team__slide_img3"></div>
 						<div class="team__slide_header">
 							ДИЗАЙНЕР
 						</div>
@@ -325,7 +333,7 @@
 
 
 					<div class="team__slide">
-						<img src="img/team-1.png" alt="Team">
+						<div class="team__slide_img team__slide_img1"></div>
 						<div class="team__slide_header">
 							МАРКЕТОЛОГ ПРОЕКТА
 						</div>
@@ -337,7 +345,7 @@
 						</div>
 					</div>
 					<div class="team__slide">
-						<img src="img/team-2.png" alt="Team">
+						<div class="team__slide_img team__slide_img2"></div>
 						<div class="team__slide_header">
 							МАРКЕТОЛОГ – СТРАТЕГ
 						</div>
@@ -349,7 +357,7 @@
 						</div>
 					</div>
 					<div class="team__slide">
-						<img src="img/team-3.png" alt="Team">
+						<div class="team__slide_img team__slide_img3"></div>
 						<div class="team__slide_header">
 							ДИЗАЙНЕР
 						</div>

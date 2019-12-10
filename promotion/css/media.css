@@ -7,19 +7,21 @@
             transform: scale(0.75); }
   .left-card, .right-card {
     width: 590px;
-    height: 560px; }
+    height: 560px;
+    font-size: 32px; }
   .left-card__front, .left-card__back, .right-card__front, .right-card__back {
     padding: 30px; }
   .right-card__button-wrapper .arrow {
     margin: 0 15px; }
-  #fullpage {
-    margin-top: 40px; }
   .main-block__wrapper {
     height: 650px; }
   .advantages__wrapper {
-    -webkit-transform: scale(0.75);
-        -ms-transform: scale(0.75);
-            transform: scale(0.75); }
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
+    height: 600px !important; }
+  .advantages__right {
+    margin-top: -50px; }
   #form h2, #footer h2 {
     margin-left: 200px;
     margin-right: 200px; }
@@ -29,34 +31,45 @@
     margin-top: -75px; }
   .advantages__item:first-child {
     margin-top: 0px; }
-  #sevenP .container {
-    -webkit-transform: scale(0.8);
-        -ms-transform: scale(0.8);
-            transform: scale(0.8); }
+  #sevenP img {
+    -webkit-transform: scale(0.7) translate(-50%, -50%);
+        -ms-transform: scale(0.7) translate(-50%, -50%);
+            transform: scale(0.7) translate(-50%, -50%);
+    top: 36%;
+    left: 45%; }
   .sevenP_wrapper {
-    height: 650px; }
+    height: 570px; }
   .sevenP__item-2, .sevenP__item-6 {
-    top: 260px; }
+    top: 250px; }
+  .sevenP__item-3, .sevenP__item-5 {
+    bottom: 110px; }
   .sevenP__item {
     z-index: 2; }
   .sevenP__item_text {
-    line-height: 35px; }
+    line-height: 30px;
+    margin-top: 5px; }
   .advantages__offer {
     margin-left: 100px; }
   .advantages__header {
     margin-left: 0; }
-  #team .container {
-    -webkit-transform: scale(0.7);
-        -ms-transform: scale(0.7);
-            transform: scale(0.7); }
+  #team .team__slider {
+    -webkit-transform: scale(0.5) !important;
+        -ms-transform: scale(0.5) !important;
+            transform: scale(0.5) !important; }
   #team h2 {
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: -20px; }
+    margin: 0;
+    margin-bottom: 15px;
+    margin-top: 15px; }
   .team__slide_text {
-    line-height: 28px; }
+    line-height: 25px; }
+  .team__slide_header {
+    margin-top: 20px;
+    margin-bottom: 10px; }
+  .team__slide_img {
+    width: 330px;
+    height: 300px; }
   footer {
-    bottom: 85px;
+    bottom: 50px;
     padding-top: 50px; }
   .team__slide img {
     width: 280px; } }

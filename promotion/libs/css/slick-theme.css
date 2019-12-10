@@ -75,9 +75,9 @@
 
 button.slick-prev
 {
-    left: 0px;
+    left: -10px;
     z-index: 2;
-    top: 50%;
+    top: 30%;
     margin-top: 30px;
     opacity: .5;
     transform: rotate(180deg);
@@ -110,9 +110,9 @@ button.slick-next:hover {
 
 .slick-next
 {
-    top: 50%;
+    top: 30%;
     margin-top: -42px;
-    right: 0;
+    right: -5px;
     opacity: .5;
 }
 [dir='rtl'] .slick-next
