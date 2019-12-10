@@ -760,8 +760,8 @@ header {
             animation: .3s ease-in-out blink;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
-    -webkit-animation-delay: 2s;
-            animation-delay: 2s; }
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s; }
 
 .advantages__item_animated-text {
   -webkit-animation-delay: 1.2s;
