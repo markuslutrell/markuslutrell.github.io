@@ -1130,6 +1130,8 @@ footer {
     -webkit-justify-content: space-between;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+  footer .header__phone {
+    margin-right: 0; }
 
 #footer form {
   margin-bottom: 200px; }

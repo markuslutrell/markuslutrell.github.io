@@ -71,7 +71,10 @@
     bottom: 50px;
     padding-top: 50px; }
   .team__slide img {
-    width: 280px; } }
+    width: 280px; }
+  header {
+    position: relative;
+    z-index: 2; } }
 
 @media screen and (max-width: 1200px) {
   .container {
@@ -312,9 +315,6 @@
       display: none; }
     footer .header__mail {
       margin-right: 0; }
-  header {
-    position: relative;
-    z-index: 2; }
   .mobile-btn {
     display: block; }
   .desktop-btn {
