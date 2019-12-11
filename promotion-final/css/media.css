@@ -73,8 +73,8 @@
   .team__slide img {
     width: 280px; }
   header {
-    position: relative;
-    z-index: 2; } }
+    z-index: 2;
+    background: transparent; } }
 
 @media screen and (max-width: 1200px) {
   .container {
