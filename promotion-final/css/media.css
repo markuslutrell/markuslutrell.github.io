@@ -151,6 +151,15 @@
     width: 100%; } }
 
 @media screen and (max-width: 996px) {
+  .popup {
+    width: 95%;
+    height: auto; }
+    .popup .popup-inner {
+      padding-left: 25px;
+      padding-right: 25px;
+      margin-bottom: 1.5%; }
+  .close-popup {
+    margin-bottom: 27px; }
   .container {
     width: 320px; }
   .logo__icon {
