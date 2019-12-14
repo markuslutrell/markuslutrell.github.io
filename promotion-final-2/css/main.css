@@ -52,7 +52,7 @@ h2 {
   -webkit-animation-delay: .25s;
           animation-delay: .25s; }
   h2 span {
-    color: #fb0910; }
+    color: #e70f16; }
 
 .overlay {
   position: fixed;
@@ -318,11 +318,11 @@ header {
 .header__btn {
   width: 197px;
   height: 46px;
-  border: 1px solid #fb0910;
+  border: 1px solid #e70f16;
   background: transparent;
   -webkit-border-radius: 7px;
           border-radius: 7px;
-  color: #fb0910;
+  color: #e70f16;
   font-size: 12px;
   text-align: center;
   line-height: 44px;
@@ -332,7 +332,7 @@ header {
   -o-transition: .3s ease;
   transition: .3s ease; }
   .header__btn:hover {
-    background: #fb0910;
+    background: #e70f16;
     color: #fff; }
 
 /*----------------Main Block--------------*/
@@ -404,7 +404,7 @@ header {
 
 .main-block__item_number {
   text-shadow: 0 0 18px rgba(251, 9, 16, 0.7);
-  color: #fb0910;
+  color: #e70f16;
   font-size: 24px;
   font-family: Helvetica;
   -webkit-transition: .3s ease;
@@ -594,10 +594,11 @@ header {
   font-size: 36px;
   letter-spacing: 4.24px;
   -webkit-perspective: 1000px;
-          perspective: 1000px;
-  color: #010704;
-  opacity: .7;
-  text-shadow: 0px 0px 0px #fff, 0px 0px 2px #fff; }
+          perspective: 1000px; }
+  .left-card span, .right-card span {
+    color: #010704;
+    opacity: .7;
+    text-shadow: 0px 0px 0px #fff, 0px 0px 2px #fff; }
 
 .left-card__back {
   -webkit-box-orient: vertical;
@@ -631,7 +632,7 @@ header {
     width: 231px;
     height: 1px;
     display: block;
-    background-color: #fb0910;
+    background-color: #e70f16;
     margin-left: 30px; }
 
 .back-side {
@@ -698,7 +699,7 @@ header {
   -webkit-transition: .3s ease;
   -o-transition: .3s ease;
   transition: .3s ease;
-  background-color: #fb0910;
+  background-color: #e70f16;
   text-align: center;
   line-height: 104px;
   font-size: 18px;
@@ -778,21 +779,21 @@ header {
   -webkit-animation-delay: .5s;
           animation-delay: .5s; }
   .advantages__offer span {
-    color: #fb0910; }
+    color: #e70f16; }
 
 @-webkit-keyframes blink {
   0% {
     opacity: 0; }
   25% {
     opacity: .8;
-    -webkit-box-shadow: 0 0 5px #fb0910;
-            box-shadow: 0 0 5px #fb0910; }
+    -webkit-box-shadow: 0 0 5px #e70f16;
+            box-shadow: 0 0 5px #e70f16; }
   75% {
     opacity: 0; }
   95% {
     opacity: 1;
-    -webkit-box-shadow: 0 0 10px #fb0910;
-            box-shadow: 0 0 10px #fb0910; }
+    -webkit-box-shadow: 0 0 10px #e70f16;
+            box-shadow: 0 0 10px #e70f16; }
   100% {
     opacity: 1; } }
 
@@ -801,14 +802,14 @@ header {
     opacity: 0; }
   25% {
     opacity: .8;
-    -webkit-box-shadow: 0 0 5px #fb0910;
-            box-shadow: 0 0 5px #fb0910; }
+    -webkit-box-shadow: 0 0 5px #e70f16;
+            box-shadow: 0 0 5px #e70f16; }
   75% {
     opacity: 0; }
   95% {
     opacity: 1;
-    -webkit-box-shadow: 0 0 10px #fb0910;
-            box-shadow: 0 0 10px #fb0910; }
+    -webkit-box-shadow: 0 0 10px #e70f16;
+            box-shadow: 0 0 10px #e70f16; }
   100% {
     opacity: 1; } }
 
@@ -826,9 +827,9 @@ header {
     display: block;
     width: 11px;
     height: 11px;
-    -webkit-box-shadow: 0 0 18px #fb0910;
-            box-shadow: 0 0 18px #fb0910;
-    background-color: #fb0910;
+    -webkit-box-shadow: 0 0 18px #e70f16;
+            box-shadow: 0 0 18px #e70f16;
+    background-color: #e70f16;
     position: absolute;
     -webkit-border-radius: 50%;
             border-radius: 50%;
@@ -919,7 +920,7 @@ header {
 input {
   width: 286px;
   height: 84px;
-  border: 1px solid #fb0910;
+  border: 1px solid #e70f16;
   padding-left: 30px;
   font-size: 14px;
   font-family: Helvetica;
@@ -931,8 +932,8 @@ input {
 button {
   width: 105px;
   height: 84px;
-  border: 1px solid #fb0910;
-  background-color: #fb0910;
+  border: 1px solid #e70f16;
+  background-color: #e70f16;
   color: #fff;
   text-decoration: underline;
   font-size: 14px;
@@ -990,9 +991,9 @@ button {
   position: absolute; }
 
 .sevenP__item_number {
-  color: #fb0910;
+  color: #e70f16;
   font-size: 20px;
-  text-shadow: 0 0 18px #fb0910;
+  text-shadow: 0 0 18px #e70f16;
   font-family: Helvetica;
   margin-bottom: 10px; }
 
@@ -1156,7 +1157,7 @@ footer {
   pointer-events: none; }
 
 a.active span {
-  background: #fb0910 !important;
+  background: #e70f16 !important;
   opacity: .7; }
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
@@ -1166,3 +1167,6 @@ a.active span {
 
 .mobile-btn {
   display: none; }
+
+.advantages__item_number {
+  opacity: .8; }
