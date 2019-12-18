@@ -92,12 +92,12 @@ $(document).ready(function() {
     infinite: true,
     slidesToScroll: 1,
     speed: 700,
-    dots: true,
     responsive: [
     {
       breakpoint: 996,
       settings: {
         slidesToShow: 1,
+        dots: true,
         slidesToScroll: 1,
     }
     }]
@@ -114,10 +114,7 @@ if ($(window).width() < 996) {
     speed: 700,
     dots: true
 })
-} else {
-  $(".sevenP_wrapper").slick("unslick");
 }
-
 
 
 
