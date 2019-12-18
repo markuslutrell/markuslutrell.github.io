@@ -204,22 +204,28 @@ button.slick-next:hover {
     top: 0;
     left: 0;
 
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
+    padding: 5px;
 
-    content: '•';
+    content: '';
     text-align: center;
 
     opacity: .25;
     color: black;
-
+    border-radius: 50%;
+    display: block;
+    width: 1px;
+    height: 1px;
+    left: 6.5px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    transition: .5s ease;
 }
 .slick-dots li.slick-active button:before
 {
-    opacity: .75;
-    color: black;
+    opacity: 1;
+    background: #e70f16; 
 }
 
 
