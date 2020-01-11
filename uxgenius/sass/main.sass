@@ -1,0 +1,531 @@
+$main-color: #004A64
+$oswald: 'Oswald', sans-serif
+/*-------------------Fullpage---------------------*/
+
+*
+	box-sizing: border-box
+html, body
+	// font-family: 'Oswald', sans-serif
+	font-family: 'Open Sans', sans-serif
+	color: #333333
+	font-size: 16px
+	overflow-x: hidden
+a
+	text-decoration: none
+
+ul
+	list-style: none
+
+button
+	border: none
+	outline: none
+
+input
+	outline: none
+
+.container
+	width: 1200px
+	margin-left: auto 
+	margin-right: auto
+	padding-left: 15px
+	padding-right: 15px
+
+.animated
+	animation-duration: 1s
+
+/*---------First section---------------*/
+
+
+.logo
+	padding-top: 25px
+	padding-bottom: 25px
+	display: block
+
+h1
+	font-size: 33px
+	font-family: $oswald
+	font-weight: 600
+	color: $main-color
+	margin-bottom: 50px
+	text-transform: uppercase
+	letter-spacing: 2px
+	line-height: 44px
+
+.main-block__text
+	font-size: 16px
+	margin-bottom: 25px
+	line-height: 21px
+	padding-right: 100px
+
+#main-block
+	background: url(../img/bg-1.png) no-repeat center top / cover
+	padding-bottom: 70px
+	main
+		.container
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+
+.main-block__right
+	form
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		background: rgba(255, 255, 255, .8)
+		border-radius: 10px
+		padding: 23px
+		width: 473px
+		position: relative
+		box-shadow: 0 1px 8px rgba(0,0,0,.27)
+	input
+		width: 320px
+		height: 45px
+		padding: 10px
+		font-size: 16px
+		font-weight: 100
+		border: 1px solid #8BA1A8
+		border-radius: 5px
+		margin-bottom: 25px
+		box-shadow: 0 3px 6px rgba(0,0,0,.16)
+		opacity: .8
+	button
+		margin-top: 10px
+
+.btn
+	width: 320px
+	height: 50px
+	color: #fff
+	border-radius: 5px
+	text-transform: uppercase
+	font-weight: 600
+	font-size: 18px
+	background-color: #12A3D7
+	font-family: $oswald
+	margin-top: 10px
+	display: block
+	line-height: 50px
+	transition: .3s ease
+	cursor: pointer
+	position: relative
+	z-index: 3
+	&:hover
+		transform: scale(1.1)
+.form__header
+	font-size: 28px
+	font-family: $oswald
+	line-height: 37px
+	padding-right: 50px
+	padding-bottom: 25px
+
+.form__alert
+	font-size: 14px
+	color: #999
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	margin-top: 40px
+	img
+		padding-right: 15px
+
+.form__offer
+	font-family: $oswald
+	font-size: 40px
+	color: #fff
+	width: 125px
+	height: 125px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: center
+	border-radius: 50%
+	background: #FF4F00
+	flex-direction: column
+	position: absolute
+	top: 120px
+	right: -22px
+	animation-delay: 1s
+	.just
+		font-size: 40px
+	.number
+		font-size: 34px
+		padding-top: 5px
+		font-weight: bold
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		.sup
+			font-size: 17px
+			margin-top: -5px
+			margin-left: -6px
+			display: block
+		.euro
+			font-weight: 100
+			font-family: 'Open Sans', sans-serif
+
+.main-block-h3
+	font-size: 24px
+	color: $main-color
+	text-transform: uppercase
+	margin-bottom: 33px
+	font-family: $oswald
+	letter-spacing: 1px
+	margin-top: 50px
+	margin-bottom: 35px
+	text-align: left
+
+.products__item_header
+	font-size: 16px
+	color: #004A64
+	font-weight: bold
+
+.products__item_content
+	font-size: 16px
+	margin: 0
+	margin-top: 3px
+
+.products__item
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: flex-start
+	margin-top: 33px
+
+.products__item_img1
+	padding-right: 27px
+.products__item_img2
+	padding-right: 33px
+
+.main-block__bottom-text
+	font-size: 24px
+	color: $main-color
+	position: relative
+	font-weight: 600
+	font-family: $oswald
+	margin-top: 60px
+	img
+		position: absolute
+		right: 50px
+		bottom: 5px
+
+/*-------------------Audit Section------------------*/
+
+#audit
+	text-align: center
+	color: #fff
+	background: url(../img/bg-2.png) no-repeat center top / cover
+	position: relative
+	h2
+		padding-top: 100px
+		margin-bottom: 60px
+		color: #fff
+	.btn
+		position: absolute
+		left: 50%
+		bottom: -25px
+		margin-left: -160px
+h2
+	font-size: 33px
+	font-weight: 600
+	font-family: $oswald
+	text-transform: uppercase
+	line-height: 44px
+	margin: 0
+	text-align: center
+	color: $main-color
+
+.audit__text
+	font-size: 24px
+	padding: 0 220px
+	padding-bottom: 100px
+	margin: 0
+
+/*------------------If Section---------------------*/
+
+#if
+	padding-top: 85px
+	position: relative
+	margin-top: 25px
+.if__list
+	list-style: none
+	margin-left: 280px
+	padding-top: 35px
+	padding-bottom: 65px
+
+.if__list_item
+	font-size: 16px
+	margin-bottom: 25px
+	position: relative
+	&:before
+		content: url(../img/arrow.png)
+		display: block
+		position: absolute
+		left: -50px
+		top: 0px
+
+
+/*---------------Why Unique block-----------------*/
+
+#unique
+	.btn
+		margin-left: auto
+		margin-right: auto
+		text-align: center
+		margin-top: 40px
+
+.live-video-block__circle
+	width: 74px
+	height: 37px
+	border-radius: 50% 50% 0 0 / 100% 100% 0 0
+	background: #fff
+	box-shadow: 0 -2px 3.5px rgba(0,0,0,.16)
+	margin-left: auto
+	margin-right: auto
+	position: relative
+	z-index: 2
+	text-align: center
+	padding-top: 20px
+	margin-top: 50px
+
+.live-video-block__item
+	width: 905px
+	padding-left: 43px
+	padding-right: 43px
+	margin-left: auto
+	margin-right: auto
+	border-radius: 10px
+	background: #fff
+	box-shadow: 0 1px 8px rgba(0,0,0,.16)
+	margin-top: -25px
+	padding-bottom: 25px
+	h3
+		padding-top: 50px
+h3
+	text-align: center
+	font-size: 24px
+	font-family: $oswald
+	font-weight: 600
+	color: $main-color
+
+.criterias__block
+	width: 905px
+	border-radius: 10px
+	background: #fff
+	box-shadow: 0 1px 8px rgba(0,0,0,.16)
+	margin-left: auto
+	margin-right: auto
+	padding-top: 35px
+	margin-top: 45px
+	padding-left: 100px
+	padding-right: 100px
+
+.criterias__block_list
+	list-style: none
+	padding-bottom: 60px
+	padding-top: 20px
+	li
+		margin-bottom: 20px
+		line-height: 25px
+		&:first-child
+			margin-bottom: 20px
+			span
+				margin-bottom: -40px
+		span
+			display: block
+			width: 36px
+			height: 36px
+			text-align: center
+			line-height: 32px
+			border-radius: 50%
+			border: solid 2px #12A3D7
+			font-size: 23px
+			font-family: $oswald
+			color: #FF6600
+			margin-left: -50px
+			font-weight: 600
+			margin-bottom: -30px
+
+/*--------------Advantages section---------------*/
+
+.advantages__item-1
+	border-right: 1px solid #12A3D7
+	border-bottom: 1px solid #12A3D7
+
+
+.advantages__item-2
+	border-bottom: 1px solid #12A3D7
+	.advantages__item_p
+		padding-left: 60px
+		padding-right: 60px
+	img
+		animation-delay: .5s
+
+.advantages__item-3
+	border-right: 1px solid #12A3D7
+	img
+		animation-delay: .25s
+.advantages__item-5
+	img
+		animation-delay: .75s
+
+.advantages__item
+	width: 50%
+	text-align: center
+	padding-top: 40px
+	padding-bottom: 70px
+	padding-left: 30px
+	padding-right: 30px
+
+#advantages
+	text-align: center 
+	padding-top: 100px
+	padding-bottom: 50px
+	.container
+		padding-left: 100px
+		padding-right: 100px
+	h2
+		padding-bottom: 45px
+		padding-left: 150px
+		padding-right: 150px
+.advantages__item_p
+	margin-top: 27px
+	font-weight: 600
+.advantages__block
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+
+.advantages__arrow
+	margin-top: -20px
+
+.advantages__offer_text
+	font-size: 24px
+	font-weight: bold
+	text-align: center
+	color: $main-color
+	line-height: 32px
+	margin-top: 55px
+	padding-left: 120px
+	padding-right: 120px
+	span
+		color: #FF6600
+
+.splash
+	padding-top: 10px
+
+.advantages__offer_price
+	display: block
+	font-size: 16px
+	font-weight: 600
+	color: #FF6600
+	margin-top: 5px
+	text-align: center
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	.euros
+		font-weight: bold
+	.cents
+		font-size: 10px
+		display: block
+
+/*-----------Footer--------------*/
+footer
+	background: #003143
+	color: #fff
+	padding-top: 50px
+	padding-bottom: 10px
+
+.footer__logo
+	padding-bottom: 25px
+
+.footer__address
+	font-size: 14px
+	margin-bottom: 15px
+	line-height: 19px
+
+.footer__block-2_header
+	font-size: 24px
+	font-family: $oswald
+	text-transform: uppercase
+
+.footer__block-2
+	text-align: center
+
+
+.footer__block
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+
+.footer__messenger__text
+	font-weight: 600
+	font-size: 18px
+	line-height: 19px
+	font-family: $oswald
+	span
+		font-size: 14px
+		font-weight: 400
+		font-family: 'Open Sans', sans-serif
+
+.footer__messenger
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	height: 100%
+	padding-bottom: 30px
+	img
+		padding-right: 16px
+
+
+.footer__phone
+	font-size: 16px
+	line-height: 21px
+	color: #fff
+	text-decoration: none
+	display: block
+
+.footer__contacts
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	margin-top: 30px
+	margin-bottom: 12px
+.phone-icon
+	padding-right: 7px
+.whatsapp-icon
+	padding-left: 10px
+
+.footer__mail
+	color: #fff
+	margin-top: 20px
+	display: block
