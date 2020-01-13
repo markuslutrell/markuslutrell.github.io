@@ -542,6 +542,12 @@ footer {
   color: #fff;
   padding-top: 50px;
   padding-bottom: 10px; }
+  footer a {
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease; }
+    footer a:hover {
+      color: #92e2ff; }
 
 .footer__logo {
   padding-bottom: 25px; }
@@ -636,6 +642,8 @@ footer {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
+    .footer__contacts a:hover {
+      color: #92e2ff; }
 
 .phone-icon {
   padding-right: 7px;
@@ -643,7 +651,12 @@ footer {
   display: block; }
 
 .whatsapp-icon {
-  padding-left: 10px; }
+  margin-left: 10px;
+  width: 92px;
+  height: 21px;
+  background: url(../img/whatsapp.png) no-repeat center center/cover; }
+  .whatsapp-icon:hover {
+    background: url(../img/whatsapp2.png) no-repeat center center/cover; }
 
 .footer__mail {
   color: #fff;
@@ -682,3 +695,7 @@ footer {
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
     transition: .3s ease; }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .main-block__left {
+    width: 697px; } }

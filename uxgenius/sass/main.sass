@@ -476,7 +476,10 @@ footer
 	color: #fff
 	padding-top: 50px
 	padding-bottom: 10px
-
+	a
+		transition: .3s ease
+		&:hover
+			color: #92e2ff
 .footer__logo
 	padding-bottom: 25px
 
@@ -552,12 +555,19 @@ footer
 		display: -o-flex
 		display: flex
 		align-items: center
+		&:hover
+			color: #92e2ff
 .phone-icon
 	padding-right: 7px
 	margin-bottom: 2px
 	display: block
 .whatsapp-icon
-	padding-left: 10px
+	margin-left: 10px
+	width: 92px
+	height: 21px
+	background: url(../img/whatsapp.png) no-repeat center center / cover
+	&:hover
+		background: url(../img/whatsapp2.png) no-repeat center center / cover
 
 .footer__mail
 	color: #fff
@@ -587,3 +597,7 @@ footer
 		font-size: 16px
 		pointer-events: none
 		transition: .3s ease
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none)
+	.main-block__left
+		width: 697px

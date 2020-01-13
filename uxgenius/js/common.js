@@ -20,29 +20,6 @@ $.afterlag(function() {
   }); 
 
 
-  $(document).ready(function() {
-
-      //E-mail Ajax Send
-      $("form").submit(function() { //Change
-          var th = $(this);
-          $.ajax({
-              type: "POST",
-              url: "mail.php", //Change
-              data: th.serialize()
-          }).done(function() {
-              $('.js-overlay-campaign').fadeIn();
-              $('.js-overlay-campaign').addClass('disabled');
-              $('#fullpage').css('filter', 'blur(10px)');
-              setTimeout(function() {
-                  // Done Functions
-                  th.trigger("reset");
-              }, 1000);
-          });
-          return false;
-      });
-
-  });
-
   $("section, header").animated("fadeIn", 2000);
   $(".main-block__left").animated("fadeInLeft", 2000);
   $(".main-block__right").animated("fadeInRight", 2000);
@@ -52,6 +29,7 @@ $.afterlag(function() {
 });
 
 let inputs = document.querySelectorAll(".form__input_item > input");
+let btns = document.querySelectorAll("a.btn");
 
 for(i = 0; i < inputs.length; i++) {
   inputs[i].addEventListener("focus", function() {
@@ -65,8 +43,16 @@ for(i = 0; i < inputs.length; i++) {
       this.nextElementSibling.style.transform = "translateY(-295%)";
     }
     else {
-      this.nextElementSibling.style.fontSize = "16px";
+      this.nextElementSibling.style.fontSize = "15px";
       this.nextElementSibling.style.transform = "translateY(-50%)";
     }
   });
+}
+
+for(i = 0; i < btns.length; i++) {
+  btns[i].onclick = function() {
+    setTimeout(function(){
+      document.querySelector("#form-address").focus();
+    }, 300);
+  }
 }
