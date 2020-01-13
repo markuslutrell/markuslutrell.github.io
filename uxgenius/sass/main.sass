@@ -28,7 +28,7 @@ input
 	margin-left: auto 
 	margin-right: auto
 	padding-left: 15px
-	padding-right: 15px
+	padding-right: 15px 
 
 .animated
 	animation-duration: 1s
@@ -58,15 +58,14 @@ h1
 	padding-right: 100px
 
 #main-block
-	background: url(../img/bg-1.png) no-repeat center top / cover
+	background: url(../img/bg-1.jpg) no-repeat center top / cover
 	padding-bottom: 70px
-	main
-		.container
-			display: -webkit-flex
-			display: -moz-flex
-			display: -ms-flex
-			display: -o-flex
-			display: flex
+	.container
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
 
 .main-block__right
 	form
@@ -90,11 +89,17 @@ h1
 		font-weight: 100
 		border: 1px solid #8BA1A8
 		border-radius: 5px
-		margin-bottom: 25px
-		box-shadow: 0 3px 6px rgba(0,0,0,.16)
-		opacity: .8
+		transition: .3s ease
+		&:focus
+			box-shadow: 0 3px 6px rgba(0,0,0,.16)
+		&:focus + label
+			font-size: 12px
+			transform: translateY(-295%)
 	button
 		margin-top: 10px
+		&:hover
+			transform: none
+
 
 .btn
 	width: 320px
@@ -115,6 +120,8 @@ h1
 	z-index: 3
 	&:hover
 		transform: scale(1.1)
+		background: #046d92
+		box-shadow: 0 3px 6px rgba(0,0,0,.16)
 .form__header
 	font-size: 28px
 	font-family: $oswald
@@ -185,6 +192,7 @@ h1
 	margin-top: 50px
 	margin-bottom: 35px
 	text-align: left
+	font-weight: 600
 
 .products__item_header
 	font-size: 16px
@@ -224,10 +232,13 @@ h1
 
 /*-------------------Audit Section------------------*/
 
+.parallax-window 
+	background: transparent
+	min-height: 400px
 #audit
 	text-align: center
 	color: #fff
-	background: url(../img/bg-2.png) no-repeat center top / cover
+	// background: url(../img/bg-2.jpg) no-repeat center top / cover
 	position: relative
 	h2
 		padding-top: 100px
@@ -271,7 +282,7 @@ h2
 	margin-bottom: 25px
 	position: relative
 	&:before
-		content: url(../img/arrow.png)
+		content: url(../img/arrow.svg)
 		display: block
 		position: absolute
 		left: -50px
@@ -424,8 +435,18 @@ h3
 	margin-top: 55px
 	padding-left: 120px
 	padding-right: 120px
+	display: block
+	transition: .3s ease
 	span
 		color: #FF6600
+	 
+
+.advantages__offer_block
+	&:hover
+		.advantages__offer_text
+			color: #FF6600
+			span
+				color: #ff5001
 
 .splash
 	padding-top: 10px
@@ -463,6 +484,8 @@ footer
 	font-size: 14px
 	margin-bottom: 15px
 	line-height: 19px
+	a
+		color: #fff
 
 .footer__block-2_header
 	font-size: 24px
@@ -500,6 +523,7 @@ footer
 	align-items: center
 	height: 100%
 	padding-bottom: 30px
+	color: #fff
 	img
 		padding-right: 16px
 
@@ -520,8 +544,18 @@ footer
 	align-items: center
 	margin-top: 30px
 	margin-bottom: 12px
+	a
+		color: #fff
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
 .phone-icon
 	padding-right: 7px
+	margin-bottom: 2px
+	display: block
 .whatsapp-icon
 	padding-left: 10px
 
@@ -529,3 +563,27 @@ footer
 	color: #fff
 	margin-top: 20px
 	display: block
+
+.footer__right_block
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	width: 58%
+
+.form__input_item
+	width: 100%
+	position: relative
+	margin-bottom: 25px
+	label
+		position: absolute
+		z-index: 2
+		top: 50%
+		transform: translateY(-50%)
+		left: 10px
+		color: #555555
+		font-size: 16px
+		pointer-events: none
+		transition: .3s ease

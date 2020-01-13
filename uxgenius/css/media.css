@@ -56,11 +56,19 @@
         -ms-flex-direction: column;
             flex-direction: column; }
   h1 {
-    font-size: 30px; }
+    font-size: 26px;
+    line-height: 38px;
+    line-height: 1.3;
+    letter-spacing: 0.2px; }
     h1 br {
       display: none; }
+  .logo {
+    padding-top: 20px;
+    padding-bottom: 10px; }
   .products__item_content {
     margin-top: 10px; }
+  .products__item {
+    margin-top: 20px; }
   .main-block__bottom-text {
     text-align: center;
     margin-bottom: 25px; }
@@ -70,14 +78,17 @@
     width: 100%;
     padding: 15px; }
     .main-block__right form input {
-      width: 100%; }
+      width: 100%;
+      font-size: 15px; }
     .main-block__right form button {
       width: 100%; }
   .form__header {
     padding-right: 0;
-    padding-bottom: 60px; }
+    padding-bottom: 60px;
+    font-size: 25px;
+    line-height: 1.4; }
   .form__offer {
-    top: 170px;
+    top: 130px;
     right: 30px;
     width: 75px;
     height: 75px; }
@@ -88,7 +99,9 @@
       .form__offer .number .sup {
         font-size: 13px; }
   h2 {
-    font-size: 28px; }
+    font-size: 26px;
+    line-height: 1.3;
+    letter-spacing: 0.2px; }
     h2 br {
       display: none; }
   #audit h2 {
@@ -143,11 +156,54 @@
             justify-content: center; }
   .footer__block-2 {
     margin-top: 25px;
-    margin-bottom: 50px; }
+    margin-bottom: 25px; }
   #advantages {
     padding-top: 50px; }
   .criterias__block_list li span {
     margin-top: 0;
     margin-bottom: -40px; }
   #advantages h2 {
-    padding-bottom: 0; } }
+    padding-bottom: 0; }
+  .logo img {
+    width: 110px; }
+  .criterias__block h3 {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-top: 5px;
+    text-align: left; }
+  .footer__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .footer__right_block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px; }
+  #main-block .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; } }

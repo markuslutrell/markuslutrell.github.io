@@ -50,3 +50,23 @@ $.afterlag(function() {
   $(".advantages__item-1 img, .advantages__item-3 img").animated("fadeInLeft", 2000);
   $(".advantages__item-2 img, .advantages__item-5 img").animated("fadeInRight", 2000);
 });
+
+let inputs = document.querySelectorAll(".form__input_item > input");
+
+for(i = 0; i < inputs.length; i++) {
+  inputs[i].addEventListener("focus", function() {
+      this.nextElementSibling.style.fontSize = "12px";
+      this.nextElementSibling.style.transform = "translateY(-295%)";
+  });
+
+  inputs[i].addEventListener("focusout", function() {
+    if(this.value !== "") {
+      this.nextElementSibling.style.fontSize = "12px";
+      this.nextElementSibling.style.transform = "translateY(-295%)";
+    }
+    else {
+      this.nextElementSibling.style.fontSize = "16px";
+      this.nextElementSibling.style.transform = "translateY(-50%)";
+    }
+  });
+}
