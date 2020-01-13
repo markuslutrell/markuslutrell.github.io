@@ -110,7 +110,8 @@
   .audit__text {
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 75px; }
+    padding-bottom: 75px;
+    padding-top: 20px; }
   #if {
     padding-top: 50px; }
   .if__list {
@@ -213,6 +214,10 @@
 @media screen and (max-width: 1020px) and (-ms-high-contrast: active), screen and (max-width: 1020px) and (-ms-high-contrast: none) {
   .main-block__left {
     width: 100%; } }
+
+@media screen and (max-width: 1020px) {
+  .parallax-window {
+    min-height: 300px; } }
 
 @media screen and (max-width: 650px) {
   .container {

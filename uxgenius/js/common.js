@@ -30,6 +30,7 @@ $.afterlag(function() {
 
 let inputs = document.querySelectorAll(".form__input_item > input");
 let btns = document.querySelectorAll("a.btn");
+let uniquebtn = document.querySelector(".advantages__offer_block");
 
 for(i = 0; i < inputs.length; i++) {
   inputs[i].addEventListener("focus", function() {
@@ -47,6 +48,12 @@ for(i = 0; i < inputs.length; i++) {
       this.nextElementSibling.style.transform = "translateY(-50%)";
     }
   });
+}
+
+uniquebtn.onclick = function() {
+  setTimeout(function(){
+    document.querySelector("#form-address").focus();
+  }, 300);
 }
 
 for(i = 0; i < btns.length; i++) {
