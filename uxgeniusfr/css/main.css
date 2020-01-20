@@ -138,23 +138,6 @@ h1 {
   -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row; }
-  #main-block header .container .language {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
-    color: #004A64; }
-    #main-block header .container .language a {
-      color: #004A64;
-      padding-left: 5px;
-      padding-right: 5px; }
 
 .btn {
   width: 320px;
@@ -753,3 +736,12 @@ footer {
 
 .fr .euros {
   padding-left: 5px; }
+
+.language {
+  background: url(../img/flag.svg) no-repeat center center;
+  width: 49px;
+  height: 31px; }
+  .language a {
+    color: #fff;
+    padding-left: 11px;
+    line-height: 31px; }
