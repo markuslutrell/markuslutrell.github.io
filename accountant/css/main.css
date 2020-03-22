@@ -1821,16 +1821,92 @@ footer {
   .footer__madeby img {
     padding-left: 10px; }
 
-.preloader {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: #fff;
-  z-index: 10;
-  opacity: 1;
-  -webkit-transition: .5s ease;
-  -o-transition: .5s ease;
-  transition: .5s ease; }
+.loaded .preloader {
+  opacity: 0;
+  display: none; }
 
 .preloader {
-  opacity: 0; }
+  background: -webkit-gradient(linear, left top, right top, from(#74972a), to(#89b331));
+  background: -webkit-linear-gradient(left, #74972a, #89b331);
+  background: -o-linear-gradient(left, #74972a, #89b331);
+  background: linear-gradient(90deg, #74972a, #89b331);
+  -webkit-box-shadow: inset 0px 0px 90px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0px 0px 90px rgba(0, 0, 0, 0.5);
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 10; }
+
+.demo {
+  width: 100px;
+  height: 102px;
+  -webkit-border-radius: 100%;
+          border-radius: 100%;
+  position: absolute;
+  top: 45%;
+  left: -webkit-calc(50% - 50px);
+  left: calc(50% - 50px);
+  overflow: visible; }
+
+.circle {
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+  .circle .inner {
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 100%;
+            border-radius: 100%;
+    border: 5px solid rgba(255, 255, 255, 0.7);
+    border-right: none;
+    border-top: none;
+    backgroudn-clip: padding;
+    -webkit-box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.15);
+            box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.15); }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+.circle:nth-of-type(0) {
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg); }
+  .circle:nth-of-type(0) .inner {
+    -webkit-animation: spin 2s infinite linear;
+            animation: spin 2s infinite linear; }
+
+.circle:nth-of-type(1) {
+  -webkit-transform: rotate(70deg);
+      -ms-transform: rotate(70deg);
+          transform: rotate(70deg); }
+  .circle:nth-of-type(1) .inner {
+    -webkit-animation: spin 2s infinite linear;
+            animation: spin 2s infinite linear; }
+
+.circle:nth-of-type(2) {
+  -webkit-transform: rotate(140deg);
+      -ms-transform: rotate(140deg);
+          transform: rotate(140deg); }
+  .circle:nth-of-type(2) .inner {
+    -webkit-animation: spin 2s infinite linear;
+            animation: spin 2s infinite linear; }
+
+.demo {
+  -webkit-animation: spin 5s infinite linear;
+          animation: spin 5s infinite linear; }
