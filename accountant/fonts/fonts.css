@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'PF Regal Display Pro';
+    src: url('PFRegalDisplayPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Regal Display Pro';
+    src: url('PFRegalDisplayPro-MediumItalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'PF Regal Display Pro';
+    src: url('PFRegalDisplayPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Regal Display Pro';
+    src: url('PFRegalDisplayPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('Mont-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('Mont-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont Book';
+    src: url('Mont-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('Mont-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('Mont-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('Mont-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mont';
+    src: url('Mont-RegularItalic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

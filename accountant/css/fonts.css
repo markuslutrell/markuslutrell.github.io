@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/HelveticaNeueCyr-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BerlingskeSlab-Tn';
+    src: url('../fonts/BerlingskeSlab-Tn.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
