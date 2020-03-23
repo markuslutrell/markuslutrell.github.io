@@ -1,14 +1,11 @@
-
-  
-    $.afterlag(function() {
-      document.body.classList.add('loaded');
-      $("section").animated("fadeIn", 2000);
-      $(".branch-1, .branch-4, .branch-6").animated("fadeInLeft", 2000);
-      $(".branch-2, .branch-3, .branch-5").animated("fadeInRight", 2000);
+window.onload = function () {
+   $.afterlag(function() {
+    document.body.classList.add('loaded');
+    $("section").animated("fadeIn", 2000);
+    $(".branch-1, .branch-4, .branch-6").animated("fadeInLeft", 2000);
+    $(".branch-2, .branch-3, .branch-5").animated("fadeInRight", 2000);
   });
-
-
-
+}
 
 
 $( function() {
