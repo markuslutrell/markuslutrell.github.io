@@ -382,7 +382,11 @@
   .footer__policies {
     width: 100%; }
   footer {
-    padding-top: 30px; } }
+    padding-top: 30px; }
+  .js-popup-campaign4 {
+    padding-right: 60px; }
+    .js-popup-campaign4 img {
+      display: none; } }
 
 @media screen and (max-width: 576px) {
   .container {
@@ -642,4 +646,20 @@
   .services__item_text {
     padding-right: 0; }
   .services__item:first-child .services__item_text {
-    padding-right: 0; } }
+    padding-right: 0; }
+  .popup {
+    width: 319px; }
+  .close-popup {
+    top: 8px;
+    right: 10px; }
+  .js-popup-campaign4 {
+    padding: 0 25px; }
+  .thanks__popup_text {
+    width: auto; }
+  .thanks__popup_btn {
+    width: 290px;
+    height: 70px;
+    margin-left: -10px;
+    margin-bottom: 100px; }
+  .thanks__popup_header {
+    margin-top: 50px; } }

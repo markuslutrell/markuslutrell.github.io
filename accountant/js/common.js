@@ -38,9 +38,8 @@ $(document).ready(function() {
             url: "mail.php", //Change
             data: th.serialize()
         }).done(function() {
-            $('.js-overlay-campaign').fadeIn();
-            $('.js-overlay-campaign').addClass('disabled');
-            $('#fullpage').css('filter', 'blur(10px)');
+            $('.js-overlay-campaign4').fadeIn();
+            $('.js-overlay-campaign4').addClass('disabled');
             setTimeout(function() {
                 // Done Functions
                 th.trigger("reset");
@@ -56,18 +55,27 @@ $(document).ready(function() {
 // Модальное окно
 
 // открыть по кнопке
-$('.js-button-campaign').click(function() { 
-  
+$('.js-button-campaign').click(function() {  
   $('.js-overlay-campaign').fadeIn();
-  $('body').css('filter', 'blur(10px)');
   $('.js-overlay-campaign').addClass('disabled');
+});
+
+$('.js-button-campaign2').click(function() {  
+  $('.js-overlay-campaign2').fadeIn();
+  $('.js-overlay-campaign2').addClass('disabled');
+});
+
+$('.js-button-campaig3').click(function() { 
+  $('.js-overlay-campaign3').fadeIn();
+  $('.js-overlay-campaign3').addClass('disabled');
 });
 
 // закрыть на крестик
 $('.js-close-campaign').click(function() { 
   $('.js-overlay-campaign').fadeOut();
   $('.js-overlay-campaign2').fadeOut();
-  $('#fullpage').css('filter', 'none');
+  $('.js-overlay-campaign3').fadeOut();
+  $('.js-overlay-campaign4').fadeOut();
 });
 
 // закрыть по клику вне окна
@@ -75,7 +83,8 @@ $(document).mouseup(function (e) {
   var popup = $('.js-popup-campaign');
   if (e.target!=popup[0]&&popup.has(e.target).length === 0){
     $('.js-overlay-campaign').fadeOut();
-    $('#fullpage').css('filter', 'none');
+    $('.js-overlay-campaign2').fadeOut();
+    $('.js-overlay-campaign3').fadeOut();
   }
 });
 
