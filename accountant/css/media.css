@@ -197,7 +197,7 @@
     margin-left: 0px; } }
 
 @media screen and (max-width: 996px) {
-  .container {
+  .container, #check .container {
     width: 576px; }
   .header__phone_number {
     display: none; }
@@ -437,7 +437,7 @@
 @media screen and (max-width: 576px) {
   .values__subheader br {
     display: none; }
-  .container {
+  .container, #check .container {
     width: 95%;
     padding: 0 5px; }
   header {
@@ -732,10 +732,12 @@
   .free__item_header {
     margin-top: 25px; }
   .work__item {
-    margin-bottom: 25px; } }
+    margin-bottom: 25px; }
+  #check h2 {
+    width: 100%; } }
 
 @media screen and (max-width: 350px) {
-  .container {
+  .container, #check .container {
     width: 320px; }
   h2 img {
     width: 100%; }
