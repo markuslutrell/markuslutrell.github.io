@@ -109,8 +109,8 @@ $mont: 'Mont', serif
 	.header__links
 		margin-left: 25px
 	.main__content_right
-		top: 110px
-		right: 30px
+		top: 160px
+		right: 0px
 	.main__content_plate
 		opacity: 1
 		background-color: rgba(236, 236, 236, 0.2)
@@ -191,6 +191,10 @@ $mont: 'Mont', serif
 	#form
 		overflow: visible
 @media screen and (max-width: 996px)
+	#main .clouds
+		display: block
+	#main 
+   	background: url(../img/main-bg.jpg) no-repeat center center / cover
 	.container, #check .container
 		width: 576px
 	.header__phone_number
@@ -406,6 +410,7 @@ $mont: 'Mont', serif
 	h1
 		text-align: center
 		line-height: 45px
+		margin-top: 25px
 		br
 			display: none
 
@@ -635,17 +640,44 @@ $mont: 'Mont', serif
 		flex-wrap: wrap
 		justify-content: space-around
 	.logo img
-		width: 110px
+		width: 100px
 	h1
-		font-size: 33px
+		font-size: 30px
+		line-height: 40px
 	h2
-		font-size: 35px
+		font-size: 30px
+		line-height: 40px
 	.free__item_header
 		margin-top: 25px
 	.work__item
 		margin-bottom: 25px
 	#check h2
 		width: 100%
+	.main__content_item3
+		margin-top: 25px
+	.values__subheader, .values__item_text, .check__list_item, .free__subheader, .values__subheader
+		font-size: 18px
+	#check h2
+		margin-top: 50px
+	.check__items
+		margin-bottom: 25px
+	#intro h2
+		text-align: center
+	.intro__list
+		margin-top: 50px
+	#numbers h2
+		margin-top: 50px
+	.work__item
+		width: auto
+		font-size: 18px
+	#tarif h2
+		margin-top: 50px
+	#tarif .free__plate_text
+		padding-right: 0
+		font-size: 18px
+	.form__text
+		font-size: 18px
+
 @media screen and (max-width: 350px)
 	.container, #check .container
 		width: 320px
