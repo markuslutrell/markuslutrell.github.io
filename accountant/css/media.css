@@ -48,11 +48,57 @@
   .branch-5 {
     right: -200px; }
   .form__woman {
-    right: -350px; } }
+    right: -350px; }
+  .check__right {
+    margin-left: 0px; }
+  .check__items {
+    margin-bottom: 100px; }
+  #check .container {
+    width: 1300px; }
+  .check__img {
+    margin-left: -90px; }
+  .intro__left img {
+    width: 650px;
+    left: -100px; } }
+
+@media screen and (max-width: 1300px) {
+  #check .container {
+    width: 1200px; }
+  .check__img {
+    margin-left: -125px; }
+  .check__right {
+    margin-left: 0px; }
+  #check h2 {
+    width: 500px;
+    margin-top: 100px; }
+    #check h2 br {
+      display: none; }
+  .check__list {
+    padding-left: 0; }
+  .check__item {
+    margin-right: 50px; }
+  .check__img {
+    margin-left: -100px;
+    margin-bottom: 0; }
+    .check__img img {
+      width: 320px; }
+  .check__form_container {
+    margin-top: 170px; }
+  .check__items {
+    margin-bottom: 50px; }
+  .check__right {
+    margin-left: -10px; } }
 
 @media screen and (max-width: 1200px) {
-  .container {
+  .container, #check .container {
     width: 996px; }
+  #check .container {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .check__right {
+    margin-left: 0px; }
   .header__text {
     display: none; }
   .header__attestat {
@@ -389,8 +435,10 @@
       display: none; } }
 
 @media screen and (max-width: 576px) {
+  .values__subheader br {
+    display: none; }
   .container {
-    width: 320px;
+    width: 95%;
     padding: 0 5px; }
   header {
     height: auto; }
@@ -662,4 +710,34 @@
     margin-left: -10px;
     margin-bottom: 100px; }
   .thanks__popup_header {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+  header .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+  .logo img {
+    width: 110px; }
+  h1 {
+    font-size: 33px; }
+  h2 {
+    font-size: 35px; }
+  .free__item_header {
+    margin-top: 25px; }
+  .work__item {
+    margin-bottom: 25px; } }
+
+@media screen and (max-width: 350px) {
+  .container {
+    width: 320px; }
+  h2 img {
+    width: 100%; }
+  .logo img {
+    width: 90px; } }

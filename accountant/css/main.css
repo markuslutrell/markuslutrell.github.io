@@ -945,14 +945,13 @@ input {
   position: relative;
   height: 403px;
   cursor: pointer;
-  margin-right: -2px;
   overflow: hidden; }
   .services__item img {
     position: absolute;
     left: -1px;
     bottom: 0;
     z-index: 0;
-    width: 100%;
+    width: 101%;
     -webkit-transition: .3s ease;
     -o-transition: .3s ease;
     transition: .3s ease;
@@ -1090,7 +1089,8 @@ input {
   display: block;
   margin-bottom: 15px;
   padding-bottom: 2px;
-  width: 177px; }
+  width: 177px;
+  cursor: pointer; }
   .work__item_link:hover {
     border-bottom: 2px dashed #fff; }
 
@@ -1867,9 +1867,14 @@ footer {
   .footer__madeby img {
     padding-left: 10px; }
 
+#preloader {
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease; }
+
 .loaded #preloader {
   opacity: 0;
-  display: none; }
+  z-index: -10; }
 
 .demo {
   -webkit-animation: spin 5s infinite linear;
@@ -1881,9 +1886,11 @@ footer {
   display: none; }
 
 h2 img {
-  width: 100%;
+  width: 80%;
   padding-top: 35px;
-  display: none; }
+  display: none;
+  margin-left: auto;
+  margin-right: auto; }
 
 #preloader {
   position: fixed;
