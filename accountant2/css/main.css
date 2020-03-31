@@ -1,0 +1,2105 @@
+@charset "UTF-8";
+/*-------------------Fullpage---------------------*/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  font-size: 14px;
+  font-family: "Mont", serif; }
+
+a {
+  text-decoration: none;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease; }
+  a:hover {
+    border-color: transparent !important; }
+
+ul {
+  list-style: none; }
+
+button {
+  border: none;
+  outline: none;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+  cursor: pointer; }
+
+input {
+  outline: none; }
+
+.container {
+  width: 1500px;
+  height: auto;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 0 20px;
+  overflow-y: hidden; }
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none; }
+
+.popup {
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  color: #020405;
+  -webkit-border-radius: 15px;
+          border-radius: 15px; }
+  .popup .check__form_container {
+    margin: 0;
+    -webkit-border-radius: 15px;
+            border-radius: 15px; }
+
+.close-popup {
+  width: 25px;
+  height: 25px;
+  top: 15px;
+  right: 15px;
+  position: absolute;
+  z-index: 5;
+  cursor: pointer;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease; }
+  .close-popup span {
+    width: 25px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.7);
+    display: block;
+    position: absolute;
+    top: 12px; }
+    .close-popup span:first-child {
+      -webkit-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+              transform: rotate(45deg); }
+    .close-popup span:last-child {
+      -webkit-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+              transform: rotate(-45deg); }
+  .close-popup:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+
+section {
+  position: relative; }
+
+/*---------------Main------------------*/
+#main {
+  background: url(../img/bg-1.jpg) no-repeat center top/cover;
+  color: #fff; }
+  #main .container {
+    position: relative; }
+
+header {
+  height: 95px;
+  padding: 10px 0px; }
+  header .container {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+
+.header__text {
+  margin-left: 65px;
+  font-family: "Mont", serif;
+  font-weight: 300;
+  line-height: 19px; }
+
+.attestat__text {
+  font-family: "Mont", serif;
+  font-weight: 300;
+  line-height: 19px;
+  margin-left: 30px; }
+  .attestat__text span {
+    color: #9fcb42; }
+
+.header__attestat {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 165px;
+  color: #f4f4f4; }
+  .header__attestat:visited {
+    color: #f4f4f4; }
+
+.social-media {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .social-media a {
+    margin: 0 2.5px; }
+    .social-media a:hover {
+      -webkit-transform: scale(1.1);
+          -ms-transform: scale(1.1);
+              transform: scale(1.1); }
+
+.header__links {
+  margin-left: 120px; }
+
+.phone__number_item {
+  font-size: 20px;
+  color: #f4f4f4;
+  font-weight: 500; }
+
+.phone__number_text {
+  font-size: 14px;
+  font-weight: 200;
+  color: #f4f4f4;
+  padding-top: 3px; }
+
+.header__phone {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-left: 60px; }
+
+.header__phone_icon {
+  margin-right: 10px;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease; }
+  .header__phone_icon:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+
+h1 {
+  font-family: "PF Regal Display Pro", serif;
+  font-size: 48px;
+  line-height: 55px;
+  font-weight: 400;
+  margin-top: 100px; }
+  h1 span {
+    color: #9fcb42;
+    font-style: italic; }
+
+.main__content_items {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px; }
+
+.main__content_text {
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  line-height: 22px; }
+
+.main__content_item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100px; }
+  .main__content_item img {
+    margin-bottom: 24px; }
+
+.main__content_header, .big-text {
+  color: #9fcb42;
+  font-size: 47px;
+  font-family: "PF Regal Display Pro", serif;
+  letter-spacing: -0.27px;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  font-style: normal; }
+  .main__content_header span, .big-text span {
+    font-size: 126px;
+    font-weight: 700; }
+
+.main__content_item3 {
+  width: 230px;
+  margin-top: -100px;
+  margin-right: 20px; }
+  .main__content_item3 .main__content_text {
+    text-align: left;
+    margin-left: 35px;
+    position: relative; }
+    .main__content_item3 .main__content_text img {
+      position: absolute;
+      right: -45px;
+      bottom: -42px; }
+
+.btn {
+  font-size: 16px;
+  font-family: "Mont", serif;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #263a4e;
+  font-weight: 600;
+  text-shadow: 1px 2px 0 rgba(255, 255, 255, 0.22);
+  background: url(../img/main-btn.png) no-repeat center center/cover;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+  cursor: pointer; }
+  .btn:hover {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1); }
+
+.main__btn {
+  width: 333px;
+  height: 78px;
+  margin-top: 62px;
+  float: right;
+  margin-right: -50px;
+  margin-bottom: 110px; }
+
+.main__content_plate {
+  padding: 25px 16px;
+  -webkit-box-shadow: 9px 14px 43px rgba(0, 0, 0, 0.2);
+          box-shadow: 9px 14px 43px rgba(0, 0, 0, 0.2);
+  background-color: rgba(236, 236, 236, 0.11);
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  width: 188px;
+  opacity: .9; }
+
+.main__plate_subheader {
+  font-size: 12px;
+  color: #9fcb42;
+  margin-top: 15px;
+  margin-bottom: 25px; }
+
+.main__plate_text {
+  font-weight: 300;
+  line-height: 20px; }
+
+.main__content_right {
+  position: absolute;
+  top: 80px;
+  right: 70px; }
+
+/*--------------------Values Section-------------------*/
+#values h2, #numbers h2 {
+  margin-top: 100px; }
+
+#values .container, #numbers .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+h2 {
+  font-size: 48px;
+  text-align: center;
+  font-family: "PF Regal Display Pro", serif;
+  color: #263a4e;
+  line-height: 55px;
+  font-weight: 400;
+  margin: 0; }
+  h2 span {
+    color: #9fcb42;
+    font-style: italic; }
+
+.values__subheader, .free__subheader {
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  color: #676767;
+  margin-bottom: 75px;
+  margin-top: 25px; }
+
+.values__item_header {
+  font-size: 36px;
+  color: #263a4e;
+  font-family: "PF Regal Display Pro", serif;
+  font-style: italic; }
+  .values__item_header span {
+    font-size: 90px;
+    font-style: normal; }
+
+.values__item_header.green {
+  color: #9fcb42; }
+
+.values__item_text {
+  font-size: 20px;
+  color: #676767;
+  line-height: 30px;
+  margin-left: 30px;
+  margin-top: 15px; }
+
+.values__items {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 125px; }
+
+.values__item:nth-child(2) {
+  margin-left: -70px; }
+
+.branch {
+  position: absolute; }
+
+.branch-1 {
+  left: -90px;
+  top: 0; }
+
+/*----------------------Check Section-------------------------*/
+#check {
+  background: url(../img/main-bg.jpg) no-repeat center center/cover;
+  position: relative; }
+
+.check__left, .check__right {
+  position: relative;
+  z-index: 2; }
+
+#check h2 {
+  text-align: left;
+  color: #ffffff;
+  margin-top: 150px;
+  margin-bottom: 30px; }
+
+.check__item_header {
+  color: #9fcb42;
+  font-family: "PF Regal Display Pro", serif;
+  font-size: 20px;
+  line-height: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.check__item_text {
+  color: #f4f4f4;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 300;
+  width: 205px; }
+
+.check__list_item {
+  color: #f4f4f4;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 300;
+  margin-left: 35px;
+  padding: 0;
+  position: relative;
+  width: 450px; }
+  .check__list_item:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #9fcb42;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    position: absolute;
+    top: 9px;
+    left: -25px; }
+  .check__list_item:after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    background: #4a3829;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    position: absolute;
+    top: 11px;
+    left: -23px; }
+
+.check__items {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 175px; }
+
+.check__item {
+  margin-right: 70px; }
+
+.clouds {
+  position: absolute;
+  bottom: -75px;
+  width: 100%;
+  z-index: 0; }
+
+.check__img {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 0; }
+
+.check__form_container {
+  background: #fff;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  width: 454px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+  margin-top: 220px; }
+  .check__form_container form {
+    border: 1px solid rgba(31, 31, 31, 0.05);
+    -webkit-border-radius: 15px;
+            border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    padding: 56px; }
+    .check__form_container form button {
+      width: 320px;
+      height: 74px;
+      -webkit-box-shadow: 0px 27px 20px -30px #000;
+              box-shadow: 0px 27px 20px -30px #000;
+      margin-top: 20px;
+      margin-bottom: 30px; }
+
+.check__form_header {
+  color: #263a4e;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "PF Regal Display Pro", serif; }
+
+.check__form_subheader {
+  text-align: center;
+  color: #676767;
+  line-height: 25px;
+  font-size: 18px;
+  margin-bottom: 35px; }
+
+input {
+  border: none;
+  width: 100%;
+  height: 75px;
+  padding-left: 30px;
+  background: url(../img/form.png) no-repeat center center/cover;
+  margin-bottom: 8px;
+  opacity: .7; }
+
+.policies {
+  color: #6e6e6e;
+  font-size: 11.5px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 300; }
+  .policies a {
+    color: #308ee6; }
+
+/*-----------------------Free section--------------------*/
+#free .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+#free h2 {
+  margin-top: 100px; }
+
+.free__item_container {
+  width: 383px;
+  height: 749px;
+  padding: 5px;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  background: #efefef url(../img/do-1.png) no-repeat center bottom/cover;
+  position: relative; }
+  .free__item_container .free__item {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(31, 31, 31, 0.05);
+    -webkit-border-radius: 15px;
+            border-radius: 15px;
+    padding: 30px 35px; }
+  .free__item_container:before {
+    content: "01";
+    width: 38px;
+    height: 46px;
+    -webkit-box-shadow: 0 0 21px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 21px rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    border: 1px solid #e8d27b;
+    background-color: #f6e18c;
+    display: block;
+    position: absolute;
+    top: 255px;
+    left: -27px;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.16);
+    color: #323232;
+    font-family: "PF Regal Display Pro", serif;
+    font-size: 16px;
+    line-height: 46px;
+    font-weight: 600;
+    padding-left: 6px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: -1; }
+
+.free__item_container:nth-child(2) {
+  background: #efefef url(../img/do-2.png) no-repeat center bottom/cover; }
+  .free__item_container:nth-child(2):before {
+    content: "02"; }
+
+.free__item_container:nth-child(3) {
+  background: #efefef url(../img/do-3.png) no-repeat center bottom/cover; }
+  .free__item_container:nth-child(3):before {
+    content: "03"; }
+
+.free__items {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 105px;
+  margin-bottom: 75px; }
+
+.free__item_header {
+  color: #263a4e;
+  font-size: 24px;
+  font-family: "PF Regal Display Pro", serif;
+  font-weight: 600;
+  margin-bottom: 30px; }
+
+.free_item_list {
+  padding-left: 25px; }
+
+.free__item_li {
+  font-size: 18px;
+  font-weight: 600;
+  color: #676767;
+  position: relative;
+  margin-bottom: 14px; }
+  .free__item_li:before {
+    content: "";
+    display: block;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    border: 3px solid #f7d86d;
+    position: absolute;
+    top: 3px;
+    left: -25px; }
+
+.branch-2 {
+  right: -70px;
+  top: -60px; }
+
+.free__plate_text {
+  font-size: 20px;
+  line-height: 35px;
+  font-weight: 400;
+  margin-left: 360px;
+  color: #ffffff;
+  position: relative;
+  padding-right: 50px; }
+  .free__plate_text:before {
+    content: "";
+    display: block;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    border: 3px solid #f7d86d;
+    position: absolute;
+    top: 10px;
+    left: -35px; }
+  .free__plate_text span {
+    font-style: italic; }
+
+.free__plate_container {
+  padding: 5px;
+  background-color: #90b445;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  position: relative;
+  width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px; }
+  .free__plate_container:after {
+    content: "Осипова Марина Владимировна";
+    display: block;
+    width: 270px;
+    -webkit-box-shadow: 0 0 21px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 21px rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    border: 1px solid #e8d27b;
+    background-color: #f6e18c;
+    font-family: "PF Regal Display Pro", serif;
+    font-size: 16px;
+    color: #323232;
+    position: absolute;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: -1;
+    left: 115px; }
+
+.free__plate {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  padding: 40px 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  z-index: 2; }
+
+.free_plate_img-1 {
+  position: absolute;
+  left: 0;
+  bottom: 0; }
+
+.free_plate_img-2 {
+  position: absolute;
+  left: 100px;
+  bottom: -7px; }
+
+/*---------------------Introducing section---------------------*/
+#intro {
+  background: url(../img/main-bg.jpg) no-repeat center top/cover;
+  color: #f4f4f4; }
+  #intro h2 {
+    text-align: left;
+    color: #f4f4f4;
+    margin-top: 150px; }
+  #intro .container {
+    overflow: visible;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-bottom: -2px; }
+
+.intro__list {
+  padding-left: 30px;
+  margin-top: 30px; }
+
+.intro__list_item {
+  position: relative;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 300; }
+  .intro__list_item:before {
+    content: "";
+    display: block;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    border: 3px solid #9fcb42;
+    position: absolute;
+    top: 5px;
+    left: -25px; }
+  .intro__list_item span {
+    font-weight: 400; }
+
+.numbers__item_header {
+  font-size: 36px;
+  color: #9fcb42;
+  font-family: "PF Regal Display Pro", serif; }
+  .numbers__item_header span {
+    font-size: 72px; }
+
+.numbers__item_text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 50px;
+  font-weight: 300;
+  width: 220px;
+  margin-top: 15px; }
+
+.cases__numbers_item {
+  margin-bottom: 25px; }
+
+.cases__docs_item {
+  width: 330px;
+  background-color: rgba(235, 235, 235, 0.1);
+  -webkit-box-shadow: 9px 14px 43px rgba(0, 0, 0, 0.1);
+          box-shadow: 9px 14px 43px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 15px;
+  margin-bottom: 20px;
+  color: #f4f4f4; }
+  .cases__docs_item:first-child {
+    padding-left: 30px; }
+    .cases__docs_item:first-child .case__docs_text {
+      padding-left: 7px; }
+  .cases__docs_item:last-child {
+    padding: 36px 15px; }
+  .cases__docs_item:visited {
+    color: #f4f4f4; }
+
+.case__docs_text {
+  font-size: 16px;
+  font-weight: 300;
+  width: 170px;
+  line-height: 20px; }
+  .case__docs_text span {
+    color: #9fcb42; }
+
+.intro__cases__container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 70px; }
+
+.intro__cases_docs {
+  margin-left: 60px; }
+
+.intro__left img {
+  position: absolute;
+  bottom: -50px;
+  left: -75px; }
+
+.intro__right {
+  position: relative;
+  z-index: 2; }
+
+.cases__btn {
+  width: 333px;
+  height: 78px;
+  margin-top: 50px;
+  margin-bottom: 200px; }
+
+.values__item_text.center {
+  text-align: center;
+  margin-left: 0; }
+
+/*------------------------Sevices section-------------------*/
+#services .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 40px; }
+
+#services h2 {
+  margin-top: 100px; }
+
+.services__subheader {
+  font-size: 20px;
+  line-height: 30px;
+  color: #676767;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 75px; }
+  .services__subheader a {
+    color: #5b8dd5;
+    font-weight: 400;
+    border-bottom: 1.5px dashed #5b8dd5; }
+  .services__subheader span {
+    color: #5b8dd5;
+    font-weight: 400;
+    border-bottom: 1.5px dashed #5b8dd5;
+    cursor: pointer; }
+    .services__subheader span:hover {
+      border-bottom: 1.5px dashed transparent; }
+
+.services__item {
+  padding: 45px;
+  width: 473px;
+  position: relative;
+  height: 403px;
+  cursor: pointer;
+  overflow: hidden; }
+  .services__item img {
+    position: absolute;
+    left: -1px;
+    bottom: 0;
+    z-index: 0;
+    width: 101%;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    height: 100%; }
+  .services__item:hover img {
+    opacity: 0; }
+
+.services__item:first-child {
+  background: url(../img/help-1.jpg) no-repeat center center/cover; }
+  .services__item:first-child .services__item_text {
+    padding-right: 50px; }
+  .services__item:first-child .btn {
+    background: url(../img/btn-2.png) no-repeat center center/cover; }
+
+.services__item:nth-child(2) {
+  background: url(../img/help-2.jpg) no-repeat center top/cover; }
+
+.services__item:nth-child(3) {
+  background: url(../img/help-3.jpg) no-repeat center top/cover; }
+
+.services__item:nth-child(4) {
+  background: url(../img/help-4.jpg) no-repeat center top/cover; }
+  .services__item:nth-child(4) .services__item_text {
+    padding-right: 20px; }
+
+.services__item:nth-child(5) {
+  background: url(../img/help-5.jpg) no-repeat center top/cover; }
+  .services__item:nth-child(5) .services__item_text {
+    padding-right: 20px; }
+
+.services__item:nth-child(6) {
+  background: url(../img/help-6.jpg) no-repeat center top/cover; }
+
+.services__item_header {
+  font-size: 30px;
+  color: #9fcb42;
+  line-height: 30px;
+  font-family: "PF Regal Display Pro", serif;
+  margin-top: 30px;
+  position: relative;
+  z-index: 2; }
+
+.services__item_text {
+  color: #f6f6f6;
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding-right: 40px;
+  position: relative;
+  z-index: 2;
+  font-weight: 300; }
+
+.services__item_btn {
+  width: 240px;
+  height: 58px;
+  font-size: 12px;
+  position: absolute;
+  z-index: 2;
+  left: 45px;
+  bottom: 50px; }
+
+.services__items {
+  -webkit-border-radius: 20px;
+          border-radius: 20px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  overflow: hidden;
+  width: 100%;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 80px; }
+
+#work .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.work__item_header {
+  color: #263a4e;
+  font-family: "PF Regal Display Pro", serif;
+  font-size: 72px;
+  margin-bottom: 50px;
+  position: relative; }
+  .work__item_header img {
+    position: absolute;
+    left: -17.5px;
+    bottom: -2px; }
+
+.work__item_text {
+  margin-left: 15px;
+  font-size: 18px;
+  color: #676767;
+  line-height: 30px; }
+
+.work__items {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.work__item {
+  width: 340px;
+  margin-bottom: 130px; }
+  .work__item:nth-child(even) .work__item_header {
+    color: #9fcb42; }
+
+.work__item_link {
+  color: #5b8dd5;
+  font-size: 18px;
+  border-bottom: 2px dashed #5b8dd5;
+  margin-left: 15px;
+  display: block;
+  margin-bottom: 15px;
+  padding-bottom: 2px;
+  width: 177px;
+  cursor: pointer; }
+  .work__item_link:hover {
+    border-bottom: 2px dashed #fff; }
+
+.work__item_phone {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 36px;
+  color: #263a4e;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 15px;
+  margin-top: 30px; }
+  .work__item_phone img {
+    width: 34px;
+    height: 34px;
+    margin-right: 15px;
+    margin-bottom: -10px; }
+
+.branch-3 {
+  right: -420px;
+  top: -170px; }
+
+#tarif .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+#tarif .free__plate_text {
+  padding-right: 20px; }
+  #tarif .free__plate_text span {
+    color: #f7d86d;
+    border-bottom: 2px dashed #f7d86d;
+    cursor: pointer; }
+    #tarif .free__plate_text span:hover {
+      border-bottom: 2px dashed transparent; }
+
+#tarif .free__plate_container:after {
+  content: "Осипова Марина Владимировна";
+  border: 1px solid #e8d27b;
+  -webkit-box-shadow: 0 0 21px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 21px rgba(0, 0, 0, 0.05);
+  background-color: #f6e18c;
+  display: inline;
+  padding: 10px 17px 5px 17px;
+  position: absolute;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  z-index: -1;
+  left: 115px;
+  font-family: "PF Regal Display Pro", serif;
+  font-size: 16px;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.16);
+  font-weight: 500;
+  color: #323232; }
+
+.tarif__items {
+  padding-left: 60px;
+  padding-right: 60px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin-bottom: 75px; }
+
+.tarif__item {
+  border: 1px solid rgba(103, 103, 103, 0.5);
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  height: 100%;
+  width: 100%; }
+  .tarif__item:before {
+    display: inline;
+    content: "";
+    padding: 6px 12px 15px 12px;
+    font-family: "PF Regal Display Pro", serif;
+    font-size: 16px;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.16);
+    -webkit-box-shadow: 0 0 21px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 21px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    font-weight: 500;
+    position: absolute;
+    top: 270px;
+    left: -120px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    z-index: -1; }
+
+.tarif__item_container {
+  width: 385px;
+  background-color: #f1f1f1;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  padding: 5px;
+  position: relative; }
+  .tarif__item_container:first-child .tarif__item:before {
+    content: "Для планирующих бизнес";
+    color: #263a4e;
+    background-color: #f6e18c;
+    border: 1px solid #e8d27b; }
+  .tarif__item_container:nth-child(2) {
+    background: #90b445; }
+    .tarif__item_container:nth-child(2) .tarif__item {
+      border: 1px solid rgba(255, 255, 255, 0.5); }
+      .tarif__item_container:nth-child(2) .tarif__item:before {
+        content: "Лидер продаж";
+        color: #ffffff;
+        border: 1px solid #3f658c;
+        background-color: #263a4e;
+        left: -77px;
+        top: 220px; }
+    .tarif__item_container:nth-child(2) .tarif__item_li {
+      color: #fff; }
+      .tarif__item_container:nth-child(2) .tarif__item_li:before {
+        border: 2px solid #f7d86d; }
+    .tarif__item_container:nth-child(2) .tarif__item_header {
+      color: #fff;
+      background-color: #9bc04e;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+    .tarif__item_container:nth-child(2) .tarif__item_price {
+      border-top: 1px solid rgba(255, 255, 255, 0.5); }
+    .tarif__item_container:nth-child(2) .tarif__item_price-current {
+      color: #fff; }
+    .tarif__item_container:nth-child(2) .tarif__item_price-prev {
+      color: #badd71; }
+  .tarif__item_container:nth-child(3) {
+    background: #263a4e; }
+    .tarif__item_container:nth-child(3) .tarif__item {
+      border: 1px solid rgba(255, 255, 255, 0.5); }
+      .tarif__item_container:nth-child(3) .tarif__item:before {
+        content: "Для тех, кому нужен индивидуальный подход";
+        color: #ffffff;
+        border: 1px solid #86ab38;
+        background-color: #90b445;
+        left: -200px;
+        top: 340px; }
+    .tarif__item_container:nth-child(3) .tarif__item_li {
+      color: #fff; }
+      .tarif__item_container:nth-child(3) .tarif__item_li:before {
+        border: 2px solid #f7d86d; }
+    .tarif__item_container:nth-child(3) .tarif__item_header {
+      color: #fff;
+      background-color: #2d455e;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.5); }
+
+.tarif__item_btn {
+  width: 271px;
+  height: 63px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.tarif__item_header {
+  color: #263a4e;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background: #f6e18c;
+  border-bottom: 1px solid #aea479;
+  -webkit-border-radius: 15px 15px 0 0;
+          border-radius: 15px 15px 0 0;
+  font-family: "PF Regal Display Pro", serif;
+  font-weight: 600; }
+
+.tarif__item_li {
+  color: #676767;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  position: relative;
+  font-weight: 600; }
+  .tarif__item_li:before {
+    content: "";
+    display: block;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #9fcb42;
+    position: absolute;
+    top: 8px;
+    left: -20px; }
+
+.tarif__item_list {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 45px; }
+
+.tarif__item_price {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid rgba(103, 103, 103, 0.5);
+  font-family: "PF Regal Display Pro", serif;
+  font-weight: 600; }
+
+.tarif__item_price-current {
+  font-size: 36px;
+  color: #263a4e; }
+  .tarif__item_price-current span {
+    font-size: 48px; }
+
+.tarif__item_price-prev {
+  color: #afafaf;
+  font-size: 24px; }
+
+#branches .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.branches__item {
+  text-align: center;
+  width: 340px;
+  height: 460px;
+  position: relative;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 25px;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease; }
+  .branches__item img {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease; }
+  .branches__item:nth-child(1) {
+    background: url(../img/otrasli-1.jpg) no-repeat center top/cover; }
+  .branches__item:nth-child(2) {
+    background: url(../img/otrasli-2.jpg) no-repeat center top/cover; }
+  .branches__item:nth-child(3) {
+    background: url(../img/otrasli-3.jpg) no-repeat center top/cover; }
+  .branches__item:nth-child(4) {
+    background: url(../img/otrasli-4.jpg) no-repeat center top/cover; }
+  .branches__item:nth-child(5) {
+    background: url(../img/otrasli-5.jpg) no-repeat center top/cover; }
+  .branches__item:nth-child(6) {
+    background: url(../img/otrasli-6.jpg) no-repeat center top/cover; }
+  .branches__item:nth-child(7) {
+    background: url(../img/otrasli-7.jpg) no-repeat center top/cover; }
+  .branches__item:nth-child(8) {
+    background: url(../img/otrasli-8.jpg) no-repeat center top/cover; }
+
+.branches__items {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+
+.branches__item_text {
+  font-family: "PF Regal Display Pro", serif;
+  font-size: 24px;
+  padding: 30px 0;
+  border-top: 1px dotted #90b445;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 111px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+#qa {
+  padding-bottom: 100px; }
+  #qa .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  #qa h2 {
+    margin-top: 100px; }
+
+.accordeon {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .accordeon .active img {
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none; }
+
+dt {
+  color: #263a4e;
+  font-size: 24px;
+  font-family: "PF Regal Display Pro", serif;
+  padding: 5px;
+  background: #fff;
+  display: block;
+  cursor: pointer;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  height: 121px;
+  margin-bottom: 50px; }
+
+dl {
+  width: 700px; }
+
+.dt__inner {
+  border: 1px solid rgba(31, 31, 31, 0.1);
+  width: 100%;
+  height: 100%;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  background-color: #ffffff;
+  padding: 45px 60px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: 500; }
+  .dt__inner img {
+    -webkit-transition: .3s ease;
+    -o-transition: .3s ease;
+    transition: .3s ease;
+    -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg); }
+
+.qa__list {
+  padding-left: 95px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #676767;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  margin: 0; }
+  .qa__list li {
+    margin-bottom: 20px;
+    position: relative; }
+    .qa__list li:before {
+      content: "";
+      display: block;
+      -webkit-border-radius: 50%;
+              border-radius: 50%;
+      width: 4px;
+      height: 4px;
+      border: 2px solid #9fcb42;
+      position: absolute;
+      top: 10px;
+      left: -25px; }
+
+.gradient {
+  background: -webkit-linear-gradient(white 0%, #f1f1f1 100%);
+  background: -o-linear-gradient(white 0%, #f1f1f1 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#f1f1f1));
+  background: linear-gradient(white 0%, #f1f1f1 100%); }
+
+.branch-4 {
+  left: -500px;
+  top: -100px; }
+
+.branch-5 {
+  right: -50px;
+  top: -150px; }
+
+#form {
+  background: url(../img/main-bg.jpg) no-repeat center top/cover;
+  color: #f4f4f4;
+  overflow: hidden; }
+  #form h2 {
+    text-align: left;
+    margin-top: 150px;
+    color: #f4f4f4; }
+  #form .check__form_container {
+    margin-left: 90px;
+    margin-top: 280px; }
+
+.form__text {
+  font-size: 20px;
+  color: #f4f4f4;
+  line-height: 30px;
+  margin-left: 80px;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 60px; }
+  .form__text:before {
+    content: "";
+    display: block;
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    border: 2px solid #9fcb42;
+    position: absolute;
+    top: 10px;
+    left: -25px; }
+
+.form__advantages {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.advantages__item_header {
+  color: #9fcb42;
+  font-family: "PF Regal Display Pro", serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.advantages__item_text {
+  font-size: 16px;
+  line-height: 25px; }
+
+.form__plate {
+  background: rgba(255, 255, 255, 0.1);
+  line-height: 20px;
+  font-size: 14px;
+  padding: 25px 40px;
+  -webkit-border-radius: 10px;
+          border-radius: 10px;
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 180px; }
+  .form__plate span {
+    color: #9fcb42; }
+  .form__plate:before {
+    content: "!";
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    background-color: #9fcb42;
+    font-size: 14px;
+    font-weight: 600;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: -8px;
+    top: -8px;
+    text-align: center; }
+
+.form__left {
+  width: 540px; }
+
+.form__plate {
+  width: 490px; }
+
+.form__woman {
+  position: absolute;
+  right: -135px;
+  bottom: 75px; }
+
+.map__item {
+  display: block;
+  width: 100%;
+  margin-bottom: 50px; }
+
+#map {
+  margin-bottom: 50px; }
+  #map .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden; }
+  #map .services__subheader {
+    margin-top: 30px;
+    margin-bottom: 55px; }
+  #map h2 {
+    margin-top: 50px; }
+
+.branch-6 {
+  left: -500px;
+  top: -100px;
+  z-index: 2;
+  pointer-events: none; }
+
+.footer__logo {
+  color: #676767; }
+
+.footer__logo_text {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  line-height: 19px; }
+
+.footer__menu ul {
+  margin: 0;
+  padding: 0; }
+  .footer__menu ul li span a {
+    color: #5b8dd5;
+    border-bottom: 1px dashed #5b8dd5; }
+  .footer__menu ul li a {
+    color: #676767;
+    font-size: 12px;
+    line-height: 25px; }
+
+.footer__addres_text {
+  font-size: 12px;
+  color: #676767;
+  line-height: 20px;
+  margin-left: 20px; }
+  .footer__addres_text span {
+    display: block;
+    padding-top: 25px; }
+
+.footer__addres {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .footer__addres img {
+    margin-top: -20px; }
+
+footer {
+  padding-top: 90px;
+  border-top: 2px solid rgba(0, 0, 0, 0.05); }
+  footer .container {
+    overflow: visible;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+
+.footer__mail {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .footer__mail a {
+    color: #263a4e;
+    line-height: 19px;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: -3px; }
+
+.footer__phone {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
+  .footer__phone span {
+    display: block;
+    margin-top: 15px; }
+  .footer__phone img {
+    margin-top: 3px; }
+
+.footer__phone_item {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 12px; }
+  .footer__phone_item a {
+    color: #263a4e;
+    font-size: 24px;
+    line-height: 20px;
+    text-align: right;
+    display: block;
+    width: 100%; }
+    .footer__phone_item a:last-child {
+      font-size: 20px;
+      margin-top: 13px; }
+
+.footer__first-row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%; }
+
+.footer__second-row {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.footer__policies a {
+  color: #676767;
+  font-size: 10px;
+  margin-right: 40px; }
+
+.footer__social {
+  color: #676767;
+  font-size: 12px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .footer__social .social-media {
+    padding-left: 30px; }
+
+.footer__madeby {
+  font-size: 10px;
+  color: #676767;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .footer__madeby img {
+    padding-left: 10px; }
+
+#preloader {
+  -webkit-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease; }
+
+.loaded #preloader {
+  opacity: 0;
+  z-index: -10; }
+
+.demo {
+  -webkit-animation: spin 5s infinite linear;
+          animation: spin 5s infinite linear; }
+
+.big-text {
+  display: block;
+  padding-top: 40px;
+  display: none; }
+
+h2 img {
+  width: 80%;
+  padding-top: 35px;
+  display: none;
+  margin-left: auto;
+  margin-right: auto; }
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background: #28231e;
+  -webkit-box-shadow: inset 0px 0px 90px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0px 0px 90px rgba(0, 0, 0, 0.5); }
+
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #9fcb42;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite; }
+
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #fff;
+  -webkit-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite; }
+
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #9fcb42;
+  -webkit-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite; }
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.thanks__popup_header {
+  font-size: 48px;
+  color: #9fcb42;
+  font-family: "PF Regal Display Pro", serif;
+  text-align: center;
+  margin-top: 135px; }
+
+.js-popup-campaign4 {
+  background: url(../img/main-bg.jpg) no-repeat center top/cover;
+  padding: 0 60px;
+  text-align: center;
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  padding-right: 450px; }
+  .js-popup-campaign4 img {
+    position: absolute;
+    bottom: 0;
+    width: 330px;
+    right: 30px; }
+
+.thanks__popup_text {
+  font-size: 18px;
+  line-height: 25px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  color: #fff;
+  width: 355px; }
+
+.thanks__popup_btn {
+  width: 320px;
+  height: 75px;
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto; }
+
+#main .clouds {
+  display: none; }
+
+.logotype {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.check__btn {
+  width: 270px;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2; }
+
+.mobile {
+  display: none; }
+
+.form__mobile_btn {
+  display: none; }
+
+iframe {
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.check__btn {
+  display: none; }
+
+.main__content_items-mobile {
+  display: none; }
+
+.mobile-zagagulina {
+  display: none; }
+
+.mobile-woman {
+  display: none; }
+
+.form__woman_mobile {
+  display: none; }
+
+.map-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+  margin-bottom: -80px; }
+
+#map .container {
+  overflow: visible; }
+
+.footer__menus {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.footer__menu-1 {
+  margin-right: 75px; }
