@@ -742,6 +742,25 @@ input {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 150px; }
+  .free__plate_container:after {
+    content: "Осипова Марина Владимировна";
+    display: block;
+    width: 270px;
+    -webkit-box-shadow: 0 0 21px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 0 21px rgba(0, 0, 0, 0.05);
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    border: 1px solid #e8d27b;
+    background-color: #f6e18c;
+    font-family: "PF Regal Display Pro", serif;
+    font-size: 16px;
+    color: #323232;
+    position: absolute;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    z-index: -1;
+    left: 115px; }
 
 .free__plate {
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -1645,25 +1664,26 @@ dl {
   width: 100%;
   margin-bottom: 50px; }
 
-#map .container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden; }
-
-#map .services__subheader {
-  margin-top: 30px;
-  margin-bottom: 55px; }
-
-#map h2 {
-  margin-top: 50px; }
+#map {
+  margin-bottom: 50px; }
+  #map .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow: hidden; }
+  #map .services__subheader {
+    margin-top: 30px;
+    margin-bottom: 55px; }
+  #map h2 {
+    margin-top: 50px; }
 
 .branch-6 {
   left: -500px;
   top: -100px;
-  z-index: 2; }
+  z-index: 2;
+  pointer-events: none; }
 
 .footer__logo {
   color: #676767; }
@@ -2006,3 +2026,80 @@ h2 img {
 
 #main .clouds {
   display: none; }
+
+.logotype {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.check__btn {
+  width: 270px;
+  height: 65px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 2; }
+
+.mobile {
+  display: none; }
+
+.form__mobile_btn {
+  display: none; }
+
+iframe {
+  -webkit-border-radius: 15px;
+          border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.check__btn {
+  display: none; }
+
+.main__content_items-mobile {
+  display: none; }
+
+.mobile-zagagulina {
+  display: none; }
+
+.mobile-woman {
+  display: none; }
+
+.form__woman_mobile {
+  display: none; }
+
+.map-icon {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: none;
+  margin-bottom: -80px; }
+
+#map .container {
+  overflow: visible; }
+
+.footer__menus {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.footer__menu-1 {
+  margin-right: 75px; }

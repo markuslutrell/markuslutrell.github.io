@@ -70,12 +70,18 @@ $('.js-button-campaig3').click(function() {
   $('.js-overlay-campaign3').addClass('disabled');
 });
 
+$('.js-button-campaign5').click(function() { 
+  $('.js-overlay-campaign5').fadeIn();
+  $('.js-overlay-campaign5').addClass('disabled');
+});
+
 // закрыть на крестик
 $('.js-close-campaign').click(function() { 
   $('.js-overlay-campaign').fadeOut();
   $('.js-overlay-campaign2').fadeOut();
   $('.js-overlay-campaign3').fadeOut();
   $('.js-overlay-campaign4').fadeOut();
+  $('.js-overlay-campaign5').fadeOut();
 });
 
 // закрыть по клику вне окна
@@ -103,3 +109,24 @@ $(".accordeon dd").hide().prev().click(function() {
   $(this).parents(".accordeon").find("dd").not(this).slideUp().prev().removeClass("active");
   $(this).next().not(":visible").slideDown().prev().addClass("active");
 });
+
+
+
+if ($(window).width() < 1200) {
+    $('.work__items').slick({
+      centerMode: true,
+      dots: false,
+      infinite: true,
+      arrows: true
+    });
+  }
+
+// if ($(window).width() < 760) {
+//     $('.tarif__items').slick({
+//       centerMode: true,
+//       dots: true,
+//       infinite: true,
+//       arrows: true,
+//       variableWidth: true
+//     });
+//   }
