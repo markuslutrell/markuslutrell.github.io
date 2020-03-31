@@ -1059,10 +1059,12 @@
   .check__item_header {
     font-size: 16px;
     line-height: 20px;
-    font-weight: 600; }
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 0; }
   .check__item_text {
     font-size: 12px;
-    line-height: 18px;
+    line-height: 16px;
     font-weight: 500;
     padding-right: 50px;
     position: relative; }
@@ -1070,6 +1072,8 @@
       position: absolute;
       right: 35px;
       bottom: -30px; }
+  .check__list_item {
+    line-height: 18px; }
   .mobile-zagagulina {
     display: block; }
   .check__img img {
@@ -1081,14 +1085,14 @@
     margin: 0;
     position: absolute; }
   .check__btn {
-    width: 170px;
-    height: 41px;
+    width: 220px;
+    height: 53px;
     font-size: 12px;
     margin-bottom: 0;
     position: absolute;
     left: 50%;
-    margin-left: -85px;
-    font-weight: 600;
+    margin-left: -110px;
+    font-weight: 700;
     bottom: -10px; }
   #check .clouds {
     bottom: 0px; }
@@ -1123,9 +1127,9 @@
     margin: 0;
     width: 100%; }
   .intro__list_item {
-    font-size: 14px;
+    font-size: 12px;
     line-height: 18px;
-    margin-left: 50px;
+    margin-left: 80px;
     margin-bottom: 20px; }
     .intro__list_item:before {
       border-width: 1.5px;
@@ -1189,12 +1193,9 @@
     font-size: 12px;
     font-weight: 700; }
   .intro__left img {
-    width: 400px;
-    left: -160px;
-    bottom: 0;
-    display: none; }
-    .intro__left img.mobile-woman {
-      display: block; }
+    width: 330px;
+    left: -91px;
+    bottom: 15px; }
   .values__item_header {
     text-align: center; }
   .values__item_text {
@@ -1559,4 +1560,38 @@
   .tarif__items_hidden {
     margin-bottom: 75px;
     height: 483px;
-    overflow-y: hidden; } }
+    overflow-y: hidden; }
+  .branch-2 {
+    display: none; }
+  #intro h2 {
+    text-align: center; }
+  .cases__btn {
+    margin-bottom: 0; }
+  .free__items {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    overflow-x: scroll;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .free__item {
+    min-width: 210px; }
+  #free .container {
+    overflow: visible; }
+  .free__item_container {
+    margin-right: 25px; }
+  #free {
+    overflow: visible; } }
+
+@media screen and (max-width: 321px) {
+  .intro__left img {
+    display: none; }
+    .intro__left img.mobile-woman {
+      display: block; } }
