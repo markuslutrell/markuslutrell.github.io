@@ -17,7 +17,7 @@
     top: 60px; }
   .check__img {
     margin-left: -175px;
-    margin-bottom: 25px; }
+    margin-bottom: 15px; }
     .check__img img {
       width: 350px; }
   .free__items {
@@ -50,7 +50,8 @@
   .branch-5 {
     right: -200px; }
   .form__woman {
-    right: -350px; }
+    right: -375px;
+    bottom: 0; }
   .check__right {
     margin-left: 0px; }
   .check__items {
@@ -58,16 +59,73 @@
   #check .container {
     width: 1300px; }
   .check__img {
-    margin-left: -90px; }
+    margin-left: -60px; }
   .intro__left img {
     width: 650px;
-    left: -100px; } }
+    left: -230px; }
+  .main__content_right {
+    right: 0; }
+  .branch-1 {
+    left: -160px; }
+  #check h2 {
+    margin-top: 75px; }
+  #check .check__form_container, #form .check__form_container {
+    -webkit-transform: scale(0.9);
+        -ms-transform: scale(0.9);
+            transform: scale(0.9);
+    margin-top: 100px; }
+  #form .check__form_container {
+    margin-top: 150px; }
+  .check__items {
+    margin-top: 25px; }
+  h2 {
+    line-height: 50px; }
+  .values__item:nth-child(2) {
+    margin-left: 0; }
+  #intro h2 {
+    margin-top: 75px; }
+  .check__list_item {
+    padding-right: 20px; }
+  .branches__item {
+    width: 280px;
+    height: 385px;
+    margin-bottom: 10px; }
+  .branch-4 {
+    left: -550px;
+    width: 1000px; }
+  .branch-3 {
+    right: -700px; }
+  .branch-5 {
+    right: -300px; }
+  #form h2 {
+    margin-top: 75px; }
+  #form .check__form_container {
+    margin-left: 0; }
+  .form__plate {
+    margin-bottom: 125px; }
+  .branch-6 {
+    width: 1100px;
+    left: -600px; }
+  .footer__menu-1 {
+    margin-right: 20px; }
+  .footer__phone_item {
+    margin-left: 8px; }
+  .footer__mail a {
+    margin-left: 8px;
+    font-size: 18px; }
+  .footer__logo_text {
+    font-size: 12px;
+    line-height: 18px; }
+  .footer__addres_text {
+    margin-left: 8px; }
+  .footer__phone_item a {
+    font-size: 22px; }
+  .footer__phone_item a:last-child {
+    font-size: 18px; } }
 
 @media screen and (max-width: 1300px) {
   #check .container {
     width: 1200px; }
-  .check__img {
-    margin-left: -125px; }
   .check__right {
     margin-left: 0px; }
   #check h2 {
@@ -80,7 +138,7 @@
   .check__item {
     margin-right: 50px; }
   .check__img {
-    margin-left: -100px;
+    margin-left: -75px;
     margin-bottom: 0; }
     .check__img img {
       width: 320px; }
@@ -93,7 +151,7 @@
 
 @media screen and (max-width: 1200px) {
   .container, #check .container {
-    width: 768px; }
+    width: 720px; }
   #check .container {
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
@@ -220,18 +278,18 @@
     font-size: 18px;
     line-height: 25px; }
   .free__item_container {
-    width: 220px;
+    width: 215px;
     margin: 25px;
     height: 440px;
     margin: 0; }
     .free__item_container .free__item {
-      padding: 20px 13px; }
+      padding: 20px 10px; }
     .free__item_container:before {
       height: 25px;
       font-size: 9px;
       line-height: 25px;
-      left: -17px;
-      padding-left: 3px;
+      left: -14px;
+      padding-left: 2px;
       top: 160px; }
   .free__item_header {
     font-size: 16px; }
@@ -494,7 +552,8 @@
     left: -280px;
     top: -120px; }
   .tarif__item_container {
-    width: 225px; }
+    width: 213px;
+    padding: 3px; }
   .tarif__item_header {
     font-size: 18px;
     padding: 15px 0; }
@@ -509,7 +568,7 @@
       top: 4px;
       left: -15px; }
   .tarif__item_list {
-    padding: 0 30px;
+    padding: 0 25px;
     margin-bottom: 20px; }
   .tarif__item_price-current {
     font-size: 21px; }
@@ -553,9 +612,9 @@
     padding-bottom: 3px;
     padding-top: 7px; }
   .branches__item {
-    width: 175px;
+    width: 162px;
     margin-bottom: 10px;
-    height: 245px; }
+    height: 230px; }
   .branches__item_text {
     font-size: 12px;
     line-height: 16.01px;
@@ -592,7 +651,7 @@
   .dt__inner {
     padding: 25px 30px; }
   dl {
-    width: 355px; }
+    width: 330px; }
   .dt__inner img {
     width: 6px; }
   .gradient {
@@ -625,9 +684,9 @@
   .advantages__item_text {
     padding-right: 20px; }
   .form__woman {
-    width: 1028px;
+    width: 950px;
     bottom: 0;
-    right: -280px; }
+    right: -260px; }
   .form__mobile_btn {
     display: -webkit-box;
     display: -webkit-flex;
@@ -684,9 +743,11 @@
     display: -ms-flexbox;
     display: flex; }
   .footer__menu-1 {
-    margin-right: 80px !important; } }
+    margin-right: 80px !important; }
+  .services__items {
+    width: 480px; } }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 700px) {
   .free_plate_img-1 {
     width: 120px; }
   .free_plate_img-2 {
@@ -1110,7 +1171,8 @@
       right: 55px;
       bottom: -50px; }
   .check__list_item {
-    line-height: 18px; }
+    line-height: 16px;
+    font-weight: 500; }
   .mobile-zagagulina {
     display: block; }
   .check__img img {
@@ -1138,7 +1200,8 @@
     margin-top: 10px;
     margin-bottom: 25px;
     padding-left: 40px;
-    padding-right: 40px; }
+    padding-right: 40px;
+    font-weight: 600; }
   .free__items {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -1309,7 +1372,9 @@
   .work__item {
     padding: 0 50px; }
   #tarif h2 {
-    margin-top: 25px; }
+    margin-top: 25px;
+    font-size: 16.5px;
+    line-height: 22px; }
   .tarif__items {
     width: 100%;
     overflow-x: scroll; }
@@ -1888,7 +1953,26 @@
   .work__item {
     margin-bottom: 0px; }
   .form__woman {
-    right: -170px; } }
+    right: -170px; }
+  .work__item_header img {
+    width: 40px;
+    margin-left: -20px; }
+  .intro__right {
+    margin-right: -40px; }
+  #intro h2 {
+    margin-left: -40px;
+    padding-left: 30px;
+    padding-right: 30px; }
+  .form__text {
+    padding-left: 0px; }
+  .intro__left img {
+    width: 290px; }
+  .check__img {
+    right: -20px; }
+    .check__img img {
+      width: 170px; }
+  .check__items {
+    margin-left: 15px; } }
 
 @media screen and (max-width: 450px) {
   #main {
@@ -1898,4 +1982,16 @@
   .intro__left img {
     display: none; }
     .intro__left img.mobile-woman {
-      display: block; } }
+      display: block; }
+  .intro__right {
+    margin-right: 0px; }
+  #intro h2 {
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .intro__left img {
+    width: 280px; }
+  .check__items {
+    margin-left: 10px; }
+  .check__img {
+    right: 0px; } }
