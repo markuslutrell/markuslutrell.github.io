@@ -251,8 +251,6 @@
     margin-bottom: -100px; }
     .check__img img {
       width: 344px; }
-  #map {
-    padding-bottom: 100px; }
   #check {
     padding-bottom: 50px; }
     #check .container {
@@ -980,8 +978,9 @@
     left: -600px;
     display: none; }
   .map__item {
-    width: 950px;
-    margin-left: -250px; }
+    width: 800px;
+    margin-left: -330px;
+    margin-bottom: 0; }
   .footer__first-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

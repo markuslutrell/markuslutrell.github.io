@@ -189,6 +189,7 @@ header {
 
 .phone__number_text {
   font-size: 14px;
+  font-weight: 400;
   color: #f4f4f4;
   padding-top: 3px; }
 
@@ -436,7 +437,7 @@ h2 {
 
 /*----------------------Check Section-------------------------*/
 #check {
-  background: no-repeat center center / cover;
+  background: url(../img/main-bg.jpg) no-repeat center center/cover;
   position: relative; }
 
 .check__left, .check__right {
@@ -618,7 +619,7 @@ input {
   padding: 5px;
   -webkit-border-radius: 15px;
           border-radius: 15px;
-  background: #efefef no-repeat center bottom / cover;
+  background: #efefef url(../img/do-1.png) no-repeat center bottom/cover;
   position: relative; }
   .free__item_container .free__item {
     width: 100%;
@@ -653,7 +654,7 @@ input {
     z-index: -1; }
 
 .free__item_container:nth-child(2) {
-  background: #efefef no-repeat center bottom / cover; }
+  background: #efefef url(../img/do-2.png) no-repeat center bottom/cover; }
   .free__item_container:nth-child(2):before {
     content: "02"; }
 
@@ -792,7 +793,7 @@ input {
 
 /*---------------------Introducing section---------------------*/
 #intro {
-  background: no-repeat center top / cover;
+  background: url(../img/main-bg.jpg) no-repeat center top/cover;
   color: #f4f4f4; }
   #intro h2 {
     text-align: left;
@@ -1549,7 +1550,7 @@ dl {
   top: -150px; }
 
 #form {
-  background: no-repeat center top / cover;
+  background: url(../img/main-bg.jpg) no-repeat center top/cover;
   color: #f4f4f4;
   overflow: hidden; }
   #form h2 {
@@ -2107,13 +2108,3 @@ iframe {
   color: #263a4e;
   font-weight: 400;
   font-style: normal; }
-
-.b-lazy {
-  -webkit-transition: opacity 300ms ease-in-out;
-  -o-transition: opacity 300ms ease-in-out;
-  transition: opacity 300ms ease-in-out;
-  max-width: 100%;
-  opacity: 0; }
-
-.b-lazy.b-loaded {
-  opacity: 1; }
