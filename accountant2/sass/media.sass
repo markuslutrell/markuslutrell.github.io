@@ -125,6 +125,8 @@ $mont: 'Mont', serif
 		font-size: 22px
 	.footer__phone_item a:last-child
 		font-size: 18px
+	#form, #form .container
+		overflow: visible
 @media screen and (max-width: 1300px)
 	#check .container
 		width: 1200px
@@ -684,6 +686,28 @@ $mont: 'Mont', serif
 		margin-right: 80px !important
 	.services__items
 		width: 480px
+	.branch-4
+		display: none
+	.mobiledn
+		display: none
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 700px)
 	.free_plate_img-1
 		width: 120px
@@ -697,7 +721,11 @@ $mont: 'Mont', serif
 	.container, #check .container
 		width: 320px
 		padding: 0 5px
-	.header__phone_number
+
+	.phone__number_item
+		font-size: 12px
+		margin-bottom: 3px
+	.phone__number_text
 		display: none
 	.header__attestat
 		display: none
@@ -706,6 +734,8 @@ $mont: 'Mont', serif
 	.main__content_right
 		top: 0px
 		left: 0
+	.logotype
+		width: 170px
 	.main__content
 		.container
 			flex-direction: column
@@ -863,6 +893,7 @@ $mont: 'Mont', serif
 		.container
 			flex-wrap: wrap
 			justify-content: center
+			overflow: visible
 		.check__form_container
 			margin-top: 0px
 			margin-left: 0
@@ -1427,8 +1458,8 @@ $mont: 'Mont', serif
 			margin-top: 40px
 	.header__phone_icon
 		img
-			width: 40px
-			height: 40px
+			width: 28px
+			height: 28px
 	.footer__mail
 		margin-top: 0
 	.footer__menu ul li a
@@ -1766,7 +1797,7 @@ $mont: 'Mont', serif
 			width: 170px
 	.check__items
 		margin-left: 15px
-
+	
 @media screen and (max-width: 450px)
 	#main
 		background: url(../img/main-bg-3.jpg) no-repeat center top / cover

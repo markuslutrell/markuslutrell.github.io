@@ -121,7 +121,9 @@
   .footer__phone_item a {
     font-size: 22px; }
   .footer__phone_item a:last-child {
-    font-size: 18px; } }
+    font-size: 18px; }
+  #form, #form .container {
+    overflow: visible; } }
 
 @media screen and (max-width: 1300px) {
   #check .container {
@@ -745,7 +747,11 @@
   .footer__menu-1 {
     margin-right: 80px !important; }
   .services__items {
-    width: 480px; } }
+    width: 480px; }
+  .branch-4 {
+    display: none; }
+  .mobiledn {
+    display: none; } }
 
 @media screen and (max-width: 700px) {
   .free_plate_img-1 {
@@ -760,7 +766,10 @@
   .container, #check .container {
     width: 320px;
     padding: 0 5px; }
-  .header__phone_number {
+  .phone__number_item {
+    font-size: 12px;
+    margin-bottom: 3px; }
+  .phone__number_text {
     display: none; }
   .header__attestat {
     display: none; }
@@ -772,6 +781,8 @@
   .main__content_right {
     top: 0px;
     left: 0; }
+  .logotype {
+    width: 170px; }
   .main__content .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -947,7 +958,8 @@
     -webkit-box-pack: center;
     -webkit-justify-content: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    overflow: visible; }
   #form .check__form_container {
     margin-top: 0px;
     margin-left: 0;
@@ -1618,8 +1630,8 @@
       margin-bottom: 20px;
       margin-top: 40px; }
   .header__phone_icon img {
-    width: 40px;
-    height: 40px; }
+    width: 28px;
+    height: 28px; }
   .footer__mail {
     margin-top: 0; }
   .footer__menu ul li a {
