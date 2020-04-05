@@ -15,6 +15,7 @@ body
 	height: 100%
 	z-index: 10
 	background: url(../img/loading.gif) no-repeat center center
+	background-size: 250px
 	background-color: #000
 	position: fixed
 	display: -webkit-flex
@@ -437,10 +438,10 @@ h1
 	top: 0
 	background-color: #080808
 	z-index: 1
-	transition: .5s ease
-	transform: scale(0, 1)
+	transition: 1s ease
+	transform: translateY(-200%)
 	&.active
-		transform: scale(1)
+		transform: translateY(0%)
 .red 
 	.menu__content
 		background-color: #d91f1f

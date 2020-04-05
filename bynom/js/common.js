@@ -1,25 +1,25 @@
 $(".preloader img").animated("zoomIn", 3000);
 window.onload = function(){
-  setTimeout(function(){
-  $(".preloader").animated("fadeOut", 3000);
-  $.afterlag(function() {
-  let mainBtn = document.querySelector(".main__btn");
-  let header = document.querySelector(".glitch")
-  let body = document.querySelector("body")
-  mainBtn.onclick = function(){
-    this.classList.add("visited");
-    body.classList.add("red");
-    header.classList.add("unglitch");
-  }
+    setTimeout(function(){
+    $(".preloader").animated("fadeOut", 3000);
+    $.afterlag(function() {
+    let mainBtn = document.querySelector(".main__btn");
+    let header = document.querySelector(".glitch")
+    let body = document.querySelector("body")
+    mainBtn.onclick = function(){
+      this.classList.add("visited");
+      body.classList.add("red");
+      header.classList.add("unglitch");
+    }
 
-  let menu = document.querySelector(".menu")
-  let menuContent = document.querySelector(".menu__content")
-  menu.onclick = function(){
-    menu.classList.toggle("active");
-    menuContent.classList.toggle("active");
-  }
-});
-}, 2000);
+    let menu = document.querySelector(".menu")
+    let menuContent = document.querySelector(".menu__content")
+    menu.onclick = function(){
+      menu.classList.toggle("active");
+      menuContent.classList.toggle("active");
+    }
+  });
+  }, 2000);
 }
 
 
