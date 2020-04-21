@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('PlayfairDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gordita';
+    src: url('Gordita-Bold.woff2') format('woff2'),
+        url('Gordita-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gordita';
+    src: url('Gordita-Regular.woff2') format('woff2'),
+        url('Gordita-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
