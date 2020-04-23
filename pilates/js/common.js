@@ -107,15 +107,20 @@ $(".accordeon dd").hide().prev().click(function() {
 
 
 if ($(window).width() < 760) {
-    $('.why__items').slick({
-      dots: false,
-      infinite: true,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 1500,
-      speed: 1000
-    });
-  }
+  $('.why__items').slick({
+    dots: false,
+    infinite: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 1500,
+    speed: 1000
+  });
+}
+
+if ($(window).width() < 760) {
+  $('#level').removeClass("desktop-slick");
+  $('#feedback').removeClass("desktop-slick");
+}
 
 $('.what-is__slider').slick({
   centerMode: true,
@@ -127,4 +132,58 @@ $('.what-is__slider').slick({
   autoplay: true,
   autoplaySpeed: 1500,
   speed: 1000
+});
+
+$('.lessons__slider').slick({
+  dots: false,
+  infinite: true,
+  arrows: true,
+  variableWidth: true,
+  slidesToShow: 1,
+});
+
+$('.level__slider').slick({
+  centerMode: true,
+  dots: false,
+  infinite: false,
+  arrows: true,
+  slidesToShow: 1,
+  speed: 10,
+  variableWidth: true,
+  initialSlide: 1,
+  responsive: [
+    {
+      breakpoint: 760,
+      settings: {
+        slidesToShow: 1,
+        variableWidth: true,
+        speed: 500,
+        initialSlide: 0,
+        infinite: true
+      }
+    }
+  ]
+});
+
+$('.feedback__slider').slick({
+  centerMode: true,
+  dots: false,
+  infinite: false,
+  arrows: true,
+  slidesToShow: 1,
+  speed: 10,
+  variableWidth: true,
+  initialSlide: 1,
+  responsive: [
+    {
+      breakpoint: 760,
+      settings: {
+        slidesToShow: 1,
+        variableWidth: true,
+        speed: 500,
+        initialSlide: 0,
+        infinite: true
+      }
+    }
+  ]
 });

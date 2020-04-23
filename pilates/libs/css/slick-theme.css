@@ -25,10 +25,17 @@
     position: absolute;
     top: 50%;
 
-    display: block;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
 
-    width: 60px;
-    height: 60px;
+    width: 56px;
+    height: 56px;
     padding: 0;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
@@ -39,19 +46,19 @@
     color: #fff;
     border: none;
     outline: none;
-    background: #9fcb42;
-    z-index: 3;
+    background: transparent;
+    border: 1px solid #b5b5b5;
+    z-index: 10;
     border-radius: 50%;
 }
-/*.slick-prev:hover,
+.slick-prev:hover,
 .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus
 {
-    color: transparent;
-    outline: none;
-    background: transparent;
-}*/
+   background-color: #096b8f;
+   border-color: #096b8f;
+}
 .slick-prev:hover:before,
 .slick-prev:focus:before,
 .slick-next:hover:before,
@@ -60,26 +67,26 @@
     opacity: 1;
 }
 .slick-prev.slick-disabled:before,
-.slick-next.slick-disabled:before
+.slick-next.slick-disabled:before,
+.slick-prev.slick-disabled,
+.slick-next.slick-disabled
 {
     opacity: .25;
+    background-color: transparent;
+    border: none;
+    cursor: auto;
 }
 
 .slick-prev:before,
 .slick-next:before
 {
-    font-family: 'slick';
-    font-size: 20px;
-    width: 12px;
-    height: 20px;
+
     line-height: 1;
     display: block;
-    transform: scale(1, 2);
     margin-left: auto;
     margin-right: auto;
     opacity: .75;
     color: white;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -87,6 +94,8 @@
 .slick-prev
 {
     left: 0px;
+    transform: rotate(-180deg);
+    margin-top: -30px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -95,11 +104,11 @@
 }
 .slick-prev:before
 {
-    content: '<';
+    content: url(../../img/arrow.png);
 }
 [dir='rtl'] .slick-prev:before
 {
-    content: '>';
+    content: url(../../img/arrow.png);
 }
 
 .slick-next
@@ -113,11 +122,11 @@
 }
 .slick-next:before
 {
-    content: '>';
+    content: url(../../img/arrow.png);
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '<';
+    content: url(../../img/arrow.png);
 }
 
 /* Dots */
