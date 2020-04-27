@@ -1,7 +1,5 @@
 window.onload = function () {
-  $.afterlag(function() {
-    document.body.classList.add('loaded');
-  });
+  document.body.classList.add('loaded');
 }
 
 
