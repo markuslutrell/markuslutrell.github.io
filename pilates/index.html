@@ -18,6 +18,9 @@
 	<link rel="stylesheet" href="css/media.css">
 </head>
 <body>
+	<div class="preloader">
+		
+	</div>
 	<div class="mobile-bg">
 		<section id="main">
 			<header>
@@ -28,11 +31,11 @@
 					</div>
 					<div class="header__menu">
 						<ul class="header__menu_list">
-							<li class="header__menu_li"><a href="#">О нас</a></li>
-							<li class="header__menu_li"><a href="#">Онлайн-курсы</a></li>
-							<li class="header__menu_li"><a href="#">Тренировки</a></li>
-							<li class="header__menu_li"><a href="#">Отзывы</a></li>
-							<li class="header__menu_li"><a href="#">Контакты</a></li>
+							<li class="header__menu_li"><a href="#academy">О нас</a></li>
+							<li class="header__menu_li"><a href="#level">Онлайн-курсы</a></li>
+							<li class="header__menu_li"><a href="#lessons">Тренировки</a></li>
+							<li class="header__menu_li"><a href="#feedback">Отзывы</a></li>
+							<li class="header__menu_li"><a href="#book">Контакты</a></li>
 						</ul>
 					</div>
 					<div class="header__contacts">
@@ -43,9 +46,9 @@
 							<img src="img/phone.png" alt="Phone">8 800 555 55 55
 						</a>
 					</div>
-					<a href="#" class="header__enter">
+					<div class="header__enter js-button-campaign4">
 						Войти<span>/Регистрация</span> <img src="img/enter.png" alt="Enter">
-					</a>	
+					</div>	
 				</div>
 			</header>
 			<div class="main__block">
@@ -73,7 +76,7 @@
 								</strong>
 
 							</div>
-							<div class="main__btn btn">
+							<div class="main__btn btn js-button-campaign2">
 								Записаться на занятие
 							</div>
 						</div>
@@ -119,7 +122,7 @@
 			<div class="container">
 				<div class="what-is__left">
 					<div class="what-is__video">
-						<div class="what-is__play">
+						<div class="what-is__play js-button-campaign5">
 							<img src="img/play.png" alt="Play">
 						</div>
 						<div class="what-is__video_text">
@@ -304,7 +307,7 @@
 					<div class="academy__video_text">
 						Посмотрите 80-ти секундный ролик <br>Президента Академии Андрея Новикова
 					</div>
-					<img src="img/play-2.png" alt="Play" class="academy__video_play">
+					<img src="img/play-2.png" alt="Play" class="js-button-campaign6 academy__video_play">
 				</div>
 			</div>
 		</div>
@@ -335,7 +338,7 @@
 				</div> 
 				<div class="level__mark desktop">
 					<img src="img/stamp-2.png" alt="Stamp">
-					В случае если вы не уверены в уровне своей подготовки, <span>оставьте заявку</span> и мы сами подберём для вас правильный комплекс
+					В случае если вы не уверены в уровне своей подготовки, <span class="js-button-campaign3">оставьте заявку</span> и мы сами подберём для вас правильный комплекс
 				</div>
 			</div>
 
@@ -356,7 +359,7 @@
 							</li>
 						</ul>
 
-						<div class="btn">
+						<div class="btn js-button-campaign4">
 							Выбрать комплекс
 						</div>
 					</div>
@@ -374,7 +377,7 @@
 								Этот уровень подразумевает большой комплекс упражнений. Здесь вы найдете больше баланса и упражнений, которые делаются на одной, двух или трех опорах. Статика и баланс хорошо укрепляют тело и стабилизируют позвоночник. Этот уровень дает возможность укрепиться, подтянуться и придать красивый облик телу гораздо быстрее, но не стоит забывать, что для этого уровня у вас должна быть хотя бы минимальная физическая подготовка
 							</li>
 						</ul>
-						<div class="btn">
+						<div class="btn js-button-campaign4">
 							Выбрать комплекс
 						</div>
 					</div>
@@ -392,7 +395,7 @@
 								Этот уровень подразумевает большой комплекс упражнений. Здесь вы найдете больше баланса и упражнений, которые делаются на одной, двух или трех опорах. Статика и баланс хорошо укрепляют тело и стабилизируют позвоночник. Этот уровень дает возможность укрепиться, подтянуться и придать красивый облик телу гораздо быстрее, но не стоит забывать, что для этого уровня у вас должна быть хотя бы минимальная физическая подготовка
 							</li>
 						</ul>
-						<div class="btn">
+						<div class="btn js-button-campaign4">
 							Выбрать комплекс
 						</div>
 					</div>
@@ -407,6 +410,19 @@
 	
 	<section id="club">
 		<div class="container">
+			<form class="club__form">
+				<div class="club__form_header">
+					Хотите попасть
+					в наш клуб?
+				</div>
+				<input type="text" placeholder="Логин">
+				<input type="text" placeholder="Пароль">
+				<input type="text" placeholder="Пароль ещё раз">
+
+				<button class="btn">
+					Вступить в клуб <img src="img/key-3.png" alt="Key">
+				</button>
+			</form>
 			<div class="club__key">
 				<img src="img/key.png" alt="Key" class="desktop key">
 				<img src="img/key-mobile.png" alt="Key" class="mobile key">
@@ -459,7 +475,7 @@
 				</div>
 				<div class="lessons__mark">
 					<img src="img/stamp-2.png" alt="Stamp">
-					Мы работаем по всем направлениям пилатеса и знаем что делать в конкретно вашем случае, <span>зарегистрируйтесь</span> и выберите подходящий для себя курс
+					Мы работаем по всем направлениям пилатеса и знаем что делать в конкретно вашем случае, <span class="js-button-campaign4"> зарегистрируйтесь</span> и выберите подходящий для себя курс
 				</div>
 			</div>
 			<div class="lessons__right">
@@ -476,18 +492,18 @@
 								<span>урок 1.</span>
 							</div>
 							<div class="lessons__title_all desktop">
-								<a href="#">
+								<span class="js-button-campaign4">
 									Смотреть все уроки
-								</a>
+								</span>
 							</div>
 						</div>
 						<div class="lessons__slide_description">
 							В этом уроке мы познакомимся с тем, что такое Пилатес и выполним 3 базовых упражнения, которые научат правильно дышать выполняя более сложные комбинации
 						</div>
 						<div class="lessons__title_all mobile">
-							<a href="#">
+							<span class="js-button-campaign4">
 								Смотреть все уроки
-							</a>
+							</span>
 						</div>
 					</div>
 
@@ -502,18 +518,18 @@
 								<span>урок 1.</span>
 							</div>
 							<div class="lessons__title_all desktop">
-								<a href="#">
+								<span class="js-button-campaign4">
 									Смотреть все уроки
-								</a>
+								</span>
 							</div>
 						</div>
 						<div class="lessons__slide_description">
 							В этом уроке мы познакомимся с тем, что такое Пилатес и выполним 3 базовых упражнения, которые научат правильно дышать выполняя более сложные комбинации
 						</div>
 						<div class="lessons__title_all mobile">
-							<a href="#">
+							<span class="js-button-campaign4">
 								Смотреть все уроки
-							</a>
+							</span>
 						</div>
 					</div>
 
@@ -528,22 +544,22 @@
 								<span>урок 1.</span>
 							</div>
 							<div class="lessons__title_all desktop">
-								<a href="#">
+								<span class="js-button-campaign4">
 									Смотреть все уроки
-								</a>
+								</span>
 							</div>
 						</div>
 						<div class="lessons__slide_description">
 							В этом уроке мы познакомимся с тем, что такое Пилатес и выполним 3 базовых упражнения, которые научат правильно дышать выполняя более сложные комбинации
 						</div>
 						<div class="lessons__title_all mobile">
-							<a href="#">
+							<span class="js-button-campaign4">
 								Смотреть все уроки
-							</a>
+							</span>
 						</div>
 					</div>
 				</div>
-				<div class="btn lessons__btn">
+				<div class="js-button-campaign4 btn lessons__btn">
 					Купить полный курс
 				</div>
 			</div>
@@ -665,11 +681,11 @@
 					<img src="img/logo.png" alt="Logo">
 				</div>
 				<ul class="header__menu_list">
-					<li class="header__menu_li"><a href="#">О нас</a></li>
-					<li class="header__menu_li"><a href="#">Онлайн-курсы</a></li>
-					<li class="header__menu_li"><a href="#">Тренировки</a></li>
-					<li class="header__menu_li"><a href="#">Отзывы</a></li>
-					<li class="header__menu_li"><a href="#">Контакты</a></li>
+					<li class="header__menu_li"><a href="#academy">О нас</a></li>
+					<li class="header__menu_li"><a href="#level">Онлайн-курсы</a></li>
+					<li class="header__menu_li"><a href="#lessons">Тренировки</a></li>
+					<li class="header__menu_li"><a href="#feedback">Отзывы</a></li>
+					<li class="header__menu_li"><a href="#book">Контакты</a></li>
 				</ul>
 			</div>
 			<div class="footer__right">
@@ -697,13 +713,144 @@
 
 	<div class="overlay js-overlay-campaign">
 		<div class="popup js-popup-campaign">
-		
-			<div class="thanks__popup_btn btn js-close-campaign">
-				<span></span>
-				<span></span>
-			</div>
+			<form class="club__form">
+				<div class="club__form_header">
+					Хотите попасть
+					в наш клуб?
+				</div>
+				<input type="text" placeholder="Логин">
+				<input type="text" placeholder="Пароль">
+				<input type="text" placeholder="Пароль ещё раз">
+
+				<button class="btn">
+					Вступить в клуб <img src="img/key-3.png" alt="Key">
+				</button>
+				<div class="js-close-campaign close-popup">
+					<span></span>
+					<span></span>
+				</div>
+			</form>
+			
 		</div>
 	</div>
+
+	<div class="overlay js-overlay-campaign2">
+		<div class="popup js-popup-campaign2">
+			<form class="club__form">
+				<div class="club__form_header">
+					Записаться на занятие
+				</div>
+				<input type="text" placeholder="Ваше имя">
+				<input type="tel" placeholder="Номер телефона">
+				<input type="email" placeholder="E-mail">
+
+				<button class="btn">
+					Записаться на занятие
+				</button>
+				<div class="js-close-campaign close-popup">
+					<span></span>
+					<span></span>
+				</div>
+			</form>
+			
+		</div>
+	</div>
+
+	<div class="overlay js-overlay-campaign3">
+		<div class="popup js-popup-campaign3">
+			<form class="club__form">
+				<div class="club__form_header">
+					Оставьте заявку
+				</div>
+				<input type="text" placeholder="Ваше имя">
+				<input type="tel" placeholder="Номер телефона">
+				<input type="email" placeholder="E-mail">
+
+				<button class="btn">
+					Отправить
+				</button>
+				<div class="js-close-campaign close-popup">
+					<span></span>
+					<span></span>
+				</div>
+			</form>
+			
+		</div>
+	</div>
+	
+	<div class="overlay js-overlay-campaign4">
+		<div class="popup login-popup js-popup-campaign4">
+			<img src="img/logo.png" alt="Logo" class="popup__logo">
+
+			<form class="login-form active">
+				<input type="text" placeholder="Логин" class="login-input">
+				<span class="show-password">Показать пароль</span>
+				<input type="password" placeholder="Пароль" class="pass-input">
+
+				<div class="login-form__checkpoint">
+					<div class="login-form__checkpoint-item">
+						<input id="checkpoint1" type="checkbox">
+						<label for="checkpoint1">
+							Запомнить меня
+						</label>
+					</div>
+					<span class="login-form__forgot">
+						Забыли пароль? 
+					</span>
+				</div>
+				
+				<button class="btn login-form__btn">
+					Войти в кабинет
+				</button>
+				<div class="login-popup__register">
+					Зарегистрироваться
+				</div>
+			</form>
+			
+			<form class="register-form">
+				<input type="text" placeholder="Логин" class="login-input">
+				<input class="email-input" type="email" placeholder="E-mail">
+				<span class="show-password">Показать пароль</span>
+				<input type="password" placeholder="Придумайте пароль" class="pass-input">
+				<span class="show-password">Показать пароль</span>
+				<input type="password" placeholder="Повторите пароль" class="pass-input">
+
+				<div class="login-form__checkpoint">
+					<div class="login-form__checkpoint-item">
+						<input id="checkpoint1" type="checkbox">
+						<label for="checkpoint1">
+							Запомнить меня
+						</label>
+					</div>
+					<span class="login-form__forgot">
+						Забыли пароль? 
+					</span>
+				</div>
+				
+				<button class="btn login-form__btn">
+					Зарегистрироваться
+				</button>
+			</form>
+
+			<div class="js-close-campaign close-popup">
+					<span></span>
+					<span></span>
+				</div>
+		</div>
+	</div>
+	
+	<div class="overlay js-overlay-campaign5">
+		<div class="popup video-popup js-popup-campaign5">
+			<iframe width="1024" height="580" src="https://www.youtube.com/embed/AW0e50XB4D0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+		</div>
+	</div>
+
+	<div class="overlay js-overlay-campaign6">
+		<div class="popup video-popup js-popup-campaign6">
+			<iframe width="1024" height="580" src="https://www.youtube.com/embed/JLLZ4tR8-1o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+	</div>
+
 	<script src="libs/js/jquery.min.js"></script>
 	<script src="libs/js/slick.min.js"></script>
 	<script src="js/common.js"></script>

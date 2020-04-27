@@ -30,6 +30,19 @@ h1,h2
 	transform: scaleY(1.3)
 	margin: 0
 
+.preloader
+	position: fixed
+	display: block
+	width: 100%
+	height: 100%
+	background: #fff
+	transition: .5s ease
+	pointer-events: none
+	z-index: 100
+
+.loaded .preloader
+	opacity: 0
+
 .number
 	font-size: 190px
 	color: $sec-color
@@ -73,14 +86,15 @@ input
 	position: absolute
 	left: 50%
 	top: 50%
-	transform: translate(-50%, -50%)
 	text-align: center
 	color: #020405
 	border-radius: 15px
 	.check__form_container
 		margin: 0
 		border-radius: 15px
-
+	.club__form
+		margin-left: -209px
+		margin-top: -278px
 .close-popup
 	width: 25px
 	height: 25px
@@ -181,6 +195,7 @@ header
 	display: flex
 	align-items: center
 	color: #ebebeb
+	cursor: pointer
 	img
 		padding-left: 20px
 
@@ -718,7 +733,7 @@ header
 	position: absolute
 	bottom: -40px
 	opacity: 0
-	transition: opacity .6s ease
+	transition: opacity .6s ease, transform .3s ease
 
 /*----------------------Club Section------------------*/
 
@@ -806,7 +821,7 @@ header
 		position: absolute
 		left: -100px
 		top: -100px
-	span
+	a
 		color: $main-color	
 		text-decoration: underline
 		cursor: pointer
@@ -839,10 +854,11 @@ header
 		color: #b8b8b8
 		font-size: 16px
 
-.lessons__title_all a
+.lessons__title_all span
 	color: $main-color	
 	font-size: 14px
 	text-decoration: underline
+	cursor: pointer
 	&:hover
 		text-decoration: none
 
@@ -1111,3 +1127,817 @@ footer
 	margin-left: auto
 	margin-right: auto
 	margin-top: 50px
+
+.club__form
+	text-align: center
+	padding: 50px 60px
+	background: url(../img/club-form-bg.png) no-repeat center center / cover
+	width: 418px
+	height: 557px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	position: absolute
+	transition: 1s ease
+	input
+		display: block
+		width: 295px
+		height: 69px
+		padding-left: 30px
+		font-size: 15px
+		background: url(../img/input.png)
+		margin-bottom: 8px
+		border: none
+	button
+		font-size: 15px
+		margin-top: 25px
+		img
+			padding-left: 10px
+#club .club__form
+	top: 120px
+	left: 215px
+	opacity: 0
+	&.active
+		opacity: 1
+
+.club__form_header
+	font-size: 46px
+	text-align: center
+	line-height: 40.49px
+	font-family: $pd
+	color: #0f0f0f
+	margin-bottom: 45px
+	transform: scaleY(1.25)
+
+
+/*------------------------Cabinet----------------*/
+
+body.cabinet
+	font-size: 18px
+	line-height: 27px
+	color: #fff
+	height: 100vh
+	overflow: hidden
+	&:before
+		content: ''
+		background: url(../img/bg-1.jpg) no-repeat center top / cover
+		display: block
+		width: 100%
+		height: 100%
+		position: fixed
+		left: 0
+		top: 0
+		z-index: -2
+	header
+		padding: 50px 0
+		.c-container
+			flex-direction: row
+			align-items: center
+			justify-content: space-between
+	.languages
+		position: static
+		margin-left: -25px
+.c-container
+	width: 1700px
+	margin-left: auto
+	margin-right: auto
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+
+aside
+	width: 300px
+	position: fixed
+
+.cabinet__menu
+	padding: 0
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+	height: 500px
+	margin-bottom: 70px
+.cabinet__menu_item
+	font-size: 24px
+	text-transform: uppercase
+	font-family: $pd
+	letter-spacing: -0.12px
+	transform: scaleY(1.2)
+	cursor: pointer
+	transition: .3s ease
+	position: relative
+	.active
+		color: $sec-color
+	&:hover
+		color: $sec-color
+	img
+		position: absolute
+		right: 140px
+		top: -52px
+	.lessons-tab-number
+		position: absolute
+		right: 175px
+		top: -47px
+		color: #fff
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		font-size: 24px
+		span
+			display: block
+			margin-top: 1px
+			transform: scaleY(.8)
+.cabinet .languages
+	left: -20px
+
+.main-cabinet-container
+	position: relative
+	height: 100%
+	flex-direction: row
+.cabinet__out
+	margin-bottom: 60px
+	margin-top: 50px
+	display: block
+	font-size: 16px
+	color: #d43737
+
+.tab__item
+	width: 500px
+	height: 500px
+	background: #cca	
+	position: absolute
+	left: 200px
+
+.tab_content
+	margin-left: 500px
+
+.tab__item_header
+	font-size: 48px
+	text-transform: uppercase
+	font-family: $pd
+	color: $sec-color
+	transform: scaleY(1.2)
+	margin-bottom: 90px
+
+.tab.active
+	color: $sec-color
+
+.tab__item_select
+	width: 0
+	height: 0
+	& + label
+		color: #096182
+		font-size: 16px
+		text-decoration: underline
+		cursor: pointer
+		&:hover
+			text-decoration: none
+
+.tab__avatar_img
+	width: 207px
+	height: 202px
+	margin-bottom: 15px
+
+.delete
+	font-size: 16px
+	color: #333030
+	display: block
+	margin-top: 271px
+
+.tab__item_inputs
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	width: 470px
+	flex-wrap: wrap
+	span
+		color: $sec-color
+		font-size: 18px
+	input
+		color: #fff
+		background: transparent
+		border: none
+		height: 40px
+		
+.tab__item_input
+	width: 200px
+	margin-bottom: 50px
+
+.tab__item_container
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+#cabinet-lessons
+	overflow-y: scroll
+	height: 82vh
+.tab__item_form
+	margin-left: 145px
+	padding-top: 110px
+	.btn
+		margin-top: 10px
+
+.tab__item_lesson
+	width: 340px
+	border: 1px solid #a7a7a7
+	border-radius: 3px
+	background: rgba(255,255,255,.05)
+	padding: 25px
+	overflow: hidden
+	margin-right: 42px
+	margin-bottom: 42px
+.tab__item_img
+	width: 292px
+	height: 317px
+	margin-left: 0
+	margin-right: auto
+
+.lesson__header
+	margin-top: 35px
+	margin-bottom: 30px
+
+.lesson__description
+	margin-bottom: 30px
+
+.lesson__buttons
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: space-between
+
+.lessons__buttons_btn
+	width: 143px
+	height: 43px
+	font-size: 12px
+	padding-bottom: 3px
+	text-shadow: 0 2px 0 rgba(0, 53, 72, 0.22)
+	background: url(../img/littlebtn.png) no-repeat center center / cover
+
+.lesson__buttons_demo
+	text-transform: uppercase
+	font-size: 14px
+	letter-spacing: 0.7px
+	color: $sec-color
+	cursor: pointer
+	img
+		padding-right: 10px
+
+section::-webkit-scrollbar
+	width: 5px
+	height: 40px
+	background-color: transparent
+
+section::-webkit-scrollbar-thumb /* 5 - ползунок */
+	border-radius: 2px
+	background-color: $sec-color
+ 	width: 7px
+
+#c-courses
+	height: 81vh
+	overflow-y: scroll
+
+.c-courses__item
+	width: 1050px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	padding: 40px
+	border: 1px solid #a7a7a7
+	background: rgba(255,255,255,.05)
+	margin-bottom: 35px
+	margin-right: 150px
+
+.courses__img
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	min-width: 317px
+	max-height: 317px
+	margin-right: 60px
+	cursor: pointer
+	img
+		transition: .3s ease
+		&:hover
+			transform: scale(1.1)
+
+.c-courses__item_number
+	font-size: 10px
+	margin-top: 20px
+	text-transform: uppercase
+
+.c-courses__item_header
+	font-size: 18px
+	margin-top: 25px
+	margin-bottom: 35px
+
+.c-courses__item_btn
+	width: 246px
+	height: 60px
+	margin-top: 40px
+.backpack__course
+	width: 1050px
+
+.backpack__course_bg
+	border: 1px solid #a7a7a7
+	background: rgba(255,255,255,.05)
+	padding: 40px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+.backback__course_subheader
+	margin-top: 23px
+	margin-bottom: 33px
+
+.backpack__course_full
+	color: #5aa232
+	font-size: 10px
+	text-transform: uppercase
+	letter-spacing: 0.5px
+.backpack__course_header
+	margin-bottom: 40px
+.backpack__course_number
+	font-size: 10px
+	text-transform: uppercase
+	padding-left: 60px
+
+.backpack__course_lessons-btn
+	margin-top: 55px
+	img
+		padding-right: 20px
+.backpack__course_preview
+	min-width: 293px
+	max-height: 317px
+	margin-right: 63px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: center
+
+.backpack__course_lessons-btn
+	color: $sec-color
+	text-transform: uppercase
+	cursor: pointer
+	font-size: 14px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+
+.backpack__slider-item_preview
+	width: 130px
+	height: 141px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	img
+		height: 62px
+
+.backpack__slider-item_header
+	margin-top: 25px
+	margin-bottom: 0px
+
+.backpack__course_slider
+	margin-top: 35px
+	padding: 0 70px
+	
+#backpack
+	overflow-y: scroll
+	height: 81vh
+.backpack__container
+	margin-right: 145px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+.backpack__course_slider-item
+	margin-left: 12px
+	margin-right: 12px
+	cursor: pointer
+.backpack__slider-item_header, .backpack__slider-item_title
+	font-size: 14px
+
+#backpack .slick-prev, #backpack .slick-next
+	top: 42px
+	margin-top: 0
+	transform: translate(0)
+
+#backpack .slick-prev
+	transform: rotate(-180deg)
+	margin-top: 5px
+#backpack .slick-next
+	right: 0
+
+.backpack__course
+	margin-bottom: 35px
+
+.backpack__lesson
+	padding: 65px
+	padding-right: 40px
+	border: 1px solid #a7a7a7
+	background: rgba(255,255,255,.05)
+	width: 495px
+
+.backpack__lesson_subheader
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	font-size: 10px
+	text-transform: uppercase
+	margin-bottom: 25px
+.backpack__lesson_status
+	color: #d43737
+
+.backpack__lesson_header
+	margin-bottom: 30px
+
+.backpack__lesson_description
+	margin-bottom: 52px
+
+.backpack__lesson_play
+	text-transform: uppercase
+	color: $sec-color
+	font-size: 14px
+	cursor: pointer
+	img
+		padding-right: 15px
+
+.backpack__lesson
+	margin-bottom: 35px
+
+.backpack__lesson:nth-child(odd)
+	margin-right: 59px
+	margin-bottom: 35px
+
+.news__item
+	padding: 40px
+	width: 1050px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	border: 1px solid #a7a7a7
+	background: rgba(255,255,255,.05)
+	margin-right: 140px
+	margin-bottom: 35px
+
+.news__item_photos
+	min-width: 310px
+	max-height: 317px
+	margin-right: 40px
+
+.news__item_date
+	margin-top: 20px
+	margin-bottom: 25px
+.news__item_header
+	margin-bottom: 30px
+.news__item_content
+	margin-bottom: 60px
+
+.news__item_date
+	font-size: 10px
+	text-transform: uppercase
+.news__item_more
+	font-size: 10px
+	text-transform: uppercase
+	text-decoration: underline
+	cursor: pointer
+	&:hover
+		text-decoration: none
+
+.news__item_main-photo
+	width: 293px
+	height: 317px
+	margin-bottom: 15px
+	cursor: pointer
+#news
+	overflow-y: scroll
+	height: 81vh
+
+.news__item_small-photos
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+
+.news__small-photo
+	width: 88px
+	height: 95px
+	cursor: pointer
+
+.news__small-photo
+	margin-right: 15px
+	margin-bottom: 15px
+
+.popup-img 
+	position: absolute
+	height: 100%
+	width: 100%
+	top: 0
+	left: 0
+	display: none
+	text-align: center
+
+.popup_bg-img 
+	background: rgba(0,0,0,0.7)
+	position: fixed
+	z-index: 1
+	height: 100%
+	width: 100%
+	
+.popup_img 
+	position: absolute
+	left: 50%
+	top: 50%
+	transform: translate(-50%, -50%)
+	margin: auto
+	z-index: 2
+	max-height: 94%
+	max-width: 94%
+	margin: 1% 0 0 0
+
+.login-popup 
+	width: 607px
+	background: url(../img/login-bg.jpg) no-repeat center top / cover
+	text-align: center
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-items: center
+	border-radius: 5px
+	transform: translate(-50%, -50%)
+	.login-input, .pass-input, .email-input
+		outline: none
+		display: block
+		border: none
+		width: 100%
+		border-bottom: 2px solid rgba(255,255,255,.2)
+		height: 50px
+		color: #fff
+		background: none
+		&:focus
+			transform: none
+	form
+		width: 100%
+		height: 100%
+		padding: 50px
+.popup__logo
+	display: block
+	margin-bottom: 20px
+	margin-top: 60px
+
+.login-input
+	margin-bottom: 70px
+
+.login-form__checkpoint-item
+	color: #fce591
+	font-size: 15px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	input
+		margin-right: 12px
+		cursor: pointer
+		position: absolute
+		z-index: -1
+		opacity: 0
+		&+label::before
+			content: ''
+			display: inline-block
+			width: 20px
+			height: 20px
+			border: 1px solid #fce591
+			border-radius: 3px
+			margin-right: 10px
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: 50% 50%
+			margin-bottom: -5px
+			transition: .3s ease
+		&:checked+label::before
+			background: #fce591 url(../img/check.png) no-repeat center center
+	label
+		cursor: pointer
+
+.login-form__forgot
+	cursor: pointer
+	font-size: 15px
+	color: $main-color
+
+.login-form__checkpoint
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	margin-top: 37px
+	margin-bottom: 65px
+
+.login-form__btn
+	margin-left: auto
+	margin-right: auto
+	margin-bottom: 45px
+
+.login-popup__register
+	font-size: 14px
+	text-decoration: underline
+	color: #fce591
+	margin-bottom: 5px
+	cursor: pointer
+	&:hover
+		text-decoration: none
+
+.login-popup form
+	display: none
+	opacity: 0
+	transition: .5s ease
+	&.active
+		display: block
+		opacity: 1
+
+.register-form
+	.login-input, .email-input, .pass-input
+		margin-bottom: 70px
+	.login-form__checkpoint
+		display: none
+	.login-form__btn
+		margin-bottom: 10px
+
+.show-password
+	color: #fff
+	text-align: right
+	display: block
+	height: 0
+	font-size: 12px
+	margin-bottom: -15px
+	padding-top: 15px
+	cursor: pointer
+
+.video-popup
+	transform: translate(-50%, -50%)
+	border-radius: 0
+	background: none
+
+.c-courses__main_img
+	width: 293px
+	height: 317px
+
+.c-courses__small_photo
+	width: 88px
+	height: 95px
+	margin-right: 14px
+	margin-bottom: 14px
+	&:nth-child(3n)
+		margin-right: 0
+.c-courses__small__photos
+	width: 293px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	margin-top: 14px
+.c-courses__item_opened
+	padding: 40px
+	width: 1050px
+	border: 1px solid #a7a7a7
+	background: rgba(255,255,255,.05)
+	margin-bottom: 35px
+	margin-right: 150px
+	transition: .3s ease
+	&.opened
+		display: flex
+.c-courses__opened_wrapper
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+.c-courses__opened_content
+	margin-left: 60px
+.c-courses__opened_subheader
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	margin-top: 23px
+	margin-bottom: 34px
+	.status
+		font-size: 10px
+		color: #5aa232
+		text-transform: uppercase
+	.time
+		text-transform: uppercase
+		font-size: 10px
+
+.c-courses__opened_description
+	margin-top: 40px
+	margin-bottom: 60px
+
+.c-courses__opened__list-header
+	margin-bottom: 25px
+
+.c-courses__opened_list
+	padding-left: 0
+	height: 90px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	flex-direction: column
+	text-align: left
+.c-courses__opened_buttons
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	margin-top: 50px
+.c-courses__opened_demo
+	font-size: 14px
+	text-transform: uppercase
+	color: $sec-color
+	margin-right: 60px
+	cursor: pointer
+	img
+		padding-right: 15px
+.c-courses__opened__list-header
+	font-size: 12px
+	color: #6e6e6e
+	text-transform: uppercase
+
+#c-courses .tab__item_header
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: space-between
+	.back
+		transform: scaleY(.8) rotate(-180deg)
+		margin-right: 15px
+		cursor: pointer
+		width: 20px
+		margin-top: 12px
+
+.c-courses__opened_btn
+	width: 307px
+	height: 76px

@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:image" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<title>Пилатес</title>
+
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+	<link rel="stylesheet" href="libs/css/normalize.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="libs/css/slick.css">
+	<link rel="stylesheet" href="libs/css/slick-theme.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+</head>
+<body class="cabinet">
+	<div class="wrapper">
+		<header>
+			<div class="c-container">
+				<div class="logo">
+					<img src="img/logo.png" class="desktop" alt="Logo">
+					<img src="img/mobile-logo.png" alt="Logo" class="mobile">
+				</div>
+				<div class="header__contacts">
+					<a href="mailto:sba@gmail.com" class="header__mail">
+						<img src="img/mail.png" alt="Mail">sba@gmail.com
+					</a>
+					<a href="tel:8 800 555 55 55" class="header__phone">
+						<img src="img/phone.png" alt="Phone">8 800 555 55 55
+					</a>
+				</div>
+			</div>
+		</header>
+		<div class="c-container main-cabinet-container">
+			<aside>
+				<nav>
+					<ul class="cabinet__menu">
+						<li class="cabinet__menu_item tab">Аккаунт</li>
+						<li class="cabinet__menu_item tab">Уроки <img src="img/new-lessons.png" alt="Lessons"><div class="lessons-tab-number"><span>+</span>2</div></li>
+						<li class="cabinet__menu_item tab">Курсы</li>
+						<li class="cabinet__menu_item tab">Мои покупки</li>
+						<li class="cabinet__menu_item tab">Новости</li>
+					</ul>
+					<a href="#" class="cabinet__out">
+						Выйти
+					</a>
+				</nav>
+				<div class="languages">
+					<div class="ru lang active">
+						<img src="img/ru.png" alt="RU"> RU
+					</div>
+					<a href="#" class="en lang">
+						<img src="img/en.png" alt="ENG"> ENG
+					</a>
+				</div>
+			</aside>
+			<div class="tab_content">
+				<section id="account" class="tab_item">
+					<div class="tab__item_header">
+						Аккаунт
+					</div>
+					<div class="tab__item_container">
+						<div class="tab__item_avatar">
+							<div style="background: url(img/avatar.jpg) no-repeat center top / cover" class="tab__avatar_img"></div>
+
+							<input id="select" type="file" class="tab__item_select">
+							<label for="select">Выбрать</label> 
+
+							<a href="#" class="delete">
+								Удалить аккаунт
+							</a>
+						</div>
+
+						<div class="tab__item_info">
+							<form class="tab__item_form">
+								<div class="tab__item_inputs">
+									<div class="tab__item_input">
+										<span>Имя</span>
+										<input type="text" value="Владислав">
+									</div>
+									<div class="tab__item_input">
+										<span>E-mail</span>
+										<input type="email" value="Vulmanv@mail.ru">
+									</div>
+									<div class="tab__item_input">
+										<span>Фамилия</span>
+										<input type="text" value="Вульман">
+									</div>
+									<div class="tab__item_input">
+										<span>Телефон</span>
+										<input type="tel" value="+7 (995) 105-73-61">
+									</div>
+									<div class="tab__item_input">
+										<span>Пароль</span>
+										<input type="password" value="1234567890">
+									</div>
+									<div class="tab__item_input">
+										<span>Новый пароль</span>
+										<input type="password" value="1234567890">
+									</div>
+								</div>
+								<button class="btn">
+									Применить изменения
+								</button>
+							</form>
+						</div>
+					</div>
+				</section>
+
+				<section id="cabinet-lessons" class="tab_item">
+					<div class="tab__item_header">
+						Уроки
+					</div>
+					<div class="tab__item_container">
+						<div class="tab__item_lesson">
+							<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="tab__item_img"></div>
+							<div class="lesson__header">
+								Пилатес для детей
+							</div>
+							<div class="lesson__description">
+								Краткое описание урока, чему учим и что клиент получит в итоге
+							</div>
+							<div class="lesson__buttons">
+								<div class="lesson__buttons_demo">
+									<img src="img/triangle.png" alt="Triangle"> демо
+								</div>
+								<div class="lessons__buttons_btn btn">
+									Купить урок
+								</div>
+							</div>
+						</div>
+						<div class="tab__item_lesson">
+							<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="tab__item_img"></div>
+							<div class="lesson__header">
+								Пилатес для детей
+							</div>
+							<div class="lesson__description">
+								Краткое описание урока, чему учим и что клиент получит в итоге
+							</div>
+							<div class="lesson__buttons">
+								<div class="lesson__buttons_demo">
+									<img src="img/triangle.png" alt="Triangle"> демо
+								</div>
+								<div class="lessons__buttons_btn btn">
+									Купить урок
+								</div>
+							</div>
+						</div>
+						<div class="tab__item_lesson">
+							<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="tab__item_img"></div>
+							<div class="lesson__header">
+								Пилатес для детей
+							</div>
+							<div class="lesson__description">
+								Краткое описание урока, чему учим и что клиент получит в итоге
+							</div>
+							<div class="lesson__buttons">
+								<div class="lesson__buttons_demo">
+									<img src="img/triangle.png" alt="Triangle"> демо
+								</div>
+								<div class="lessons__buttons_btn btn">
+									Купить урок
+								</div>
+							</div>
+						</div>
+						<div class="tab__item_lesson">
+							<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="tab__item_img"></div>
+							<div class="lesson__header">
+								Пилатес для детей
+							</div>
+							<div class="lesson__description">
+								Краткое описание урока, чему учим и что клиент получит в итоге
+							</div>
+							<div class="lesson__buttons">
+								<div class="lesson__buttons_demo">
+									<img src="img/triangle.png" alt="Triangle"> демо
+								</div>
+								<div class="lessons__buttons_btn btn">
+									Купить урок
+								</div>
+							</div>
+						</div>
+						<div class="tab__item_lesson">
+							<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="tab__item_img"></div>
+							<div class="lesson__header">
+								Пилатес для детей
+							</div>
+							<div class="lesson__description">
+								Краткое описание урока, чему учим и что клиент получит в итоге
+							</div>
+							<div class="lesson__buttons">
+								<div class="lesson__buttons_demo">
+									<img src="img/triangle.png" alt="Triangle"> демо
+								</div>
+								<div class="lessons__buttons_btn btn">
+									Купить урок
+								</div>
+							</div>
+						</div>
+						<div class="tab__item_lesson">
+							<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="tab__item_img"></div>
+							<div class="lesson__header">
+								Пилатес для детей
+							</div>
+							<div class="lesson__description">
+								Краткое описание урока, чему учим и что клиент получит в итоге
+							</div>
+							<div class="lesson__buttons">
+								<div class="lesson__buttons_demo">
+									<img src="img/triangle.png" alt="Triangle"> демо
+								</div>
+								<div class="lessons__buttons_btn btn">
+									Купить урок
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="c-courses" class="tab_item">
+					<div class="tab__item_header">
+						Курсы
+					</div>
+					<div class="c-courses__container">
+						<div class="c-courses__item">
+							<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="courses__img">
+								<img src="img/cabinet-play.png" alt="Play">
+							</div>
+							<div class="c-courses__item_info">
+								<div class="c-courses__item_number">
+									10 видео	
+								</div>
+								<div class="c-courses__item_header">
+									Пилатес для детей
+								</div>
+								<div class="c-courses__item_text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+								</div>
+								<a href="#" class="btn c-courses__item_btn">
+									Оплатить курс
+								</a>
+							</div>
+						</div>
+
+						<div class="c-courses__item_opened">
+							<div class="c-courses__opened_wrapper">
+								<div class="c-courses__opened_images">
+									<div data-src="img/image-sample.jpg" style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="c-courses__main_img"></div>
+									<div class="c-courses__small__photos">
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+									</div>
+								</div>
+								<div class="c-courses__opened_content">
+									<div class="c-courses__opened_subheader">
+										<span class="status">Полная версия</span>
+										<span class="time">13 часов</span>
+									</div>
+									<div class="c-courses__opened_header">
+										Пилатес для детей
+									</div>
+									<div class="c-courses__opened_description">
+										Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют определения и уточнения новых предложений. Задача организации, в особенности же сложившаяся структура организации в значительной степени обуславливает создание соответствующий условий активизации. С другой стороны сложившаяся структура организации играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+									</div>
+									<div class="c-courses__opened__list-header">
+										Что понадобится:
+									</div>
+									<ul class="c-courses__opened_list">
+										<li>1. Коврик</li>
+										<li>2. Гантели</li>
+										<li>3. Резинка</li>
+										<li>4. Коврик</li>
+										<li>5. Гантели</li>
+										<li>6. Резинка</li>
+										<li>7. Коврик</li>
+										<li>8. Гантели</li>
+										<li>9. Резинка</li>
+										<li>10. Коврик</li>
+										<li>11. Гантели</li>
+										<li>12. Резинка</li>
+										<li>13. Коврик</li>
+										<li>14. Гантели</li>
+										<li>15. Резинка</li>
+									</ul>
+
+									<div class="c-courses__opened_buttons">
+										<div class="c-courses__opened_demo">
+											<img src="img/triangle.png" alt="Play"> ДЕМО
+										</div>
+										<div class="c-courses__opened_btn btn">
+											Оплатить курс
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="c-courses__item">
+							<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="courses__img">
+								<img src="img/cabinet-play.png" alt="Play">
+							</div>
+							<div class="c-courses__item_info">
+								<div class="c-courses__item_number">
+									10 видео	
+								</div>
+								<div class="c-courses__item_header">
+									Пилатес для детей
+								</div>
+								<div class="c-courses__item_text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+								</div>
+								<a href="#" class="btn c-courses__item_btn">
+									Оплатить курс
+								</a>
+							</div>
+						</div>
+
+						<div class="c-courses__item_opened">
+							<div class="c-courses__opened_wrapper">
+								<div class="c-courses__opened_images">
+									<div data-src="img/image-sample.jpg" style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="c-courses__main_img"></div>
+									<div class="c-courses__small__photos">
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+									</div>
+								</div>
+								<div class="c-courses__opened_content">
+									<div class="c-courses__opened_subheader">
+										<span class="status">Полная версия</span>
+										<span class="time">13 часов</span>
+									</div>
+									<div class="c-courses__opened_header">
+										Пилатес для детей
+									</div>
+									<div class="c-courses__opened_description">
+										Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют определения и уточнения новых предложений. Задача организации, в особенности же сложившаяся структура организации в значительной степени обуславливает создание соответствующий условий активизации. С другой стороны сложившаяся структура организации играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+									</div>
+									<div class="c-courses__opened__list-header">
+										Что понадобится:
+									</div>
+									<ul class="c-courses__opened_list">
+										<li>1. Коврик</li>
+										<li>2. Гантели</li>
+										<li>3. Резинка</li>
+										<li>4. Коврик</li>
+										<li>5. Гантели</li>
+										<li>6. Резинка</li>
+										<li>7. Коврик</li>
+										<li>8. Гантели</li>
+										<li>9. Резинка</li>
+										<li>10. Коврик</li>
+										<li>11. Гантели</li>
+										<li>12. Резинка</li>
+										<li>13. Коврик</li>
+										<li>14. Гантели</li>
+										<li>15. Резинка</li>
+									</ul>
+
+									<div class="c-courses__opened_buttons">
+										<div class="c-courses__opened_demo">
+											<img src="img/triangle.png" alt="Play"> ДЕМО
+										</div>
+										<div class="c-courses__opened_btn btn">
+											Оплатить курс
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="c-courses__item">
+							<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="courses__img">
+								<img src="img/cabinet-play.png" alt="Play">
+							</div>
+							<div class="c-courses__item_info">
+								<div class="c-courses__item_number">
+									10 видео	
+								</div>
+								<div class="c-courses__item_header">
+									Пилатес для детей
+								</div>
+								<div class="c-courses__item_text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+								</div>
+								<a href="#" class="btn c-courses__item_btn">
+									Оплатить курс
+								</a>
+							</div>
+						</div>
+
+						<div class="c-courses__item_opened">
+							<div class="c-courses__opened_wrapper">
+								<div class="c-courses__opened_images">
+									<div data-src="img/image-sample.jpg" style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="c-courses__main_img"></div>
+									<div class="c-courses__small__photos">
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+										<div data-src="img/image-sample.jpg" class="c-courses__small_photo" style="background: url(img/image-sample.jpg) no-repeat center top / cover"></div>
+									</div>
+								</div>
+								<div class="c-courses__opened_content">
+									<div class="c-courses__opened_subheader">
+										<span class="status">Полная версия</span>
+										<span class="time">13 часов</span>
+									</div>
+									<div class="c-courses__opened_header">
+										Пилатес для детей
+									</div>
+									<div class="c-courses__opened_description">
+										Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют определения и уточнения новых предложений. Задача организации, в особенности же сложившаяся структура организации в значительной степени обуславливает создание соответствующий условий активизации. С другой стороны сложившаяся структура организации играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+									</div>
+									<div class="c-courses__opened__list-header">
+										Что понадобится:
+									</div>
+									<ul class="c-courses__opened_list">
+										<li>1. Коврик</li>
+										<li>2. Гантели</li>
+										<li>3. Резинка</li>
+										<li>4. Коврик</li>
+										<li>5. Гантели</li>
+										<li>6. Резинка</li>
+										<li>7. Коврик</li>
+										<li>8. Гантели</li>
+										<li>9. Резинка</li>
+										<li>10. Коврик</li>
+										<li>11. Гантели</li>
+										<li>12. Резинка</li>
+										<li>13. Коврик</li>
+										<li>14. Гантели</li>
+										<li>15. Резинка</li>
+									</ul>
+
+									<div class="c-courses__opened_buttons">
+										<div class="c-courses__opened_demo">
+											<img src="img/triangle.png" alt="Play"> ДЕМО
+										</div>
+										<div class="c-courses__opened_btn btn">
+											Оплатить курс
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="backpack" class="tab_item">
+					<div class="tab__item_header">
+						Мои уроки
+					</div>
+					<div class="backpack__container">
+						<div class="backpack__course">
+							<div class="backpack__course_bg">
+								<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__course_preview">
+									<img src="img/cabinet-play.png" alt="Play">
+								</div>
+
+								<div class="backpack__course_description">
+									<div class="backback__course_subheader">
+										<span class="backpack__course_full">
+											полная версия
+										</span>
+										<span class="backpack__course_number">
+											10 видео
+										</span>
+									</div>
+
+									<div class="backpack__course_header">
+										Пилатес для детей
+									</div>
+									
+									<div class="backpack__course_text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+									</div>
+									<div class="backpack__course_lessons-btn">
+										<img src="img/triangle.png" alt="Play">открыть все уроки
+									</div>
+								</div>
+							</div>
+							
+							<div class="backpack__course_slider">
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 1.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 2.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 3.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 4.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 5.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 6.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 7.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 8.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 9.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 10.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="backpack__course">
+							<div class="backpack__course_bg">
+								<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__course_preview">
+									<img src="img/cabinet-play.png" alt="Play">
+								</div>
+
+								<div class="backpack__course_description">
+									<div class="backback__course_subheader">
+										<span class="backpack__course_full">
+											полная версия
+										</span>
+										<span class="backpack__course_number">
+											10 видео
+										</span>
+									</div>
+
+									<div class="backpack__course_header">
+										Пилатес для детей
+									</div>
+									
+									<div class="backpack__course_text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+									</div>
+									<div class="backpack__course_lessons-btn">
+										<img src="img/triangle.png" alt="Play">открыть все уроки
+									</div>
+								</div>
+							</div>
+							
+							<div class="backpack__course_slider">
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 1.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 2.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 3.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 4.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 5.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 6.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 7.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 8.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 9.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+								
+								<div class="backpack__course_slider-item">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" class="backpack__slider-item_preview">
+										<img src="img/cabinet-play.png" alt="Play">
+									</div>
+									<div class="backpack__slider-item_header">
+										Урок 10.
+									</div>
+									<div class="backpack__slider-item_title">
+										Растяжка
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="backpack__lesson">
+							<div class="backpack__lesson_subheader">
+								<span class="backpack__lesson_status">
+									demo
+								</span>
+								<span class="backpack__lesson_time">
+									2.3 минуты
+								</span>
+							</div>
+
+							<div class="backpack__lesson_header">
+								Children pilates (lesson 1)
+							</div>
+							<div class="backpack__lesson_description">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+							</div>
+							<div class="backpack__lesson_play">
+								<img src="img/triangle.png" alt="Play"> Смотреть видео
+							</div>
+						</div>
+							
+						<div class="backpack__lesson">
+							<div class="backpack__lesson_subheader">
+								<span class="backpack__lesson_status">
+									demo
+								</span>
+								<span class="backpack__lesson_time">
+									2.3 минуты
+								</span>
+							</div>
+
+							<div class="backpack__lesson_header">
+								Children pilates (lesson 1)
+							</div>
+							<div class="backpack__lesson_description">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+							</div>
+							<div class="backpack__lesson_play">
+								<img src="img/triangle.png" alt="Play"> Смотреть видео
+							</div>
+						</div>
+							
+					</div>
+				</section>
+
+				<section id="news" class="tab_item">
+					<div class="tab__item_header">
+						Новости
+					</div>
+					<div class="news__container">
+						<div class="news__item">
+							<div class="news__item_photos">
+								<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__item_main-photo"></div>
+
+								<div class="news__item_small-photos opened">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+								</div>
+							</div>
+
+							<div class="news__item__text">
+								<div class="news__item_date">
+									04.04.2020
+								</div>
+								<div class="news__item_header">
+									Андрей Новиков открыл новый зал
+								</div>
+								<div class="news__item_content mini">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+								</div>
+								<div class="news__item_content opened">
+									<p>
+										Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют определения и уточнения новых предложений. Задача организации, в особенности же сложившаяся структура организации в значительной степени обуславливает создание соответствующий условий активизации. С другой стороны сложившаяся структура организации играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+									</p>
+									<p>
+										Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа систем массового участия. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Таким образом постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также консультация с широким активом играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.
+									</p>
+								</div>
+								<div class="news__item_more mini">
+									читать полностью
+								</div>
+								<div class="news__item_more opened">
+									свернуть
+								</div>
+							</div>
+						</div>
+
+						<div class="news__item">
+							<div class="news__item_photos">
+								<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__item_main-photo"></div>
+
+								<div class="news__item_small-photos opened">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+								</div>
+							</div>
+
+							<div class="news__item__text">
+								<div class="news__item_date">
+									04.04.2020
+								</div>
+								<div class="news__item_header">
+									Андрей Новиков открыл новый зал
+								</div>
+								<div class="news__item_content mini">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+								</div>
+								<div class="news__item_content opened">
+									<p>
+										Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют определения и уточнения новых предложений. Задача организации, в особенности же сложившаяся структура организации в значительной степени обуславливает создание соответствующий условий активизации. С другой стороны сложившаяся структура организации играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+									</p>
+									<p>
+										Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа систем массового участия. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Таким образом постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также консультация с широким активом играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.
+									</p>
+								</div>
+								<div class="news__item_more mini">
+									читать полностью
+								</div>
+								<div class="news__item_more opened">
+									свернуть
+								</div>
+							</div>
+						</div>
+
+						<div class="news__item">
+							<div class="news__item_photos">
+								<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__item_main-photo"></div>
+
+								<div class="news__item_small-photos opened">
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+									<div style="background: url(img/image-sample.jpg) no-repeat center top / cover" data-src="img/image-sample.jpg" class="news__small-photo"></div>
+								</div>
+							</div>
+
+							<div class="news__item__text">
+								<div class="news__item_date">
+									04.04.2020
+								</div>
+								<div class="news__item_header">
+									Андрей Новиков открыл новый зал
+								</div>
+								<div class="news__item_content mini">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
+								</div>
+								<div class="news__item_content opened">
+									<p>
+										Не следует, однако забывать, что начало повседневной работы по формированию позиции требуют определения и уточнения новых предложений. Задача организации, в особенности же сложившаяся структура организации в значительной степени обуславливает создание соответствующий условий активизации. С другой стороны сложившаяся структура организации играет важную роль в формировании дальнейших направлений развития. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач.
+									</p>
+									<p>
+										Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности требуют от нас анализа систем массового участия. Не следует, однако забывать, что дальнейшее развитие различных форм деятельности требуют определения и уточнения системы обучения кадров, соответствует насущным потребностям. Таким образом постоянный количественный рост и сфера нашей активности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Идейные соображения высшего порядка, а также консультация с широким активом играет важную роль в формировании позиций, занимаемых участниками в отношении поставленных задач.
+									</p>
+								</div>
+								<div class="news__item_more mini">
+									читать полностью
+								</div>
+								<div class="news__item_more opened">
+									свернуть
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<script src="libs/js/jquery.min.js"></script>
+	<script src="libs/js/slick.min.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>
