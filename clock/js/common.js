@@ -1,6 +1,3 @@
-// Clock
-// Copyright Roman Kyktenko 21.06.2020
-
 function displayCanvas(){
     let canvasHTML = document.getElementById('clock');
     let contextHTML = canvasHTML.getContext('2d');
@@ -16,7 +13,7 @@ function displayCanvas(){
     let yCenterClock = canvasHTML.height/2;
 	
     // Контур годинника
-    contextHTML.strokeStyle = "#fff";
+    contextHTML.strokeStyle =  "#fff";
     contextHTML.lineWidth = 1;
     contextHTML.beginPath();
     contextHTML.arc(xCenterClock, yCenterClock, radiusClock, 0, 2*Math.PI, true);
@@ -53,35 +50,17 @@ function displayCanvas(){
     contextHTML.stroke();
 	contextHTML.closePath();	
     }
-	
-    // Години
-    contextHTML.beginPath();
-    contextHTML.lineWidth = 5;
-    contextHTML.moveTo(xCenterClock, yCenterClock);
-    contextHTML.lineTo(xCenterClock + hoursLength*Math.cos(Math.PI/2 - hoursAngle*(Math.PI/180)),
-    yCenterClock - hoursLength*Math.sin(Math.PI/2 - hoursAngle*(Math.PI/180)));
-    contextHTML.stroke();
-    contextHTML.closePath();    
 
+	
     // Стрілки
     let secondsLength = radiusNum - 40;
     let minutesLength = radiusNum - 45;
     let hoursLength = minutesLength / 1.4;
     let d = new Date(); // Отримуємо дату
-    let secondsAngle = 6 * d.getSeconds(); // Кут для секунд
-    let minutesAngle = 6 * (d.getMinutes() + (1 / 60)*d.getSeconds()); // Кут для хвилин
-    let hoursAngle = 30 * (d.getHours() + (1 / 60)*d.getMinutes()); // Кут для годин
-
-    // Хвилини
-    contextHTML.beginPath();
-    contextHTML.strokeStyle =  "#000000";
-    contextHTML.lineWidth = 3;
-    contextHTML.moveTo(xCenterClock, yCenterClock);
-    contextHTML.lineTo(xCenterClock + minutesLength*Math.cos(Math.PI/2 - minutesAngle*(Math.PI/180)),
-    yCenterClock - minutesLength*Math.sin(Math.PI/2 - minutesAngle*(Math.PI/180)));
-    contextHTML.stroke();
-    contextHTML.closePath();
-
+    let secondsAngle = 6*d.getSeconds(); // Кут для секунд
+    let minutesAngle = 6*(d.getMinutes() + (1/60)*d.getSeconds()); // Кут для хвилин
+    let hoursAngle = 30*(d.getHours() + (1/60)*d.getMinutes()); // Кут для годин
+	
     // Секунди
     contextHTML.beginPath();
     contextHTML.strokeStyle =  "#91d9fa";
@@ -91,12 +70,31 @@ function displayCanvas(){
     contextHTML.stroke();
     contextHTML.closePath();
 
+    // Хвилини
+    contextHTML.beginPath();
+    contextHTML.strokeStyle =  "#000000";
+    contextHTML.lineWidth = 3;
+    contextHTML.moveTo(xCenterClock, yCenterClock);
+    contextHTML.lineTo(xCenterClock + minutesLength*Math.cos(Math.PI/2 - minutesAngle*(Math.PI/180)),
+	yCenterClock - minutesLength*Math.sin(Math.PI/2 - minutesAngle*(Math.PI/180)));
+    contextHTML.stroke();
+    contextHTML.closePath();
+
+    // Години
+    contextHTML.beginPath();
+    contextHTML.lineWidth = 5;
+    contextHTML.moveTo(xCenterClock, yCenterClock);
+    contextHTML.lineTo(xCenterClock + hoursLength*Math.cos(Math.PI/2 - hoursAngle*(Math.PI/180)),
+	yCenterClock - hoursLength*Math.sin(Math.PI/2 - hoursAngle*(Math.PI/180)));
+    contextHTML.stroke();
+    contextHTML.closePath();	
+	
     // Центр годинника
     contextHTML.beginPath();
     contextHTML.strokeStyle =  "#fff";
     contextHTML.fillStyle = "#ffffff";
     contextHTML.lineWidth = 4;
-    contextHTML.arc(xCenterClock, yCenterClock, 5, 0, 2 * Math.PI, true);
+    contextHTML.arc(xCenterClock, yCenterClock, 5, 0, 2*Math.PI, true);
     contextHTML.stroke();
     contextHTML.fill();
     contextHTML.closePath();
