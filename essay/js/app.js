@@ -36,7 +36,7 @@ $('.testimonials__slider').slick({
     
   ]
 }); 
-$("main").mCustomScrollbar({
+$(".main-scroll").mCustomScrollbar({
 	theme:"dark"
 });
 
@@ -152,6 +152,97 @@ const select4 = document.querySelector('#select4');
          select4.classList.remove('change');
      }
  };
+
+const select5 = document.querySelector('#select5');
+
+ select5.addEventListener('blur', () => selectEvent5());
+ select5.addEventListener('click', () => selectEvent5());
+
+ selectEvent5 = () => {
+     if (event.type == 'click') {
+         if (select5.classList.contains('change')) {
+             select5.classList.remove('change');
+         } else {
+             select5.classList.add('change');
+         }
+     }
+     if (event.type == 'blur') {
+         select5.classList.remove('change');
+     }
+ };
+
+const select6 = document.querySelector('#select6');
+
+ select6.addEventListener('blur', () => selectEvent6());
+ select6.addEventListener('click', () => selectEvent6());
+
+ selectEvent6 = () => {
+     if (event.type == 'click') {
+         if (select6.classList.contains('change')) {
+             select6.classList.remove('change');
+         } else {
+             select6.classList.add('change');
+         }
+     }
+     if (event.type == 'blur') {
+         select6.classList.remove('change');
+     }
+ };
+
+ const select7 = document.querySelector('#select7');
+
+ select7.addEventListener('blur', () => selectEvent7());
+ select7.addEventListener('click', () => selectEvent7());
+
+ selectEvent7 = () => {
+     if (event.type == 'click') {
+         if (select7.classList.contains('change')) {
+             select7.classList.remove('change');
+         } else {
+             select7.classList.add('change');
+         }
+     }
+     if (event.type == 'blur') {
+         select7.classList.remove('change');
+     }
+ };
+
+const select8 = document.querySelector('#select8');
+
+ select8.addEventListener('blur', () => selectEvent8());
+ select8.addEventListener('click', () => selectEvent8());
+
+ selectEvent8 = () => {
+     if (event.type == 'click') {
+         if (select8.classList.contains('change')) {
+             select8.classList.remove('change');
+         } else {
+             select8.classList.add('change');
+         }
+     }
+     if (event.type == 'blur') {
+         select8.classList.remove('change');
+     }
+ };
+
+ const select9 = document.querySelector('#select9');
+
+ select9.addEventListener('blur', () => selectEvent9());
+ select9.addEventListener('click', () => selectEvent9());
+
+ selectEvent9 = () => {
+     if (event.type == 'click') {
+         if (select9.classList.contains('change')) {
+             select9.classList.remove('change');
+         } else {
+             select9.classList.add('change');
+         }
+     }
+     if (event.type == 'blur') {
+         select9.classList.remove('change');
+     }
+ };
+
 
 if (navigator.platform === 'MacIntel' || navigator.platform === 'MacPPC') {
  $('.calculator__price span').css("font-family", "Arial");
