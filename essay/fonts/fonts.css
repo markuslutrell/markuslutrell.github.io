@@ -1,47 +1,35 @@
 @font-face {
-    font-family: 'Muli';
-    src: url('Muli-SemiBold.eot');
-    src: url('Muli-SemiBold.eot?#iefix') format('embedded-opentype'),
-        url('Muli-SemiBold.woff2') format('woff2'),
-        url('Muli-SemiBold.woff') format('woff'),
-        url('Muli-SemiBold.ttf') format('truetype');
-    font-weight: 600;
+    font-family: 'Source Sans Pro';
+    src: url('SourceSansPro-Light.eot');
+    src: url('SourceSansPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('SourceSansPro-Light.woff2') format('woff2'),
+        url('SourceSansPro-Light.woff') format('woff'),
+        url('SourceSansPro-Light.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Muli';
-    src: url('Muli-Regular.eot');
-    src: url('Muli-Regular.eot?#iefix') format('embedded-opentype'),
-        url('Muli-Regular.woff2') format('woff2'),
-        url('Muli-Regular.woff') format('woff'),
-        url('Muli-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Muli';
-    src: url('Muli-Bold.eot');
-    src: url('Muli-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Muli-Bold.woff2') format('woff2'),
-        url('Muli-Bold.woff') format('woff'),
-        url('Muli-Bold.ttf') format('truetype');
+    font-family: 'Source Sans Pro';
+    src: url('SourceSansPro-Bold.eot');
+    src: url('SourceSansPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SourceSansPro-Bold.woff2') format('woff2'),
+        url('SourceSansPro-Bold.woff') format('woff'),
+        url('SourceSansPro-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Muli';
-    src: url('Muli-Light.eot');
-    src: url('Muli-Light.eot?#iefix') format('embedded-opentype'),
-        url('Muli-Light.woff2') format('woff2'),
-        url('Muli-Light.woff') format('woff'),
-        url('Muli-Light.ttf') format('truetype');
-    font-weight: 300;
+    font-family: 'Source Sans Pro';
+    src: url('SourceSansPro-Regular.eot');
+    src: url('SourceSansPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('SourceSansPro-Regular.woff2') format('woff2'),
+        url('SourceSansPro-Regular.woff') format('woff'),
+        url('SourceSansPro-Regular.ttf') format('truetype');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
