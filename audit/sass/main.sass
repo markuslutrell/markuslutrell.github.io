@@ -1,0 +1,1333 @@
+*
+	-webkit-tap-highlight-color: transparent
+	box-sizing: border-box
+
+input, button, select
+	-webkit-appearance: none
+	appearance: none
+	outline: none
+body
+	color: #000
+	overflow-x: hidden
+	font-family: 'Proxima Nova', sans-serif
+html
+	overflow-x: hidden
+a
+	text-decoration: none
+	color: #000
+	transition: .3s ease
+
+body, input, button, select, textarea
+	font-family: 'Proxima Nova', sans-serif
+	font-size: 20px
+	line-height: 32px
+
+h1, h2, h3, h4 ,h5 ,h6
+	font-family: 'Yeseva One', serif
+	font-weight: 400
+
+header
+	padding: 30px 0
+
+header .page-container
+	align-items: center
+
+.page-container
+	width: 1240px
+	padding: 0 20px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	margin-left: auto
+	margin-right: auto
+
+.all-btn
+	font-size: 14px
+	text-transform: uppercase
+	box-sizing: border-box
+	background: transparent
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	font-weight: bold
+	justify-content: center
+	cursor: pointer
+	height: 60px
+	transition: .3s ease
+	border-radius: 999px
+
+/* Main */
+
+#main-section
+	background: url(../images/dest/bg-1.jpg) no-repeat center top / cover
+
+.logo
+	font-size: 20px
+	font-family: 'Yeseva One', serif
+	color: #fff
+	line-height: 23px
+	text-transform: uppercase
+	margin-bottom: 0px
+
+.header__menu
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	list-style: none
+	padding-left: 0
+	margin: 0
+	margin-right: 60px
+
+.header__menu_item
+	color: #fff
+	margin: 0 8px
+	font-size: 16px
+	line-height: 19px
+	color: #CECECE
+	transition: .3s ease
+	display: block
+
+.header__contacts
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.header__mail
+	margin-left: 22px
+	margin-right: 40px
+
+.header__mail, .header__phone
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	font-size: 16px
+	line-height: 19px
+	color: #fff
+	img
+		padding-right: 4px
+	img:first-child
+		display: block
+	img:last-child
+		display: none
+
+.header__contacts_btn 
+	border: 1px solid #785AEC
+	width: 212px
+	font-size: 14px
+	line-height: 17px
+	font-weight: bold
+	text-transform: uppercase
+	color: #785AEC
+	&:hover
+		background: #785AEC
+		color: #fff
+
+header
+	position: fixed
+	width: 100%
+	top: 0
+	transition: .3s ease
+	left: 0
+	z-index: 5
+	&.sticky
+		background: #fff
+		padding: 15px 0
+		.header__menu_item
+			color: #6C6C6C
+		.header__phone, .header__mail
+			color: #000
+			img:first-child
+				display: none
+			img:last-child
+				display: block
+		.logo
+			color: #000
+	.page-container
+		justify-content: space-between
+
+.main-content
+	.page-container
+		flex-direction: row
+		justify-content: space-between
+
+.main-content__right
+	padding-top: 230px
+	margin-left: -50px
+.main-content__offer
+	margin-top: 290px
+	font-size: 14px
+	line-height: 17px
+	letter-spacing: 0.325em
+	text-transform: uppercase
+	color: #5C269D
+	margin-bottom: 40px
+
+h1
+	font-size: 45px
+	line-height: 52px
+	color: #fff
+	margin-bottom: 50px
+	width: 700px
+	margin-top: 0
+	position: relative
+	&:before
+		content: "01"
+		display: block
+		color: #FFCC00
+		text-transform: uppercase
+		font-size: 20px
+		line-height: 24px
+		font-weight: bold
+		position: absolute
+		left: -110px
+		top: 20px
+		font-family: 'Proxima Nova', sans-serif
+.main-content__subheader
+	font-size: 20px
+	line-height: 29px
+	color: #fff
+	width: 500px
+	b
+		font-weight: 600
+
+.main-content__btn
+	background: #FFCC00
+	font-size: 14px
+	line-height: 17px
+	letter-spacing: 1px
+	text-transform: uppercase
+	color: #000
+	font-weight: bold
+	width: 407px
+	height: 84px
+	margin-bottom: 300px
+	margin-top: 70px
+	&:hover
+		background: #FFA800
+
+.main-content__remark
+	margin-bottom: 45px
+	color: #CECECE
+	font-size: 18px
+	line-height: 22px
+	letter-spacing: -0.015em
+	color: #5C269D
+
+/* Report */
+
+h2
+	font-size: 40px
+	line-height: 49px
+	color: #000
+	margin: 0
+	position: relative
+	&:before
+		content: "02"
+		display: block
+		color: #1C0552
+		text-transform: uppercase
+		font-size: 20px
+		line-height: 24px
+		font-weight: bold
+		position: absolute
+		left: -110px
+		top: 10px
+		font-family: 'Proxima Nova', sans-serif
+
+#report
+	h2
+		margin-top: 240px
+		margin-bottom: 60px
+		width: 635px
+	.page-container
+		flex-direction: column
+
+.report__text
+	width: 600px
+	b
+		font-weight: 600
+
+.report__buttons
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	margin-top: 45px
+	margin-bottom: 90px
+
+.report__button
+	width: 287px
+	color: #6848EA
+	height: 73px
+	border: 1px solid #6848EA
+	margin-right: 23px
+	&:hover
+		background: #6848EA
+		color: #fff
+
+.report__button2
+	width: 316px
+	color: #fff
+	height: 73px
+	background: #6848EA
+	&:hover
+		background: #785AEC
+.report__line
+	height: 1px
+	background: #CDCDCD
+	width: 1440px
+	margin-left: -120px
+	margin-bottom: 95px
+
+.report__header
+	color: #785AEC
+	font-size: 48px
+	line-height: 84px
+	font-family: 'Yeseva One', serif
+#report
+	position: relative
+
+.report__waves
+	width: 100%
+	bottom: 0
+	position: absolute
+	z-index: -2
+.report__items
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	margin-bottom: 85px
+	width: 1440px
+	padding: 60px 120px
+	margin-top: 0
+	margin-left: -120px
+	border: 7px solid #F1EFFD
+	border-radius: 45px
+	background: #fff
+
+.report__item
+	width: 135px
+
+/* Tasks */
+
+#task
+	background: #F1EFFD
+	.page-container
+		flex-direction: column
+	.report__text
+		margin-bottom: 140px
+	h2
+		margin-top: 270px
+		width: 625px
+		&:before
+			content: "03"
+
+.task__item
+	width: 220px
+
+.task__items
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	margin-bottom: 140px
+	width: 1440px
+	border-radius: 45px
+	background: #fff
+	padding: 60px 120px
+	margin-left: -120px
+
+.task__item_text
+	font-size: 18px
+	line-height: 26px
+	margin-top: 33px
+
+.offer
+	font-size: 12px
+	text-transform: uppercase
+	color: #5C269D
+	line-height: 15px
+	letter-spacing: 0.325em
+
+#audit
+	background: linear-gradient(294.61deg, #45108A 2.3%, #3D065F 29.86%, #10054D 101.35%)
+	.offer
+		margin-top: 300px
+		margin-bottom: 30px
+	h2
+		margin-top: 0
+		margin-bottom: 46px
+		color: #fff
+		&:before
+			content: "04"
+			color: #FFCC00
+	.page-container
+		justify-content: space-between
+
+.audit__btn
+	background: #FFCC00
+	width: 407px
+	height: 84px
+	color: #000
+	margin-top: 70px
+	margin-bottom: 290px
+	&:hover
+		background: #FFA800
+
+.audit__left
+	width: 536px
+
+.audit__circles_subheader
+	opacity: .3
+.audit__text
+	color: #fff
+
+.audit__right
+	padding-top: 225px
+	img
+		margin-right: -60px
+
+#about
+	h2
+		margin-top: 230px
+		&:before
+			content: "05"
+	.page-container:last-child
+		flex-direction: column
+
+.about__offer
+	margin-top: 0px
+	margin-bottom: 25px
+	font-size: 12px
+	letter-spacing: 0.325em
+	font-weight: bold
+	margin-left: 55px
+.about__dates_item
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	font-size: 18px
+	line-height: 28px
+	margin-bottom: 5px
+	span
+		color: #785AEC
+		font-family: 'Yeseva One', serif
+		font-size: 12px
+		line-height: 28px
+		width: 55px
+
+.about__sert
+	position: absolute
+
+.about__right
+	margin-top: -8px
+	position: relative
+	margin-left: 80px
+
+.about__sert
+	position: absolute
+	right: 0px
+	top: 170px
+.about__dates
+	padding: 40px
+	background: #F1EFFD
+	width: 530px
+	border-radius: 45px
+	padding-bottom: 35px
+	margin-top: 50px
+
+.about__items
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	width: 100%
+	margin-top: 0px
+	margin-bottom: 127px
+	margin-left: -360px
+	width: 1920px
+#about
+	.slick-track
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+.about__item
+	margin-left: 65px
+	margin-right: 65px
+	filter: grayscale(5)
+	transition: .3s ease
+	cursor: pointer
+	outline: none
+	&:hover
+		filter: none
+.about_sep
+	width: 1440px
+	margin-left: -120px
+	background: #CDCDCD
+	height: 1px
+	margin-top: -10px
+
+/* Portfolio */
+
+.portfolio__slider
+	width: 100%
+	margin-top: 170px
+	margin-bottom: 95px
+
+
+.portfolio__slide_text
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	margin-top: 95px
+	width: 100%
+
+.portfolio__slide_header
+	margin: 0
+	font-size: 40px
+	line-height: 49px
+	color: #282828
+	font-weight: normal
+	width: 600px
+.portfolio__slide_content
+	max-width: 507px
+	p
+		margin-bottom: 40px
+		font-size: 20px
+		line-height: 28px
+		color: #282828
+		margin-top: 0
+
+.portfolio__slide_sep
+	width: 1440px
+	height: 1px
+	background: #CDCDCD
+	margin-left: -120px
+	display: block
+	margin-bottom: 50px
+
+.portfolio__slide_results
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	border: 7px solid #F1EFFD
+	padding: 50px 60px
+	border-radius: 45px
+	justify-content: space-between
+	margin-top: 30px
+
+.portfolio__slide_results-header
+	font-family: 'Yeseva One', serif
+	color: #000
+	font-size: 24px
+	line-height: 42px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	margin-bottom: 27px
+	&:before
+		content: ""
+		display: block
+		width: 61px
+		height: 2px
+		margin-right: 25px
+		background: #CACACA
+	span
+		color: #785AEC
+
+.portfolio__slide_results-text
+	color: #282828
+	font-size: 14px
+	line-height: 24px
+
+.portfolio__slide_results-item
+	width: 372px
+	margin-right: 35px
+.slick-next, .slick-prev
+	width: 72px
+	height: 72px
+	border: 2px solid #282828
+	border-radius: 50%
+	z-index: 2
+	border: 2px solid #785AEC
+	&:before
+		opacity: 1
+.slick-next, .slick-prev
+	&:hover
+		border: 2px solid #785AEC
+		background: #785AEC
+		&:before
+			content: url(../images/dest/arrow-white.png)
+	&.slick-disabled
+		border: 2px solid rgba(40, 40, 40, 0.2)
+		&:hover
+			background-color: transparent
+			&:before
+				content: url(../images/dest/arrow.png)
+			
+.slick-next
+	transform: rotate(0deg)
+	right: -115px
+	top: 38%
+	margin-top: -5px
+	&:hover
+		transform: rotate(0deg)
+	&:before
+		content: url(../images/dest/arrow-violet.png)
+	&.slick-disabled
+		transform: rotate(0deg)
+		&:hover
+			transform: rotate(180deg)
+
+.slick-prev
+	transform: rotate(180deg)
+	left: -115px
+	top: 38%
+	&:hover
+		transform: rotate(-180deg)
+	&:before
+		content: url(../images/dest/arrow-violet.png)
+	&.slick-disabled
+		&:hover
+			transform: rotate(0deg)
+
+/* Feedback */
+
+#feedback
+	background: url(../images/dest/bg-2.jpg) no-repeat center top / cover
+	h2
+		margin-top: 360px
+		color: #fff
+		margin-bottom: 45px
+		&:before
+			content: "07"
+			color: #FFCC00
+	.page-container
+		justify-content: space-between
+	.slick-prev, .slick-next
+		border: 2px solid #fff
+		right: -120px
+		left: auto
+		&:before
+			content: url(../images/dest/arrow-white.png)
+		&:hover
+			border-color: #FFA800
+			background: #FFA800
+			&:before
+				content: url(../images/dest/arrow.png)
+	.slick-next:hover
+		transform: rotate(180deg)
+	.slick-prev:hover
+		transform: rotate(0deg)
+	.slick-next
+		top: 210px
+	.slick-prev
+		top: 300px
+	
+
+.feedback__btn
+	width: 407px
+	height: 84px
+	background: #FFCC00
+	color: #000
+	margin-bottom: 325px
+	&:hover
+		background: #FFA800
+.feedback__text
+	color: #fff
+	margin-top: 0
+	margin-bottom: 65px
+.feedback__left
+	width: 600px
+
+.feedback__slider
+	width: 492px
+	background: #fff
+	border-radius: 18.7589px
+	margin-top: 240px
+
+.feedback__slide
+	padding: 36px 42px
+.feedback__slide_up
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 50px
+.feedback__slide_video
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+
+.feedback__slide_circle
+	border: 1.6764px solid #785AEC
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: center
+	margin-right: 13px
+	width: 64px
+	height: 64px
+	border-radius: 50%
+
+.feedback__slide_video-text
+	font-size: 16px
+	color: #6848EA
+	line-height: 19px
+
+.feedback__slide_text
+	p
+		font-size: 18px
+		line-height: 28px
+		margin-top: 0
+		margin-bottom: 25px
+
+.feedback__slide_more
+	font-size: 16px
+	color: #AEAEAE
+	text-decoration: underline
+	cursor: pointer
+	&:hover
+		text-decoration: none
+
+
+#faq
+	position: relative
+	h2
+		margin-top: 264px
+		margin-bottom: 40px
+		width: 600px
+		&:before
+			content: "08"
+	.page-container
+		justify-content: space-between
+
+.faq__waves
+	position: absolute
+	width: 100%
+	bottom: 0
+	left: 0
+	z-index: -1
+
+.accordeon
+	width: 875px
+	margin-bottom: 220px
+
+dt
+	border-bottom: 1px solid #CFCFCF
+	padding: 35px
+	padding-top: 27px
+	cursot: pointer
+	transition: .3s ease
+	padding-right: 30px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	align-items: center
+	cursor: pointer
+	// &:hover
+	// 	border-radius: 25px
+	// 	background: #F1EFFD
+dd
+	margin-top: 40px
+
+.accordeon-btn
+	position: relative
+	width: 18px
+	transition: .3s ease
+	height: 18px
+	span
+		position: absolute
+		width: 18px
+		height: 1px
+		background: #000
+		top: 8px
+		left: 0
+		transition: .3s ease
+		&:last-child
+			transform: rotate(90deg)
+
+dt.active .accordeon-btn span:last-child
+	transform: rotate(0deg)
+dt.active
+	border: none
+dl.active
+	border: 7px solid #F1EFFD
+	border-radius: 25px
+	background: #fff
+
+dl
+	transition: .3s ease
+	border: 7px solid transparent
+	margin: 0
+
+dd
+	padding-bottom: 50px
+
+.faq__right
+	margin-top: 310px
+.faq__rigth_text
+	font-size: 24px
+	line-height: 30px
+	width: 220px
+	font-family: 'Yeseva One', serif
+	margin: 25px 0
+
+.faq__right_btn
+	width: 174px
+	height: 73px
+	border: 2px solid #785AEC
+	color: #785AEC
+	&:hover
+		color: #fff
+		background: #785AEC
+
+
+/* Docs */
+
+#docs
+	background: #F1EFFD
+	.page-container
+		flex-direction: column
+	h2
+		margin-top: 255px
+		margin-bottom: 50px
+		width: 614px
+		&:before
+			content: "09"
+
+.docs__text
+	margin-bottom: 100px
+	width: 666px
+
+.docs__items
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-wrap: wrap
+	margin-right: 220px
+
+.docs__item
+	padding: 21px 27px
+	background: #fff
+	border-radius: 5px
+	width: 287px
+	margin-bottom: 50px
+	margin-right: 30px
+	position: relative
+	&:before
+		content: url(../images/dest/wordpng.png)
+		display: block
+		position: absolute
+		width: 45px
+		height: 23px
+		top: -11px
+		left: 13px
+	&.pdf:before
+		content: url(../images/dest/pdf.png)
+
+.docs__item_text
+	font-size: 14px
+	line-height: 17px
+	text-transform: uppercase
+	font-weight: bold
+.docs__btn
+	width: 407px
+	height: 84px
+	background: #6848EA
+	margin-top: 28px
+	margin-bottom: 160px
+	color: #fff
+	&:hover
+		background: #785AEC
+
+/* Footer */
+
+.mobile
+	display: none
+
+footer
+	background: #15054F	
+	padding-top: 70px
+	.page-container
+		flex-direction: column
+.footer__up
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	width: 100%
+	padding-bottom: 65px
+	border-bottom: 1px solid #5C269D
+
+.footer__btn
+	background: #FFCC00
+	width: 240px
+	height: 73px
+	&:hover
+		background: #FFA800
+
+.footer__header
+	color: #fff
+	margin-bottom: 41px
+	width: 563px
+	font-size: 35px
+	line-height: 40px
+	&:before
+		display: none
+
+.footer__documentation
+	span
+		color: #fff
+		font-size: 20px
+		line-height: 34px
+	ul
+		margin: 0
+		margin-top: 10px
+		list-style: none
+		padding: 0
+
+.footer__link
+	font-size: 20px
+	color: #5C269D
+	line-height: 34px
+
+.footer__down
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	padding-bottom: 25px
+	padding-top: 40px
+	align-items: center
+.footer__logo
+	color: #fff
+	font-size: 24px
+	line-height: 28px
+	text-transform: uppercase
+	font-family: 'Yeseva One', serif
+
+.footer__phone, .footer__mail
+	font-size: 18px
+	line-height: 22px
+	color: #fff
+	margin-left: 30px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	img
+		padding-right: 7px
+
+.footer__down_btn
+	border: 2px solid #785AEC
+	color: #785AEC
+	width: 212px
+	height: 60px
+	margin-left: 40px
+	&:hover
+		color: #fff
+		background: #785AEC
+
+.footer__down__data
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+
+.footer__developer
+	font-size: 12px
+	color: #5C269D
+	line-height: 20px
+	margin-bottom: 45px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px)
+	.page-container
+		width: 768px
+		padding: 0 10px
+	.header__menu
+		display: none
+	.main-content__right
+		display: none
+	.main-content__offer
+		margin-top: 200px
+	.main-content__btn
+		margin-bottom: 200px
+	.report__items
+		margin-left: 0
+		width: 100%
+		padding: 50px 50px
+	.report__text
+		font-size: 18px
+		line-height: 28px
+	#report h2
+		margin-top: 150px
+	#task h2
+		margin-top: 100px
+	.task__items
+		margin-left: 0
+		width: 100%
+		flex-wrap: wrap
+		padding-bottom: 10px
+	.task__item
+		margin-bottom: 50px
+	#task .report__text
+		margin-bottom: 100px
+	.task__items
+		margin-bottom: 100px
+	#audit .offer
+		margin-top: 150px
+	.audit__right
+		display: none
+	.audit__btn
+		margin-bottom: 150px
+	#about .page-container
+		flex-direction: column
+	.about__right
+		margin-left: 0
+	.about__img
+		margin-top: -100px
+	.about__dates
+		width: 100%
+	.portfolio__slider
+		margin-top: 50px
+	.portfolio__slide_content p
+		margin-bottom: 20px
+		font-size: 18px
+		line-height: 26px
+	.portfolio__slide_header
+		font-size: 30px
+		line-height: 40px
+	.portfolio__slide_text
+		margin-top: 50px
+	#feedback .page-container
+		flex-direction: column
+	#feedback h2
+		margin-top: 150px
+	.feedback__slider
+		margin-top: 0
+		margin-bottom: 100px
+	.feedback__btn
+		margin-bottom: 50px
+	.feedback__slider
+		width: 82%
+	#faq h2
+		margin-top: 100px
+	.accordeon
+		width: 500px
+		margin-right: 0
+		margin-bottom: 70px
+	.faq__left
+		width: 500px
+	#docs h2
+		margin-top: 100px
+	.docs__items
+		width: 100%
+	.docs__btn
+		margin-bottom: 100px
+	.footer__up
+		flex-wrap: wrap
+	.footer__documentation
+		margin-top: 50px
+		margin-right: 100px
+	.footer__down
+		flex-wrap: wrap
+		justify-content: center
+	.footer__logo
+		margin-bottom: 20px
+	.mobile__phone.mobile 
+		display: none
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 760px)
+	.page-container
+		width: 320px
+		padding: 0 20px
+	h1, h2
+		text-align: center
+		&:before
+			display: none
+	h1
+		width: 100%
+		margin: 0
+		font-size: 19px
+		line-height: 23px
+	.main-content__subheader
+		width: 100%
+		text-align: center
+		font-size: 12px
+		line-height: 18px
+		padding: 0px 30px
+		margin-top: 20px
+	.main-content__btn
+		width: 232px
+		height: 48px
+		font-size: 8px
+		line-height: 10px
+		letter-spacing: 0.571429px
+		margin-left: auto
+		margin-right: auto
+		margin-top: 38px
+		margin-bottom: 20px
+	.main-content__left
+		width: 100%
+	.offer
+		font-size: 12px
+		line-height: 15px
+		letter-spacing: 0.325em
+		text-align: center
+		width: 100%
+	.main-content__offer
+		margin-top: 50px
+		margin-bottom: 15px
+		text-align: center
+	header
+		display: none
+	.mobile
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+	.mobile-logo
+		text-align: center
+		display: block
+		width: 100%
+		margin-top: 87px
+	.main-content__remark
+		font-size: 12px
+		line-height: 15px
+		text-align: center
+		padding: 0 50px
+		margin-bottom: 80px
+	.mobile__phone.mobile 
+		width: 60px
+		height: 60px
+		background: #785AEC
+		border-radius: 50%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: center
+		position: fixed
+		right: 20px
+		z-index: 2
+		top: 16px
+		img
+			width: 21px
+	h2
+		font-size: 20px
+		line-height: 24px
+		width: 100% !important
+	#report h2
+		margin-top: 37px
+		margin-bottom: 25px
+	.report__text
+		font-size: 12px
+		text-align: center
+		line-height: 19px
+		width: 100%
+		margin-top: 0
+		margin-bottom: 0
+	.report__buttons
+		flex-direction: column
+		align-items: center
+	.report__button 
+		width: 233px
+		height: 47px
+		font-size: 8px
+		line-height: 10px
+		margin-bottom: 9px
+		border: 2px solid #6848EA
+		margin-right: 0
+	.report__button2
+		width: 233px
+		height: 53px
+		font-size: 8px
+	.all-btn
+		font-size: 8px
+		line-height: 10px
+	.report__buttons
+		margin-top: 35px
+		margin-bottom: 35px
+	.report__items
+		padding: 30px
+		flex-wrap: wrap
+		padding-bottom: 0px
+		border: 3px solid #F1EFFD
+		margin-bottom: 0
+	.report__item
+		width: 81px
+	.report__header
+		font-size: 24px
+		text-align: center
+		line-height: 42px
+	.report__text
+		text-align: center
+		font-size: 12px
+		margin-bottom: 30px
+	#task h2
+		margin-top: 70px
+		margin-bottom: 25px
+	#task .report__text
+		margin-bottom: 37px
+	.task__items
+		padding: 25px
+		padding-bottom: 0
+		margin-bottom: 38px
+	.task__item
+		justify-content: center
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		align-items: center
+		text-align: center
+		margin-bottom: 32px
+		&:first-child
+			padding: 0 15px
+	.task__item_text
+		font-size: 12px
+		line-height: 17px
+		margin-top: 10px
+		padding: 0 12px
+	#audit .offer
+		margin-top: 40px
+	.audit__left
+		width: 100%
+	.desktop
+		display: none
+	.offer
+		text-align: center
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+	#audit .offer
+		margin-bottom: 12px
+	#audit h2
+		margin-bottom: 26px
+	.audit__text
+		text-align: center
+		font-size: 12px
+		text-align: center
+		line-height: 19px
+	.audit__btn
+		width: 233px
+		height: 48px
+		margin-left: auto
+		margin-right: auto
+		margin-top: 37px
+		margin-bottom: 45px
+	#about h2
+		margin-top: 30px 
+	.about__text
+		font-size: 12px
+		line-height: 19px
+		text-align: center
+		display: block
+		margin-top: 26px
+		margin-bottom: 19px
+	.about__dates
+		display: none
+	.about__img	
+		width: 100%
+		margin-top: -70px
+	.about__sert
+		bottom: 0
+		top: auto
+		width: 92px
+		left: 50%
+		margin-left: -46px
