@@ -62,7 +62,10 @@ $(".feedback__slide3 .feedback__slide_more").click(function() {
   $(".feedback__full_overlay3").addClass("active");
 });
 
-
+$(document).ready(function() { 
+  $(".report__item").animated("fadeInRight", 2000);
+  $(".task__item").animated("fadeInRight", 2000);
+});
 
 $(".portfolio__slider").slick({
     slidesToShow: 1,
@@ -103,7 +106,7 @@ $(".about__skills").slick({
     arrows: false,
     autoplay: true,
     dots: false,
-    autoplaySpeed: 1000,
+    autoplaySpeed: 1500,
     infinite: true,
   });
 

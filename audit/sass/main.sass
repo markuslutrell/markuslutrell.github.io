@@ -372,6 +372,13 @@ h2
 
 .report__item
 	width: 135px
+	animation-delay: .25s
+	&:nth-child(3)
+		animation-delay: .5s
+	&:nth-child(2)
+		animation-delay: .75s
+	&:nth-child(1)
+		animation-delay: 1s
 
 /* Tasks */
 
@@ -389,7 +396,13 @@ h2
 
 .task__item
 	width: 220px
-
+	animation-delay: .25s
+	&:nth-child(3)
+		animation-delay: .5s
+	&:nth-child(2)
+		animation-delay: .75s
+	&:nth-child(1)
+		animation-delay: 1s
 .task__items
 	display: -webkit-flex
 	display: -moz-flex
@@ -536,6 +549,15 @@ h2
 	outline: none
 	&:hover
 		filter: none
+.about__item10
+	height: 82px
+	max-width: 182px
+.about__item11
+	max-width: 200px 
+	height: 100px 
+.about__item12
+	max-width: 161px 
+	height: 88px
 .about_sep
 	width: 1440px
 	margin-left: -120px
@@ -657,8 +679,10 @@ h2
 		cursor: auto
 		&:hover
 			background-color: transparent
+			opacity: 1
 			&:before
 				content: url(../images/dest/arrow.png)
+				opacity: 1
 			
 .slick-next
 	transform: rotate(0deg)
@@ -708,8 +732,10 @@ h2
 		&:hover
 			border-color: #FFA800
 			background: #FFA800
+			transform: rotate(90deg)
 			&:before
-				content: url(../images/dest/arrow.png)
+				content: url(../images/dest/arrow-violet-2.png)
+				
 	.slick-next:hover
 		transform: rotate(180deg)
 	.slick-prev:hover
@@ -852,7 +878,7 @@ dt
 	&.active
 		&:hover
 			border-radius: 25px
-			background: #fff
+			background: transparent
 dd
 	margin-top: 40px
 
@@ -1367,6 +1393,14 @@ footer
 		margin-bottom: 20px
 	.mobile__phone.mobile 
 		display: none
+		animation: pulse 4s ease-in-out infinite
+	@keyframes pulse
+		0%
+			transform: scale(.8)
+		50%
+			transform: scale(1)
+		100%
+			transform: scale(.8)
 	.popup-section__form__header
 		width: 100% !important
 		text-align: center
@@ -1555,6 +1589,7 @@ footer
 		padding: 25px
 		padding-bottom: 0
 		margin-bottom: 38px
+		justify-content: center
 	.task__item
 		justify-content: center
 		display: -webkit-flex
@@ -1572,7 +1607,7 @@ footer
 		font-size: 12px
 		line-height: 17px
 		margin-top: 10px
-		padding: 0 12px
+		padding: 0 8px
 	#audit .offer
 		margin-top: 40px
 	.audit__left
@@ -1669,12 +1704,15 @@ footer
 		&:nth-child(10)
 			width: 93px
 			order: 8
+			height: auto
 		&:nth-child(11)
 			width: 93px
 			order: 6
+			height: auto
 		&:nth-child(12)
 			width: 75px
 			order: 12
+			height: auto
 	.about__items_header, .about__skills_header 
 		font-size: 12px
 		line-height: 15px
@@ -1728,6 +1766,7 @@ footer
 		font-size: 20px
 		line-height: 24px
 		margin-bottom: 25px
+		width: 100%
 	.portfolio__slide_content p
 		font-size: 12px
 		line-height: 17px
@@ -1886,8 +1925,11 @@ footer
 		display: -o-flex
 		display: flex
 		flex-wrap: wrap
+		justify-content: center
+		align-items: center
 		img
 			width: 103px
+			height: 119px
 	.faq__rigth_text
 		font-size: 18px
 		line-height: 23px
