@@ -12,14 +12,56 @@ if (widthh > 1200) {
   });
 }
 
+$("body").on('click', '[href*="#"]', function(e){
+  var fixed_offset = 100;
+  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+  e.preventDefault();
+});
+
+window.onload = function () {
+  setTimeout(document.body.classList.add('loaded'), 1000);
+}
+
 $(window).scroll(function() {
   if ($(this).scrollTop() > 100){
-    $('header').addClass("sticky");
+    $('.fixed-header').addClass("sticky");
   }
   else{
-    $('header').removeClass("sticky");
+    $('.fixed-header').removeClass("sticky");
   }
 });
+
+$(".feedback__full_close").click(function() {
+  $(this).parent().parent().removeClass("active");
+});
+
+$(".popup-section__form_close").click(function() {
+  $(this).parent().parent().parent().removeClass("active");
+});
+
+$(".js-button").click(function() {
+  $("#popup1").addClass("active");
+});
+$(".js-button2").click(function() {
+  $("#popup2").addClass("active");
+});
+$(".js-button3").click(function() {
+  $("#popup3").addClass("active");
+});
+$(".js-button4").click(function() {
+  $("#popup4").addClass("active");
+});
+
+$(".feedback__slide1 .feedback__slide_more").click(function() {
+  $(".feedback__full_overlay1").addClass("active");
+});
+$(".feedback__slide2 .feedback__slide_more").click(function() {
+  $(".feedback__full_overlay2").addClass("active");
+});
+$(".feedback__slide3 .feedback__slide_more").click(function() {
+  $(".feedback__full_overlay3").addClass("active");
+});
+
 
 
 $(".portfolio__slider").slick({
@@ -43,7 +85,8 @@ $(".feedback__slider").slick({
     ]
   });
 
-$(".about__items").slick({
+if (widthh > 770) {
+  $(".about__items").slick({
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
@@ -51,10 +94,19 @@ $(".about__items").slick({
     dots: false,
     autoplaySpeed: 1500,
     infinite: true,
-    responsive: [
-      
-    ]
   });
+}
+
+$(".about__skills").slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    dots: false,
+    autoplaySpeed: 1000,
+    infinite: true,
+  });
+
 
 $(".header__mobile").click(function(){
   $("#mobile__menu").addClass("active");

@@ -93,6 +93,8 @@ header .page-container
 	color: #CECECE
 	transition: .3s ease
 	display: block
+	&:hover
+		transform: scale(1.1)
 
 .header__contacts
 	display: -webkit-flex
@@ -115,12 +117,15 @@ header .page-container
 	font-size: 16px
 	line-height: 19px
 	color: #fff
+	transition: .3s ease
 	img
 		padding-right: 4px
 	img:first-child
 		display: block
 	img:last-child
 		display: none
+	&:hover
+		transform: scale(1.15)
 
 .header__contacts_btn 
 	border: 1px solid #785AEC
@@ -134,11 +139,55 @@ header .page-container
 		background: #785AEC
 		color: #fff
 
+$spinkit-size: 200px !default
+$spinkit-spinner-color: #FFCC00 !default
+
+#preloader
+	width: 100%
+	height: 100%
+	position: fixed
+	background: linear-gradient(294.61deg, #45108A 2.3%, #3D065F 29.86%, #10054D 101.35%)
+	z-index: 10
+	transition: 1.5s ease
+
+.loaded #preloader
+	opacity: 0
+	pointer-events: none
+
+.sk-double-bounce 
+	width: $spinkit-size
+	height: $spinkit-size
+	position: absolute
+	left: 50%
+	top: 50%
+	margin-left: -100px
+	margin-top: -100px
+	.sk-child 
+		width: 100%
+		height: 100%
+		border-radius: 50%
+		background-color: $spinkit-spinner-color
+		opacity: 0.6
+		position: absolute
+		top: 0
+		left: 0
+		animation: sk-double-bounce 3.0s infinite ease-in-out
+	.sk-double-bounce-2 
+		animation-delay: -1.0s
+  
+@keyframes sk-double-bounce 
+	0%, 100% 
+		transform: scale(0)
+	50% 
+		transform: scale(1.0)
+  
+
+
 header
 	position: fixed
 	width: 100%
 	top: 0
-	transition: .3s ease
+	transition: .5s ease
 	left: 0
 	z-index: 5
 	&.sticky
@@ -248,7 +297,7 @@ h2
 
 #report
 	h2
-		margin-top: 240px
+		margin-top: 140px
 		margin-bottom: 60px
 		width: 635px
 	.page-container
@@ -333,7 +382,7 @@ h2
 	.report__text
 		margin-bottom: 140px
 	h2
-		margin-top: 270px
+		margin-top: 150px
 		width: 625px
 		&:before
 			content: "03"
@@ -370,7 +419,7 @@ h2
 #audit
 	background: linear-gradient(294.61deg, #45108A 2.3%, #3D065F 29.86%, #10054D 101.35%)
 	.offer
-		margin-top: 300px
+		margin-top: 220px
 		margin-bottom: 30px
 	h2
 		margin-top: 0
@@ -388,7 +437,7 @@ h2
 	height: 84px
 	color: #000
 	margin-top: 70px
-	margin-bottom: 290px
+	margin-bottom: 220px
 	&:hover
 		background: #FFA800
 
@@ -401,13 +450,13 @@ h2
 	color: #fff
 
 .audit__right
-	padding-top: 225px
+	padding-top: 125px
 	img
 		margin-right: -60px
 
 #about
 	h2
-		margin-top: 230px
+		margin-top: 150px
 		&:before
 			content: "05"
 	.page-container:last-child
@@ -443,7 +492,8 @@ h2
 	margin-top: -8px
 	position: relative
 	margin-left: 80px
-
+.about__text
+	margin-top: 47px
 .about__sert
 	position: absolute
 	right: 0px
@@ -497,7 +547,7 @@ h2
 
 .portfolio__slider
 	width: 100%
-	margin-top: 170px
+	margin-top: 100px
 	margin-bottom: 95px
 
 
@@ -546,7 +596,17 @@ h2
 	border-radius: 45px
 	justify-content: space-between
 	margin-top: 30px
-
+	position: relative
+	&:before
+		content: ""
+		display: block
+		height: 100%
+		width: 7px
+		background: #F1EFFD
+		position: absolute
+		left: 50%
+		margin-left: -3.5px
+		top: 0	
 .portfolio__slide_results-header
 	font-family: 'Yeseva One', serif
 	color: #000
@@ -594,6 +654,7 @@ h2
 			content: url(../images/dest/arrow-white.png)
 	&.slick-disabled
 		border: 2px solid rgba(40, 40, 40, 0.2)
+		cursor: auto
 		&:hover
 			background-color: transparent
 			&:before
@@ -630,7 +691,7 @@ h2
 #feedback
 	background: url(../images/dest/bg-2.jpg) no-repeat center top / cover
 	h2
-		margin-top: 360px
+		margin-top: 260px
 		color: #fff
 		margin-bottom: 45px
 		&:before
@@ -664,7 +725,7 @@ h2
 	height: 84px
 	background: #FFCC00
 	color: #000
-	margin-bottom: 325px
+	margin-bottom: 225px
 	&:hover
 		background: #FFA800
 .feedback__text
@@ -678,7 +739,7 @@ h2
 	width: 492px
 	background: #fff
 	border-radius: 18.7589px
-	margin-top: 240px
+	margin-top: 140px
 
 .feedback__slide
 	padding: 36px 42px
@@ -712,7 +773,18 @@ h2
 	width: 64px
 	height: 64px
 	border-radius: 50%
-
+	cursor: pointer
+	transition: .3s ease
+	img:first-child
+		display: block
+	img:last-child
+		display: none
+	&:hover
+		background: #785AEC
+		img:first-child
+			display: none
+		img:last-child
+			display: block
 .feedback__slide_video-text
 	font-size: 16px
 	color: #6848EA
@@ -737,7 +809,7 @@ h2
 #faq
 	position: relative
 	h2
-		margin-top: 264px
+		margin-top: 164px
 		margin-bottom: 40px
 		width: 600px
 		&:before
@@ -755,11 +827,13 @@ h2
 .accordeon
 	width: 875px
 	margin-bottom: 220px
+.portfolio__slide_img
+	img:last-child
+		display: none
 
 dt
 	border-bottom: 1px solid #CFCFCF
 	padding: 35px
-	padding-top: 27px
 	cursot: pointer
 	transition: .3s ease
 	padding-right: 30px
@@ -771,9 +845,14 @@ dt
 	justify-content: space-between
 	align-items: center
 	cursor: pointer
-	// &:hover
-	// 	border-radius: 25px
-	// 	background: #F1EFFD
+	&:hover
+		border-radius: 25px
+		background: #F1EFFD
+		border-color: transparent
+	&.active
+		&:hover
+			border-radius: 25px
+			background: #fff
 dd
 	margin-top: 40px
 
@@ -811,7 +890,7 @@ dd
 	padding-bottom: 50px
 
 .faq__right
-	margin-top: 310px
+	margin-top: 210px
 .faq__rigth_text
 	font-size: 24px
 	line-height: 30px
@@ -836,7 +915,7 @@ dd
 	.page-container
 		flex-direction: column
 	h2
-		margin-top: 255px
+		margin-top: 105px
 		margin-bottom: 50px
 		width: 614px
 		&:before
@@ -863,6 +942,9 @@ dd
 	margin-bottom: 50px
 	margin-right: 30px
 	position: relative
+	transition: .3 ease
+	&:hover
+		transform: scale(1.1)
 	&:before
 		content: url(../images/dest/wordpng.png)
 		display: block
@@ -996,26 +1078,197 @@ footer
 	line-height: 20px
 	margin-bottom: 45px
 
+.feedback__full_overlay
+	width: 100%
+	height: 100%
+	position: fixed
+	background: rgba(0, 0, 0, .5)
+	z-index: 5
+	left: 0
+	top: 0
+	transition: .5s ease
+	opacity: 0
+	pointer-events: none
+	&.active
+		pointer-events: auto
+		opacity: 1
 
+.feedback-full__item
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	background: #fff
+	width: 975px
+	padding: 40px
+	border-radius: 18.7589px
+	.feedback__slide_video
+		margin-top: 100px
+		margin-left: 0
 
+.feedback__full_close
+	width: 50px
+	height: 50px
+	background: #785AEC
+	border-radius: 50%
+	position: absolute
+	top: -15px
+	right: -13px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	cursor: pointer
+	transition: .3s ease
+	justify-content: center
+	&:hover
+		background: #FFA800
+		span
+			background: #000
+	span
+		width: 20px
+		transition: .3s ease
+		height: 2px
+		display: block
+		position: absolute
+		background: #fff
+		transform: rotate(45deg)
+		&:first-child
+			transform: rotate(-45deg)
 
+.popup-section
+	width: 100%
+	height: 100%
+	position: fixed
+	background: linear-gradient(291.55deg, #45108A 0.04%, #3D065F 38.2%, #10054D 100.1%)
+	z-index: 10
+	top: 0
+	left: 0
+	pointer-events: none
+	transition: .7s ease
+	transform: translateY(-200%)
+	&.active
+		transform: translateY(0%)
+		pointer-events: auto
 
+.popup-section__form__header
+	font-size: 45px
+	line-height: 52px
+	color: #fff
+	font-family: 'Yeseva One', serif
+	margin-top: 230px
+	margin-bottom: 78px
+	width: 550px
+	
 
+#popup2
+	.popup-section__form__header
+		width: 700px
+	.popup-section__form_right
+		margin-left: -100px
+#popup4
+	.popup-section__form__header
+		width: 600px
+	.popup-section__form_right
+		margin-left: 0px
+.popup-section__form
+	.page-container
+		padding: 0 165px
+		position: relative
+		height: 100%
+	input
+		width: 407px
+		height: 84px
+		margin-bottom: 13px
+		border: 2px solid #785AEC
+		font-size: 14px
+		line-height: 17px
+		letter-spacing: 1px
+		color: #785AEC
+		padding: 0 35px
+		border-radius: 930.092px
+		background-color: transparent
+		display: block
+		font-weight: 600
+		outline: none
+		transition: .3s ease
+		&:focus
+			color: #fff
+			border: 2px solid #FFFFFF
+			&::-webkit-input-placeholder
+				color: #fff
+			&::-moz-placeholder
+				color: #fff
+			&:-moz-placeholder
+				color: #fff
+			&:-ms-input-placeholder
+				color: #fff
+		&::-webkit-input-placeholder
+			color: #785AEC
+			transition: .3s ease
+		&::-moz-placeholder
+			color: #785AEC
+			transition: .3s ease
+		&:-moz-placeholder
+			color: #785AEC
+			transition: .3s ease
+		&:-ms-input-placeholder
+			color: #785AEC
+			transition: .3s ease
+	button
+		background: #FFCC00
+		margin-top: 50px
+		width: 407px
+		height: 84px
+		border: none
+		outline: none
+		&:hover
+			background: #FFA800
+.popup-section__form_right
+	margin-top: 387px
+	margin-left: 30px
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.popup-section__form-icon
+	position: absolute
+.popup-section__form_close
+	width: 50px
+	height: 50px
+	border: 2px solid #FFFFFF
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: center
+	position: absolute
+	top: 230px
+	right: 160px
+	border-radius: 50%
+	cursor: pointer
+	transition: .3s ease
+	&:hover
+		background: #FFA800
+		border: 2px solid #FFA800
+		span
+			background: #000
+	span
+		top: 46%
+		width: 20px
+		height: 2px
+		background: #fff
+		position: absolute
+		transform: rotate(45deg)
+		&:first-child
+			transform: rotate(-45deg)
+.popup-section__form-icon1
+	bottom: -60px
+	left: -100px
+.popup-section__form-icon2
+	top: 501px
+	right: 0
 
 @media screen and (max-width: 1200px)
 	.page-container
@@ -1067,6 +1320,7 @@ footer
 		width: 100%
 	.portfolio__slider
 		margin-top: 50px
+		margin-bottom: 150px
 	.portfolio__slide_content p
 		margin-bottom: 20px
 		font-size: 18px
@@ -1113,9 +1367,47 @@ footer
 		margin-bottom: 20px
 	.mobile__phone.mobile 
 		display: none
-
-
-
+	.popup-section__form__header
+		width: 100% !important
+		text-align: center
+		margin-top: 200px
+		font-size: 40px
+		line-height: 45px
+		margin-bottom: 50px
+		br
+			display: none
+	.popup-section__form_right
+		display: none
+	.popup-section__form_close
+		right: 50px
+		top: 150px
+	.popup-section__form-icon2
+		right: 50px
+	.popup-section__form-icon1
+		left: 20px
+		bottom: -200px
+	.portfolio__slide_results
+		padding-left: 30px
+		padding-right: 30px
+	.portfolio__slide_results-item
+		margin-right: 0
+	.portfolio__slide_results-item:last-child
+		margin-left: 60px
+		margin-right: 0
+	.feedback-full__item
+		width: 95%
+		max-width: 975px
+	#portfolio 
+		.slick-next, .slick-prev
+			bottom: -65px
+			top: auto
+			width: 39px
+			border-width: 1px
+			height: 39px
+		.slick-prev
+			left: 325px
+		.slick-next
+			right: 325px
 
 
 
@@ -1331,3 +1623,411 @@ footer
 		width: 92px
 		left: 50%
 		margin-left: -46px
+	.popup-section
+		transform: translateY(-200%)
+	.about__items
+		width: 100%
+		margin: 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	.about__item
+		margin-left: 3px
+		margin-right: 3px
+		margin-bottom: 10px
+		&:nth-child(1)
+			width: 85px
+			order: 1
+		&:nth-child(2)
+			width: 81px
+			order: 2
+		&:nth-child(3)
+			width: 83px
+			order: 4
+		&:nth-child(4)
+			width: 94px
+			order: 11
+		&:nth-child(5)
+			width: 100px
+			order: 9
+		&:nth-child(6)
+			width: 54px
+			order: 7
+		&:nth-child(7)
+			width: 90px
+			order: 10
+		&:nth-child(8)
+			width: 70px
+			order: 5
+		&:nth-child(9)
+			width: 90px
+			order: 3
+		&:nth-child(10)
+			width: 93px
+			order: 8
+		&:nth-child(11)
+			width: 93px
+			order: 6
+		&:nth-child(12)
+			width: 75px
+			order: 12
+	.about__items_header, .about__skills_header 
+		font-size: 12px
+		line-height: 15px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		margin-bottom: 20px
+		margin-top: 34px
+		text-transform: uppercase
+		color: #5C269D
+		font-weight: bold
+		width: 100%
+	.about__skills_header 
+		margin-top: 35px
+		margin-bottom: 20px
+	.about__skills_item
+		width: 180px
+		padding: 23px
+		background: #F1EFFD
+		border-radius: 25px
+		margin-right: 40px
+		margin-left: 40px
+	.about__skills_item-header
+		font-size: 10px
+		line-height: 18px
+		color: #785AEC
+		font-family: 'Yeseva One', serif
+	.about__skills_item_text
+		font-size: 12px
+		line-height: 19px
+	.portfolio__slider
+		margin-top: 80px
+	.portfolio__slide_img
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		img:first-child
+			display: none
+		img:last-child
+			display: block
+	.portfolio__slide_text
+		flex-direction: column
+		margin-top: 15px
+	.portfolio__slide_header
+		font-size: 20px
+		line-height: 24px
+		margin-bottom: 25px
+	.portfolio__slide_content p
+		font-size: 12px
+		line-height: 17px
+		margin-bottom: 15px
+	.portfolio__slide_results
+		flex-direction: column
+		border: 3px solid #F1EFFD
+		margin-top: 20px
+		&:before
+			width: 100%
+			height: 3px
+			left: 0
+			top: 51%
+			margin-top: -1.5px
+			margin-left: 0
+	.portfolio__slide_results-item
+		width: 100%
+		margin-bottom: 43px
+	.portfolio__slide_results-item:last-child
+		margin: 0
+		margin-bottom: 0
+	.portfolio__slide_results-header
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		margin-bottom: 4px
+		font-size: 20px
+		line-height: 35px
+		span
+			color: #000
+		&:before
+			display: none
+	.portfolio__slide_results
+		padding: 25px
+	.portfolio__slide_results-text
+		font-size: 12px
+		line-height: 20px
+		text-align: center
+	#portfolio 
+		.slick-next, .slick-prev
+			bottom: -65px
+			top: auto
+			width: 39px
+			border-width: 1px
+			height: 39px
+		.slick-prev
+			left: 95px
+		.slick-next
+			right: 95px
+	.portfolio__slider
+		margin-bottom: 130px
+	.feedback__left
+		width: 100%
+	#feedback h2
+		margin-top: 35px
+		margin-bottom: 25px
+	.feedback__text
+		text-align: center
+		font-size: 12px
+		line-height: 19px
+		margin-bottom: 37px
+	.feedback__btn
+		width: 233px
+		height: 48px
+		margin-left: auto
+		margin-right: auto
+		margin-bottom: 40px
+	.feedback__slide
+		padding: 25px
+	.feedback__slider
+		width: 100%
+	.feedback__slide_text
+		p
+			font-size: 12px
+			line-height: 19px
+			margin-bottom: 15px
+	.feedback__slide_more
+		font-size: 12px
+		margin-top: 0
+		line-height: 19px
+		margin-top: -5px
+	.feedback__slide_video
+		margin-top: 30px
+		margin-bottom: 75px
+	.feedback__slide_video-text
+		font-size: 12px
+		line-height: 14px
+		width: 80px
+		br
+			display: none
+	.feedback__slider
+		margin-bottom: 43px
+	#feedback
+		.slick-next, .slick-prev
+			bottom: 30px
+			top: auto
+			width: 39px
+			height: 39px
+			border: 1.04562px solid #785AEC
+			&:before
+				content: url(../images/dest/arrow-violet.png)
+				width: 9px
+				transform: scale(.5)
+		.slick-next
+			right: 92px
+		.slick-prev
+			left: 92px
+	#feedback-full
+		.feedback__slide_video
+			margin-top: 20px
+			margin-bottom: 0
+	.feedback__slide_up
+		margin-bottom: 10px
+	.feedback-full__item
+		padding: 25px
+	.feedback__full_close
+		right: -5px
+		top: -10px
+	#faq 
+		.page-container
+			flex-direction: column
+		h2
+			margin-top: 35px
+			margin-bottom: 20px
+	.faq__left
+		width: 100%
+	.accordeon
+		width: 100%
+		margin-bottom: 40px
+	dl:first-child dt
+		border-top: 1px solid #CFCFCF		
+		&.active
+			border: none
+	dt
+		padding: 20px
+		font-size: 12px
+		line-height: 16px
+	dd
+		padding-bottom: 20px
+		font-size: 12px
+		line-height: 16px
+		margin-top: 0
+		margin-left: 20px
+	dl.active
+		background: #F1EFFD
+	.accordeon-btn
+		display: none
+	.faq__right
+		margin-top: 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-wrap: wrap
+		img
+			width: 103px
+	.faq__rigth_text
+		font-size: 18px
+		line-height: 23px
+		width: 160px
+		margin-left: 16px
+	.faq__right_btn
+		width: 233px
+		height: 45px
+		margin-left: auto
+		margin-right: auto
+		margin-top: 40px
+		margin-bottom: 35px
+	#docs h2
+		margin-top: 25px
+		margin-bottom: 25px
+	.docs__text
+		width: 100%
+		text-align: center
+		font-size: 12px
+		line-height: 19px
+		padding-left: 10px
+		padding-right: 10px
+		margin-bottom: 48px
+	.docs__item
+		width: 100%
+		margin-right: 0
+		margin-bottom: 23px
+	.docs__btn
+		display: none
+	.docs__items
+		margin-bottom: 25px
+	footer
+		padding-top: 38px
+	.footer__header
+		font-size: 20px
+		line-height: 23px
+	.footer__btn
+		font-size: 14px
+		margin-left: auto
+		margin-right: auto
+	.footer__documentation span
+		font-size: 10px
+		line-height: 17px
+	.footer__link
+		font-size: 10px
+		line-height: 17px
+	.footer__documentation li
+		height: 17px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+	.footer__documentation
+		margin-top: 60px
+		margin-right: 0px
+	.footer__up
+		padding-bottom: 48px
+	.footer__logo
+		display: none
+	.footer__down__data
+		flex-direction: column
+		justify-content: center
+	.footer__phone
+		margin-left: 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		margin-bottom: 18px
+	.footer__mail
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		margin-left: 0
+		margin-bottom: 38px
+	.footer__down_btn
+		margin-left: auto
+		margin-right: auto
+		font-size: 13.2px
+		line-height: 16px
+	.footer__developer
+		text-align: center
+		margin-bottom: 40px
+	.footer__down
+		padding-bottom: 50px
+	.popup-section__form .page-container
+		padding-left: 20px
+		padding-right: 20px
+	.popup-section__form__header
+		width: 100% !important
+	.popup-section__form input
+		width: 233px
+		height: 50px
+		margin-bottom: 7px
+		font-size: 8px
+		padding-left: 20px
+		margin-left: auto
+		margin-right: auto
+		border-width: 1.12727px
+	.popup-section__form button
+		width: 233px
+		height: 50px
+		margin-left: auto
+		margin-top: 35px
+		margin-right: auto
+	.popup-section__form__header
+		font-size: 20px
+		line-height: 23px
+		margin-bottom: 30px
+		margin-top: 110px
+		padding-left: 10px
+		padding-right: 10px
+	.popup-section__form-icon1
+		width: 48px
+		top: 40px
+		bottom: auto
+		left: 50%
+		margin-left: -24px
+	.popup-section__form-icon2
+		display: none
+	.popup-section__form_policies
+		font-size: 12px
+		line-height: 15px
+		text-align: center
+		width: 100%
+		display: block
+		color: #5C269D
+		margin-top: 18px
+		padding-left: 20px
+		padding-right: 20px
+	.popup-section__form_close
+		bottom: -75px
+		top: auto
+		left: 50%
+		right: auto
+		margin-left: -25px

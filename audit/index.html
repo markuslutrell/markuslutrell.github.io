@@ -17,20 +17,26 @@
 	<link rel="stylesheet" href="css/app.min.css">
 </head>
 <body>
+	<section id="preloader">
+	  <div class='sk-double-bounce'>
+	    <div class='sk-child sk-double-bounce-1'></div>
+	    <div class='sk-child sk-double-bounce-2'></div>
+	  </div>
+	</section>
 	<section id="main-section">
-		<header>
+		<header class="fixed-header">
 			<div class="page-container">
-				<a href="#" class="logo">
+				<a href="#main-content" class="logo">
 					audit <br>
 					context
 				</a>
 
 				<ul class="header__menu">
-					<li><a href="#" class="header__menu_item">Кейсы</a></li>
-					<li><a href="#" class="header__menu_item">О нас</a></li>
-					<li><a href="#" class="header__menu_item">Частые вопросы</a></li>
-					<li><a href="#" class="header__menu_item">Документация</a></li>
-					<li><a href="#" class="header__menu_item">Отзывы</a></li>
+					<li><a href="#portfolio" class="header__menu_item">Кейсы</a></li>
+					<li><a href="#about" class="header__menu_item">О нас</a></li>
+					<li><a href="#faq" class="header__menu_item">Частые вопросы</a></li>
+					<li><a href="#docs" class="header__menu_item">Документация</a></li>
+					<li><a href="#feedback" class="header__menu_item">Отзывы</a></li>
 				</ul>
 
 				<div class="header__contacts">
@@ -40,20 +46,20 @@
 					<a href="#" class="header__mail">
 						<img src="images/dest/mail.png" alt="Mail"><img src="images/dest/mail-black.png" alt="Mail"> Написать
 					</a>
-					<div class="header__contacts_btn all-btn">
+					<div class="header__contacts_btn js-button4 all-btn">
 						Обратный звонок
 					</div>
 				</div>
 			</div>
 		</header>
 
-		<div class="main-content">
+		<div class="main-content" id="main-content">
 			<div class="page-container">
 				<a href="tel:+ 7 (351) 77-54-33" class="mobile__phone mobile">
 					<img src="images/dest/phone.png" alt="Phone">
 				</a>
 				<div class="main-content__left">
-					<a href="#" class="mobile-logo mobile logo">
+					<a href="#main-content" class="mobile-logo mobile logo">
 						audit
 						context
 					</a>
@@ -70,7 +76,7 @@
 						<b>Увеличим</b> колличество лидов <b>до 28% </b>и предоставим полноценный <b>отчёт</b> по <b>50-ти показателям</b>
 					</div>
 
-					<div class="main-content__btn all-btn">
+					<div class="main-content__btn all-btn js-button"">
 						узнать реальный потенциал рекламы
 					</div>
 
@@ -98,10 +104,10 @@
 			</p>
 
 			<div class="report__buttons">
-				<div class="report__button all-btn">
+				<div class="report__button js-button3 all-btn">
 					Запросить пример аудита
 				</div>
-				<div class="report__button2 all-btn">
+				<div class="report__button2 js-button2 all-btn">
 					Получить персональный отчёт
 				</div>
 			</div>
@@ -201,7 +207,7 @@
 					Мы показываем максимально <b>реальную картину</b> происходящего, и если можем её исправить -
 					<b>предлагаем свою помощь</b>
 				</p>
-				<div class="audit__btn all-btn">
+				<div class="audit__btn js-button all-btn">
 					узнать реальный потенциал рекламы
 				</div>
 			</div>
@@ -218,7 +224,7 @@
 					Зайцев <br>
 					Николай Евгеньевич
 				</h2>
-				<div class="about__text mobile">
+				<div class="about__text">
 					<b>80% наших клиентов</b> пришли именно по услуге аудита. Мы показываем максимально
 					<b>реальную картину </b>
 				</div>
@@ -243,6 +249,56 @@
 		</div>
 
 		<div class="page-container">
+			<div class="about__skills_header mobile">
+				Практический опыт:
+			</div>
+			<div class="about__skills mobile">
+				<div class="about__skills_item">
+					<div class="about__skills_item-header">
+						2008г.
+					</div>
+					<div class="about__skills_item_text">
+						Фриланс специалист
+						по SEO продвижению
+					</div>
+				</div>
+				<div class="about__skills_item">
+					<div class="about__skills_item-header">
+						2016г.
+					</div>
+					<div class="about__skills_item_text">
+						Руководитель отдела
+						маркетинга “Доктор ОСТ”
+					</div>
+				</div>
+				<div class="about__skills_item">
+					<div class="about__skills_item-header">
+						2016г.
+					</div>
+					<div class="about__skills_item_text">
+						Руководитель отдела маркетинга “Nir-Vanna”
+					</div>
+				</div>
+				<div class="about__skills_item">
+					<div class="about__skills_item-header">
+						2016г.
+					</div>
+					<div class="about__skills_item_text">
+						Руководитель отдела маркетинга “Nir-Vanna”
+					</div>
+				</div>
+				<div class="about__skills_item">
+					<div class="about__skills_item-header">
+						2017г.
+					</div>
+					<div class="about__skills_item_text">
+						Директор по маркетингу “Витакон”
+					</div>
+				</div>
+			</div>
+			<div class="mobile about__items_header">
+				Клиенты:
+			</div>
 			<div class="about__items">
 				<img src="images/dest/logos-1.png" alt="Logo" class="about__item">
 				<img src="images/dest/logos-2.png" alt="Logo" class="about__item">
@@ -255,6 +311,7 @@
 				<img src="images/dest/logos-9.png" alt="Logo" class="about__item">
 				<img src="images/dest/logos-10.png" alt="Logo" class="about__item">
 				<img src="images/dest/logos-11.png" alt="Logo" class="about__item">
+				<img src="images/dest/logos-12.png" alt="Logo" class="about__item">
 			</div>
 		</div>
 	</section>
@@ -265,6 +322,7 @@
 				<div class="portfolio__slide">
 					<div class="portfolio__slide_img">
 						<img src="images/dest/portfolio-1.jpg" alt="Portfolio">
+						<img src="images/dest/portfolio-1-mobile.jpg" alt="Portfolio">
 					</div>
 
 					<div class="portfolio__slide_text">
@@ -306,6 +364,7 @@
 				<div class="portfolio__slide">
 					<div class="portfolio__slide_img">
 						<img src="images/dest/portfolio-1.jpg" alt="Portfolio">
+						<img src="images/dest/portfolio-1-mobile.jpg" alt="Portfolio">
 					</div>
 
 					<div class="portfolio__slide_text">
@@ -347,6 +406,7 @@
 				<div class="portfolio__slide">
 					<div class="portfolio__slide_img">
 						<img src="images/dest/portfolio-1.jpg" alt="Portfolio">
+						<img src="images/dest/portfolio-1-mobile.jpg" alt="Portfolio">
 					</div>
 
 					<div class="portfolio__slide_text">
@@ -399,20 +459,21 @@
 				<p class="feedback__text">
 					Компании, которые <b>уже оптимизировали</b> свои рекламные кампании, и изъявили желание поделиться <b>общими результатами</b>
 				</p>
-				<div class="feedback__btn all-btn">
+				<div class="feedback__btn desktop js-button all-btn">
 					узнать реальный потенциал рекламы
 				</div>
 			</div>
 			<div class="feedback__right">
 				<div class="feedback__slider">
-					<div class="feedback__slide">
+					<div class="feedback__slide feedback__slide1">
 						<div class="feedback__slide_up">
 							<div class="feedback__slide_img">
 								<img src="images/dest/doctor.png" alt="Doctor">
 							</div>
-							<div class="feedback__slide_video">
+							<div class="feedback__slide_video desktop">
 								<div class="feedback__slide_circle">
 									<img src="images/dest/triangle.png" alt="Tr">
+									<img src="images/dest/triangle-2.png" alt="Tr">
 								</div>
 								<div class="feedback__slide_video-text">
 									Смотреть видео <br>
@@ -439,17 +500,28 @@
 
 							<div class="feedback__slide_more">
 								Читать полностью
+							</div>
+							<div class="feedback__slide_video mobile">
+								<div class="feedback__slide_circle">
+									<img src="images/dest/triangle.png" alt="Tr">
+									<img src="images/dest/triangle-2.png" alt="Tr">
+								</div>
+								<div class="feedback__slide_video-text">
+									Смотреть видео <br>
+									отзыв
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="feedback__slide">
+					<div class="feedback__slide feedback__slide2">
 						<div class="feedback__slide_up">
 							<div class="feedback__slide_img">
 								<img src="images/dest/doctor.png" alt="Doctor">
 							</div>
-							<div class="feedback__slide_video">
+							<div class="feedback__slide_video desktop">
 								<div class="feedback__slide_circle">
 									<img src="images/dest/triangle.png" alt="Tr">
+									<img src="images/dest/triangle-2.png" alt="Tr">
 								</div>
 								<div class="feedback__slide_video-text">
 									Смотреть видео <br>
@@ -476,17 +548,28 @@
 
 							<div class="feedback__slide_more">
 								Читать полностью
+							</div>
+							<div class="feedback__slide_video mobile">
+								<div class="feedback__slide_circle">
+									<img src="images/dest/triangle.png" alt="Tr">
+									<img src="images/dest/triangle-2.png" alt="Tr">
+								</div>
+								<div class="feedback__slide_video-text">
+									Смотреть видео <br>
+									отзыв
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="feedback__slide">
+					<div class="feedback__slide feedback__slide3">
 						<div class="feedback__slide_up">
 							<div class="feedback__slide_img">
 								<img src="images/dest/doctor.png" alt="Doctor">
 							</div>
-							<div class="feedback__slide_video">
+							<div class="feedback__slide_video desktop">
 								<div class="feedback__slide_circle">
 									<img src="images/dest/triangle.png" alt="Tr">
+									<img src="images/dest/triangle-2.png" alt="Tr">
 								</div>
 								<div class="feedback__slide_video-text">
 									Смотреть видео <br>
@@ -514,7 +597,143 @@
 							<div class="feedback__slide_more">
 								Читать полностью
 							</div>
+
+							<div class="feedback__slide_video mobile">
+								<div class="feedback__slide_circle">
+									<img src="images/dest/triangle.png" alt="Tr">
+									<img src="images/dest/triangle-2.png" alt="Tr">
+								</div>
+								<div class="feedback__slide_video-text">
+									Смотреть видео <br>
+									отзыв
+								</div>
+							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+			<div class="feedback__btn mobile js-button all-btn">
+				узнать реальный потенциал рекламы
+			</div>
+		</div>
+	</section>
+	
+	<section id="feedback-full">
+		<div class="feedback__full_overlay feedback__full_overlay1">
+			<div class="feedback-full__item">
+				<div class="feedback__full_close">
+					<span></span><span></span>
+				</div>
+				<div class="feedback__slide_up">
+					<div class="feedback__slide_img">
+						<img src="images/dest/doctor.png" alt="Doctor">
+					</div>
+				</div>
+
+				<div class="feedback__slide_text">
+					<p>
+						Спасибо огромное за аудит Николаю Зайцеву
+						и его компанде, всё сделали быстро
+						и качественно, оптимизировали наш бюджет
+						и мы приросли на 15% по объёму лидов
+						для нашего бизнеса 	
+					</p>
+					<p>
+						Ляляля ляляля
+					</p>
+					<p>
+						Спасибо огромное за аудит Николаю Зайцеву
+						и его компанде, всё сделали быстро и качественно, 
+					</p>
+				</div>
+				<div class="feedback__slide_video">
+					<div class="feedback__slide_circle">
+						<img src="images/dest/triangle.png" alt="Tr">
+						<img src="images/dest/triangle-2.png" alt="Tr">
+					</div>
+					<div class="feedback__slide_video-text">
+						Смотреть видео <br>
+						отзыв
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="feedback__full_overlay feedback__full_overlay2">
+			<div class="feedback-full__item">
+				<div class="feedback__full_close">
+					<span></span><span></span>
+				</div>
+				<div class="feedback__slide_up">
+					<div class="feedback__slide_img">
+						<img src="images/dest/doctor.png" alt="Doctor">
+					</div>
+				</div>
+
+				<div class="feedback__slide_text">
+					<p>
+						Спасибо огромное за аудит Николаю Зайцеву
+						и его компанде, всё сделали быстро
+						и качественно, оптимизировали наш бюджет
+						и мы приросли на 15% по объёму лидов
+						для нашего бизнеса 	
+					</p>
+					<p>
+						Ляляля ляляля
+					</p>
+					<p>
+						Спасибо огромное за аудит Николаю Зайцеву
+						и его компанде, всё сделали быстро и качественно, 
+					</p>
+				</div>
+				<div class="feedback__slide_video">
+					<div class="feedback__slide_circle">
+						<img src="images/dest/triangle.png" alt="Tr">
+						<img src="images/dest/triangle-2.png" alt="Tr">
+					</div>
+					<div class="feedback__slide_video-text">
+						Смотреть видео <br>
+						отзыв
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="feedback__full_overlay feedback__full_overlay3">
+			<div class="feedback-full__item">
+				<div class="feedback__full_close">
+					<span></span><span></span>
+				</div>
+				<div class="feedback__slide_up">
+					<div class="feedback__slide_img">
+						<img src="images/dest/doctor.png" alt="Doctor">
+					</div>
+				</div>
+
+				<div class="feedback__slide_text">
+					<p>
+						Спасибо огромное за аудит Николаю Зайцеву
+						и его компанде, всё сделали быстро
+						и качественно, оптимизировали наш бюджет
+						и мы приросли на 15% по объёму лидов
+						для нашего бизнеса 	
+					</p>
+					<p>
+						Ляляля ляляля
+					</p>
+					<p>
+						Спасибо огромное за аудит Николаю Зайцеву
+						и его компанде, всё сделали быстро и качественно, 
+					</p>
+				</div>
+				<div class="feedback__slide_video">
+					<div class="feedback__slide_circle">
+						<img src="images/dest/triangle.png" alt="Tr">
+						<img src="images/dest/triangle-2.png" alt="Tr">
+					</div>
+					<div class="feedback__slide_video-text">
+						Смотреть видео <br>
+						отзыв
 					</div>
 				</div>
 			</div>
@@ -588,8 +807,11 @@
 					Если вы не нашли в списке свой вопрос
 				</div>
 
-				<div class="all-btn faq__right_btn">
-					задать вопрос
+				<div class="all-btn js-button4 faq__right_btn">
+					<span class="desktop">задать вопрос</span>
+					<span class="mobile">
+						перезвоните мне для консультации
+					</span>
 				</div>
 			</div>
 		</div>
@@ -646,7 +868,7 @@
 				</a>
 			</div>
 
-			<div class="docs__btn all-btn">
+			<div class="docs__btn js-button all-btn">
 				узнать реальный потенциал рекламы
 			</div>
 		</div>
@@ -661,7 +883,7 @@
 						как повысить эффективность вашей рекламной компании
 					</h2>
 
-					<div class="footer__btn all-btn">
+					<div class="footer__btn js-button3 all-btn">
 						Проведите мне аудит
 					</div>
 				</div>
@@ -681,17 +903,17 @@
 				<div class="footer__documentation">
 					<span>Навигация</span>
 					<ul>
-						<li><a href="#" class="footer__link">Кейсы</a></li>
-						<li><a href="#" class="footer__link">О нас</a></li>
-						<li><a href="#" class="footer__link">Частые вопросы</a></li>
-						<li><a href="#" class="footer__link">Документация</a></li>
-						<li><a href="#" class="footer__link">Отзывы</a></li>
+						<li><a href="#portfolio" class="footer__link">Кейсы</a></li>
+						<li><a href="#about" class="footer__link">О нас</a></li>
+						<li><a href="#faq" class="footer__link">Частые вопросы</a></li>
+						<li><a href="#docs" class="footer__link">Документация</a></li>
+						<li><a href="#feedback" class="footer__link">Отзывы</a></li>
 					</ul>
 				</div>
 			</div>
 
 			<div class="footer__down">
-				<a href="#" class="footer__logo">
+				<a href="#main-content" class="footer__logo">
 					audit context
 				</a>
 				<div class="footer__down__data">
@@ -702,7 +924,7 @@
 						<img src="images/dest/mail.png" alt="Phone"> audit-centext@mail.ru
 					</a>
 
-					<div class="footer__down_btn all-btn">
+					<div class="footer__down_btn js-button4 all-btn">
 						Обратный звонок
 					</div>
 				</div>
@@ -713,6 +935,249 @@
 			</div>
 		</div>
 	</footer>
+
+	<section id="popup1" class="popup-section">
+		<header>
+			<div class="page-container">
+				<a href="#main-content" class="logo">
+					audit <br>
+					context
+				</a>
+
+				<ul class="header__menu">
+					<li><a href="#portfolio" class="header__menu_item">Кейсы</a></li>
+					<li><a href="#about" class="header__menu_item">О нас</a></li>
+					<li><a href="#faq" class="header__menu_item">Частые вопросы</a></li>
+					<li><a href="#docs" class="header__menu_item">Документация</a></li>
+					<li><a href="#feedback" class="header__menu_item">Отзывы</a></li>
+				</ul>
+
+				<div class="header__contacts">
+					<a href="#" class="header__phone">
+						<img src="images/dest/phone.png" alt="Phone"><img src="images/dest/phone-black.png" alt="Phone"> Позвонить
+					</a>
+					<a href="#" class="header__mail">
+						<img src="images/dest/mail.png" alt="Mail"><img src="images/dest/mail-black.png" alt="Mail"> Написать
+					</a>
+					<div class="header__contacts_btn js-button4 all-btn">
+						Обратный звонок
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="popup-section__form">
+			<div class="page-container">
+				<img src="images/dest/form-element-1.png" alt="Element" class="popup-section__form-icon popup-section__form-icon1"><img src="images/dest/form-element-2.png" alt="Element" class="popup-section__form-icon popup-section__form-icon2">
+				<div class="popup-section__form_close">
+					<span></span><span></span>
+				</div>
+				<div class="popup-section__form_left">
+					<form>
+						<div class="popup-section__form__header">
+							Заполните форму <br>
+							и узнайте реальных потенциал рекламы
+						</div>
+						<input type="text" placeholder="ВАШЕ ИМЯ">
+						<input type="text" placeholder="ВАШ ТЕЛЕФОН">
+						<button class="all-btn">
+							узнать реальный потенциал рекламы
+						</button>
+						<a href="#" class="mobile popup-section__form_policies">
+							Нажимая на кнопку вы принимаете
+							условия политики конфиденциальности
+						</a>
+					</form>
+				</div>
+				<div class="popup-section__form_right">
+					<img src="images/dest/manager.png" alt="Manager">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="popup2" class="popup-section">
+		<header>
+			<div class="page-container">
+				<a href="#main-content" class="logo">
+					audit <br>
+					context
+				</a>
+
+				<ul class="header__menu">
+					<li><a href="#portfolio" class="header__menu_item">Кейсы</a></li>
+					<li><a href="#about" class="header__menu_item">О нас</a></li>
+					<li><a href="#faq" class="header__menu_item">Частые вопросы</a></li>
+					<li><a href="#docs" class="header__menu_item">Документация</a></li>
+					<li><a href="#feedback" class="header__menu_item">Отзывы</a></li>
+				</ul>
+
+				<div class="header__contacts">
+					<a href="#" class="header__phone">
+						<img src="images/dest/phone.png" alt="Phone"><img src="images/dest/phone-black.png" alt="Phone"> Позвонить
+					</a>
+					<a href="#" class="header__mail">
+						<img src="images/dest/mail.png" alt="Mail"><img src="images/dest/mail-black.png" alt="Mail"> Написать
+					</a>
+					<div class="header__contacts_btn js-button4 all-btn">
+						Обратный звонок
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="popup-section__form">
+			<div class="page-container">
+				<img src="images/dest/form-element-1.png" alt="Element" class="popup-section__form-icon popup-section__form-icon1"><img src="images/dest/form-element-2.png" alt="Element" class="popup-section__form-icon popup-section__form-icon2">
+				<div class="popup-section__form_close">
+					<span></span><span></span>
+				</div>
+				<div class="popup-section__form_left">
+					<form>
+						<div class="popup-section__form__header">
+							Заполните форму <br>
+							и получите персональный
+							отчёт по вашей рекламе
+						</div>
+						<input type="text" placeholder="ВАШЕ ИМЯ">
+						<input type="text" placeholder="ВАШ ТЕЛЕФОН">
+						<button class="all-btn">
+							узнать реальный потенциал рекламы
+						</button>
+						<a href="#" class="mobile popup-section__form_policies">
+							Нажимая на кнопку вы принимаете
+							условия политики конфиденциальности
+						</a>
+					</form>
+				</div>
+				<div class="popup-section__form_right">
+					<img src="images/dest/manager.png" alt="Manager">
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="popup3" class="popup-section">
+		<header>
+			<div class="page-container">
+				<a href="#main-content" class="logo">
+					audit <br>
+					context
+				</a>
+
+				<ul class="header__menu">
+					<li><a href="#portfolio" class="header__menu_item">Кейсы</a></li>
+					<li><a href="#about" class="header__menu_item">О нас</a></li>
+					<li><a href="#faq" class="header__menu_item">Частые вопросы</a></li>
+					<li><a href="#docs" class="header__menu_item">Документация</a></li>
+					<li><a href="#feedback" class="header__menu_item">Отзывы</a></li>
+				</ul>
+
+				<div class="header__contacts">
+					<a href="#" class="header__phone">
+						<img src="images/dest/phone.png" alt="Phone"><img src="images/dest/phone-black.png" alt="Phone"> Позвонить
+					</a>
+					<a href="#" class="header__mail">
+						<img src="images/dest/mail.png" alt="Mail"><img src="images/dest/mail-black.png" alt="Mail"> Написать
+					</a>
+					<div class="header__contacts_btn js-button4 all-btn">
+						Обратный звонок
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="popup-section__form">
+			<div class="page-container">
+				<img src="images/dest/form-element-1.png" alt="Element" class="popup-section__form-icon popup-section__form-icon1"><img src="images/dest/form-element-2.png" alt="Element" class="popup-section__form-icon popup-section__form-icon2">
+				<div class="popup-section__form_close">
+					<span></span><span></span>
+				</div>
+				<div class="popup-section__form_left">
+					<form>
+						<div class="popup-section__form__header">
+							Проведём аудит <br>
+							по 50-ти показателям
+							вашей рекламы
+						</div>
+						<input type="text" placeholder="ВАШЕ ИМЯ">
+						<input type="text" placeholder="ВАШ ТЕЛЕФОН">
+						<button class="all-btn">
+							Проведите мне аудит
+						</button>
+						<a href="#" class="mobile popup-section__form_policies">
+							Нажимая на кнопку вы принимаете
+							условия политики конфиденциальности
+						</a>
+					</form>
+				</div>
+				<div class="popup-section__form_right">
+					<img src="images/dest/manager.png" alt="Manager">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="popup4" class="popup-section">
+		<header>
+			<div class="page-container">
+				<a href="#main-content" class="logo">
+					audit <br>
+					context
+				</a>
+
+				<ul class="header__menu">
+					<li><a href="#portfolio" class="header__menu_item">Кейсы</a></li>
+					<li><a href="#about" class="header__menu_item">О нас</a></li>
+					<li><a href="#faq" class="header__menu_item">Частые вопросы</a></li>
+					<li><a href="#docs" class="header__menu_item">Документация</a></li>
+					<li><a href="#feedback" class="header__menu_item">Отзывы</a></li>
+				</ul>
+
+				<div class="header__contacts">
+					<a href="#" class="header__phone">
+						<img src="images/dest/phone.png" alt="Phone"><img src="images/dest/phone-black.png" alt="Phone"> Позвонить
+					</a>
+					<a href="#" class="header__mail">
+						<img src="images/dest/mail.png" alt="Mail"><img src="images/dest/mail-black.png" alt="Mail"> Написать
+					</a>
+					<div class="header__contacts_btn js-button4 all-btn">
+						Обратный звонок
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="popup-section__form">
+			<div class="page-container">
+				<img src="images/dest/form-element-1.png" alt="Element" class="popup-section__form-icon popup-section__form-icon1"><img src="images/dest/form-element-2.png" alt="Element" class="popup-section__form-icon popup-section__form-icon2">
+				<div class="popup-section__form_close">
+					<span></span><span></span>
+				</div>
+				<div class="popup-section__form_left">
+					<form>
+						<div class="popup-section__form__header">
+							Заполните форму ниже <br>
+							и мы свяжемся с вами
+							в течении 6-ти минут
+						</div>
+						<input type="text" placeholder="ВАШЕ ИМЯ">
+						<input type="text" placeholder="ВАШ ТЕЛЕФОН">
+						<button class="all-btn">
+							Перезвоните поскорее
+						</button>
+						<a href="#" class="mobile popup-section__form_policies">
+							Нажимая на кнопку вы принимаете
+							условия политики конфиденциальности
+						</a>
+					</form>
+				</div>
+				<div class="popup-section__form_right">
+					<img src="images/dest/manager.png" alt="Manager">
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<script src="js/libs.min.js"></script>
 	<script src="js/app.min.js"></script>
