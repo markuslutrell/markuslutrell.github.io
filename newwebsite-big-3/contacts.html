@@ -240,21 +240,29 @@
 								<span class="contacts__input_label">
 									Name
 								</span>
-								<input type="text">
+								<input required class="validation-form" type="text">
+								<span class="sample__form_input-error-text">
+									Error
+								</span>
+								<img src="images/dest/error.svg" alt="Error" class="sample__form_input-error">
 							</div>
 
 							<div class="contacts__form_input">
 								<span class="contacts__input_label">
 									Email
 								</span>
-								<input type="email">
+								<input required class="validation-form" type="email">
+								<span class="sample__form_input-error-text">
+									Error
+								</span>
+								<img src="images/dest/error.svg" alt="Error" class="sample__form_input-error">
 							</div>
 						</div>
 						<div class="contacts__form_input">
 							<span class="contacts__input_label">
 								Your comment
 							</span>
-							<textarea name="Comment"></textarea>
+							<textarea required class="validation-form" name="Comment"></textarea>
 						</div>
 
 						<button class="all-btn">

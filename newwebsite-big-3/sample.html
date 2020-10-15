@@ -303,13 +303,27 @@
 					</div>
 
 					<form class="sample__form">
-						<img src="images/dest/stars-2.svg" alt="Stars" class="sample__form_stars">
+						<div class="sample__form_stars rating-area">
+							<input type="radio" id="star-1" name="rating" value="1">
+							<label for="star-1">
+								
+							</label>
+							<input type="radio" id="star-2" name="rating" value="2">
+							<label for="star-2"></label>
+							<input type="radio" id="star-3" name="rating" value="3">
+							<label for="star-3"></label>  
+							<input type="radio" id="star-4" name="rating" value="4">
+							<label for="star-4"></label>    
+							<input type="radio" id="star-5" name="rating" value="5">
+							<label for="star-5"></label>								
+						</div>
+						<!-- <img src="images/dest/stars-2.svg" alt="Stars" class="sample__form_stars"> -->
 
 						<div class="sample__form_input">
 							<span class="sample__form_label">
 								Leave your comment
 							</span>
-							<textarea></textarea>
+							<textarea class="validation-form" required></textarea>
 						</div>
 
 						<div class="sample__form_inputs">
@@ -317,13 +331,21 @@
 								<span class="sample__form_label">
 									Name
 								</span>
-								<input type="text">
+								<input class="validation-form" type="text" required>
+								<span class="sample__form_input-error-text">
+									Error
+								</span>
+								<img src="images/dest/error.svg" alt="Error" class="sample__form_input-error">
 							</div>
 							<div class="sample__form_input">
 								<span class="sample__form_label">
 									Email
 								</span>
-								<input type="text">
+								<input class="validation-form" type="text" required>
+								<span class="sample__form_input-error-text">
+									Error
+								</span>
+								<img src="images/dest/error.svg" alt="Error" class="sample__form_input-error">
 							</div>
 
 							<button class="all-btn">
