@@ -1,57 +1,222 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<meta property="og:image" content="">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-	<title>Bynom</title>
+	<meta name="robots" content="noindex"/>
 
+	<title>Resume</title>
+	
 	<link rel="shortcut icon" href="img/favicon.png" type="image/png">
-	<link rel="stylesheet" href="libs/css/normalize.css">
-	<link rel="stylesheet" href="libs/css/animate.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
+
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="fonts/fonts.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/app.min.css">
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/app.min.js"></script>
 </head>
 <body>
-	
-	<section id="main">
-		<div class="container">
-			<img src="img/logo.png" alt="Logo" class="logo">
+	<div id="preloader">
+	  <img src="images/dest/logo-big.png" alt="Logo" class="preloader__logo">
 
-			<div class="menu">
-				<span></span>
-				<span></span>
-			</div>
-
-			<div class="main__header">
-				<a href="#" class="main__btn">
-					Click <br>
-					<span>here</span>
+	  <div class="preloader__load">
+	  	Загрузка: <span>40%</span>
+	  </div>
+	</div>
+	<header>
+		<div class="page-container">
+			<div class="header__wrapper">
+				<a href="#" class="logo">
+					<img src="images/dest/logo.svg" alt="Logo">
 				</a>
-				<div class="glitch-wrapper">
-					<h1 class="glitch" data-text="Create		
-						Studio">
-						Create 		
-						Studio
-					</h1>
-				</div>
-				<span class="main__header_text">
-					Websites of the XXI century
-				</span>
-			</div>
+				<a href="#" class="logo2">
+					<img src="images/dest/logo2.svg" alt="Logo">
+				</a>
 
-			<div class="main__categories">
-				<span>Branding</span>/
-				<span>UX</span>/
-				<span>Frontend</span>
+				<div class="header__links">
+					<a href="#" class="header__links_item">
+						Проекты
+					</a>
+					<a href="#" class="header__links_item">
+						Студия
+					</a>
+					<a href="#" class="header__links_item">
+						Связаться
+					</a>	
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<nav class="main-nav" id="start">
+		<div class="page-container">
+			<div class="main-nav__category">
+				<div class="main-nav__link active">
+					Брендинг
+				</div>
+				<div class="main-nav__link">
+					Веб-сайты
+				</div>
+			</div>
+			<div class="main-nav__year">
+				<div class="main-nav__link active">
+					2020
+				</div>
+				<div class="main-nav__link">
+					2019
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<section id="main">
+		<div class="main__img">
+			<div class="page-container large">
+				<img src="images/dest/main.jpg" alt="Main">
+			</div>
+		</div>
+		<div class="main__text">
+			<div class="page-container">
+				<div class="main__text_left">
+					<h1>
+						Создаём уникальные сайты и сервисы,
+						под любые бизнес-задачи
+					</h1>
+
+					<div class="main__text_links">
+						<a href="#" class="main__text_link"><img src="images/dest/awards-1.svg" alt="Icon"></a>
+						<a href="#" class="main__text_link"><img src="images/dest/awards-2.svg" alt="Icon"></a>
+						<a href="#" class="main__text_link"><img src="images/dest/awards-3.svg" alt="Icon"></a>
+					</div>
+				</div>
+				<div class="main__text_right">
+					<p class="main__text_p">
+						Команда аналитиков, пришедшая в UX дизайн <br>
+						из маркетинг-агентств, совмещающая удобство для  <br>пользователя, эстетичность а главное увеличение <br>показателей в каждом своём проекте
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<script src="libs/js/jquery.min.js"></script>
-	<script src="libs/js/animate-css.js"></script>
-	<script src="libs/js/waypoints.min.js"></script>
-	<script src="js/common.js"></script>
+	<section id="main-case">
+		<div class="main-case__header">
+			<div class="page-container">
+				<div class="main-case__header_text">
+					Любим наши проекты
+				</div>
+				<div class="main-case__header_year">
+					2020
+				</div>
+			</div>
+		</div>
+		<div class="page-container large">
+			<a href="#" class="main-case__item">
+				<div class="page-container">
+					<h2 class="main-case__item_header">
+						Айдентика и промо-сайт
+					</h2>
+					<div class="main-case__item_info">		
+						<div class="main-case__item_name">
+							Winwinwin
+						</div>
+						<div class="main-case__item_subheader">
+							Агентство по поиску личных <br>
+							ассистентов
+						</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</section>
+
+	<section id="cases">
+		<div class="page-container large">
+			<a href="#" class="cases__item">
+				<div class="cases__item_header">
+					Дизайн-концепт промо-сайта
+				</div>
+				<div class="cases__item_name">
+					Google concept
+				</div>
+				<div class="cases__item_subheader">
+					Посадочная страница для гугла
+				</div>
+			</a>
+			<a href="#" class="cases__item">
+				<div class="cases__item_header">
+					Дизай-концепт корпоративного сайта
+				</div>
+				<div class="cases__item_name">
+					blm concept
+				</div>
+				<div class="cases__item_subheader">
+					Корпорат для Black Lives Matter 
+				</div>
+			</a>
+			<a href="#" class="cases__item">
+				<div class="cases__item_header">
+					Дизайн промо-сайта 
+				</div>
+				<div class="cases__item_name">
+					Golden city 
+				</div>
+				<div class="cases__item_subheader">
+					Дизайн корпоративного сайта <br> жилого комплекса 
+				</div>
+			</a>
+			<div class="cases__item">
+				<a href="#" class="cases__link">
+					Все проекты
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="page-container">
+			<div class="footer__menu">
+				<ul>
+					<li><a href="#" class="footer__menu_item">Youtube</a></li>
+					<li><a href="#" class="footer__menu_item">Instagram</a></li>
+					<li><a href="#" class="footer__menu_item">Twitter</a></li>
+				</ul>
+
+				<div class="footer__menu_copyright">
+					Copyright by bynom 2020
+				</div>
+			</div>
+
+			<div class="footer__right">
+				<div class="footer__projects">
+					<div class="footer__projects__header">
+						Проекты
+					</div>
+					<a href="#" class="footer__projects_link">
+						Брендинг
+					</a>
+					<a href="#" class="footer__projects_link">
+						Веб-сайты
+					</a>
+				</div>
+
+				<a href="#" class="footer__projects_studio">
+					Студия
+				</a>
+
+				<a href="#start" class="footer__projects_up">
+					<img src="images/dest/arrow-up.svg" alt="Arrow">
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/app.min.js"></script>
 </body>
 </html>
