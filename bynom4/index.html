@@ -49,6 +49,11 @@
 						Связаться
 					</a>	
 				</div>
+
+				<div class="header__mobile_links">
+					<a href="#"><img src="images/dest/mail.svg" alt="Mail"></a>
+					<a href="#"><img src="images/dest/phone.svg" alt="Phone"></a>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -77,24 +82,27 @@
 	<section id="main">
 		<div class="main__img">
 			<div class="page-container large">
-				<img src="images/dest/main.jpg" alt="Main">
+				<picture>
+					<source srcset="images/dest/main-mobile.jpg" media="(max-width: 767px)">
+					<img src="images/dest/main.jpg" alt="Main">
+				</picture>
 			</div>
 		</div>
 		<div class="main__text">
 			<div class="page-container">
 				<div class="main__text_left">
-					<h1>
+					<h1 class="wow fadeIn" data-wow-duration="2s">
 						Создаём уникальные сайты и сервисы,
 						под любые бизнес-задачи
 					</h1>
 
-					<div class="main__text_links">
+					<div class="main__text_links wow fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
 						<a href="#" class="main__text_link"><img src="images/dest/awards-1.svg" alt="Icon"></a>
 						<a href="#" class="main__text_link"><img src="images/dest/awards-2.svg" alt="Icon"></a>
 						<a href="#" class="main__text_link"><img src="images/dest/awards-3.svg" alt="Icon"></a>
 					</div>
 				</div>
-				<div class="main__text_right">
+				<div class="main__text_right wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
 					<p class="main__text_p">
 						Команда аналитиков, пришедшая в UX дизайн <br>
 						из маркетинг-агентств, совмещающая удобство для  <br>пользователя, эстетичность а главное увеличение <br>показателей в каждом своём проекте
@@ -107,10 +115,10 @@
 	<section id="main-case">
 		<div class="main-case__header">
 			<div class="page-container">
-				<div class="main-case__header_text">
+				<div class="main-case__header_text wow fadeInLeft" data-wow-duration="1s" >
 					Любим наши проекты
 				</div>
-				<div class="main-case__header_year">
+				<div class="main-case__header_year wow fadeInRight" data-wow-duration="1s" >
 					2020
 				</div>
 			</div>
@@ -118,14 +126,15 @@
 		<div class="page-container large">
 			<a href="#" class="main-case__item">
 				<div class="page-container">
-					<h2 class="main-case__item_header">
+					<h2 class="main-case__item_header wow fadeIn" data-wow-duration="1s"
+					>
 						Айдентика и промо-сайт
 					</h2>
 					<div class="main-case__item_info">		
-						<div class="main-case__item_name">
+						<div class="main-case__item_name wow fadeInUp" data-wow-duration="1s">
 							Winwinwin
 						</div>
-						<div class="main-case__item_subheader">
+						<div class="main-case__item_subheader wow fadeInUp" data-wow-duration="1s" data-wow-delay=".25s">
 							Агентство по поиску личных <br>
 							ассистентов
 						</div>
@@ -137,7 +146,7 @@
 
 	<section id="cases">
 		<div class="page-container large">
-			<a href="#" class="cases__item">
+			<a href="#" class="cases__item wow fadeIn" data-wow-duration="1s">
 				<div class="cases__item_header">
 					Дизайн-концепт промо-сайта
 				</div>
@@ -148,7 +157,7 @@
 					Посадочная страница для гугла
 				</div>
 			</a>
-			<a href="#" class="cases__item">
+			<a href="#" class="cases__item wow fadeIn" data-wow-duration="1s" data-wow-delay=".25s">
 				<div class="cases__item_header">
 					Дизай-концепт корпоративного сайта
 				</div>
@@ -159,7 +168,7 @@
 					Корпорат для Black Lives Matter 
 				</div>
 			</a>
-			<a href="#" class="cases__item">
+			<a href="#" class="cases__item wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
 				<div class="cases__item_header">
 					Дизайн промо-сайта 
 				</div>
@@ -170,7 +179,7 @@
 					Дизайн корпоративного сайта <br> жилого комплекса 
 				</div>
 			</a>
-			<div class="cases__item">
+			<div class="cases__item wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
 				<a href="#" class="cases__link">
 					Все проекты
 				</a>
@@ -178,7 +187,7 @@
 		</div>
 	</section>
 
-	<footer>
+	<footer class="wow fadeIn" data-wow-duration="1s">
 		<div class="page-container">
 			<div class="footer__menu">
 				<ul>
@@ -217,6 +226,11 @@
 	</footer>
 
 	<script src="js/libs.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 	<script src="js/app.min.js"></script>
 </body>
 </html>
